@@ -56,7 +56,11 @@
         "description": "Poetic performances"
       }
     ],
-    "moreActs": "More acts will be added continuously."
+    "moreActs": "More acts will be added continuously.",
+    "detailed": {
+      "title": "Our Artists",
+      "subtitle": "Get to know the international acts"
+    }
   },
   "tickets": {
     "title": "Tickets",
@@ -162,6 +166,70 @@
     "address": "Theatron, Ostpark, Munich",
     "transport": "Signage in the park • U-/S-Bahn connection • accessible",
     "mapUrl": "https://maps.google.com/maps?q=Theatron+Ostpark+München"
+  },
+  "program": {
+    "title": "Program",
+    "subtitle": "Three days of circus magic",
+    "shows": [
+      {
+        "day": "Friday, 14 November",
+        "time": "19:00",
+        "title": "Opening Show",
+        "description": "Festive opening of the Freeman Festival featuring both acts",
+        "duration": "75 minutes"
+      },
+      {
+        "day": "Saturday, 15 November",
+        "time": "15:00",
+        "title": "Art for Rainy Days",
+        "description": "\"How a Spiral Works\" – award‑winning contemporary performance",
+        "duration": "60 minutes"
+      },
+      {
+        "day": "Saturday, 15 November",
+        "time": "19:00",
+        "title": "The Nordic Council",
+        "description": "\"Häppy Hour\" – Nordic circus art with live music",
+        "duration": "60 minutes"
+      },
+      {
+        "day": "Sunday, 16 November",
+        "time": "15:00",
+        "title": "Matinee Show",
+        "description": "Family‑friendly performance with highlights from both acts",
+        "duration": "75 minutes"
+      },
+      {
+        "day": "Sunday, 16 November",
+        "time": "19:00",
+        "title": "Finale",
+        "description": "Grand closing show with all artists",
+        "duration": "75 minutes"
+      }
+    ],
+    "notes": {
+      "entrance": "Entry 30 minutes before showtime",
+      "seating": "Free seating – early arrival recommended",
+      "accessibility": "All performances are accessible"
+    }
+  },
+  "venue": {
+    "title": "Pepe Dome",
+    "subtitle": "A unique circus experience in a geodesic dome",
+    "description": "The Pepe Dome is a spectacular geodesic dome in the heart of Munich's Ostpark. With its unique architecture it offers the perfect atmosphere for contemporary circus art.",
+    "features": [
+      { "icon": "🏛️", "title": "Geodesic Architecture", "description": "The dome creates an intimate yet generous atmosphere" },
+      { "icon": "🎪", "title": "5‑meter Dome Height", "description": "Perfect for spectacular aerial acrobatics" },
+      { "icon": "👥", "title": "200 Seats", "description": "Optimal view for every guest" },
+      { "icon": "♿", "title": "Accessible", "description": "Fully accessible for all visitors" },
+      { "icon": "🌡️", "title": "Climate‑controlled", "description": "Comfortable temperatures in any season" },
+      { "icon": "🚗", "title": "Prime Location", "description": "Right in Ostpark with good connections" }
+    ],
+    "location": {
+      "address": "Theatron, Ostpark Munich",
+      "transport": "U-/S‑Bahn connection • signage in the park",
+      "parking": "Limited parking – public transport recommended"
+    }
   },
   "finalCta": {
     "title": "Ready for Freeman Festival?",

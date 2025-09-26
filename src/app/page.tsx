@@ -1,11 +1,12 @@
 "use client";
+type CountdownLabels = { days: string; hours: string; minutes: string; seconds: string };
 import deContent from "@/i18n/de.json";
 import enContent from "@/i18n/en.json";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
 // Countdown Component
-function Countdown({ targetDate, labels }: { targetDate: Date; labels: any }) {
+function Countdown({ targetDate, labels }: { targetDate: Date; labels: CountdownLabels }) {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -393,7 +394,7 @@ export default function Home() {
             {content.press.title}
           </h2>
           <blockquote className="text-xl md:text-2xl leading-relaxed mb-8 italic text-white/90">
-            "{content.press.quote}"
+            &ldquo;{content.press.quote}&rdquo;
           </blockquote>
           <div className="flex justify-center items-center gap-4">
             <div className="w-12 h-0.5 bg-yellow-400"></div>
