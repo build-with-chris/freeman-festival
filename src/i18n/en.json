@@ -223,7 +223,7 @@
   "location": {
     "title": "Directions & Info",
     "address": "Theatron, Ostpark, Munich",
-    "transport": "Signage in the park • U-/S-Bahn connection • accessible",
+    "transport": "U-Bahn Quiddestraße • signage in the park • accessible",
     "mapUrl": "https://maps.google.com/maps?q=Theatron+Ostpark+München"
   },
   "program": {
@@ -301,8 +301,8 @@
     ],
     "location": {
       "address": "Theatron, Ostpark Munich",
-      "transport": "U-/S‑Bahn connection • signage in the park",
-      "parking": "Limited parking – public transport recommended",
+      "transport": "U-Bahn Quiddestraße • signage in the park",
+      "parking": "Parking at Michaeligarten (15 min walk)",
       "mapUrl": "https://maps.google.com/maps?q=Theatron+Ostpark+München"
     },
     "gallery": [
@@ -368,7 +368,7 @@
       "addressLabel": "Address",
       "email": "info@freeman-festival.de",
       "phone": "+49 89 123 456 78",
-      "address": "Theatron, Ostpark\n81735 Munich"
+      "address": "Theatron, Ostpark\n81735 Munich\n\nTransport: U-Bahn Quiddestraße\nParking: Michaeligarten (15 min walk)"
     },
     "press": {
       "title": "Press & Media",
