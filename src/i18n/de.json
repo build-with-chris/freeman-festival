@@ -1,0 +1,299 @@
+{
+  "hero": {
+    "badge": "Neu in München",
+    "title": "Magische Zirkustage im Münchner Osten",
+    "subtitle": "Drei Tage Zirkuskunst – unterhaltsam, nachdenklich, humorvoll. Verpass es nicht.",
+    "date": "14.–16. November",
+    "location": "Ostpark • Pepe Dome im Theatron",
+    "venue": "Barrierefrei • Familienfreundlich • ca. 75 Minuten",
+    "cta": "Jetzt Tickets sichern",
+    "price": "Tickets ab 12 €",
+    "scarcity": "200 Plätze pro Vorstellung – keine Platzreservierung",
+    "countdown": {
+      "title": "Bis zum Festival:",
+      "days": "Tage",
+      "hours": "Stunden",
+      "minutes": "Minuten",
+      "seconds": "Sekunden"
+    }
+  },
+  "navigation": {
+    "home": "Start",
+    "program": "Programm",
+    "lineup": "Line-up",
+    "venue": "Pepe Dome",
+    "tickets": "Tickets",
+    "faq": "FAQ",
+    "language": {
+      "switch": "EN",
+      "current": "DE"
+    }
+  },
+  "valueProps": {
+    "price": {
+      "title": "Faire Preise",
+      "description": "Tickets ab 12 € für erstklassige Shows"
+    },
+    "artists": {
+      "title": "Internationales Line-up",
+      "description": "Handverlesene Künstler aus aller Welt"
+    },
+    "venue": {
+      "title": "Einzigartiges Setting",
+      "description": "Im geodätischen Dome mitten im Ostpark"
+    }
+  },
+  "lineup": {
+    "title": "Line-up 2025",
+    "subtitle": "Internationale Zirkuskunst vom Feinsten",
+    "artists": [
+      {
+        "name": "The Nordic Council",
+        "description": "Zeitgenössische Zirkuskunst",
+        "show": "Häppy Hour",
+        "country": "Finnland, Island & Schweden",
+        "members": "Merri Heikilä, Bjarni Árnason, Jakob Jacobsson",
+        "style": "Jonglage, Akrobatik und Live-Musik verschmelzen in einem kraftvollen, poetischen Circus-Erlebnis",
+        "concept": "Nordische Zauberkunst: Das Stück ist humorvoll, überraschend und tiefgründig – inspiriert von Alltagsritualen in Skandinavien, transformiert in Bewegungs- und Bildsprache",
+        "audience": "Geeignet auch für Familien"
+      },
+      {
+        "name": "Art for Rainy Days",
+        "description": "Contemporary Circus & Dance Collective",
+        "show": "How a Spiral Works",
+        "award": "Gewinner des Latvian Dance Awards 2023/2024",
+        "category": "Best Contemporary Performance",
+        "style": "Ihre Performance verbindet Elemente aus Tanz, Zirkus und zeitgenössischer Bewegung",
+        "concept": "Sie nutzen physische Ausdrucksformen, Bewegungssprache und visuelle Metaphern in ihrer Choreografie",
+        "recognition": "Der Latvian Dance Award gilt als einer der höchsten Auszeichnungen im Bereich Tanz/Kunst in Lettland"
+      }
+    ],
+    "moreActs": "Mehr Acts werden laufend ergänzt.",
+    "detailed": {
+      "title": "Unsere Künstler:innen",
+      "subtitle": "Lernen Sie die internationalen Acts kennen"
+    }
+  },
+  "tickets": {
+    "title": "Tickets",
+    "subtitle": "200 Plätze pro Vorstellung – freie Platzwahl",
+    "tiers": [
+      {
+        "name": "Early Bird",
+        "price": "12 €",
+        "note": "limitiert"
+      },
+      {
+        "name": "Standard",
+        "price": "18 €",
+        "note": "online"
+      },
+      {
+        "name": "Abendkasse",
+        "price": "22 €",
+        "note": "falls verfügbar"
+      }
+    ],
+    "note": "Online über Eventfrog (Link folgt)",
+    "online": "Online-Tickets",
+    "offline": "Abendkasse",
+    "price": "12–22 €"
+  },
+  "schedule": {
+    "title": "Spielzeiten",
+    "subtitle": "Einlass 30 Min. vor Beginn • freie Platzwahl",
+    "items": [
+      {
+        "day": "Fr",
+        "time": "19:00"
+      },
+      {
+        "day": "Sa",
+        "time": "15:00"
+      },
+      {
+        "day": "Sa",
+        "time": "19:00"
+      },
+      {
+        "day": "So",
+        "time": "15:00"
+      },
+      {
+        "day": "So",
+        "time": "19:00"
+      }
+    ]
+  },
+  "highlights": {
+    "title": "Highlights",
+    "items": [
+      "Luftakrobatik in 5 m Höhe",
+      "Familienfreundliche Atmosphäre",
+      "Ein Ort in München, den man nicht verpassen sollte"
+    ]
+  },
+  "press": {
+    "title": "Aus der Presse",
+    "quote": "Von 14. bis 16. November soll das Zelt, gefördert mit Mitteln des Bayerischen Tanz-Verbandes (BLZV), die Münchner Zentrale der europaweiten Aktion »La nuit de la Cirque« werden.",
+    "source": "Süddeutsche Zeitung",
+    "sourceUrl": "https://www.sueddeutsche.de/muenchen/zirkus-zelt-neuperlach-pepe-arts-muenchen-kulturausschuss-li.3262786"
+  },
+  "partners": {
+    "title": "Mit Unterstützung von",
+    "logos": [
+      "/logos/kulturreferat.svg",
+      "/logos/muenchen.svg",
+      "/logos/blvz.svg"
+    ]
+  },
+  "media": {
+    "title": "Eindrücke",
+    "subtitle": "Videos & Bilder – folge @pepe_arts für mehr"
+  },
+  "faq": {
+    "title": "FAQ",
+    "questions": [
+      {
+        "q": "Wo gibt es Tickets?",
+        "a": "Online (Eventfrog-Link folgt) und an der Abendkasse."
+      },
+      {
+        "q": "Wie finde ich hin?",
+        "a": "Beschilderung im Ostpark. Google Maps führt zum Pepe Dome im Theatron."
+      },
+      {
+        "q": "Ist es barrierefrei und für Kinder geeignet?",
+        "a": "Ja. Die Show dauert ca. 75 Minuten."
+      }
+    ]
+  },
+  "social": {
+    "title": "Folge uns auf Instagram",
+    "subtitle": "Die neuesten Updates von @pepe_arts",
+    "handle": "@pepe_arts",
+    "reels": [
+      {
+        "url": "https://instagram.com/p/placeholder1",
+        "thumbnail": "/instagram/reel1.jpg",
+        "title": "Behind the Scenes"
+      },
+      {
+        "url": "https://instagram.com/p/placeholder2",
+        "thumbnail": "/instagram/reel2.jpg",
+        "title": "Artist Preview"
+      },
+      {
+        "url": "https://instagram.com/p/placeholder3",
+        "thumbnail": "/instagram/reel3.jpg",
+        "title": "Dome Setup"
+      }
+    ]
+  },
+  "location": {
+    "title": "Anfahrt & Info",
+    "address": "Theatron, Ostpark, München",
+    "transport": "Beschilderung im Park • U-/S-Bahn Verbindung • barrierefrei",
+    "mapUrl": "https://maps.google.com/maps?q=Theatron+Ostpark+München"
+  },
+  "program": {
+    "title": "Programm",
+    "subtitle": "Drei Tage voller Zirkusmagie",
+    "shows": [
+      {
+        "day": "Freitag, 14. November",
+        "time": "19:00",
+        "title": "Eröffnungsshow",
+        "description": "Feierliche Eröffnung des Freeman Festivals mit beiden Acts",
+        "duration": "75 Minuten"
+      },
+      {
+        "day": "Samstag, 15. November",
+        "time": "15:00",
+        "title": "Art for Rainy Days",
+        "description": "\"How a Spiral Works\" - Preisgekrönte Contemporary Performance",
+        "duration": "60 Minuten"
+      },
+      {
+        "day": "Samstag, 15. November",
+        "time": "19:00",
+        "title": "The Nordic Council",
+        "description": "\"Häppy Hour\" - Nordische Zirkuskunst mit Live-Musik",
+        "duration": "60 Minuten"
+      },
+      {
+        "day": "Sonntag, 16. November",
+        "time": "15:00",
+        "title": "Matinee-Show",
+        "description": "Familienfreundliche Vorstellung mit Highlights beider Acts",
+        "duration": "75 Minuten"
+      },
+      {
+        "day": "Sonntag, 16. November",
+        "time": "19:00",
+        "title": "Finale",
+        "description": "Große Abschlussshow mit allen Künstlern",
+        "duration": "75 Minuten"
+      }
+    ],
+    "notes": {
+      "entrance": "Einlass jeweils 30 Minuten vor Vorstellungsbeginn",
+      "seating": "Freie Platzwahl - frühes Erscheinen empfohlen",
+      "accessibility": "Alle Vorstellungen sind barrierefrei zugänglich"
+    }
+  },
+  "venue": {
+    "title": "Pepe Dome",
+    "subtitle": "Einzigartiges Zirkuserlebnis im geodätischen Dome",
+    "description": "Der Pepe Dome ist ein spektakulärer geodätischer Dome im Herzen des Münchner Ostparks. Mit seiner einzigartigen Architektur bietet er die perfekte Atmosphäre für zeitgenössische Zirkuskunst.",
+    "features": [
+      {
+        "icon": "🏛️",
+        "title": "Geodätische Architektur",
+        "description": "Der Dome schafft eine intime, aber großzügige Atmosphäre"
+      },
+      {
+        "icon": "🎪",
+        "title": "5 Meter Kuppelhöhe",
+        "description": "Perfekt für spektakuläre Luftakrobatik"
+      },
+      {
+        "icon": "👥",
+        "title": "200 Plätze",
+        "description": "Optimale Sicht für jeden Gast"
+      },
+      {
+        "icon": "♿",
+        "title": "Barrierefrei",
+        "description": "Vollständig zugänglich für alle Besucher"
+      },
+      {
+        "icon": "🌡️",
+        "title": "Klimatisiert",
+        "description": "Angenehme Temperaturen zu jeder Jahreszeit"
+      },
+      {
+        "icon": "🚗",
+        "title": "Beste Lage",
+        "description": "Mitten im Ostpark mit guter Anbindung"
+      }
+    ],
+    "location": {
+      "address": "Theatron, Ostpark München",
+      "transport": "U-/S-Bahn Verbindung • Beschilderung im Park",
+      "parking": "Begrenzte Parkplätze - ÖPNV empfohlen"
+    }
+  },
+  "finalCta": {
+    "title": "Bereit für das Freeman Festival?",
+    "subtitle": "Sichere dir jetzt deine Tickets für das Event des Jahres",
+    "primary": "Jetzt Tickets sichern",
+    "secondary": "Fragen? → FAQ",
+    "scarcity": "Begrenzte Plätze verfügbar"
+  },
+  "footer": {
+    "impressum": "Impressum",
+    "datenschutz": "Datenschutz",
+    "social": "Instagram @pepe_arts"
+  }
+}

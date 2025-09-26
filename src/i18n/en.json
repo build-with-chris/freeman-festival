@@ -1,0 +1,195 @@
+{
+  "hero": {
+    "badge": "New in Munich",
+    "title": "Magical Circus Days in Munich's East",
+    "subtitle": "Three days of circus art – entertaining, thoughtful, humorous. Don't miss it.",
+    "date": "November 14–16",
+    "location": "Ostpark • Pepe Dome at Theatron",
+    "venue": "Accessible • Family-friendly • approx. 75 minutes",
+    "cta": "Get Tickets Now",
+    "price": "Tickets from €12",
+    "scarcity": "200 seats per show – no seat reservations",
+    "countdown": {
+      "title": "Until the festival:",
+      "days": "Days",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "program": "Program",
+    "lineup": "Line-up",
+    "venue": "Pepe Dome",
+    "tickets": "Tickets",
+    "faq": "FAQ",
+    "language": {
+      "switch": "DE",
+      "current": "EN"
+    }
+  },
+  "valueProps": {
+    "price": {
+      "title": "Fair Pricing",
+      "description": "Tickets from €12 for premium shows"
+    },
+    "artists": {
+      "title": "International Line-up",
+      "description": "Hand-picked artists from around the world"
+    },
+    "venue": {
+      "title": "Unique Setting",
+      "description": "In the geodesic dome in the heart of Ostpark"
+    }
+  },
+  "lineup": {
+    "title": "Line-up (first acts)",
+    "subtitle": "More artists to follow",
+    "artists": [
+      {
+        "name": "The Nordic Council",
+        "description": "Contemporary circus art"
+      },
+      {
+        "name": "Art for Rainy Days",
+        "description": "Poetic performances"
+      }
+    ],
+    "moreActs": "More acts will be added continuously."
+  },
+  "tickets": {
+    "title": "Tickets",
+    "subtitle": "200 seats per show – free seating",
+    "tiers": [
+      {
+        "name": "Early Bird",
+        "price": "€12",
+        "note": "limited"
+      },
+      {
+        "name": "Standard",
+        "price": "€18",
+        "note": "online"
+      },
+      {
+        "name": "Box Office",
+        "price": "€22",
+        "note": "if available"
+      }
+    ],
+    "note": "Online via Eventfrog (link coming)",
+    "online": "Online Tickets",
+    "offline": "Box Office",
+    "price": "€12–22"
+  },
+  "schedule": {
+    "title": "Showtimes",
+    "subtitle": "Entry 30 min. before start • free seating",
+    "items": [
+      {
+        "day": "Fri",
+        "time": "19:00"
+      },
+      {
+        "day": "Sat",
+        "time": "15:00"
+      },
+      {
+        "day": "Sat",
+        "time": "19:00"
+      },
+      {
+        "day": "Sun",
+        "time": "15:00"
+      },
+      {
+        "day": "Sun",
+        "time": "19:00"
+      }
+    ]
+  },
+  "highlights": {
+    "title": "Highlights",
+    "items": [
+      "Aerial acrobatics at 5m height",
+      "Family-friendly atmosphere",
+      "A place in Munich not to be missed"
+    ]
+  },
+  "press": {
+    "title": "Press",
+    "quote": "From November 14 to 16, the tent, supported by the Bavarian Dance Association (BLZV), will become Munich's headquarters for the Europe-wide action 'La nuit de la Cirque'.",
+    "source": "Süddeutsche Zeitung",
+    "sourceUrl": "https://www.sueddeutsche.de/muenchen/zirkus-zelt-neuperlach-pepe-arts-muenchen-kulturausschuss-li.3262786"
+  },
+  "partners": {
+    "title": "With support from",
+    "logos": [
+      "/logos/kulturreferat.svg",
+      "/logos/muenchen.svg",
+      "/logos/blvz.svg"
+    ]
+  },
+  "media": {
+    "title": "Impressions",
+    "subtitle": "Videos & Images – follow @pepe_arts for more"
+  },
+  "social": {
+    "title": "Follow us on Instagram",
+    "subtitle": "Latest updates from @pepe_arts",
+    "handle": "@pepe_arts",
+    "reels": [
+      {
+        "url": "https://instagram.com/p/placeholder1",
+        "thumbnail": "/instagram/reel1.jpg",
+        "title": "Behind the Scenes"
+      },
+      {
+        "url": "https://instagram.com/p/placeholder2",
+        "thumbnail": "/instagram/reel2.jpg",
+        "title": "Artist Preview"
+      },
+      {
+        "url": "https://instagram.com/p/placeholder3",
+        "thumbnail": "/instagram/reel3.jpg",
+        "title": "Dome Setup"
+      }
+    ]
+  },
+  "location": {
+    "title": "Directions & Info",
+    "address": "Theatron, Ostpark, Munich",
+    "transport": "Signage in the park • U-/S-Bahn connection • accessible",
+    "mapUrl": "https://maps.google.com/maps?q=Theatron+Ostpark+München"
+  },
+  "finalCta": {
+    "title": "Ready for Freeman Festival?",
+    "subtitle": "Get your tickets now for the event of the year",
+    "primary": "Get Tickets Now",
+    "secondary": "Questions? → FAQ",
+    "scarcity": "Limited seats available"
+  },
+  "faq": {
+    "title": "FAQ",
+    "questions": [
+      {
+        "q": "Where can I get tickets?",
+        "a": "Online (Eventfrog link follows) and at the box office."
+      },
+      {
+        "q": "How do I get there?",
+        "a": "Signage in Ostpark. Google Maps leads to Pepe Dome at Theatron."
+      },
+      {
+        "q": "Is it accessible and suitable for children?",
+        "a": "Yes. The show lasts approximately 75 minutes."
+      }
+    ]
+  },
+  "footer": {
+    "impressum": "Imprint",
+    "datenschutz": "Privacy",
+    "social": "Instagram @pepe_arts"
+  }
+}

@@ -1,36 +1,145 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Freeman Festival 2025 Website
 
-## Getting Started
+Das Jahresentertainment im Münchner Osten - Freeman Festival Website mit Next.js, Tailwind CSS und TypeScript.
 
-First, run the development server:
+## 🎪 Features
+
+- **Responsive Design** - Mobile-first mit Freeman-Theme
+- **Internationalisierung** - Deutsch/Englisch (DE als Standard)
+- **SEO-optimiert** - Metadata, JSON-LD Schema, Open Graph
+- **Accessibility** - ARIA-Labels, Keyboard Navigation
+- **Performance** - Next.js App Router, optimierte Assets
+- **Conversion-Fokus** - Countdown, Scarcity, Multiple CTAs
+
+## 🚀 Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌐 Promo-Redirect Snippets
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Für die Bewerbung auf bestehenden Pepe-Domains:
 
-## Learn More
+### pepeshows.de/freeman
 
-To learn more about Next.js, take a look at the following resources:
+```html
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="0; url=https://freemanfestival.de/?utm_source=pepeshows&utm_campaign=freeman2025">
+    <link rel="canonical" href="https://freemanfestival.de/">
+    <title>Freeman Festival 2025 - Pepe Shows</title>
+    <meta name="description" content="Das Jahresentertainment im Münchner Osten - 14.-16. November 2025">
+    <style>
+        body { font-family: 'Inter', sans-serif; background: #161616; color: #fff; text-align: center; padding: 50px 20px; }
+        .logo { font-size: 2rem; font-weight: bold; color: #D4A574; margin-bottom: 2rem; }
+        .btn { display: inline-block; background: #D4A574; color: #0A0A0A; padding: 1rem 2rem; border-radius: 2rem; text-decoration: none; font-weight: 600; margin-top: 2rem; }
+        .btn:hover { background: #E6B887; }
+    </style>
+</head>
+<body>
+    <div class="logo">Freeman Festival 2025</div>
+    <p>Das Jahresentertainment im Münchner Osten</p>
+    <p>14.–16. November 2025 • Ostpark München • Pepe Dome</p>
+    <a href="https://freemanfestival.de/?utm_source=pepeshows&utm_campaign=freeman2025" class="btn">Jetzt Tickets sichern</a>
+    <script>
+        setTimeout(() => {
+            window.location.href = 'https://freemanfestival.de/?utm_source=pepeshows&utm_campaign=freeman2025';
+        }, 2000);
+    </script>
+</body>
+</html>
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### pepearts.de/freeman
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```html
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="0; url=https://freemanfestival.de/?utm_source=pepearts&utm_campaign=freeman2025">
+    <link rel="canonical" href="https://freemanfestival.de/">
+    <title>Freeman Festival 2025 - Pepe Arts</title>
+    <meta name="description" content="Das Jahresentertainment im Münchner Osten - 14.-16. November 2025">
+    <style>
+        body { font-family: 'Inter', sans-serif; background: #161616; color: #fff; text-align: center; padding: 50px 20px; }
+        .logo { font-size: 2rem; font-weight: bold; color: #D4A574; margin-bottom: 2rem; }
+        .btn { display: inline-block; background: #D4A574; color: #0A0A0A; padding: 1rem 2rem; border-radius: 2rem; text-decoration: none; font-weight: 600; margin-top: 2rem; }
+        .btn:hover { background: #E6B887; }
+    </style>
+</head>
+<body>
+    <div class="logo">Freeman Festival 2025</div>
+    <p>Das Jahresentertainment im Münchner Osten</p>
+    <p>14.–16. November 2025 • Ostpark München • Pepe Dome</p>
+    <a href="https://freemanfestival.de/?utm_source=pepearts&utm_campaign=freeman2025" class="btn">Jetzt Tickets sichern</a>
+    <script>
+        setTimeout(() => {
+            window.location.href = 'https://freemanfestival.de/?utm_source=pepearts&utm_campaign=freeman2025';
+        }, 2000);
+    </script>
+</body>
+</html>
+```
 
-## Deploy on Vercel
+### Minimale Redirect (nur Weiterleitung)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```html
+<!doctype html>
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="0; url=https://freemanfestival.de/?utm_source=pepeshows&utm_campaign=freeman2025">
+<link rel="canonical" href="https://freemanfestival.de/">
+<title>Freeman Festival 2025</title>
+<p>Weiterleitung… <a href="https://freemanfestival.de/?utm_source=pepeshows&utm_campaign=freeman2025">klicken</a>.</p>
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📊 UTM Tracking
+
+Die Website ist vorbereitet für UTM-Tracking:
+- `utm_source=pepeshows|pepearts`
+- `utm_campaign=freeman2025`
+
+## 🎯 CTA-Struktur
+
+**Alle CTAs führen zu #tickets (später Eventfrog-Link):**
+
+1. **Hero CTA** - Primary, scrollt zu Tickets
+2. **Nach Tickets** - Secondary CTA mit großem Button
+3. **Finale CTA** - Big CTA vor Footer mit Scarcity
+
+## 🔧 Konfiguration
+
+- **Standard-Sprache**: Deutsch (DE)
+- **Englisch**: Per `?lang=en` Parameter (geplant)
+- **Ticket-Link**: Platzhalter für Eventfrog-Integration
+- **Domain**: freemanfestival.de
+
+## 📱 Social Media
+
+- Instagram: [@pepe_arts](https://instagram.com/pepe_arts)
+- Hashtags: #FreemanFestival #ZirkusInMünchen #PepeDome #Ostpark
+
+## 🎨 Design System
+
+**Freeman Theme basiert auf PepeShows Design Tokens:**
+- Primary: Gold (#D4A574)
+- Background: Dark (#161616)
+- Surface: Dark Surface (#1A1A1A)
+- Fonts: Outfit (Display), Inter (Body)
+
+## 🏗️ Tech Stack
+
+- **Framework**: Next.js 15 App Router
+- **Styling**: Tailwind CSS + Freeman Theme
+- **TypeScript**: Vollständige Typsicherheit
+- **Fonts**: Google Fonts (Outfit + Inter)
+- **Icons**: Emoji + Unicode
+- **SEO**: JSON-LD Schema, Open Graph, Twitter Cards
