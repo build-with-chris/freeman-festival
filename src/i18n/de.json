@@ -69,6 +69,10 @@
       }
     ],
     "moreActs": "Mehr Acts werden laufend ergänzt.",
+    "moreActsTitle": "Weitere Acts folgen",
+    "ctaTitle": "Erlebe diese Künstler live",
+    "ctaButton": "🎫 Jetzt Tickets sichern",
+    "ctaSubtitle": "Internationale Zirkuskunst • 5 Shows • 14.–16. November",
     "detailed": {
       "title": "Unsere Künstler:innen",
       "subtitle": "Lernen Sie die internationalen Acts kennen"
@@ -158,7 +162,14 @@
         "features": ["Festival-Finale", "Emotional", "Unvergesslich"],
         "audience": "Bewegender Abschluss für alle Altersgruppen"
       }
-    ]
+    ],
+    "modal": {
+      "durationLabel": "Dauer",
+      "audienceLabel": "Zielgruppe",
+      "highlightsLabel": "Highlights",
+      "ticketsButton": "🎫 Tickets für diese Show",
+      "ticketsNote": "200 Plätze • Freie Platzwahl • Early Bird bis 15.10"
+    }
   },
   "highlights": {
     "title": "Highlights",
@@ -272,15 +283,30 @@
       }
     ],
     "notes": {
+      "title": "Wichtige Hinweise",
+      "entranceLabel": "Einlass",
+      "seatingLabel": "Plätze",
+      "accessibilityLabel": "Barrierefreiheit",
       "entrance": "Einlass jeweils 30 Minuten vor Vorstellungsbeginn",
       "seating": "Freie Platzwahl - frühes Erscheinen empfohlen",
       "accessibility": "Alle Vorstellungen sind barrierefrei zugänglich"
-    }
+    },
+    "ctaTitle": "Tickets für alle Shows verfügbar",
+    "ctaButton": "🎫 Jetzt Tickets sichern",
+    "ctaSubtitle": "200 Plätze pro Vorstellung • Freie Platzwahl"
   },
   "venue": {
     "title": "Pepe Dome",
     "subtitle": "Einzigartiges Zirkuserlebnis im geodätischen Dome",
     "description": "Der Pepe Dome ist ein spektakulärer geodätischer Dome im Herzen des Münchner Ostparks. Mit seiner einzigartigen Architektur bietet er die perfekte Atmosphäre für zeitgenössische Zirkuskunst.",
+    "featuresTitle": "Was macht den Pepe Dome besonders?",
+    "locationTitle": "Lage & Anfahrt",
+    "galleryTitle": "Impressionen",
+    "gallerySubtitle": "Weitere Bilder folgen in Kürze",
+    "techTitle": "Technische Details",
+    "transportTitle": "🚇 Öffentliche Verkehrsmittel",
+    "carTitle": "🚗 Anfahrt mit dem Auto",
+    "routeButton": "Route planen",
     "features": [
       {
         "icon": "🏛️",
@@ -316,8 +342,37 @@
     "location": {
       "address": "Theatron, Ostpark München",
       "transport": "U-/S-Bahn Verbindung • Beschilderung im Park",
-      "parking": "Begrenzte Parkplätze - ÖPNV empfohlen"
-    }
+      "parking": "Begrenzte Parkplätze - ÖPNV empfohlen",
+      "mapUrl": "https://maps.google.com/maps?q=Theatron+Ostpark+München"
+    },
+    "gallery": [
+      { "icon": "🏛️", "title": "Außenansicht" },
+      { "icon": "🎪", "title": "Innenraum" },
+      { "icon": "✨", "title": "Atmosphäre" }
+    ],
+    "ctaTitle": "Erlebe Zirkuskunst im Pepe Dome",
+    "ctaButton": "🎫 Jetzt Tickets sichern",
+    "ctaSubtitle": "Einzigartiges Ambiente • 200 Plätze • Barrierefrei",
+    "techSpecs": [
+      {
+        "title": "Kapazität & Größe",
+        "items": [
+          "200 Sitzplätze (freie Platzwahl)",
+          "5 Meter Kuppelhöhe",
+          "Geodätische Kuppelkonstruktion",
+          "Optimale Akustik"
+        ]
+      },
+      {
+        "title": "Ausstattung & Service",
+        "items": [
+          "Klimatisiert",
+          "Vollständig barrierefrei",
+          "Moderne Licht- & Tontechnik",
+          "Garderobe & Sanitäranlagen"
+        ]
+      }
+    ]
   },
   "finalCta": {
     "title": "Bereit für das Freeman Festival?",

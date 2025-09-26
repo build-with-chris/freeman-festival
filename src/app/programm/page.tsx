@@ -62,21 +62,21 @@ export default function ProgramPage() {
 
           {/* Important Notes */}
           <div className="mt-16 p-8 rounded-xl bg-blue-500/10 border border-blue-400/20">
-            <h3 className="display text-xl font-bold mb-6 text-center">Wichtige Hinweise</h3>
+            <h3 className="display text-xl font-bold mb-6 text-center">{content.program.notes.title}</h3>
             <div className="grid md:grid-cols-3 gap-6 text-center">
               <div>
                 <div className="text-2xl mb-2">⏰</div>
-                <p className="font-semibold mb-1">Einlass</p>
+                <p className="font-semibold mb-1">{content.program.notes.entranceLabel}</p>
                 <p className="text-sm muted">{content.program.notes.entrance}</p>
               </div>
               <div>
                 <div className="text-2xl mb-2">🪑</div>
-                <p className="font-semibold mb-1">Plätze</p>
+                <p className="font-semibold mb-1">{content.program.notes.seatingLabel}</p>
                 <p className="text-sm muted">{content.program.notes.seating}</p>
               </div>
               <div>
                 <div className="text-2xl mb-2">♿</div>
-                <p className="font-semibold mb-1">Barrierefreiheit</p>
+                <p className="font-semibold mb-1">{content.program.notes.accessibilityLabel}</p>
                 <p className="text-sm muted">{content.program.notes.accessibility}</p>
               </div>
             </div>
@@ -88,16 +88,16 @@ export default function ProgramPage() {
       <section className="py-20 px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="display text-4xl font-bold mb-8">
-            Tickets für alle Shows verfügbar
+            {content.program.ctaTitle}
           </h2>
           <Link
             href="/#tickets"
             className="btn-primary text-xl px-10 py-5 shadow-2xl hover:shadow-yellow-400/20 transition-all"
           >
-            🎫 Jetzt Tickets sichern
+            {content.program.ctaButton}
           </Link>
           <p className="mt-6 muted">
-            200 Plätze pro Vorstellung • Freie Platzwahl
+            {content.program.ctaSubtitle}
           </p>
         </div>
       </section>

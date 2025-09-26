@@ -69,6 +69,10 @@
       }
     ],
     "moreActs": "More acts will be added continuously.",
+    "moreActsTitle": "More acts coming soon",
+    "ctaTitle": "Experience these artists live",
+    "ctaButton": "🎫 Get Tickets Now",
+    "ctaSubtitle": "International circus art • 5 shows • November 14–16",
     "detailed": {
       "title": "Our Artists",
       "subtitle": "Get to know the international acts"
@@ -158,7 +162,14 @@
         "features": ["Festival Finale", "Emotional", "Unforgettable"],
         "audience": "Moving conclusion for all ages"
       }
-    ]
+    ],
+    "modal": {
+      "durationLabel": "Duration",
+      "audienceLabel": "Target Audience",
+      "highlightsLabel": "Highlights",
+      "ticketsButton": "🎫 Tickets for this Show",
+      "ticketsNote": "200 seats • Free seating • Early Bird until Oct 15"
+    }
   },
   "highlights": {
     "title": "Highlights",
@@ -255,15 +266,30 @@
       }
     ],
     "notes": {
+      "title": "Important Information",
+      "entranceLabel": "Entry",
+      "seatingLabel": "Seating",
+      "accessibilityLabel": "Accessibility",
       "entrance": "Entry 30 minutes before showtime",
       "seating": "Free seating – early arrival recommended",
       "accessibility": "All performances are accessible"
-    }
+    },
+    "ctaTitle": "Tickets available for all shows",
+    "ctaButton": "🎫 Get Tickets Now",
+    "ctaSubtitle": "200 seats per show • Free seating"
   },
   "venue": {
     "title": "Pepe Dome",
     "subtitle": "A unique circus experience in a geodesic dome",
     "description": "The Pepe Dome is a spectacular geodesic dome in the heart of Munich's Ostpark. With its unique architecture it offers the perfect atmosphere for contemporary circus art.",
+    "featuresTitle": "What makes the Pepe Dome special?",
+    "locationTitle": "Location & Directions",
+    "galleryTitle": "Impressions",
+    "gallerySubtitle": "More images coming soon",
+    "techTitle": "Technical Details",
+    "transportTitle": "🚇 Public Transport",
+    "carTitle": "🚗 By Car",
+    "routeButton": "Plan Route",
     "features": [
       { "icon": "🏛️", "title": "Geodesic Architecture", "description": "The dome creates an intimate yet generous atmosphere" },
       { "icon": "🎪", "title": "5‑meter Dome Height", "description": "Perfect for spectacular aerial acrobatics" },
@@ -275,8 +301,37 @@
     "location": {
       "address": "Theatron, Ostpark Munich",
       "transport": "U-/S‑Bahn connection • signage in the park",
-      "parking": "Limited parking – public transport recommended"
-    }
+      "parking": "Limited parking – public transport recommended",
+      "mapUrl": "https://maps.google.com/maps?q=Theatron+Ostpark+München"
+    },
+    "gallery": [
+      { "icon": "🏛️", "title": "Exterior View" },
+      { "icon": "🎪", "title": "Interior" },
+      { "icon": "✨", "title": "Atmosphere" }
+    ],
+    "ctaTitle": "Experience Circus Art in the Pepe Dome",
+    "ctaButton": "🎫 Get Tickets Now",
+    "ctaSubtitle": "Unique Atmosphere • 200 Seats • Accessible",
+    "techSpecs": [
+      {
+        "title": "Capacity & Size",
+        "items": [
+          "200 seats (free seating)",
+          "5 meter dome height",
+          "Geodesic dome construction",
+          "Optimal acoustics"
+        ]
+      },
+      {
+        "title": "Equipment & Service",
+        "items": [
+          "Air-conditioned",
+          "Fully accessible",
+          "Modern lighting & sound technology",
+          "Cloakroom & restrooms"
+        ]
+      }
+    ]
   },
   "finalCta": {
     "title": "Ready for Freeman Festival?",

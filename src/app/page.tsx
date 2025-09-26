@@ -562,7 +562,7 @@ export default function Home() {
                 <div className="p-4 rounded-lg bg-white/5 border border-white/10">
                   <div className="flex items-center gap-2 mb-2">
                     <span className="text-lg">⏱️</span>
-                    <span className="font-semibold">Dauer</span>
+                    <span className="font-semibold">{content.schedule.modal.durationLabel}</span>
                   </div>
                   <p className="text-white/80">{content.schedule.items[selectedShow].duration}</p>
                 </div>
@@ -571,7 +571,7 @@ export default function Home() {
                 <div className="p-4 rounded-lg bg-white/5 border border-white/10">
                   <div className="flex items-center gap-2 mb-2">
                     <span className="text-lg">👥</span>
-                    <span className="font-semibold">Zielgruppe</span>
+                    <span className="font-semibold">{content.schedule.modal.audienceLabel}</span>
                   </div>
                   <p className="text-white/80">{content.schedule.items[selectedShow].audience}</p>
                 </div>
@@ -581,7 +581,7 @@ export default function Home() {
               <div className="mb-6">
                 <h4 className="font-semibold mb-3 flex items-center gap-2">
                   <span>✨</span>
-                  Highlights
+                  {content.schedule.modal.highlightsLabel}
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {content.schedule.items[selectedShow].features.map((feature, index) => (
@@ -604,10 +604,10 @@ export default function Home() {
                   }}
                   className="btn-primary px-8 py-3 text-lg"
                 >
-                  🎫 Tickets für diese Show
+                  {content.schedule.modal.ticketsButton}
                 </button>
                 <p className="text-sm text-white/60 mt-2">
-                  200 Plätze • Freie Platzwahl • Early Bird bis 15.10
+                  {content.schedule.modal.ticketsNote}
                 </p>
               </div>
             </div>

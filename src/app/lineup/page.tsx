@@ -112,7 +112,7 @@ export default function LineupPage() {
 
           {/* More Acts Coming */}
           <div className="text-center mt-20 p-8 rounded-xl bg-black/20 border border-white/10">
-            <h3 className="display text-2xl font-bold mb-4">Weitere Acts folgen</h3>
+            <h3 className="display text-2xl font-bold mb-4">{content.lineup.moreActsTitle}</h3>
             <p className="text-white/80 mb-6">{content.lineup.moreActs}</p>
             <div className="flex justify-center">
               <a
@@ -133,16 +133,16 @@ export default function LineupPage() {
       <section className="py-20 px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="display text-4xl font-bold mb-8">
-            Erlebe diese Künstler live
+            {content.lineup.ctaTitle}
           </h2>
           <Link
             href="/#tickets"
             className="btn-primary text-xl px-10 py-5 shadow-2xl hover:shadow-yellow-400/20 transition-all"
           >
-            🎫 Jetzt Tickets sichern
+            {content.lineup.ctaButton}
           </Link>
           <p className="mt-6 muted">
-            Internationale Zirkuskunst • 5 Shows • 14.–16. November
+            {content.lineup.ctaSubtitle}
           </p>
         </div>
       </section>

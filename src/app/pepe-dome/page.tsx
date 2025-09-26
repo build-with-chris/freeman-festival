@@ -44,7 +44,7 @@ export default function VenuePage() {
       <section className="py-20 px-6 bg-black/10">
         <div className="max-w-6xl mx-auto">
           <h2 className="display text-4xl md:text-5xl font-bold text-center mb-16">
-            Was macht den Pepe Dome besonders?
+            {content.venue.featuresTitle}
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {content.venue.features.map((feature, index) => (
@@ -62,7 +62,7 @@ export default function VenuePage() {
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="display text-4xl md:text-5xl font-bold text-center mb-16">
-            Lage & Anfahrt
+            {content.venue.locationTitle}
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Map */}
@@ -83,21 +83,21 @@ export default function VenuePage() {
               <h3 className="display text-2xl font-bold mb-6">{content.venue.location.address}</h3>
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-semibold text-white mb-2">🚇 Öffentliche Verkehrsmittel</h4>
+                  <h4 className="font-semibold text-white mb-2">{content.venue.transportTitle}</h4>
                   <p className="text-white/80">{content.venue.location.transport}</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-white mb-2">🚗 Anfahrt mit dem Auto</h4>
+                  <h4 className="font-semibold text-white mb-2">{content.venue.carTitle}</h4>
                   <p className="text-white/80">{content.venue.location.parking}</p>
                 </div>
                 <a
-                  href={content.location.mapUrl}
+                  href={content.venue.location.mapUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 border border-white/30 rounded-full hover:border-white/50 transition-colors"
                 >
                   <span>🗺️</span>
-                  <span className="font-semibold">Route planen</span>
+                  <span className="font-semibold">{content.venue.routeButton}</span>
                 </a>
               </div>
             </div>
@@ -109,14 +109,10 @@ export default function VenuePage() {
       <section className="py-20 px-6 bg-black/10">
         <div className="max-w-6xl mx-auto">
           <h2 className="display text-4xl md:text-5xl font-bold text-center mb-16">
-            Impressionen
+            {content.venue.galleryTitle}
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { icon: '🏛️', title: 'Außenansicht' },
-              { icon: '🎪', title: 'Innenraum' },
-              { icon: '✨', title: 'Atmosphäre' }
-            ].map((item, index) => (
+            {content.venue.gallery.map((item, index) => (
               <div key={index} className="aspect-square bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-xl flex items-center justify-center border border-white/10">
                 <div className="text-center">
                   <div className="text-6xl mb-4">{item.icon}</div>
@@ -126,7 +122,7 @@ export default function VenuePage() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <p className="muted">Weitere Bilder folgen in Kürze</p>
+            <p className="muted">{content.venue.gallerySubtitle}</p>
           </div>
         </div>
       </section>
@@ -135,27 +131,19 @@ export default function VenuePage() {
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="display text-4xl md:text-5xl font-bold text-center mb-16">
-            Technische Details
+            {content.venue.techTitle}
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="p-8 rounded-xl bg-black/20 border border-white/10">
-              <h3 className="display text-xl font-bold mb-4 text-white">Kapazität & Größe</h3>
-              <ul className="space-y-2 text-white/80">
-                <li>• 200 Sitzplätze (freie Platzwahl)</li>
-                <li>• 5 Meter Kuppelhöhe</li>
-                <li>• Geodätische Kuppelkonstruktion</li>
-                <li>• Optimale Akustik</li>
-              </ul>
-            </div>
-            <div className="p-8 rounded-xl bg-black/20 border border-white/10">
-              <h3 className="display text-xl font-bold mb-4 text-white">Ausstattung & Service</h3>
-              <ul className="space-y-2 text-white/80">
-                <li>• Klimatisiert</li>
-                <li>• Vollständig barrierefrei</li>
-                <li>• Moderne Licht- & Tontechnik</li>
-                <li>• Garderobe & Sanitäranlagen</li>
-              </ul>
-            </div>
+            {content.venue.techSpecs.map((spec, index) => (
+              <div key={index} className="p-8 rounded-xl bg-black/20 border border-white/10">
+                <h3 className="display text-xl font-bold mb-4 text-white">{spec.title}</h3>
+                <ul className="space-y-2 text-white/80">
+                  {spec.items.map((item, itemIndex) => (
+                    <li key={itemIndex}>• {item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -164,16 +152,16 @@ export default function VenuePage() {
       <section className="py-20 px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="display text-4xl font-bold mb-8">
-            Erlebe Zirkuskunst im Pepe Dome
+            {content.venue.ctaTitle}
           </h2>
           <Link
             href="/#tickets"
             className="btn-primary text-xl px-10 py-5 shadow-2xl transition-all"
           >
-            🎫 Jetzt Tickets sichern
+            {content.venue.ctaButton}
           </Link>
           <p className="mt-6 muted">
-            Einzigartiges Ambiente • 200 Plätze • Barrierefrei
+            {content.venue.ctaSubtitle}
           </p>
         </div>
       </section>
