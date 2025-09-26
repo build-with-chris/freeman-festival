@@ -1,42 +1,15 @@
 "use client";
-import deContent from "@/i18n/de.json";
 import Link from "next/link";
+import { useLanguage } from "@/contexts/LanguageContext";
+import Navigation from "@/components/Navigation";
 
 export default function ProgramPage() {
-  const content = deContent;
+  const { content } = useLanguage();
 
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-black/90 backdrop-blur-sm border-b border-white/10">
-        <div className="max-w-6xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="display text-xl font-bold text-yellow-400">
-              Freeman Festival
-            </Link>
-            <div className="flex items-center gap-6">
-              <Link href="/" className="hover:text-yellow-400 transition-colors">
-                {content.navigation.home}
-              </Link>
-              <Link href="/programm" className="text-yellow-400 font-semibold">
-                {content.navigation.program}
-              </Link>
-              <Link href="/lineup" className="hover:text-yellow-400 transition-colors">
-                {content.navigation.lineup}
-              </Link>
-              <Link href="/pepe-dome" className="hover:text-yellow-400 transition-colors">
-                {content.navigation.venue}
-              </Link>
-              <Link href="/#tickets" className="btn-primary px-4 py-2 text-sm">
-                {content.navigation.tickets}
-              </Link>
-              <button className="px-3 py-1 border border-white/20 rounded text-sm hover:border-yellow-400/50 transition-colors">
-                {content.navigation.language.switch}
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navigation currentPage="program" />
 
       {/* Hero Section */}
       <section className="py-20 px-6 text-center">
@@ -51,15 +24,15 @@ export default function ProgramPage() {
           {/* Date Overview */}
           <div className="grid md:grid-cols-3 gap-6 mb-16">
             <div className="p-6 rounded-xl bg-black/20 border border-white/10">
-              <div className="text-2xl font-bold text-yellow-400 mb-2">Fr 14.11</div>
+              <div className="text-2xl font-bold text-white mb-2">Fr 14.11</div>
               <div className="text-sm muted">1 Show</div>
             </div>
             <div className="p-6 rounded-xl bg-black/20 border border-white/10">
-              <div className="text-2xl font-bold text-yellow-400 mb-2">Sa 15.11</div>
+              <div className="text-2xl font-bold text-white mb-2">Sa 15.11</div>
               <div className="text-sm muted">2 Shows</div>
             </div>
             <div className="p-6 rounded-xl bg-black/20 border border-white/10">
-              <div className="text-2xl font-bold text-yellow-400 mb-2">So 16.11</div>
+              <div className="text-2xl font-bold text-white mb-2">So 16.11</div>
               <div className="text-sm muted">2 Shows</div>
             </div>
           </div>
@@ -71,14 +44,14 @@ export default function ProgramPage() {
         <div className="max-w-4xl mx-auto">
           <div className="space-y-8">
             {content.program.shows.map((show, index) => (
-              <div key={index} className="p-8 rounded-xl bg-black/20 border border-white/10 hover:border-yellow-400/30 transition-colors">
+              <div key={index} className="p-8 rounded-xl bg-black/20 border border-white/10 hover:border-white/30 transition-colors">
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                   <div>
                     <h3 className="display text-2xl font-bold mb-2">{show.title}</h3>
-                    <p className="text-yellow-400 font-semibold">{show.day}</p>
+                    <p className="text-white font-semibold">{show.day}</p>
                   </div>
                   <div className="text-right">
-                    <div className="text-3xl font-bold text-yellow-400">{show.time}</div>
+                    <div className="text-3xl font-bold text-white">{show.time}</div>
                     <div className="text-sm muted">{show.duration}</div>
                   </div>
                 </div>

@@ -105,23 +105,58 @@
     "items": [
       {
         "day": "Fr",
-        "time": "19:00"
+        "time": "19:00",
+        "date": "14. November",
+        "title": "Opening Night - Nordic Elegance",
+        "description": "Erleben Sie die Premiere mit The Nordic Council. Eine Show voller nordischer Eleganz und poetischer Akrobatik, die das Festival stimmungsvoll eröffnet.",
+        "artist": "The Nordic Council",
+        "duration": "75 Minuten",
+        "features": ["Artistik", "Live-Musik", "Poetische Performance"],
+        "audience": "Familienfreundlich ab 8 Jahren"
       },
       {
         "day": "Sa",
-        "time": "15:00"
+        "time": "15:00",
+        "date": "15. November",
+        "title": "Matinee - Zirkus für die Familie",
+        "description": "Die perfekte Nachmittagsshow für Familien. Art for Rainy Days präsentiert spielerische und interaktive Zirkuskunst, die Kinder und Erwachsene gleichermaßen begeistert.",
+        "artist": "Art for Rainy Days",
+        "duration": "60 Minuten",
+        "features": ["Interaktiv", "Familienfreundlich", "Mitmach-Elemente"],
+        "audience": "Ideal für Familien mit Kindern ab 4 Jahren"
       },
       {
         "day": "Sa",
-        "time": "19:00"
+        "time": "19:00",
+        "date": "15. November",
+        "title": "Abendgala - Poesie in Motion",
+        "description": "Die Hauptshow des Festivals! Beide Künstlergruppen vereinen sich zu einer spektakulären Abendgala mit den besten Nummern aus beiden Shows.",
+        "artist": "The Nordic Council & Art for Rainy Days",
+        "duration": "90 Minuten",
+        "features": ["Beste Nummern", "Künstler-Kollaboration", "Spektakuläre Finale"],
+        "audience": "Für alle Altersgruppen geeignet"
       },
       {
         "day": "So",
-        "time": "15:00"
+        "time": "15:00",
+        "date": "16. November",
+        "title": "Sonntagsmatinee - Nordic Elegance",
+        "description": "Entspannter Sonntagnachmittag mit The Nordic Council. Genießen Sie nordische Zirkuspoesie in ruhiger Atmosphäre - perfekt für einen gemütlichen Sonntag.",
+        "artist": "The Nordic Council",
+        "duration": "75 Minuten",
+        "features": ["Entspannt", "Poetisch", "Nordische Atmosphäre"],
+        "audience": "Perfekt für entspannte Sonntage, ab 6 Jahren"
       },
       {
         "day": "So",
-        "time": "19:00"
+        "time": "19:00",
+        "date": "16. November",
+        "title": "Finale - Art for Rainy Days",
+        "description": "Der große Abschluss des Festivals! Art for Rainy Days verabschiedet sich mit einer emotionalen und unvergesslichen Abschlussvorstellung.",
+        "artist": "Art for Rainy Days",
+        "duration": "75 Minuten",
+        "features": ["Festival-Finale", "Emotional", "Unvergesslich"],
+        "audience": "Bewegender Abschluss für alle Altersgruppen"
       }
     ]
   },

@@ -1,42 +1,15 @@
 "use client";
-import deContent from "@/i18n/de.json";
 import Link from "next/link";
+import { useLanguage } from "@/contexts/LanguageContext";
+import Navigation from "@/components/Navigation";
 
 export default function VenuePage() {
-  const content = deContent;
+  const { content } = useLanguage();
 
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-black/90 backdrop-blur-sm border-b border-white/10">
-        <div className="max-w-6xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="display text-xl font-bold text-yellow-400">
-              Freeman Festival
-            </Link>
-            <div className="flex items-center gap-6">
-              <Link href="/" className="hover:text-yellow-400 transition-colors">
-                {content.navigation.home}
-              </Link>
-              <Link href="/programm" className="hover:text-yellow-400 transition-colors">
-                {content.navigation.program}
-              </Link>
-              <Link href="/lineup" className="hover:text-yellow-400 transition-colors">
-                {content.navigation.lineup}
-              </Link>
-              <Link href="/pepe-dome" className="text-yellow-400 font-semibold">
-                {content.navigation.venue}
-              </Link>
-              <Link href="/#tickets" className="btn-primary px-4 py-2 text-sm">
-                {content.navigation.tickets}
-              </Link>
-              <button className="px-3 py-1 border border-white/20 rounded text-sm hover:border-yellow-400/50 transition-colors">
-                {content.navigation.language.switch}
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navigation currentPage="venue" />
 
       {/* Hero Section */}
       <section className="py-20 px-6 text-center">
@@ -49,7 +22,7 @@ export default function VenuePage() {
           </p>
 
           {/* Hero Image Placeholder */}
-          <div className="aspect-video bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-xl mb-12 flex items-center justify-center border border-white/10">
+          <div className="aspect-video bg-gradient-to-br from-white/10 to-white/5 rounded-xl mb-12 flex items-center justify-center border border-white/10">
             <div className="text-center">
               <div className="text-8xl mb-4">🏛️</div>
               <p className="text-lg muted">Pepe Dome Außenansicht</p>
@@ -75,7 +48,7 @@ export default function VenuePage() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {content.venue.features.map((feature, index) => (
-              <div key={index} className="p-8 rounded-xl bg-black/20 border border-white/10 text-center hover:border-yellow-400/30 transition-colors">
+              <div key={index} className="p-8 rounded-xl bg-black/20 border border-white/10 text-center hover:border-white/30 transition-colors">
                 <div className="text-4xl mb-4">{feature.icon}</div>
                 <h3 className="display text-xl font-semibold mb-3">{feature.title}</h3>
                 <p className="muted leading-relaxed">{feature.description}</p>
@@ -110,18 +83,18 @@ export default function VenuePage() {
               <h3 className="display text-2xl font-bold mb-6">{content.venue.location.address}</h3>
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-semibold text-yellow-400 mb-2">🚇 Öffentliche Verkehrsmittel</h4>
+                  <h4 className="font-semibold text-white mb-2">🚇 Öffentliche Verkehrsmittel</h4>
                   <p className="text-white/80">{content.venue.location.transport}</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-yellow-400 mb-2">🚗 Anfahrt mit dem Auto</h4>
+                  <h4 className="font-semibold text-white mb-2">🚗 Anfahrt mit dem Auto</h4>
                   <p className="text-white/80">{content.venue.location.parking}</p>
                 </div>
                 <a
                   href={content.location.mapUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-yellow-400/20 border border-yellow-400/30 rounded-full hover:border-yellow-400/50 transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 border border-white/30 rounded-full hover:border-white/50 transition-colors"
                 >
                   <span>🗺️</span>
                   <span className="font-semibold">Route planen</span>
@@ -166,7 +139,7 @@ export default function VenuePage() {
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="p-8 rounded-xl bg-black/20 border border-white/10">
-              <h3 className="display text-xl font-bold mb-4 text-yellow-400">Kapazität & Größe</h3>
+              <h3 className="display text-xl font-bold mb-4 text-white">Kapazität & Größe</h3>
               <ul className="space-y-2 text-white/80">
                 <li>• 200 Sitzplätze (freie Platzwahl)</li>
                 <li>• 5 Meter Kuppelhöhe</li>
@@ -175,7 +148,7 @@ export default function VenuePage() {
               </ul>
             </div>
             <div className="p-8 rounded-xl bg-black/20 border border-white/10">
-              <h3 className="display text-xl font-bold mb-4 text-yellow-400">Ausstattung & Service</h3>
+              <h3 className="display text-xl font-bold mb-4 text-white">Ausstattung & Service</h3>
               <ul className="space-y-2 text-white/80">
                 <li>• Klimatisiert</li>
                 <li>• Vollständig barrierefrei</li>
@@ -195,7 +168,7 @@ export default function VenuePage() {
           </h2>
           <Link
             href="/#tickets"
-            className="btn-primary text-xl px-10 py-5 shadow-2xl hover:shadow-yellow-400/20 transition-all"
+            className="btn-primary text-xl px-10 py-5 shadow-2xl transition-all"
           >
             🎫 Jetzt Tickets sichern
           </Link>

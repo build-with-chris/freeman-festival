@@ -1,42 +1,15 @@
 "use client";
-import deContent from "@/i18n/de.json";
 import Link from "next/link";
+import { useLanguage } from "@/contexts/LanguageContext";
+import Navigation from "@/components/Navigation";
 
 export default function LineupPage() {
-  const content = deContent;
+  const { content } = useLanguage();
 
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-black/90 backdrop-blur-sm border-b border-white/10">
-        <div className="max-w-6xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="display text-xl font-bold text-yellow-400">
-              Freeman Festival
-            </Link>
-            <div className="flex items-center gap-6">
-              <Link href="/" className="hover:text-yellow-400 transition-colors">
-                {content.navigation.home}
-              </Link>
-              <Link href="/programm" className="hover:text-yellow-400 transition-colors">
-                {content.navigation.program}
-              </Link>
-              <Link href="/lineup" className="text-yellow-400 font-semibold">
-                {content.navigation.lineup}
-              </Link>
-              <Link href="/pepe-dome" className="hover:text-yellow-400 transition-colors">
-                {content.navigation.venue}
-              </Link>
-              <Link href="/#tickets" className="btn-primary px-4 py-2 text-sm">
-                {content.navigation.tickets}
-              </Link>
-              <button className="px-3 py-1 border border-white/20 rounded text-sm hover:border-yellow-400/50 transition-colors">
-                {content.navigation.language.switch}
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navigation currentPage="lineup" />
 
       {/* Hero Section */}
       <section className="py-20 px-6 text-center">
@@ -63,7 +36,7 @@ export default function LineupPage() {
                 </div>
               </div>
               <div>
-                <h2 className="display text-4xl font-bold mb-4 text-yellow-400">
+                <h2 className="display text-4xl font-bold mb-4 text-white">
                   {content.lineup.artists[0].name}
                 </h2>
                 <p className="text-xl mb-4 text-white/80">{content.lineup.artists[0].country}</p>
@@ -100,18 +73,18 @@ export default function LineupPage() {
                 </div>
               </div>
               <div className="md:order-1">
-                <h2 className="display text-4xl font-bold mb-4 text-yellow-400">
+                <h2 className="display text-4xl font-bold mb-4 text-white">
                   {content.lineup.artists[1].name}
                 </h2>
                 <p className="text-xl mb-4 text-white/80">{content.lineup.artists[1].description}</p>
 
                 {/* Award Highlight */}
-                <div className="p-4 rounded-lg bg-yellow-400/10 border border-yellow-400/30 mb-6">
+                <div className="p-4 rounded-lg bg-white/10 border border-white/30 mb-6">
                   <div className="flex items-center gap-2 mb-2">
                     <span className="text-2xl">🏆</span>
-                    <p className="font-bold text-yellow-400">{content.lineup.artists[1].award}</p>
+                    <p className="font-bold text-white">{content.lineup.artists[1].award}</p>
                   </div>
-                  <p className="text-sm text-yellow-200">{content.lineup.artists[1].category}</p>
+                  <p className="text-sm text-white/80">{content.lineup.artists[1].category}</p>
                 </div>
 
                 <p className="text-lg mb-6 font-semibold">

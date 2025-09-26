@@ -49,11 +49,23 @@
     "artists": [
       {
         "name": "The Nordic Council",
-        "description": "Contemporary circus art"
+        "description": "Contemporary Circus Arts",
+        "show": "Häppy Hour",
+        "country": "Finland, Iceland & Sweden",
+        "members": "Merri Heikilä, Bjarni Árnason, Jakob Jacobsson",
+        "style": "Juggling, acrobatics and live music merge in a powerful, poetic circus experience",
+        "concept": "Nordic magic art: The piece is humorous, surprising and profound – inspired by everyday rituals in Scandinavia, transformed into movement and visual language",
+        "audience": "Also suitable for families"
       },
       {
         "name": "Art for Rainy Days",
-        "description": "Poetic performances"
+        "description": "Contemporary Circus & Dance Collective",
+        "show": "How a Spiral Works",
+        "award": "Winner of the Latvian Dance Awards 2023/2024",
+        "category": "Best Contemporary Performance",
+        "style": "Their performance combines elements from dance, circus and contemporary movement",
+        "concept": "They use physical expression forms, movement language and visual metaphors in their choreography",
+        "recognition": "The Latvian Dance Award is considered one of the highest honors in the field of dance/art in Latvia"
       }
     ],
     "moreActs": "More acts will be added continuously.",
@@ -93,23 +105,58 @@
     "items": [
       {
         "day": "Fri",
-        "time": "19:00"
+        "time": "7:00 PM",
+        "date": "November 14th",
+        "title": "Opening Night - Nordic Elegance",
+        "description": "Experience the premiere with The Nordic Council. A show full of Nordic elegance and poetic acrobatics that opens the festival with style.",
+        "artist": "The Nordic Council",
+        "duration": "75 minutes",
+        "features": ["Acrobatics", "Live Music", "Poetic Performance"],
+        "audience": "Family-friendly from age 8"
       },
       {
         "day": "Sat",
-        "time": "15:00"
+        "time": "3:00 PM",
+        "date": "November 15th",
+        "title": "Matinee - Family Circus",
+        "description": "The perfect afternoon show for families. Art for Rainy Days presents playful and interactive circus art that delights children and adults alike.",
+        "artist": "Art for Rainy Days",
+        "duration": "60 minutes",
+        "features": ["Interactive", "Family-friendly", "Participatory Elements"],
+        "audience": "Ideal for families with children from age 4"
       },
       {
         "day": "Sat",
-        "time": "19:00"
+        "time": "7:00 PM",
+        "date": "November 15th",
+        "title": "Evening Gala - Poetry in Motion",
+        "description": "The main show of the festival! Both artist groups unite for a spectacular evening gala with the best acts from both shows.",
+        "artist": "The Nordic Council & Art for Rainy Days",
+        "duration": "90 minutes",
+        "features": ["Best Acts", "Artist Collaboration", "Spectacular Finale"],
+        "audience": "Suitable for all ages"
       },
       {
         "day": "Sun",
-        "time": "15:00"
+        "time": "3:00 PM",
+        "date": "November 16th",
+        "title": "Sunday Matinee - Nordic Elegance",
+        "description": "Relaxed Sunday afternoon with The Nordic Council. Enjoy Nordic circus poetry in a calm atmosphere - perfect for a cozy Sunday.",
+        "artist": "The Nordic Council",
+        "duration": "75 minutes",
+        "features": ["Relaxed", "Poetic", "Nordic Atmosphere"],
+        "audience": "Perfect for relaxed Sundays, from age 6"
       },
       {
         "day": "Sun",
-        "time": "19:00"
+        "time": "7:00 PM",
+        "date": "November 16th",
+        "title": "Finale - Art for Rainy Days",
+        "description": "The grand finale of the festival! Art for Rainy Days bids farewell with an emotional and unforgettable closing performance.",
+        "artist": "Art for Rainy Days",
+        "duration": "75 minutes",
+        "features": ["Festival Finale", "Emotional", "Unforgettable"],
+        "audience": "Moving conclusion for all ages"
       }
     ]
   },

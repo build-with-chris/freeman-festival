@@ -51,20 +51,20 @@
   .btn-primary {
     background:var(--primary);
     color:var(--primary-foreground);
-    box-shadow: 0 4px 15px rgba(212, 165, 116, 0.2);
+    box-shadow: 0 2px 8px rgba(212, 165, 116, 0.15);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .btn-primary:hover {
     background:var(--pepe-gold-hover);
-    box-shadow: 0 8px 25px rgba(212, 165, 116, 0.4), 0 0 20px rgba(212, 165, 116, 0.3);
-    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(212, 165, 116, 0.25);
+    transform: translateY(-1px);
   }
 
   .btn-primary:active {
     background:var(--pepe-gold-active);
     transform: translateY(0);
-    box-shadow: 0 4px 15px rgba(212, 165, 116, 0.2);
+    box-shadow: 0 2px 8px rgba(212, 165, 116, 0.15);
   }
 
   .display {
@@ -74,5 +74,18 @@
 
   .muted {
     color:var(--muted-foreground);
+  }
+
+  @keyframes energetic-pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+
+  .energetic-logo {
+    animation: energetic-pulse 2s ease-in-out infinite;
+  }
+
+  .energetic-logo:hover {
+    animation: energetic-pulse 0.5s ease-in-out infinite;
   }
 }
