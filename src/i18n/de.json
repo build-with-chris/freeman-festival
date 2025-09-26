@@ -298,8 +298,28 @@
   },
   "venue": {
     "title": "Pepe Dome",
-    "subtitle": "Einzigartiges Zirkuserlebnis im geodätischen Dome",
-    "description": "Der Pepe Dome ist ein spektakulärer geodätischer Dome im Herzen des Münchner Ostparks. Mit seiner einzigartigen Architektur bietet er die perfekte Atmosphäre für zeitgenössische Zirkuskunst.",
+    "subtitle": "Ein Ort, den München so noch nicht kennt",
+    "description": "Seit dem 1. August 2025 steht er im Ostpark: der Pepe Dome. Eine geodätische Kuppel mitten im Grünen, die Raum für Artistik, Tanz und Kultur schafft – modern, offen und inspirierend. Seine Höhe und Architektur machen spektakuläre Luftakrobatik möglich, während die intime Atmosphäre jede Begegnung persönlich wirken lässt.",
+    "uniqueness": "Weil der Dome nur für eine begrenzte Zeit steht, hat jeder Besuch etwas Einmaliges.",
+    "experienceTitle": "Erleben & Mitmachen",
+    "experienceSubtitle": "Der Dome bietet mehr als nur Shows",
+    "experiences": [
+      {
+        "icon": "🎭",
+        "title": "Shows erleben",
+        "description": "Internationale Zirkuskunst und zeitgenössische Performances in einzigartiger Atmosphäre"
+      },
+      {
+        "icon": "🤸",
+        "title": "Kurse & Workshops",
+        "description": "Bewegung, Tanz oder Zirkus – für Neugierige und Kreative jeden Levels"
+      },
+      {
+        "icon": "🎪",
+        "title": "Events & Feiern",
+        "description": "Flexibler Raum für Firmenevents, Kulturabende oder private Feiern"
+      }
+    ],
     "featuresTitle": "Was macht den Pepe Dome besonders?",
     "locationTitle": "Lage & Anfahrt",
     "galleryTitle": "Impressionen",

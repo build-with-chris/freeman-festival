@@ -34,9 +34,33 @@ export default function VenuePage() {
       {/* Description */}
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-lg md:text-xl leading-relaxed text-white/90 mb-16">
+          <p className="text-lg md:text-xl leading-relaxed text-white/90 mb-8">
             {content.venue.description}
           </p>
+          <p className="text-lg text-white/70 italic mb-16">
+            {content.venue.uniqueness}
+          </p>
+        </div>
+      </section>
+
+      {/* Experience Section */}
+      <section className="py-20 px-6 bg-black/20">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="display text-4xl md:text-5xl font-bold mb-8">
+            {content.venue.experienceTitle}
+          </h2>
+          <p className="text-lg text-white/80 mb-16">
+            {content.venue.experienceSubtitle}
+          </p>
+          <div className="grid md:grid-cols-3 gap-8">
+            {content.venue.experiences.map((experience, index) => (
+              <div key={index} className="p-8 rounded-xl bg-black/20 border border-white/10 text-center hover:border-white/30 transition-colors">
+                <div className="text-4xl mb-4">{experience.icon}</div>
+                <h3 className="display text-xl font-semibold mb-3">{experience.title}</h3>
+                <p className="muted leading-relaxed">{experience.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

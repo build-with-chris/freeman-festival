@@ -281,8 +281,28 @@
   },
   "venue": {
     "title": "Pepe Dome",
-    "subtitle": "A unique circus experience in a geodesic dome",
-    "description": "The Pepe Dome is a spectacular geodesic dome in the heart of Munich's Ostpark. With its unique architecture it offers the perfect atmosphere for contemporary circus art.",
+    "subtitle": "A place Munich has never seen before",
+    "description": "Since August 1st, 2025, it stands in Ostpark: the Pepe Dome. A geodesic dome surrounded by greenery, creating space for artistry, dance, and culture – modern, open, and inspiring. Its height and architecture enable spectacular aerial acrobatics, while the intimate atmosphere makes every encounter feel personal.",
+    "uniqueness": "Because the Dome stands for only a limited time, every visit has something unique about it.",
+    "experienceTitle": "Experience & Participate",
+    "experienceSubtitle": "The Dome offers more than just shows",
+    "experiences": [
+      {
+        "icon": "🎭",
+        "title": "Experience Shows",
+        "description": "International circus arts and contemporary performances in a unique atmosphere"
+      },
+      {
+        "icon": "🤸",
+        "title": "Courses & Workshops",
+        "description": "Movement, dance, or circus – for curious and creative people of all levels"
+      },
+      {
+        "icon": "🎪",
+        "title": "Events & Celebrations",
+        "description": "Flexible space for corporate events, cultural evenings, or private celebrations"
+      }
+    ],
     "featuresTitle": "What makes the Pepe Dome special?",
     "locationTitle": "Location & Directions",
     "galleryTitle": "Impressions",
