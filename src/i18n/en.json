@@ -23,6 +23,7 @@
     "lineup": "Line-up",
     "venue": "Pepe Dome",
     "tickets": "Tickets",
+    "contact": "Contact",
     "faq": "FAQ",
     "language": {
       "switch": "DE",
@@ -357,9 +358,62 @@
       }
     ]
   },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have questions about Freeman Festival? We're here to help!",
+    "general": {
+      "title": "General Inquiries",
+      "emailLabel": "Email",
+      "phoneLabel": "Phone",
+      "addressLabel": "Address",
+      "email": "info@freeman-festival.de",
+      "phone": "+49 89 123 456 78",
+      "address": "Theatron, Ostpark\n81735 Munich"
+    },
+    "press": {
+      "title": "Press & Media",
+      "contactLabel": "Contact Person",
+      "emailLabel": "Email",
+      "phoneLabel": "Phone",
+      "name": "Sarah Weber",
+      "email": "press@freeman-festival.de",
+      "phone": "+49 89 123 456 79"
+    },
+    "partner": {
+      "title": "Our Main Partner",
+      "subtitle": "Freeman Festival is presented by PepeShows",
+      "pepeDescription": "PepeShows is Munich's leading platform for contemporary circus arts and our proud main partner. For years, they've been bringing innovative performances to the city.",
+      "pepeButton": "Learn more about PepeShows",
+      "supportTitle": "Additional Supporters",
+      "supporters": [
+        {
+          "name": "Munich Cultural Department",
+          "description": "Official support from the City of Munich"
+        },
+        {
+          "name": "Theatron in Ostpark",
+          "description": "Venue and local partner"
+        },
+        {
+          "name": "Bavarian Association for Contemporary Dance",
+          "description": "Professional support and networking"
+        }
+      ]
+    },
+    "social": {
+      "title": "Follow Us",
+      "subtitle": "Stay updated with the latest news"
+    },
+    "cta": {
+      "title": "Ready for the Festival?",
+      "button": "🎫 Get Tickets Now",
+      "subtitle": "Only few seats remaining"
+    }
+  },
   "footer": {
     "impressum": "Imprint",
     "datenschutz": "Privacy",
+    "partner": "PepeShows",
     "social": "Instagram @pepe_arts"
   }
 }

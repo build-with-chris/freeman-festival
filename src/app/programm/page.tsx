@@ -110,11 +110,22 @@ export default function ProgramPage() {
               Freeman Festival 2025
             </div>
             <div className="flex gap-8">
+              <Link href="/kontakt" className="muted hover:text-white transition-colors">
+                {content.navigation.contact}
+              </Link>
               <a href="#" className="muted hover:text-white transition-colors">
                 {content.footer.impressum}
               </a>
               <a href="#" className="muted hover:text-white transition-colors">
                 {content.footer.datenschutz}
+              </a>
+              <a
+                href="https://pepeshows.de/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="muted hover:text-white transition-colors"
+              >
+                {content.footer.partner}
               </a>
             </div>
           </div>

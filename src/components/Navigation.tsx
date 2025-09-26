@@ -5,7 +5,7 @@ import { useState } from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 interface NavigationProps {
-  currentPage?: 'home' | 'program' | 'lineup' | 'venue';
+  currentPage?: 'home' | 'program' | 'lineup' | 'venue' | 'contact';
   onTicketsClick?: () => void;
 }
 
@@ -66,6 +66,12 @@ export default function Navigation({ currentPage = 'home', onTicketsClick }: Nav
               className={currentPage === 'venue' ? 'text-white font-semibold' : 'hover:text-white transition-colors text-white/70'}
             >
               {content.navigation.venue}
+            </Link>
+            <Link
+              href="/kontakt"
+              className={currentPage === 'contact' ? 'text-white font-semibold' : 'hover:text-white transition-colors text-white/70'}
+            >
+              {content.navigation.contact}
             </Link>
             <button
               onClick={handleTicketsClick}
@@ -171,6 +177,17 @@ export default function Navigation({ currentPage = 'home', onTicketsClick }: Nav
                 onClick={closeMenu}
               >
                 {content.navigation.venue}
+              </Link>
+              <Link
+                href="/kontakt"
+                className={`block text-center py-3 px-4 rounded-lg transition-colors ${
+                  currentPage === 'contact'
+                    ? 'bg-white/20 text-white font-semibold'
+                    : 'hover:bg-white/10 hover:text-white text-white/70'
+                }`}
+                onClick={closeMenu}
+              >
+                {content.navigation.contact}
               </Link>
 
               {/* Mobile Tickets Button */}

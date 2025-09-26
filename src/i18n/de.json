@@ -23,6 +23,7 @@
     "lineup": "Line-up",
     "venue": "Pepe Dome",
     "tickets": "Tickets",
+    "contact": "Kontakt",
     "faq": "FAQ",
     "language": {
       "switch": "EN",
@@ -381,9 +382,62 @@
     "secondary": "Fragen? → FAQ",
     "scarcity": "Begrenzte Plätze verfügbar"
   },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Haben Sie Fragen zum Freeman Festival? Wir helfen gerne weiter!",
+    "general": {
+      "title": "Allgemeine Anfragen",
+      "emailLabel": "E-Mail",
+      "phoneLabel": "Telefon",
+      "addressLabel": "Adresse",
+      "email": "info@freeman-festival.de",
+      "phone": "+49 89 123 456 78",
+      "address": "Theatron, Ostpark\n81735 München"
+    },
+    "press": {
+      "title": "Presse & Medien",
+      "contactLabel": "Ansprechpartner",
+      "emailLabel": "E-Mail",
+      "phoneLabel": "Telefon",
+      "name": "Sarah Weber",
+      "email": "presse@freeman-festival.de",
+      "phone": "+49 89 123 456 79"
+    },
+    "partner": {
+      "title": "Unser Hauptpartner",
+      "subtitle": "Das Freeman Festival wird präsentiert von PepeShows",
+      "pepeDescription": "PepeShows ist Münchens führende Plattform für zeitgenössische Zirkuskunst und unser stolzer Hauptpartner. Seit Jahren bringen sie innovative Performances in die Stadt.",
+      "pepeButton": "Mehr über PepeShows",
+      "supportTitle": "Weitere Unterstützer",
+      "supporters": [
+        {
+          "name": "Kulturreferat München",
+          "description": "Offizielle Förderung der Stadt München"
+        },
+        {
+          "name": "Theatron im Ostpark",
+          "description": "Veranstaltungsort und lokaler Partner"
+        },
+        {
+          "name": "Bayerischer Landesverband für zeitgenössischen Tanz",
+          "description": "Fachliche Unterstützung und Vernetzung"
+        }
+      ]
+    },
+    "social": {
+      "title": "Folgen Sie uns",
+      "subtitle": "Bleiben Sie auf dem Laufenden mit den neuesten Updates"
+    },
+    "cta": {
+      "title": "Bereit für das Festival?",
+      "button": "🎫 Jetzt Tickets sichern",
+      "subtitle": "Nur noch wenige Plätze verfügbar"
+    }
+  },
   "footer": {
     "impressum": "Impressum",
     "datenschutz": "Datenschutz",
+    "partner": "PepeShows",
     "social": "Instagram @pepe_arts"
   }
 }
