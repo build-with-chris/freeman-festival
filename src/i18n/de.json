@@ -1,8 +1,9 @@
 {
   "hero": {
     "badge": "Neu in München",
-    "title": "Magische Zirkustage im Münchner Osten",
-    "subtitle": "Drei Tage Zirkuskunst – unterhaltsam, nachdenklich, humorvoll. Verpass es nicht.",
+    "title": "Freeman Festival | Zeit für Zirkus",
+    "subtitle": "Magische Zirkustage im Münchner Osten",
+    "description": "Drei Tage Zirkuskunst – unterhaltsam, nachdenklich, humorvoll. Ein Festival, das die Freiheit des künstlerischen Ausdrucks feiert.",
     "date": "14.–16. November",
     "location": "Ostpark • Pepe Dome im Theatron",
     "venue": "Barrierefrei • Familienfreundlich • ca. 75 Minuten",
@@ -22,6 +23,7 @@
     "program": "Programm",
     "lineup": "Line-up",
     "venue": "Pepe Dome",
+    "about": "Über uns",
     "tickets": "Tickets",
     "contact": "Kontakt",
     "faq": "FAQ",
@@ -47,6 +49,13 @@
   "lineup": {
     "title": "Line-up 2025",
     "subtitle": "Internationale Zirkuskunst vom Feinsten",
+    "mission": {
+      "title": "Kunst ist Freiheit",
+      "subtitle": "Ein Festival für künstlerische Freiheit und kulturelle Verbindung",
+      "description": "In einer Zeit zunehmender Spaltung kommen wir in Bewegung und Ausdruck zusammen, um die Freiheit zurückzugewinnen – nicht nur als Individuen, sondern als kollektiver Akt der Einheit.",
+      "button": "Mehr über unsere Mission",
+      "tagline": "Zeitgenössischer Zirkus wird zu unserer gemeinsamen Sprache: offen, inklusiv und grenzenlos."
+    },
     "artists": [
       {
         "name": "The Nordic Council",
@@ -452,6 +461,51 @@
       "title": "Bereit für das Festival?",
       "button": "🎫 Jetzt Tickets sichern",
       "subtitle": "Nur noch wenige Plätze verfügbar"
+    }
+  },
+  "about": {
+    "title": "Freeman Festival | Zeit für Zirkus",
+    "subtitle": "Wir feiern die Freiheit des künstlerischen Ausdrucks, verwurzelt in Verbundenheit und Einheit",
+    "tagline": "Kunst ist Freiheit. Zirkus ist Freiheit. Du bist frei.",
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Das Freeman Festival feiert die künstlerische Freiheit, indem es internationale Zirkusartisten zusammenbringt, um Identität, Tradition und Innovation durch mutige, grenzüberschreitende Darbietungen zu erforschen. In einer Zeit zunehmender Spaltung kommen wir in Bewegung und Ausdruck zusammen, um die Freiheit zurückzugewinnen – nicht nur als Individuen, sondern als kollektiver Akt der Einheit."
+    },
+    "munich": {
+      "title": "Warum München?",
+      "paragraphs": [
+        "Münchens Geschichte ist geprägt von künstlerischer Rebellion und Innovation. Von den expressiven Brüchen des Blauen Reiters bis zu den bahnbrechenden Performances der Dada-Bewegung ist die Stadt seit jeher ein Zentrum für Bewegungen, die Kultur neu definieren und den Status quo in Frage stellen.",
+        "Indem wir das Freeman Festival hier ausrichten, würdigen wir diese radikale Vergangenheit – und verankern unsere Vision zugleich in der Gegenwart, in der künstlerische Freiheit angesichts globaler Spannungen, Zensur und Polarisierung notwendiger denn je ist."
+      ]
+    },
+    "circus": {
+      "title": "Zeitgenössischer Zirkus als Sprache",
+      "description": "Der zeitgenössische Zirkus, der sich Definitionen und Traditionen verweigert, bietet einen radikal offenen Raum, in dem Kulturen, Techniken und Körper miteinander sprechen können. Hier ist Zirkus weder an Genre noch an Geografie gebunden. Er ist ein Ort, an dem ein Seil, eine Geste oder ein Sturz die Last einer Heimat oder den Traum einer grenzenlosen Welt tragen können."
+    },
+    "questions": {
+      "title": "Das Festival fragt:",
+      "items": [
+        "Wie bleiben wir geerdet, während wir kulturübergreifend agieren?",
+        "Wie können wir unsere Körper nutzen, um Geschichten zu erzählen, die sowohl persönlich als auch politisch sind?",
+        "Was bedeutet es, Traditionen zurückzugewinnen und gleichzeitig neue Sprachen zu erfinden?"
+      ]
+    },
+    "vision": {
+      "title": "Unser Chor der Freiheit",
+      "description": "Bei diesem Festival geht es nicht nur darum, die individuelle Stimme zu feiern – es geht darum, einen Chor zu bilden. Ein Raum, in dem Freiheit kollektiv wird, in dem Unterschiedlichkeit Kraftquelle ist und in dem Einheit nicht Uniformität ist, sondern ein gemeinsames Bekenntnis zu Wahrheit, Verletzlichkeit und künstlerischem Mut."
+    },
+    "freedom": {
+      "statements": [
+        "Kunst ist Freiheit",
+        "Zirkus ist Freiheit",
+        "Du bist frei"
+      ],
+      "closing": "In München kommen wir in diesem Moment zusammen – über Grenzen und Disziplinen hinweg."
+    },
+    "cta": {
+      "title": "Werde Teil der Bewegung",
+      "subtitle": "Erlebe künstlerische Freiheit in ihrer reinsten Form",
+      "button": "🎫 Zur Freiheit"
     }
   },
   "footer": {

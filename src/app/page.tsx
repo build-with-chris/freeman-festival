@@ -114,8 +114,11 @@ export default function Home() {
           <h1 className="display text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-4 sm:mb-6 tracking-tight px-2">
             {content.hero.title}
           </h1>
-          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/90 leading-relaxed max-w-4xl mx-auto px-2">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6 text-white/90 font-semibold px-2">
             {content.hero.subtitle}
+          </h2>
+          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/80 leading-relaxed max-w-4xl mx-auto px-2">
+            {content.hero.description}
           </p>
 
           {/* Countdown */}
@@ -234,6 +237,31 @@ export default function Home() {
             className="inline-flex items-center gap-2 px-6 py-3 border border-white/30 rounded-full hover:border-white/50 transition-colors"
           >
             <span>Mehr über unsere Künstler</span>
+            <span>→</span>
+          </Link>
+        </div>
+      </section>
+
+      {/* Mission Teaser */}
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="display text-4xl md:text-5xl font-bold mb-8">
+            {content.lineup.mission.title}
+          </h2>
+          <p className="text-xl md:text-2xl text-white/90 mb-8 font-semibold">
+            {content.lineup.mission.subtitle}
+          </p>
+          <p className="text-lg md:text-xl leading-relaxed text-white/80 mb-8">
+            {content.lineup.mission.description}
+          </p>
+          <p className="text-lg text-white/70 italic mb-12">
+            {content.lineup.mission.tagline}
+          </p>
+          <Link
+            href="/ueber"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 border border-white/30 rounded-full hover:border-white/50 hover:bg-white/20 transition-all"
+          >
+            <span className="font-semibold">{content.lineup.mission.button}</span>
             <span>→</span>
           </Link>
         </div>

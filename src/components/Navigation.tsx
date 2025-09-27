@@ -5,7 +5,7 @@ import { useState } from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 interface NavigationProps {
-  currentPage?: 'home' | 'program' | 'lineup' | 'venue' | 'contact';
+  currentPage?: 'home' | 'program' | 'lineup' | 'venue' | 'about' | 'contact';
   onTicketsClick?: () => void;
 }
 
@@ -66,6 +66,12 @@ export default function Navigation({ currentPage = 'home', onTicketsClick }: Nav
               className={currentPage === 'venue' ? 'text-white font-semibold' : 'hover:text-white transition-colors text-white/70'}
             >
               {content.navigation.venue}
+            </Link>
+            <Link
+              href="/ueber"
+              className={currentPage === 'about' ? 'text-white font-semibold' : 'hover:text-white transition-colors text-white/70'}
+            >
+              {content.navigation.about}
             </Link>
             <Link
               href="/kontakt"
@@ -177,6 +183,17 @@ export default function Navigation({ currentPage = 'home', onTicketsClick }: Nav
                 onClick={closeMenu}
               >
                 {content.navigation.venue}
+              </Link>
+              <Link
+                href="/ueber"
+                className={`block text-center py-3 px-4 rounded-lg transition-colors ${
+                  currentPage === 'about'
+                    ? 'bg-white/20 text-white font-semibold'
+                    : 'hover:bg-white/10 hover:text-white text-white/70'
+                }`}
+                onClick={closeMenu}
+              >
+                {content.navigation.about}
               </Link>
               <Link
                 href="/kontakt"

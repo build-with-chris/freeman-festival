@@ -1,8 +1,9 @@
 {
   "hero": {
     "badge": "New in Munich",
-    "title": "Magical Circus Days in Munich's East",
-    "subtitle": "Three days of circus art – entertaining, thoughtful, humorous. Don't miss it.",
+    "title": "Freeman Festival | Zeit für Zirkus",
+    "subtitle": "Magical Circus Days in Munich's East",
+    "description": "Three days of circus art – entertaining, thoughtful, humorous. A festival celebrating the freedom of artistic expression.",
     "date": "November 14–16",
     "location": "Ostpark • Pepe Dome at Theatron",
     "venue": "Accessible • Family-friendly • approx. 75 minutes",
@@ -22,6 +23,7 @@
     "program": "Program",
     "lineup": "Line-up",
     "venue": "Pepe Dome",
+    "about": "About",
     "tickets": "Tickets",
     "contact": "Contact",
     "faq": "FAQ",
@@ -47,6 +49,13 @@
   "lineup": {
     "title": "Line-up (first acts)",
     "subtitle": "More artists to follow",
+    "mission": {
+      "title": "Art is Freedom",
+      "subtitle": "A festival for artistic freedom and cultural connection",
+      "description": "In a time of rising division, we come together in movement and expression to reclaim freedom—not just as individuals, but as a collective act of unity.",
+      "button": "Learn about our mission",
+      "tagline": "Contemporary circus becomes our common language: open, inclusive, and unbound."
+    },
     "artists": [
       {
         "name": "The Nordic Council",
@@ -428,6 +437,51 @@
       "title": "Ready for the Festival?",
       "button": "🎫 Get Tickets Now",
       "subtitle": "Only few seats remaining"
+    }
+  },
+  "about": {
+    "title": "Freeman Festival | Zeit für Zirkus",
+    "subtitle": "Celebrating Freedom of Artistic Expression, Rooted in Connection and Unity",
+    "tagline": "Art is freedom. Circus is freedom. You are free.",
+    "mission": {
+      "title": "Our Mission",
+      "description": "Freeman Festival celebrates artistic freedom by bringing together international circus artists to explore identity, tradition, and innovation through bold, boundary-pushing performance. In a time of rising division, we come together in movement and expression to reclaim freedom—not just as individuals, but as a collective act of unity."
+    },
+    "munich": {
+      "title": "Why Munich?",
+      "paragraphs": [
+        "Munich's history is steeped in artistic rebellion and innovation. From the expressive ruptures of the Blauer Reiter group to the boundary-breaking performances of the Dada movement, the city has long been a ground zero for movements that redefine culture and confront the status quo.",
+        "In hosting Freeman Festival here, we honor this radical past—while rooting our vision in the present, where artistic freedom is more necessary than ever in the face of global tensions, censorship, and polarization."
+      ]
+    },
+    "circus": {
+      "title": "Contemporary Circus as Language",
+      "description": "Contemporary circus, with its rejection of definition and tradition, becomes a perfect meeting ground. It offers a radically open space where cultures, techniques, and bodies can speak together. Here, circus is not bound by genre or geography. It is a place where a rope, a gesture, or a fall can carry the weight of a homeland or the dream of a borderless world."
+    },
+    "questions": {
+      "title": "It asks:",
+      "items": [
+        "How do we stay grounded while reaching across cultures?",
+        "How can we use our bodies to tell stories that are both personal and political?",
+        "What does it mean to reclaim tradition while inventing new languages?"
+      ]
+    },
+    "vision": {
+      "title": "Our Chorus of Freedom",
+      "description": "This festival is not just about celebrating the individual voice—it's about creating a chorus. A space where freedom becomes collective, where difference is a source of strength, and where unity is not uniformity, but a shared commitment to truth, vulnerability, and artistic courage."
+    },
+    "freedom": {
+      "statements": [
+        "Art is freedom",
+        "Circus is freedom",
+        "You are free"
+      ],
+      "closing": "In Munich, in this moment, we come together—across borders and disciplines."
+    },
+    "cta": {
+      "title": "Become Part of the Movement",
+      "subtitle": "Experience artistic freedom in its purest form",
+      "button": "🎫 To Freedom"
     }
   },
   "footer": {
