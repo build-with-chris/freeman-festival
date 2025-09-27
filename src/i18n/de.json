@@ -513,11 +513,16 @@
       "emailLabel": "E-Mail",
       "phoneLabel": "Telefon",
       "contactLabel": "Ansprechpartner",
-      "addressLabel": "Veranstaltungsort",
       "email": "info@pepeshows.de",
       "phone": "+49 179 6990707",
-      "contact": "Michael Heiduk",
-      "address": "Theatron im Ostpark\nMichaeligarten\n81735 München\n\n🚇 Anfahrt: U-Bahn Quiddestraße\n🚗 Parken: Michaeligarten (15 Min. Fußweg)"
+      "contact": "Michael Heiduk"
+    },
+    "venue": {
+      "title": "Veranstaltungsort",
+      "name": "Theatron im Ostpark",
+      "address": "Michaeligarten\n81735 München",
+      "transport": "🚇 Anfahrt: U-Bahn Quiddestraße",
+      "parking": "🚗 Parken: Michaeligarten (15 Min. Fußweg)"
     },
     "press": {
       "title": "Presse & Medien",

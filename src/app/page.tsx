@@ -1,6 +1,6 @@
 "use client";
 type CountdownLabels = { days: string; hours: string; minutes: string; seconds: string };
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { useLanguage } from "@/contexts/LanguageContext";
 import Navigation from "@/components/Navigation";
@@ -127,21 +127,21 @@ export default function Home() {
     setGalleryOpen(true);
   };
 
-  const closeGallery = () => {
+  const closeGallery = useCallback(() => {
     setGalleryOpen(false);
-  };
+  }, []);
 
-  const nextImage = () => {
+  const nextImage = useCallback(() => {
     setCurrentImageIndex((prev) =>
       prev === galleryImages[currentGallery].length - 1 ? 0 : prev + 1
     );
-  };
+  }, [currentGallery, galleryImages]);
 
-  const prevImage = () => {
+  const prevImage = useCallback(() => {
     setCurrentImageIndex((prev) =>
       prev === 0 ? galleryImages[currentGallery].length - 1 : prev - 1
     );
-  };
+  }, [currentGallery, galleryImages]);
 
   // Keyboard navigation for gallery
   useEffect(() => {
@@ -159,7 +159,7 @@ export default function Home() {
 
     document.addEventListener('keydown', handleKeyDown);
     return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [galleryOpen]);
+  }, [galleryOpen, closeGallery, prevImage, nextImage]);
 
   return (
     <div className="min-h-screen">

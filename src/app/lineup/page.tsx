@@ -41,7 +41,7 @@ export default function LineupPage() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-blue-500/30 via-transparent to-transparent"></div>
                     <div className="absolute bottom-4 left-4 text-white/90 text-sm font-medium">
-                      "Häppy Hour"
+                      &ldquo;Häppy Hour&rdquo;
                     </div>
                   </div>
 
@@ -72,7 +72,7 @@ export default function LineupPage() {
                 </h2>
                 <p className="text-xl mb-4 text-white/80">{content.lineup.artists[0].country}</p>
                 <p className="text-lg mb-6 font-semibold">
-                  Show: &quot;{content.lineup.artists[0].show}&quot;
+                  Show: &ldquo;{content.lineup.artists[0].show}&rdquo;
                 </p>
 
                 <div className="space-y-4 mb-6">
@@ -109,7 +109,7 @@ export default function LineupPage() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                     <div className="absolute bottom-4 left-4 text-white/80 text-sm font-medium">
-                      "How a Spiral Works"
+                      &ldquo;How a Spiral Works&rdquo;
                     </div>
                   </div>
 
@@ -150,7 +150,7 @@ export default function LineupPage() {
                 </div>
 
                 <p className="text-lg mb-6 font-semibold">
-                  Show: &quot;{content.lineup.artists[1].show}&quot;
+                  Show: &ldquo;{content.lineup.artists[1].show}&rdquo;
                 </p>
 
                 <div className="space-y-4 mb-6">

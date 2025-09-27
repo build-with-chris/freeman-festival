@@ -25,11 +25,40 @@ export default function ContactPage() {
 
       {/* Contact Information */}
       <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            {/* Venue Information - First on mobile */}
+            <div className="p-8 rounded-xl bg-black/20 border border-white/10 order-1 md:order-3 lg:order-1">
+              <h2 className="display text-2xl font-bold mb-6 text-white">
+                📍 {content.contact.venue.title}
+              </h2>
+              <div className="space-y-4">
+                <div>
+                  <h3 className="font-semibold text-white text-lg mb-2">{content.contact.venue.name}</h3>
+                  <p className="text-white/80 whitespace-pre-line mb-4">
+                    {content.contact.venue.address}
+                  </p>
+                </div>
+                <div className="space-y-2">
+                  <p className="text-white/90 font-medium">{content.contact.venue.transport}</p>
+                  <p className="text-white/90 font-medium">{content.contact.venue.parking}</p>
+                </div>
+                <div className="mt-6">
+                  <a
+                    href="https://maps.google.com/maps?q=Theatron+Ostpark+München"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/30 rounded-lg hover:border-white/50 hover:bg-white/20 transition-all text-white"
+                  >
+                    🗺️ <span>Google Maps</span>
+                  </a>
+                </div>
+              </div>
+            </div>
 
             {/* General Contact */}
-            <div className="p-8 rounded-xl bg-black/20 border border-white/10">
+            <div className="p-8 rounded-xl bg-black/20 border border-white/10 order-2 md:order-1 lg:order-2">
               <h2 className="display text-2xl font-bold mb-6 text-white">
                 {content.contact.general.title}
               </h2>
@@ -58,17 +87,11 @@ export default function ContactPage() {
                     {content.contact.general.contact}
                   </p>
                 </div>
-                <div>
-                  <h3 className="font-semibold text-white mb-2">📍 {content.contact.general.addressLabel}</h3>
-                  <p className="text-white/80 whitespace-pre-line">
-                    {content.contact.general.address}
-                  </p>
-                </div>
               </div>
             </div>
 
             {/* Press Contact */}
-            <div className="p-8 rounded-xl bg-black/20 border border-white/10">
+            <div className="p-8 rounded-xl bg-black/20 border border-white/10 order-3 md:order-2 lg:order-3">
               <h2 className="display text-2xl font-bold mb-6 text-white">
                 {content.contact.press.title}
               </h2>

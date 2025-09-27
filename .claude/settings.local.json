@@ -1,10 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm install:*)",
-      "Bash(git add:*)",
-      "Bash(git push:*)",
-      "Bash(Zeit für Zirkus\" with \"Internationale Zirkus-Shows\"\n- Add conversion-focused CTAs and scarcity messaging throughout\n- Integrate artist performance images (Happy Hour & How A Spiral Works)\n- Add interactive gallery lightbox for homepage lineup cards\n- Update value proposition cards with better icons and clickable links\n- Enhance partner logo visibility across all pages\n- Add Dada historical image to About page Munich section\n- Update all contact information with correct PepeShows details\n- Improve Instagram section with real performance photos\n\n🤖 Generated with [Claude Code](https://claude.ai/code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "ask": []
