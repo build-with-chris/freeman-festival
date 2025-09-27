@@ -31,8 +31,39 @@ export default function LineupPage() {
             {/* The Nordic Council */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <div className="aspect-square bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-xl mb-6 flex items-center justify-center border border-white/10">
-                  <span className="text-8xl">🎪</span>
+                <div className="space-y-4">
+                  {/* Main featured image */}
+                  <div className="aspect-square bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-xl overflow-hidden border border-white/10 relative group">
+                    <img
+                      src="/Happy Hour/Chris Collina for Nordic Council.webp"
+                      alt="Häppy Hour performance by The Nordic Council"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-85 hover:opacity-100"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-500/30 via-transparent to-transparent"></div>
+                    <div className="absolute bottom-4 left-4 text-white/90 text-sm font-medium">
+                      "Häppy Hour"
+                    </div>
+                  </div>
+
+                  {/* Image grid */}
+                  <div className="grid grid-cols-2 gap-2">
+                    <div className="aspect-square bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-lg overflow-hidden border border-white/10 relative group">
+                      <img
+                        src="/Happy Hour/Glass multiplex.webp"
+                        alt="The Nordic Council performance detail"
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-75 hover:opacity-95"
+                      />
+                      <div className="absolute inset-0 bg-blue-500/10"></div>
+                    </div>
+                    <div className="aspect-square bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-lg overflow-hidden border border-white/10 relative group">
+                      <img
+                        src="/Happy Hour/Sofa cropped.webp"
+                        alt="The Nordic Council artistic moment"
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-75 hover:opacity-95"
+                      />
+                      <div className="absolute inset-0 bg-purple-500/10"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div>
@@ -68,8 +99,39 @@ export default function LineupPage() {
             {/* Art for Rainy Days */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="md:order-2">
-                <div className="aspect-square bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-xl mb-6 flex items-center justify-center border border-white/10">
-                  <span className="text-8xl">🎭</span>
+                <div className="space-y-4">
+                  {/* Main featured image */}
+                  <div className="aspect-square bg-black/40 rounded-xl overflow-hidden border border-white/10 relative group">
+                    <img
+                      src="/How A Spiral Works/Zane Krūmiņa.webp"
+                      alt="How a Spiral Works performance by Art for Rainy Days"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 hover:opacity-100"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                    <div className="absolute bottom-4 left-4 text-white/80 text-sm font-medium">
+                      "How a Spiral Works"
+                    </div>
+                  </div>
+
+                  {/* Image grid */}
+                  <div className="grid grid-cols-2 gap-2">
+                    <div className="aspect-square bg-black/40 rounded-lg overflow-hidden border border-white/10 relative group">
+                      <img
+                        src="/How A Spiral Works/Eve Gastaldi.webp"
+                        alt="Art for Rainy Days performer Eve Gastaldi"
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-70 hover:opacity-90"
+                      />
+                      <div className="absolute inset-0 bg-black/20"></div>
+                    </div>
+                    <div className="aspect-square bg-black/40 rounded-lg overflow-hidden border border-white/10 relative group">
+                      <img
+                        src="/How A Spiral Works/Zane Krūmiņa 2.webp"
+                        alt="Art for Rainy Days performance detail"
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-70 hover:opacity-90"
+                      />
+                      <div className="absolute inset-0 bg-black/20"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="md:order-1">
@@ -124,6 +186,19 @@ export default function LineupPage() {
                 <span>📱</span>
                 <span className="font-semibold">Updates auf Instagram</span>
               </a>
+            </div>
+          </div>
+
+          {/* General Partners & Supporters */}
+          <div className="text-center mt-20">
+            <h3 className="display text-xl font-bold mb-8 muted">Mit Unterstützung von</h3>
+            <div className="flex justify-center items-center">
+              <img
+                src="/Logos.png"
+                alt="Partner und Förderer: Kulturreferat München, Theatron, BLVZ und weitere"
+                className="max-w-full h-auto opacity-60 hover:opacity-90 transition-opacity duration-300"
+                style={{ maxHeight: '140px' }}
+              />
             </div>
           </div>
         </div>

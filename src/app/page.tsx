@@ -87,7 +87,32 @@ function Countdown({ targetDate, labels }: { targetDate: Date; labels: Countdown
 export default function Home() {
   const { content } = useLanguage();
   const [selectedShow, setSelectedShow] = useState<number | null>(null);
+  const [galleryOpen, setGalleryOpen] = useState(false);
+  const [currentGallery, setCurrentGallery] = useState<number>(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const festivalDate = new Date("2025-11-14T19:00:00");
+
+  // Gallery images for each artist
+  const galleryImages = [
+    // The Nordic Council - Häppy Hour
+    [
+      "/Happy Hour/Chris Collina for Nordic Council.webp",
+      "/Happy Hour/Chris Collina - Häppy Hour 3.webp",
+      "/Happy Hour/Chris Collina - Häppy Hour 4.webp",
+      "/Happy Hour/Dynamo - Happy Hour cropped.webp",
+      "/Happy Hour/Dynamo - Happy Hour-806.webp",
+      "/Happy Hour/Glass multiplex.webp",
+      "/Happy Hour/Sofa cropped.webp"
+    ],
+    // Art for Rainy Days - How a Spiral Works
+    [
+      "/How A Spiral Works/Zane Krūmiņa.webp",
+      "/How A Spiral Works/Zane Krūmiņa 1.webp",
+      "/How A Spiral Works/Zane Krūmiņa 2.webp",
+      "/How A Spiral Works/Eve Gastaldi.webp",
+      "/How A Spiral Works/Eve Gastaldi 1.webp"
+    ]
+  ];
 
   const scrollToTickets = () => {
     const ticketsSection = document.getElementById('tickets');
@@ -95,6 +120,46 @@ export default function Home() {
       ticketsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
+
+  const openGallery = (artistIndex: number) => {
+    setCurrentGallery(artistIndex);
+    setCurrentImageIndex(0);
+    setGalleryOpen(true);
+  };
+
+  const closeGallery = () => {
+    setGalleryOpen(false);
+  };
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) =>
+      prev === galleryImages[currentGallery].length - 1 ? 0 : prev + 1
+    );
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) =>
+      prev === 0 ? galleryImages[currentGallery].length - 1 : prev - 1
+    );
+  };
+
+  // Keyboard navigation for gallery
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (!galleryOpen) return;
+
+      if (e.key === 'Escape') {
+        closeGallery();
+      } else if (e.key === 'ArrowLeft') {
+        prevImage();
+      } else if (e.key === 'ArrowRight') {
+        nextImage();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [galleryOpen]);
 
   return (
     <div className="min-h-screen">
@@ -186,27 +251,41 @@ export default function Home() {
       <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-            <div className="text-center p-6 sm:p-8 rounded-xl bg-black/20 border border-white/10">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-white/20 to-white/10 rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center">
-                <span className="text-xl sm:text-2xl">💰</span>
+            {/* Tickets Card */}
+            <button
+              onClick={scrollToTickets}
+              className="text-center p-6 sm:p-8 rounded-xl bg-black/20 border border-white/10 hover:border-yellow-400/30 hover:bg-black/30 transition-all group cursor-pointer"
+            >
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-yellow-400/20 to-orange-400/20 rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <span className="text-xl sm:text-2xl">🎟️</span>
               </div>
-              <h3 className="display text-lg sm:text-xl font-semibold mb-2 sm:mb-3">{content.valueProps.price.title}</h3>
+              <h3 className="display text-lg sm:text-xl font-semibold mb-2 sm:mb-3 group-hover:text-white transition-colors">{content.valueProps.price.title}</h3>
               <p className="muted text-sm sm:text-base">{content.valueProps.price.description}</p>
-            </div>
-            <div className="text-center p-6 sm:p-8 rounded-xl bg-black/20 border border-white/10">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-white/20 to-white/10 rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center">
-                <span className="text-xl sm:text-2xl">🎭</span>
+            </button>
+
+            {/* Artists Card */}
+            <Link
+              href="/lineup"
+              className="text-center p-6 sm:p-8 rounded-xl bg-black/20 border border-white/10 hover:border-blue-400/30 hover:bg-black/30 transition-all group block"
+            >
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <span className="text-xl sm:text-2xl">⭐</span>
               </div>
-              <h3 className="display text-lg sm:text-xl font-semibold mb-2 sm:mb-3">{content.valueProps.artists.title}</h3>
+              <h3 className="display text-lg sm:text-xl font-semibold mb-2 sm:mb-3 group-hover:text-white transition-colors">{content.valueProps.artists.title}</h3>
               <p className="muted text-sm sm:text-base">{content.valueProps.artists.description}</p>
-            </div>
-            <div className="text-center p-6 sm:p-8 rounded-xl bg-black/20 border border-white/10 sm:col-span-2 lg:col-span-1">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-white/20 to-white/10 rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center">
-                <span className="text-xl sm:text-2xl">🏛️</span>
+            </Link>
+
+            {/* Venue Card */}
+            <Link
+              href="/pepe-dome"
+              className="text-center p-6 sm:p-8 rounded-xl bg-black/20 border border-white/10 hover:border-green-400/30 hover:bg-black/30 transition-all group block sm:col-span-2 lg:col-span-1"
+            >
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-green-400/20 to-teal-400/20 rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <span className="text-xl sm:text-2xl">🎪</span>
               </div>
-              <h3 className="display text-lg sm:text-xl font-semibold mb-2 sm:mb-3">{content.valueProps.venue.title}</h3>
+              <h3 className="display text-lg sm:text-xl font-semibold mb-2 sm:mb-3 group-hover:text-white transition-colors">{content.valueProps.venue.title}</h3>
               <p className="muted text-sm sm:text-base">{content.valueProps.venue.description}</p>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -223,10 +302,28 @@ export default function Home() {
           </p>
           <div className="grid md:grid-cols-2 gap-12 mb-12">
             {content.lineup.artists.slice(0, 2).map((artist, index) => (
-              <div key={index} className="p-8 rounded-xl bg-black/20 border border-white/10">
-                <div className="w-20 h-20 bg-gradient-to-br from-white/20 to-white/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-2xl">🎪</span>
+              <div key={index} className="p-8 rounded-xl bg-black/20 border border-white/10 hover:border-white/30 transition-colors">
+                {/* Artist Image */}
+                <div
+                  className="w-full h-48 mb-6 rounded-lg overflow-hidden cursor-pointer group relative"
+                  onClick={() => openGallery(index)}
+                >
+                  <img
+                    src={index === 0 ? "/Happy Hour/Chris Collina for Nordic Council.webp" : "/How A Spiral Works/Zane Krūmiņa.webp"}
+                    alt={`${artist.name} performance`}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div className="bg-white/20 backdrop-blur-sm rounded-full p-3">
+                      <span className="text-white text-lg">🖼️</span>
+                    </div>
+                  </div>
+                  <div className="absolute bottom-3 left-3 text-white/90 text-sm font-medium">
+                    {index === 0 ? "Häppy Hour" : "How a Spiral Works"}
+                  </div>
                 </div>
+
                 <h3 className="display text-xl font-bold mb-2">{artist.name}</h3>
                 <p className="muted text-sm">{artist.description}</p>
               </div>
@@ -436,12 +533,13 @@ export default function Home() {
           <h3 className="display text-xl md:text-2xl font-bold mb-8 muted">
             {content.partners.title}
           </h3>
-          <div className="flex justify-center items-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all">
-            {content.partners.logos.map((logo, index) => (
-              <div key={index} className="w-20 h-12 bg-white/10 rounded-lg flex items-center justify-center">
-                <span className="text-xs muted">Logo</span>
-              </div>
-            ))}
+          <div className="flex justify-center items-center">
+            <img
+              src="/Logos.png"
+              alt="Partner und Förderer: Kulturreferat München, Theatron, BLVZ und weitere"
+              className="max-w-full h-auto opacity-70 hover:opacity-100 transition-opacity duration-300"
+              style={{ maxHeight: '180px' }}
+            />
           </div>
         </div>
       </section>
@@ -462,8 +560,28 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="block p-4 rounded-xl bg-black/20 border border-white/10 hover:border-yellow-400/30 transition-all group"
               >
-                <div className="aspect-square bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-lg mb-4 flex items-center justify-center">
-                  <span className="text-4xl">📸</span>
+                <div className="aspect-square bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-lg mb-4 overflow-hidden relative">
+                  {index === 0 ? (
+                    <img
+                      src="/Happy Hour/Dynamo - Happy Hour cropped.webp"
+                      alt="Häppy Hour behind the scenes"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  ) : index === 1 ? (
+                    <img
+                      src="/Happy Hour/Chris Collina - Häppy Hour 4.webp"
+                      alt="Häppy Hour artist preview"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center">
+                      <span className="text-4xl">📸</span>
+                    </div>
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent group-hover:from-black/30 transition-colors"></div>
+                  <div className="absolute bottom-2 left-2 text-white/80 text-xs">
+                    @pepe_arts
+                  </div>
                 </div>
                 <h3 className="font-semibold group-hover:text-white transition-colors">{reel.title}</h3>
               </a>
@@ -649,6 +767,80 @@ export default function Home() {
                   {content.schedule.modal.ticketsNote}
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Gallery Modal */}
+      {galleryOpen && (
+        <div className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4">
+          <div className="relative max-w-6xl w-full h-full flex items-center justify-center">
+            {/* Close Button */}
+            <button
+              onClick={closeGallery}
+              className="absolute top-4 right-4 z-10 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white text-xl transition-colors"
+            >
+              ✕
+            </button>
+
+            {/* Previous Button */}
+            <button
+              onClick={prevImage}
+              className="absolute left-4 z-10 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white text-xl transition-colors"
+            >
+              ←
+            </button>
+
+            {/* Next Button */}
+            <button
+              onClick={nextImage}
+              className="absolute right-4 z-10 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white text-xl transition-colors"
+            >
+              →
+            </button>
+
+            {/* Main Image */}
+            <div className="relative w-full h-full flex items-center justify-center">
+              <img
+                src={galleryImages[currentGallery][currentImageIndex]}
+                alt={`Gallery image ${currentImageIndex + 1}`}
+                className="max-w-full max-h-full object-contain"
+              />
+
+              {/* Image Counter */}
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/50 backdrop-blur-sm rounded-full px-4 py-2 text-white text-sm">
+                {currentImageIndex + 1} / {galleryImages[currentGallery].length}
+              </div>
+
+              {/* Artist Name */}
+              <div className="absolute top-4 left-4 bg-black/50 backdrop-blur-sm rounded-lg px-4 py-2 text-white">
+                <h3 className="font-semibold">
+                  {currentGallery === 0 ? "The Nordic Council" : "Art for Rainy Days"}
+                </h3>
+                <p className="text-sm text-white/80">
+                  {currentGallery === 0 ? "Häppy Hour" : "How a Spiral Works"}
+                </p>
+              </div>
+            </div>
+
+            {/* Thumbnail Strip */}
+            <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 flex gap-2 max-w-full overflow-x-auto p-2">
+              {galleryImages[currentGallery].map((image, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentImageIndex(index)}
+                  className={`w-16 h-16 rounded-lg overflow-hidden border-2 transition-all ${
+                    index === currentImageIndex ? 'border-white' : 'border-white/30'
+                  }`}
+                >
+                  <img
+                    src={image}
+                    alt={`Thumbnail ${index + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </button>
+              ))}
             </div>
           </div>
         </div>

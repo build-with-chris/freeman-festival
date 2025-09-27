@@ -53,8 +53,14 @@ export default function ContactPage() {
                   </a>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-white mb-2">📍 {content.contact.general.addressLabel}</h3>
+                  <h3 className="font-semibold text-white mb-2">👤 {content.contact.general.contactLabel}</h3>
                   <p className="text-white/80">
+                    {content.contact.general.contact}
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-white mb-2">📍 {content.contact.general.addressLabel}</h3>
+                  <p className="text-white/80 whitespace-pre-line">
                     {content.contact.general.address}
                   </p>
                 </div>

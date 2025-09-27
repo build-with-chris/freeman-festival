@@ -56,23 +56,34 @@ export default function AboutPage() {
                 ))}
               </div>
             </div>
-            <div className="p-8 rounded-xl bg-gradient-to-br from-white/10 to-white/5 border border-white/20">
-              <div className="text-center">
-                <div className="text-6xl mb-4">🎨</div>
-                <h3 className="display text-xl font-bold mb-4">Künstlerische Tradition</h3>
-                <div className="space-y-3 text-white/80">
-                  <div className="flex items-center gap-3">
-                    <span className="text-2xl">🎭</span>
-                    <span>Blauer Reiter</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <span className="text-2xl">🎪</span>
-                    <span>Dada-Bewegung</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <span className="text-2xl">✊</span>
-                    <span>Kultureller Widerstand</span>
-                  </div>
+            <div className="space-y-4">
+              {/* Artistic Tradition List - in one row */}
+              <div className="flex flex-wrap gap-6 text-white/90 text-sm md:text-base">
+                <div className="flex items-center gap-2">
+                  <span className="text-2xl">🎭</span>
+                  <span className="font-medium">Blauer Reiter</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-2xl">🎪</span>
+                  <span className="font-medium">Dada-Bewegung</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-2xl">✊</span>
+                  <span className="font-medium">Kultureller Widerstand</span>
+                </div>
+              </div>
+
+              {/* Dada Image - larger */}
+              <div className="rounded-xl overflow-hidden border border-white/20 relative group">
+                <img
+                  src="/Dada.webp"
+                  alt="Dada-Bewegung München - Historische künstlerische Rebellion"
+                  className="w-full h-80 md:h-96 object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h4 className="font-bold text-lg">Dada-Bewegung</h4>
+                  <p className="text-sm text-white/80">München als Zentrum künstlerischer Revolution</p>
                 </div>
               </div>
             </div>
@@ -130,6 +141,19 @@ export default function AboutPage() {
             </div>
             <div className="mt-8 text-lg text-white/80 italic">
               {content.about.freedom.closing}
+            </div>
+          </div>
+
+          {/* General Partners & Supporters */}
+          <div className="text-center mt-20">
+            <h3 className="display text-xl font-bold mb-8 muted">Mit Unterstützung von</h3>
+            <div className="flex justify-center items-center">
+              <img
+                src="/Logos.png"
+                alt="Partner und Förderer: Kulturreferat München, Theatron, BLVZ und weitere"
+                className="max-w-full h-auto opacity-60 hover:opacity-90 transition-opacity duration-300"
+                style={{ maxHeight: '140px' }}
+              />
             </div>
           </div>
         </div>

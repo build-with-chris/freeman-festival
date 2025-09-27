@@ -1,15 +1,15 @@
 {
   "hero": {
-    "badge": "New in Munich",
-    "title": "Freeman Festival | Zeit für Zirkus",
-    "subtitle": "Magical Circus Days in Munich's East",
-    "description": "Three days of circus art – entertaining, thoughtful, humorous. A festival celebrating the freedom of artistic expression.",
+    "badge": "November 14–16 in Munich",
+    "title": "International Circus Shows",
+    "subtitle": "5 Shows • 3 Days • 1 Unique Experience",
+    "description": "Experience spectacular acrobatics and contemporary circus art from Europe. Live music, poetic performances and a touch of Nordic charm – right in Munich.",
     "date": "November 14–16",
-    "location": "Ostpark • Pepe Dome at Theatron",
-    "venue": "Accessible • Family-friendly • approx. 75 minutes",
-    "cta": "Get Tickets Now",
-    "price": "Tickets from €12",
-    "scarcity": "200 seats per show – no seat reservations",
+    "location": "Ostpark • Geodesic Dome",
+    "venue": "✓ Only 200 seats ✓ Unique atmosphere ✓ Family-friendly",
+    "cta": "🎫 Get tickets from €12",
+    "price": "Early Bird from €12 • Standard €18 • Box Office €22",
+    "scarcity": "⚠️ Limited seats – Only 200 seats per show",
     "countdown": {
       "title": "Until the festival:",
       "days": "Days",
@@ -24,7 +24,7 @@
     "lineup": "Line-up",
     "venue": "Pepe Dome",
     "about": "About",
-    "tickets": "Tickets",
+    "tickets": "🎫 Tickets from €12",
     "contact": "Contact",
     "faq": "FAQ",
     "language": {
@@ -34,16 +34,16 @@
   },
   "valueProps": {
     "price": {
-      "title": "Fair Pricing",
-      "description": "Tickets from €12 for premium shows"
+      "title": "🎫 From €12 only",
+      "description": "Affordable tickets for international circus art – Early Bird until Oct 15"
     },
     "artists": {
-      "title": "International Line-up",
-      "description": "Hand-picked artists from around the world"
+      "title": "🏆 Award-winning artists",
+      "description": "Nordic Council & Art for Rainy Days – direct from Scandinavia & Latvia"
     },
     "venue": {
-      "title": "Unique Setting",
-      "description": "In the geodesic dome in the heart of Ostpark"
+      "title": "🎪 Unique location",
+      "description": "Geodesic dome with 5m height – perfect for spectacular aerial acrobatics"
     }
   },
   "lineup": {
@@ -89,18 +89,18 @@
     }
   },
   "tickets": {
-    "title": "Tickets",
-    "subtitle": "200 seats per show – free seating",
+    "title": "🎫 Get your tickets now",
+    "subtitle": "⚠️ Only 200 seats per show – free seating",
     "tiers": [
       {
-        "name": "Early Bird",
+        "name": "🚀 Early Bird",
         "price": "€12",
-        "note": "limited"
+        "note": "until Oct 15 • SAVE €10"
       },
       {
         "name": "Standard",
         "price": "€18",
-        "note": "online"
+        "note": "available online"
       },
       {
         "name": "Box Office",
@@ -108,69 +108,69 @@
         "note": "if available"
       }
     ],
-    "note": "Online via Eventfrog (link coming)",
-    "online": "Online Tickets",
+    "note": "Available now via Eventfrog (link coming)",
+    "online": "🎫 Online Tickets",
     "offline": "Box Office",
-    "price": "€12–22"
+    "price": "from €12"
   },
   "schedule": {
-    "title": "Showtimes",
+    "title": "5 Shows in 3 Days",
     "subtitle": "Entry 30 min. before start • free seating",
     "items": [
       {
         "day": "Fri",
-        "time": "7:00 PM",
+        "time": "8:00 PM",
         "date": "November 14th",
-        "title": "Opening Night - Nordic Elegance",
-        "description": "Experience the premiere with The Nordic Council. A show full of Nordic elegance and poetic acrobatics that opens the festival with style.",
-        "artist": "The Nordic Council",
+        "title": "\"Insomnia\"",
+        "description": "Jakob Jakobsson opens the festival with his intense performance about sleeplessness and nocturnal dreams.",
+        "artist": "Jakob Jakobsson",
         "duration": "75 minutes",
-        "features": ["Acrobatics", "Live Music", "Poetic Performance"],
-        "audience": "Family-friendly from age 8"
+        "features": ["Festival Opening", "Contemporary Circus", "Solo Performance"],
+        "audience": "Adults and teens from age 12"
       },
       {
         "day": "Sat",
-        "time": "3:00 PM",
+        "time": "5:00 PM",
         "date": "November 15th",
-        "title": "Matinee - Family Circus",
-        "description": "The perfect afternoon show for families. Art for Rainy Days presents playful and interactive circus art that delights children and adults alike.",
+        "title": "\"Häppy Hour\"",
+        "description": "The Nordic Council combines Nordic elegance with live music, juggling and poetic acrobatics.",
+        "artist": "The Nordic Council",
+        "duration": "75 minutes",
+        "features": ["Nordic Circus Art", "Live Music", "Poetic Acrobatics"],
+        "audience": "For all ages from 6"
+      },
+      {
+        "day": "Sat",
+        "time": "7:00 PM",
+        "date": "November 15th",
+        "title": "\"How a Spiral Works\"",
+        "description": "Art for Rainy Days presents their award-winning performance about movement, spirals and transformation.",
         "artist": "Art for Rainy Days",
         "duration": "60 minutes",
-        "features": ["Interactive", "Family-friendly", "Participatory Elements"],
-        "audience": "Ideal for families with children from age 4"
-      },
-      {
-        "day": "Sat",
-        "time": "7:00 PM",
-        "date": "November 15th",
-        "title": "Evening Gala - Poetry in Motion",
-        "description": "The main show of the festival! Both artist groups unite for a spectacular evening gala with the best acts from both shows.",
-        "artist": "The Nordic Council & Art for Rainy Days",
-        "duration": "90 minutes",
-        "features": ["Best Acts", "Artist Collaboration", "Spectacular Finale"],
-        "audience": "Suitable for all ages"
+        "features": ["Award-winning", "Contemporary", "Dance & Circus"],
+        "audience": "For all ages from 8"
       },
       {
         "day": "Sun",
         "time": "3:00 PM",
         "date": "November 16th",
-        "title": "Sunday Matinee - Nordic Elegance",
-        "description": "Relaxed Sunday afternoon with The Nordic Council. Enjoy Nordic circus poetry in a calm atmosphere - perfect for a cozy Sunday.",
+        "title": "\"Häppy Hour\" (Matinee)",
+        "description": "Relaxed Sunday matinee with The Nordic Council. Nordic circus poetry in a calm atmosphere.",
         "artist": "The Nordic Council",
         "duration": "75 minutes",
-        "features": ["Relaxed", "Poetic", "Nordic Atmosphere"],
-        "audience": "Perfect for relaxed Sundays, from age 6"
+        "features": ["Relaxed", "Poetic", "Family-friendly"],
+        "audience": "Perfect for relaxed Sundays from age 6"
       },
       {
         "day": "Sun",
-        "time": "7:00 PM",
+        "time": "5:00 PM",
         "date": "November 16th",
-        "title": "Finale - Art for Rainy Days",
-        "description": "The grand finale of the festival! Art for Rainy Days bids farewell with an emotional and unforgettable closing performance.",
+        "title": "\"How a Spiral Works\" (Finale)",
+        "description": "The grand festival finale! Art for Rainy Days bids farewell with an emotional closing performance.",
         "artist": "Art for Rainy Days",
         "duration": "75 minutes",
         "features": ["Festival Finale", "Emotional", "Unforgettable"],
-        "audience": "Moving conclusion for all ages"
+        "audience": "Moving conclusion for all from age 8"
       }
     ],
     "modal": {
@@ -237,44 +237,138 @@
   },
   "program": {
     "title": "Program",
-    "subtitle": "Three days of circus magic",
-    "shows": [
+    "subtitle": "Three days of circus magic, workshops and artistic dialogue",
+    "days": [
       {
-        "day": "Friday, 14 November",
-        "time": "19:00",
-        "title": "Opening Show",
-        "description": "Festive opening of the Freeman Festival featuring both acts",
-        "duration": "75 minutes"
+        "day": "Friday, November 14",
+        "theme": "Opening & Connection",
+        "events": [
+          {
+            "time": "7:00 PM",
+            "title": "Opening Event",
+            "subtitle": "Freeman Festival: What We Do, How We Do It, and Why?",
+            "type": "opening",
+            "description": "Festive opening with introduction to the festival mission"
+          },
+          {
+            "time": "8:00 PM",
+            "title": "\"Insomnia\"",
+            "subtitle": "Jakob Jakobsson",
+            "type": "show",
+            "description": "Contemporary circus show about sleeplessness and nocturnal dreams"
+          },
+          {
+            "time": "9:00 PM",
+            "title": "Aftertalk & Opening Party",
+            "subtitle": "Where Music, Drinks, and Words Connect Creative Worlds",
+            "type": "social",
+            "description": "Discussion with the artist and opening celebration"
+          }
+        ]
       },
       {
-        "day": "Saturday, 15 November",
-        "time": "15:00",
-        "title": "Art for Rainy Days",
-        "description": "\"How a Spiral Works\" – award‑winning contemporary performance",
-        "duration": "60 minutes"
+        "day": "Saturday, November 15",
+        "theme": "Workshops & Performance",
+        "events": [
+          {
+            "time": "10:00 AM-12:00 PM",
+            "title": "Workshop Part I",
+            "subtitle": "\"Stillness in Motion: Mastering Presence and Intention in Performance\"",
+            "type": "workshop",
+            "artist": "Alise Bokaldere",
+            "description": "Intensive workshop on presence and intention in performance"
+          },
+          {
+            "time": "5:00 PM",
+            "title": "\"Häppy Hour\"",
+            "subtitle": "The Nordic Council",
+            "type": "show",
+            "description": "Nordic circus art with live music, juggling and acrobatics"
+          },
+          {
+            "time": "7:00 PM",
+            "title": "\"How a Spiral Works\"",
+            "subtitle": "Art for Rainy Days",
+            "type": "show",
+            "description": "Award-winning contemporary performance about movement and metamorphosis"
+          },
+          {
+            "time": "8:00 PM",
+            "title": "Aftertalk",
+            "subtitle": "Discussion with the artists",
+            "type": "talk",
+            "description": "Dialogue about the performances and artistic processes"
+          }
+        ]
       },
       {
-        "day": "Saturday, 15 November",
-        "time": "19:00",
-        "title": "The Nordic Council",
-        "description": "\"Häppy Hour\" – Nordic circus art with live music",
-        "duration": "60 minutes"
-      },
-      {
-        "day": "Sunday, 16 November",
-        "time": "15:00",
-        "title": "Matinee Show",
-        "description": "Family‑friendly performance with highlights from both acts",
-        "duration": "75 minutes"
-      },
-      {
-        "day": "Sunday, 16 November",
-        "time": "19:00",
-        "title": "Finale",
-        "description": "Grand closing show with all artists",
-        "duration": "75 minutes"
+        "day": "Sunday, November 16",
+        "theme": "Dialogue & Finale",
+        "events": [
+          {
+            "time": "10:00 AM-12:00 PM",
+            "title": "Workshop Part II",
+            "subtitle": "\"Stillness in Motion: Mastering Presence and Intention in Performance\"",
+            "type": "workshop",
+            "artist": "Alise Bokaldere",
+            "description": "Continuation of the workshop on presence and intention"
+          },
+          {
+            "time": "1:00 PM-2:00 PM",
+            "title": "Artist Talks",
+            "subtitle": "Curated meeting for circus & dance professionals",
+            "type": "talk",
+            "curator": "Valentina Barone",
+            "description": "Curated conversations for circus and dance professionals"
+          },
+          {
+            "time": "3:00 PM",
+            "title": "\"Häppy Hour\"",
+            "subtitle": "The Nordic Council",
+            "type": "show",
+            "description": "Nordic circus art with live music (matinee)"
+          },
+          {
+            "time": "5:00 PM",
+            "title": "\"How a Spiral Works\"",
+            "subtitle": "Art for Rainy Days",
+            "type": "show",
+            "description": "Contemporary performance about spirals of life"
+          },
+          {
+            "time": "7:00 PM",
+            "title": "Open Stage",
+            "subtitle": "for experimental ideas",
+            "type": "experimental",
+            "description": "Open stage for experimental ideas and new works"
+          },
+          {
+            "time": "9:30 PM",
+            "title": "Closing Party",
+            "subtitle": "See You Next Year",
+            "type": "social",
+            "description": "Festival closing celebration with outlook to the future"
+          }
+        ]
       }
     ],
+    "partners": {
+      "workshop": {
+        "name": "Alise Bokaldere",
+        "url": "https://alisebokaldere.wixsite.com/my-site",
+        "role": "Workshop Leader"
+      },
+      "curator": {
+        "name": "Valentina Barone",
+        "url": "https://www.aroundaboutcircus.com",
+        "role": "Artist Talks Curator"
+      },
+      "film": {
+        "name": "Formerly Known As",
+        "url": "https://www.fkafilm.com/",
+        "role": "Filming & Post-Production"
+      }
+    },
     "notes": {
       "title": "Important Information",
       "entranceLabel": "Entry",
@@ -364,11 +458,11 @@
     ]
   },
   "finalCta": {
-    "title": "Ready for Freeman Festival?",
-    "subtitle": "Get your tickets now for the event of the year",
-    "primary": "Get Tickets Now",
-    "secondary": "Questions? → FAQ",
-    "scarcity": "Limited seats available"
+    "title": "Last chance: Only few tickets left!",
+    "subtitle": "5 spectacular shows in 3 days – secure your seat for international circus art now",
+    "primary": "🎫 Get tickets from €12 now",
+    "secondary": "⚠️ Only 200 seats per show",
+    "scarcity": "Early Bird prices only until October 15"
   },
   "faq": {
     "title": "FAQ",
@@ -394,19 +488,21 @@
       "title": "General Inquiries",
       "emailLabel": "Email",
       "phoneLabel": "Phone",
-      "addressLabel": "Address",
-      "email": "info@freeman-festival.de",
-      "phone": "+49 89 123 456 78",
-      "address": "Theatron, Ostpark\n81735 Munich\n\nTransport: U-Bahn Quiddestraße\nParking: Michaeligarten (15 min walk)"
+      "contactLabel": "Contact Person",
+      "addressLabel": "Event Location",
+      "email": "info@pepeshows.de",
+      "phone": "+49 179 6990707",
+      "contact": "Michael Heiduk",
+      "address": "Theatron in Ostpark\nMichaeligarten\n81735 Munich\n\n🚇 Transport: U-Bahn Quiddestraße\n🚗 Parking: Michaeligarten (15 min walk)"
     },
     "press": {
       "title": "Press & Media",
       "contactLabel": "Contact Person",
       "emailLabel": "Email",
       "phoneLabel": "Phone",
-      "name": "Sarah Weber",
-      "email": "press@freeman-festival.de",
-      "phone": "+49 89 123 456 79"
+      "name": "Christoph Hermann",
+      "email": "info@pepeshows.de",
+      "phone": "+49 159 04891419"
     },
     "partner": {
       "title": "Our Main Partner",
