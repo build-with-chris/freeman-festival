@@ -90,8 +90,33 @@ export default function LineupPage() {
                   </p>
                 </div>
 
-                <div className="text-sm text-white/60">
+                <div className="text-sm text-white/60 mb-6">
                   <p><strong>Mitglieder:</strong> {content.lineup.artists[0].members}</p>
+                </div>
+
+                {/* Video Preview */}
+                <div className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-blue-400/30 rounded-xl p-6 mb-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="text-2xl">🎬</span>
+                    <h3 className="font-bold text-white">Performance Preview</h3>
+                  </div>
+                  <div className="aspect-video rounded-lg overflow-hidden bg-black/20 border border-white/20 mb-4">
+                    <iframe
+                      src="https://www.youtube.com/embed/owESp3YkcRY?rel=0&modestbranding=1"
+                      title="The Nordic Council - Häppy Hour Performance"
+                      className="w-full h-full"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                  <p className="text-white/80 text-sm mb-4">Erlebe einen Vorgeschmack auf die faszinierende Performance von The Nordic Council</p>
+                  <Link
+                    href="/#tickets"
+                    className="btn-primary w-full justify-center py-3 text-lg font-semibold"
+                  >
+                    🎫 Tickets für "Häppy Hour" sichern
+                  </Link>
                 </div>
               </div>
             </div>
@@ -162,10 +187,35 @@ export default function LineupPage() {
                   </p>
                 </div>
 
-                <div className="p-4 rounded-lg bg-blue-500/10 border border-blue-400/20">
+                <div className="p-4 rounded-lg bg-blue-500/10 border border-blue-400/20 mb-6">
                   <p className="text-blue-300 text-sm">
                     <strong>Auszeichnung:</strong> {content.lineup.artists[1].recognition}
                   </p>
+                </div>
+
+                {/* Video Preview */}
+                <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-400/30 rounded-xl p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="text-2xl">🎬</span>
+                    <h3 className="font-bold text-white">Performance Preview</h3>
+                  </div>
+                  <div className="aspect-video rounded-lg overflow-hidden bg-black/20 border border-white/20 mb-4">
+                    <iframe
+                      src="https://www.youtube.com/embed/UWLTynMZhHE?rel=0&modestbranding=1"
+                      title="Art for Rainy Days - How a Spiral Works Performance"
+                      className="w-full h-full"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                  <p className="text-white/80 text-sm mb-4">Entdecke die preisgekrönte Performance von Art for Rainy Days</p>
+                  <Link
+                    href="/#tickets"
+                    className="btn-primary w-full justify-center py-3 text-lg font-semibold"
+                  >
+                    🎫 Tickets für "How a Spiral Works" sichern
+                  </Link>
                 </div>
               </div>
             </div>

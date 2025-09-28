@@ -90,6 +90,7 @@ export default function Home() {
   const [galleryOpen, setGalleryOpen] = useState(false);
   const [currentGallery, setCurrentGallery] = useState<number>(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [expandedVideo, setExpandedVideo] = useState<string | null>(null);
   const festivalDate = new Date("2025-11-14T19:00:00");
 
   // Gallery images for each artist
@@ -129,6 +130,15 @@ export default function Home() {
 
   const closeGallery = useCallback(() => {
     setGalleryOpen(false);
+  }, []);
+
+  // Video expansion handlers
+  const handleVideoPlay = useCallback((videoId: string) => {
+    setExpandedVideo(videoId);
+  }, []);
+
+  const closeExpandedVideo = useCallback(() => {
+    setExpandedVideo(null);
   }, []);
 
   const nextImage = useCallback(() => {
@@ -211,21 +221,6 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Promo Video */}
-          <div className="mb-6 sm:mb-8 max-w-4xl mx-auto px-4">
-            <div className="relative rounded-lg sm:rounded-xl overflow-hidden border border-white/20 shadow-2xl">
-              <video
-                controls
-                className="w-full h-auto"
-                poster="/SaveTheDate.webp"
-                preload="metadata"
-              >
-                <source src="/Freeman-fest-video-for-web.mp4" type="video/mp4" />
-                Ihr Browser unterstützt das Video-Tag nicht.
-              </video>
-            </div>
-            <p className="text-xs sm:text-sm muted mt-2 sm:mt-3 text-center">🎥 Freeman Festival Promo • Bitte mit Ton anschauen</p>
-          </div>
 
           {/* Accessibility Hinweis-Balken */}
           <div className="inline-block mb-6 sm:mb-8 px-4 sm:px-6 py-3 bg-blue-500/20 border border-blue-400/30 rounded-full max-w-full">
@@ -260,7 +255,11 @@ export default function Home() {
                 <span className="text-xl sm:text-2xl">🎟️</span>
               </div>
               <h3 className="display text-lg sm:text-xl font-semibold mb-2 sm:mb-3 group-hover:text-white transition-colors">{content.valueProps.price.title}</h3>
-              <p className="muted text-sm sm:text-base">{content.valueProps.price.description}</p>
+              <p className="muted text-sm sm:text-base mb-3">{content.valueProps.price.description}</p>
+              <div className="text-xs text-white/60 group-hover:text-white/80 transition-colors flex items-center justify-center gap-1">
+                <span>mehr Infos</span>
+                <span className="group-hover:translate-x-1 transition-transform">→</span>
+              </div>
             </button>
 
             {/* Artists Card */}
@@ -272,7 +271,11 @@ export default function Home() {
                 <span className="text-xl sm:text-2xl">⭐</span>
               </div>
               <h3 className="display text-lg sm:text-xl font-semibold mb-2 sm:mb-3 group-hover:text-white transition-colors">{content.valueProps.artists.title}</h3>
-              <p className="muted text-sm sm:text-base">{content.valueProps.artists.description}</p>
+              <p className="muted text-sm sm:text-base mb-3">{content.valueProps.artists.description}</p>
+              <div className="text-xs text-white/60 group-hover:text-white/80 transition-colors flex items-center justify-center gap-1">
+                <span>mehr Infos</span>
+                <span className="group-hover:translate-x-1 transition-transform">→</span>
+              </div>
             </Link>
 
             {/* Venue Card */}
@@ -284,7 +287,11 @@ export default function Home() {
                 <span className="text-xl sm:text-2xl">🎪</span>
               </div>
               <h3 className="display text-lg sm:text-xl font-semibold mb-2 sm:mb-3 group-hover:text-white transition-colors">{content.valueProps.venue.title}</h3>
-              <p className="muted text-sm sm:text-base">{content.valueProps.venue.description}</p>
+              <p className="muted text-sm sm:text-base mb-3">{content.valueProps.venue.description}</p>
+              <div className="text-xs text-white/60 group-hover:text-white/80 transition-colors flex items-center justify-center gap-1">
+                <span>mehr Infos</span>
+                <span className="group-hover:translate-x-1 transition-transform">→</span>
+              </div>
             </Link>
           </div>
         </div>
@@ -336,6 +343,110 @@ export default function Home() {
             <span>Mehr über unsere Künstler</span>
             <span>→</span>
           </Link>
+        </div>
+      </section>
+
+          {/* Promo Video */}
+          <div className="mb-6 sm:mb-8 max-w-4xl mx-auto px-4">
+            <div className="relative rounded-lg sm:rounded-xl overflow-hidden border border-white/20 shadow-2xl">
+              <video
+                controls
+                className="w-full h-auto"
+                poster="/SaveTheDate.webp"
+                preload="metadata"
+              >
+                <source src="/Freeman-fest-video-for-web.mp4" type="video/mp4" />
+                Ihr Browser unterstützt das Video-Tag nicht.
+              </video>
+            </div>
+            <p className="text-xs sm:text-sm muted mt-2 sm:mt-3 text-center">🎥 Freeman Festival Promo • Bitte mit Ton anschauen</p>
+          </div>
+
+      {/* YouTube Videos Section */}
+      <section className="py-20 px-6 bg-black/10">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="display text-3xl md:text-4xl font-bold mb-4">
+            Unsere Künstler live
+          </h2>
+          <p className="text-lg muted mb-12">
+            Einblicke in spektakuläre Performances
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* The Nordic Council YouTube Video */}
+            <div className="space-y-4">
+              <div
+                className="aspect-video bg-black/40 rounded-xl overflow-hidden border border-white/20 relative group cursor-pointer video-container"
+                onClick={() => handleVideoPlay('owESp3YkcRY')}
+              >
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/owESp3YkcRY?rel=0&modestbranding=1"
+                  title="The Nordic Council - Häppy Hour Performance"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <div className="absolute bottom-4 left-4 text-white pointer-events-none">
+                  <h3 className="font-bold text-lg">The Nordic Council</h3>
+                  <p className="text-sm text-white/80">Häppy Hour Performance</p>
+                </div>
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 group-hover:scale-110 transition-transform">
+                    <span className="text-white text-2xl">▶️</span>
+                  </div>
+                </div>
+              </div>
+              <Link
+                href="/#tickets"
+                className="btn-primary w-full justify-center py-3 text-lg font-semibold"
+              >
+                🎫 Tickets für "Häppy Hour" sichern
+              </Link>
+            </div>
+
+            {/* Art for Rainy Days YouTube Video */}
+            <div className="space-y-4">
+              <div
+                className="aspect-video bg-black/40 rounded-xl overflow-hidden border border-white/20 relative group cursor-pointer video-container"
+                onClick={() => handleVideoPlay('UWLTynMZhHE')}
+              >
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/UWLTynMZhHE?rel=0&modestbranding=1"
+                  title="Art for Rainy Days - How a Spiral Works"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <div className="absolute bottom-4 left-4 text-white pointer-events-none">
+                  <h3 className="font-bold text-lg">Art for Rainy Days</h3>
+                  <p className="text-sm text-white/80">How a Spiral Works</p>
+                </div>
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 group-hover:scale-110 transition-transform">
+                    <span className="text-white text-2xl">▶️</span>
+                  </div>
+                </div>
+              </div>
+              <Link
+                href="/#tickets"
+                className="btn-primary w-full justify-center py-3 text-lg font-semibold"
+              >
+                🎫 Tickets für "How a Spiral Works" sichern
+              </Link>
+            </div>
+          </div>
+
+          <div className="mt-12">
+            <Link
+              href="/lineup"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 border border-white/30 rounded-full hover:border-white/50 hover:bg-white/20 transition-all"
+            >
+              <span className="font-semibold">Alle Künstler entdecken</span>
+              <span>→</span>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -841,6 +952,48 @@ export default function Home() {
                   />
                 </button>
               ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Expanded Video Modal */}
+      {expandedVideo && (
+        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
+          <div className="relative w-full max-w-6xl mx-auto">
+            {/* Close Button */}
+            <button
+              onClick={closeExpandedVideo}
+              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
+              aria-label="Video schließen"
+            >
+              <span className="text-3xl">×</span>
+            </button>
+
+            {/* Expanded Video */}
+            <div className="aspect-video bg-black rounded-xl overflow-hidden">
+              <iframe
+                className="w-full h-full"
+                src={`https://www.youtube.com/embed/${expandedVideo}?autoplay=1&rel=0&modestbranding=1`}
+                title="Expanded Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+
+            {/* Video Info */}
+            <div className="mt-4 text-center text-white">
+              <h3 className="text-xl font-bold mb-2">
+                {expandedVideo === 'owESp3YkcRY' ? 'The Nordic Council - Häppy Hour' : 'Art for Rainy Days - How a Spiral Works'}
+              </h3>
+              <Link
+                href="/#tickets"
+                className="btn-primary inline-flex items-center gap-2 px-8 py-3 text-lg font-semibold"
+                onClick={closeExpandedVideo}
+              >
+                🎫 Tickets für diese Performance sichern
+              </Link>
             </div>
           </div>
         </div>

@@ -34,15 +34,15 @@
   },
   "valueProps": {
     "price": {
-      "title": "🎫 Ab 12€ dabei sein",
+      "title": "Ab 12€ dabei sein",
       "description": "Günstige Tickets für internationale Zirkuskunst – Early Bird bis 15.10."
     },
     "artists": {
-      "title": "🏆 Preisgekrönte Künstler",
+      "title": "Preisgekrönte Künstler",
       "description": "Nordic Council & Art for Rainy Days – direkt aus Skandinavien & Lettland"
     },
     "venue": {
-      "title": "🎪 Einmalige Location",
+      "title": "Einmalige Location",
       "description": "Geodätische Kuppel mit 5m Höhe – perfekt für spektakuläre Luftakrobatik"
     }
   },
@@ -206,6 +206,13 @@
   "media": {
     "title": "Eindrücke",
     "subtitle": "Videos & Bilder – folge @pepe_arts für mehr"
+  },
+  "videos": {
+    "title": "Promo-Videos",
+    "subtitle": "Erhalte einen ersten Eindruck von unseren Künstlern",
+    "pepeDescription": "PepeShows Vorschau",
+    "nordicDescription": "The Nordic Council Performance",
+    "rainyDescription": "Art for Rainy Days Preview"
   },
   "faq": {
     "title": "FAQ",

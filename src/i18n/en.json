@@ -34,15 +34,15 @@
   },
   "valueProps": {
     "price": {
-      "title": "🎫 From €12 only",
+      "title": "From €12 only",
       "description": "Affordable tickets for international circus art – Early Bird until Oct 15"
     },
     "artists": {
-      "title": "🏆 Award-winning artists",
+      "title": "Award-winning artists",
       "description": "Nordic Council & Art for Rainy Days – direct from Scandinavia & Latvia"
     },
     "venue": {
-      "title": "🎪 Unique location",
+      "title": "Unique location",
       "description": "Geodesic dome with 5m height – perfect for spectacular aerial acrobatics"
     }
   },
@@ -206,6 +206,13 @@
   "media": {
     "title": "Impressions",
     "subtitle": "Videos & Images – follow @pepe_arts for more"
+  },
+  "videos": {
+    "title": "Promo Videos",
+    "subtitle": "Get a first impression of our artists",
+    "pepeDescription": "PepeShows Preview",
+    "nordicDescription": "The Nordic Council Performance",
+    "rainyDescription": "Art for Rainy Days Preview"
   },
   "social": {
     "title": "Follow us on Instagram",

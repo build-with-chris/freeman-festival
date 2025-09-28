@@ -138,6 +138,57 @@ export default function ProgramPage() {
 
                           <p className="text-white/80 leading-relaxed mb-4">{event.description}</p>
 
+                          {/* Video Preview for Show Events */}
+                          {event.type === 'show' && event.title.includes('Häppy Hour') && (
+                            <div className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-blue-400/30 rounded-xl p-4 mb-4">
+                              <div className="flex items-center gap-2 mb-3">
+                                <span className="text-lg">🎬</span>
+                                <h4 className="font-semibold text-white text-sm">Performance Preview</h4>
+                              </div>
+                              <div className="aspect-video rounded-lg overflow-hidden bg-black/20 border border-white/20 mb-3">
+                                <iframe
+                                  src="https://www.youtube.com/embed/owESp3YkcRY?rel=0&modestbranding=1"
+                                  title="The Nordic Council - Häppy Hour Performance"
+                                  className="w-full h-full"
+                                  frameBorder="0"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                  allowFullScreen
+                                ></iframe>
+                              </div>
+                              <Link
+                                href="/#tickets"
+                                className="btn-primary w-full justify-center py-2 text-sm font-semibold"
+                              >
+                                🎫 Tickets für diese Show sichern
+                              </Link>
+                            </div>
+                          )}
+
+                          {event.type === 'show' && event.title.includes('How a Spiral Works') && (
+                            <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-400/30 rounded-xl p-4 mb-4">
+                              <div className="flex items-center gap-2 mb-3">
+                                <span className="text-lg">🎬</span>
+                                <h4 className="font-semibold text-white text-sm">Performance Preview</h4>
+                              </div>
+                              <div className="aspect-video rounded-lg overflow-hidden bg-black/20 border border-white/20 mb-3">
+                                <iframe
+                                  src="https://www.youtube.com/embed/UWLTynMZhHE?rel=0&modestbranding=1"
+                                  title="Art for Rainy Days - How a Spiral Works Performance"
+                                  className="w-full h-full"
+                                  frameBorder="0"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                  allowFullScreen
+                                ></iframe>
+                              </div>
+                              <Link
+                                href="/#tickets"
+                                className="btn-primary w-full justify-center py-2 text-sm font-semibold"
+                              >
+                                🎫 Tickets für diese Show sichern
+                              </Link>
+                            </div>
+                          )}
+
                           {/* Additional Info */}
                           <div className="flex flex-wrap gap-4 text-sm">
                             {event.artist && (
