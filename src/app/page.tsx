@@ -215,7 +215,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/70 hover:text-white transition-colors underline text-sm sm:text-base"
-              aria-label="Freeman Festival Location in Google Maps öffnen"
+              aria-label="Freeman Location in Google Maps öffnen"
             >
               📍 Google Maps
             </a>
@@ -359,7 +359,7 @@ export default function Home() {
                 Ihr Browser unterstützt das Video-Tag nicht.
               </video>
             </div>
-            <p className="text-xs sm:text-sm muted mt-2 sm:mt-3 text-center">🎥 Freeman Festival Promo • Bitte mit Ton anschauen</p>
+            <p className="text-xs sm:text-sm muted mt-2 sm:mt-3 text-center">🎥 Freeman Promo • Bitte mit Ton anschauen</p>
           </div>
 
       {/* YouTube Videos Section */}
@@ -401,7 +401,7 @@ export default function Home() {
                 href="/#tickets"
                 className="btn-primary w-full justify-center py-3 text-lg font-semibold"
               >
-                🎫 Tickets für &ldquo;Häppy Hour&rdquo; sichern
+Tickets für &ldquo;Häppy Hour&rdquo;
               </Link>
             </div>
 
@@ -433,7 +433,7 @@ export default function Home() {
                 href="/#tickets"
                 className="btn-primary w-full justify-center py-3 text-lg font-semibold"
               >
-                🎫 Tickets für &ldquo;How a Spiral Works&rdquo; sichern
+Tickets für &ldquo;How a Spiral Works&rdquo;
               </Link>
             </div>
           </div>
@@ -753,7 +753,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
             <div className="display text-xl font-bold mb-4 md:mb-0">
-              Freeman Festival 2025
+              Freeman 2025
             </div>
             <div className="flex gap-8">
               <Link href="/kontakt" className="muted hover:text-white transition-colors">
@@ -992,7 +992,7 @@ export default function Home() {
                 className="btn-primary inline-flex items-center gap-2 px-8 py-3 text-lg font-semibold"
                 onClick={closeExpandedVideo}
               >
-                🎫 Tickets für diese Performance sichern
+Tickets für diese Performance
               </Link>
             </div>
           </div>

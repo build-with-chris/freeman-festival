@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Read(//Users/hecking_killa/**)",
+      "Bash(npx create-next-app:*)"
     ],
     "deny": [],
     "ask": []

@@ -1,13 +1,13 @@
 {
   "hero": {
     "badge": "November 14–16 in Munich",
-    "title": "International Circus Shows",
-    "subtitle": "5 Shows • 3 Days • 1 Unique Experience",
-    "description": "Experience spectacular acrobatics and contemporary circus art from Europe. Live music, poetic performances and a touch of Nordic charm – right in Munich.",
+    "title": "Freeman – Festival of Artistry",
+    "subtitle": "5 Shows • 3 Days • Excellence meets Poetry",
+    "description": "International top-tier artists showcase acrobatics and entertainment at world-class level – live, intimate and right in Munich.",
     "date": "November 14–16",
     "location": "Ostpark • Geodesic Dome",
     "venue": "✓ Only 200 seats ✓ Unique atmosphere ✓ Family-friendly",
-    "cta": "🎫 Get tickets from €12",
+    "cta": "Get tickets from €12",
     "price": "Early Bird from €12 • Standard €18 • Box Office €22",
     "scarcity": "⚠️ Limited seats – Only 200 seats per show",
     "countdown": {
@@ -24,7 +24,7 @@
     "lineup": "Line-up",
     "venue": "Pepe Dome",
     "about": "About",
-    "tickets": "🎫 Tickets from €12",
+    "tickets": "Tickets from €12",
     "contact": "Contact",
     "faq": "FAQ",
     "language": {
@@ -35,7 +35,7 @@
   "valueProps": {
     "price": {
       "title": "From €12 only",
-      "description": "Affordable tickets for international circus art – Early Bird until Oct 15"
+      "description": "Affordable tickets for international artistry – Early Bird until Oct 15"
     },
     "artists": {
       "title": "Award-winning artists",
@@ -48,13 +48,13 @@
   },
   "lineup": {
     "title": "Line-up (first acts)",
-    "subtitle": "More artists to follow",
+    "subtitle": "International Artistry at its Finest",
     "mission": {
-      "title": "Art is Freedom",
-      "subtitle": "A festival for artistic freedom and cultural connection",
+      "title": "Artistry is Freedom",
+      "subtitle": "A festival of artistry for artistic freedom and cultural connection",
       "description": "In a time of rising division, we come together in movement and expression to reclaim freedom—not just as individuals, but as a collective act of unity.",
       "button": "Learn about our mission",
-      "tagline": "Contemporary circus becomes our common language: open, inclusive, and unbound."
+      "tagline": "Contemporary artistry becomes our common language: open, inclusive, and unbound."
     },
     "artists": [
       {
@@ -81,15 +81,15 @@
     "moreActs": "More acts will be added continuously.",
     "moreActsTitle": "More acts coming soon",
     "ctaTitle": "Experience these artists live",
-    "ctaButton": "🎫 Get Tickets Now",
-    "ctaSubtitle": "International circus art • 5 shows • November 14–16",
+    "ctaButton": "Get Tickets Now",
+    "ctaSubtitle": "International artistry • 5 shows • November 14–16",
     "detailed": {
       "title": "Our Artists",
       "subtitle": "Get to know the international acts"
     }
   },
   "tickets": {
-    "title": "🎫 Get your tickets now",
+    "title": "Get your tickets now",
     "subtitle": "⚠️ Only 200 seats per show – free seating",
     "tiers": [
       {
@@ -109,7 +109,7 @@
       }
     ],
     "note": "Available now via Eventfrog (link coming)",
-    "online": "🎫 Online Tickets",
+    "online": "Online Tickets",
     "offline": "Box Office",
     "price": "from €12"
   },
@@ -177,7 +177,7 @@
       "durationLabel": "Duration",
       "audienceLabel": "Target Audience",
       "highlightsLabel": "Highlights",
-      "ticketsButton": "🎫 Tickets for this Show",
+      "ticketsButton": "Tickets for this Show",
       "ticketsNote": "200 seats • Free seating • Early Bird until Oct 15"
     }
   },
@@ -386,7 +386,7 @@
       "accessibility": "All performances are accessible"
     },
     "ctaTitle": "Tickets available for all shows",
-    "ctaButton": "🎫 Get Tickets Now",
+    "ctaButton": "Get Tickets Now",
     "ctaSubtitle": "200 seats per show • Free seating"
   },
   "venue": {
@@ -400,12 +400,12 @@
       {
         "icon": "🎭",
         "title": "Experience Shows",
-        "description": "International circus arts and contemporary performances in a unique atmosphere"
+        "description": "International artistry and contemporary performances in a unique atmosphere"
       },
       {
         "icon": "🤸",
         "title": "Courses & Workshops",
-        "description": "Movement, dance, or circus – for curious and creative people of all levels"
+        "description": "Movement, dance, or artistry – for curious and creative people of all levels"
       },
       {
         "icon": "🎪",
@@ -440,8 +440,8 @@
       { "icon": "🎪", "title": "Interior" },
       { "icon": "✨", "title": "Atmosphere" }
     ],
-    "ctaTitle": "Experience Circus Art in the Pepe Dome",
-    "ctaButton": "🎫 Get Tickets Now",
+    "ctaTitle": "Experience Artistry in the Pepe Dome",
+    "ctaButton": "Get Tickets Now",
     "ctaSubtitle": "Unique Atmosphere • 200 Seats • Accessible",
     "techSpecs": [
       {
@@ -465,9 +465,9 @@
     ]
   },
   "finalCta": {
-    "title": "Last chance: Only few tickets left!",
-    "subtitle": "5 spectacular shows in 3 days – secure your seat for international circus art now",
-    "primary": "🎫 Get tickets from €12 now",
+    "title": "Only few tickets left!",
+    "subtitle": "5 spectacular shows in 3 days – secure your seat for international artistry now",
+    "primary": "Get tickets from €12 now",
     "secondary": "⚠️ Only 200 seats per show",
     "scarcity": "Early Bird prices only until October 15"
   },
@@ -490,7 +490,7 @@
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Have questions about Freeman Festival? We're here to help!",
+    "subtitle": "Have questions about Freeman? We're here to help!",
     "general": {
       "title": "General Inquiries",
       "emailLabel": "Email",
@@ -518,8 +518,8 @@
     },
     "partner": {
       "title": "Our Main Partner",
-      "subtitle": "Freeman Festival is presented by PepeShows",
-      "pepeDescription": "PepeShows is Munich's leading platform for contemporary circus arts and our proud main partner. For years, they've been bringing innovative performances to the city.",
+      "subtitle": "Freeman is presented by PepeShows",
+      "pepeDescription": "PepeShows is Munich's leading platform for contemporary artistry and our proud main partner. For years, they've been bringing innovative performances to the city.",
       "pepeButton": "Learn more about PepeShows",
       "supportTitle": "Additional Supporters",
       "supporters": [
@@ -543,28 +543,28 @@
     },
     "cta": {
       "title": "Ready for the Festival?",
-      "button": "🎫 Get Tickets Now",
+      "button": "Get Tickets Now",
       "subtitle": "Only few seats remaining"
     }
   },
   "about": {
-    "title": "Freeman Festival | Zeit für Zirkus",
+    "title": "Freeman | Time for Artistry",
     "subtitle": "Celebrating Freedom of Artistic Expression, Rooted in Connection and Unity",
-    "tagline": "Art is freedom. Circus is freedom. You are free.",
+    "tagline": "Art is freedom. Artistry is freedom. You are free.",
     "mission": {
       "title": "Our Mission",
-      "description": "Freeman Festival celebrates artistic freedom by bringing together international circus artists to explore identity, tradition, and innovation through bold, boundary-pushing performance. In a time of rising division, we come together in movement and expression to reclaim freedom—not just as individuals, but as a collective act of unity."
+      "description": "Freeman celebrates artistic freedom by bringing together international artists to explore identity, tradition, and innovation through bold, boundary-pushing performance. In a time of rising division, we come together in movement and expression to reclaim freedom—not just as individuals, but as a collective act of unity."
     },
     "munich": {
       "title": "Why Munich?",
       "paragraphs": [
         "Munich's history is steeped in artistic rebellion and innovation. From the expressive ruptures of the Blauer Reiter group to the boundary-breaking performances of the Dada movement, the city has long been a ground zero for movements that redefine culture and confront the status quo.",
-        "In hosting Freeman Festival here, we honor this radical past—while rooting our vision in the present, where artistic freedom is more necessary than ever in the face of global tensions, censorship, and polarization."
+        "In hosting Freeman here, we honor this radical past—while rooting our vision in the present, where artistic freedom is more necessary than ever in the face of global tensions, censorship, and polarization."
       ]
     },
     "circus": {
-      "title": "Contemporary Circus as Language",
-      "description": "Contemporary circus, with its rejection of definition and tradition, becomes a perfect meeting ground. It offers a radically open space where cultures, techniques, and bodies can speak together. Here, circus is not bound by genre or geography. It is a place where a rope, a gesture, or a fall can carry the weight of a homeland or the dream of a borderless world."
+      "title": "Contemporary Artistry as Language",
+      "description": "Contemporary artistry, with its rejection of definition and tradition, becomes a perfect meeting ground. It offers a radically open space where cultures, techniques, and bodies can speak together. Here, artistry is not bound by genre or geography. It is a place where a rope, a gesture, or a fall can carry the weight of a homeland or the dream of a borderless world."
     },
     "questions": {
       "title": "It asks:",
@@ -581,7 +581,7 @@
     "freedom": {
       "statements": [
         "Art is freedom",
-        "Circus is freedom",
+        "Artistry is freedom",
         "You are free"
       ],
       "closing": "In Munich, in this moment, we come together—across borders and disciplines."

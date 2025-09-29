@@ -1,13 +1,13 @@
 {
   "hero": {
     "badge": "14.–16. November in München",
-    "title": "Internationale Zirkus-Shows",
-    "subtitle": "5 Shows • 3 Tage • 1 einmaliges Erlebnis",
-    "description": "Erlebe spektakuläre Akrobatik und zeitgenössische Zirkuskunst aus Europa. Live-Musik, poetische Performances und ein Hauch von nordischem Charme – mitten in München.",
+    "title": "Freeman – Festival der Artistik",
+    "subtitle": "5 Shows • 3 Tage • Höchstleistung trifft Poesie",
+    "description": "Internationale Spitzen-Artist:innen zeigen Akrobatik und Entertainment auf Weltklasse-Niveau – live, nahbar und mitten in München.",
     "date": "14.–16. November",
     "location": "Ostpark • Geodätische Kuppel",
     "venue": "✓ Nur 200 Plätze ✓ Einzigartige Atmosphäre ✓ Familienfreundlich",
-    "cta": "🎫 Tickets ab 12€ sichern",
+    "cta": "Tickets ab 12€ sichern",
     "price": "Early Bird ab 12 € • Standard 18 € • Abendkasse 22 €",
     "scarcity": "⚠️ Begrenzte Plätze – Nur 200 Sitzplätze pro Show",
     "countdown": {
@@ -24,7 +24,7 @@
     "lineup": "Line-up",
     "venue": "Pepe Dome",
     "about": "Über uns",
-    "tickets": "🎫 Tickets ab 12€",
+    "tickets": "Tickets ab 12€",
     "contact": "Kontakt",
     "faq": "FAQ",
     "language": {
@@ -35,10 +35,10 @@
   "valueProps": {
     "price": {
       "title": "Ab 12€ dabei sein",
-      "description": "Günstige Tickets für internationale Zirkuskunst – Early Bird bis 15.10."
+      "description": "Günstige Tickets für internationale Artistik – Early Bird bis 15.10."
     },
     "artists": {
-      "title": "Preisgekrönte Künstler",
+      "title": "Preisgekrönte Artist:innen",
       "description": "Nordic Council & Art for Rainy Days – direkt aus Skandinavien & Lettland"
     },
     "venue": {
@@ -48,13 +48,13 @@
   },
   "lineup": {
     "title": "Line-up 2025",
-    "subtitle": "Internationale Zirkuskunst vom Feinsten",
+    "subtitle": "Internationale Artistik vom Feinsten",
     "mission": {
-      "title": "Kunst ist Freiheit",
-      "subtitle": "Ein Festival für künstlerische Freiheit und kulturelle Verbindung",
+      "title": "Artistik ist Freiheit",
+      "subtitle": "Ein Festival der Artistik für künstlerische Freiheit und kulturelle Verbindung",
       "description": "In einer Zeit zunehmender Spaltung kommen wir in Bewegung und Ausdruck zusammen, um die Freiheit zurückzugewinnen – nicht nur als Individuen, sondern als kollektiver Akt der Einheit.",
       "button": "Mehr über unsere Mission",
-      "tagline": "Zeitgenössischer Zirkus wird zu unserer gemeinsamen Sprache: offen, inklusiv und grenzenlos."
+      "tagline": "Zeitgenössische Artistik wird zu unserer gemeinsamen Sprache: offen, inklusiv und grenzenlos."
     },
     "artists": [
       {
@@ -81,15 +81,15 @@
     "moreActs": "Mehr Acts werden laufend ergänzt.",
     "moreActsTitle": "Weitere Acts folgen",
     "ctaTitle": "Erlebe diese Künstler live",
-    "ctaButton": "🎫 Jetzt Tickets sichern",
-    "ctaSubtitle": "Internationale Zirkuskunst • 5 Shows • 14.–16. November",
+    "ctaButton": "Jetzt Tickets sichern",
+    "ctaSubtitle": "Internationale Artistik • 5 Shows • 14.–16. November",
     "detailed": {
       "title": "Unsere Künstler:innen",
       "subtitle": "Lernen Sie die internationalen Acts kennen"
     }
   },
   "tickets": {
-    "title": "🎫 Jetzt Tickets sichern",
+    "title": "Jetzt Tickets sichern",
     "subtitle": "⚠️ Nur 200 Plätze pro Show – freie Platzwahl",
     "tiers": [
       {
@@ -109,7 +109,7 @@
       }
     ],
     "note": "Sofort verfügbar über Eventfrog (Link folgt)",
-    "online": "🎫 Online-Tickets",
+    "online": "Online-Tickets",
     "offline": "Abendkasse",
     "price": "ab 12 €"
   },
@@ -177,7 +177,7 @@
       "durationLabel": "Dauer",
       "audienceLabel": "Zielgruppe",
       "highlightsLabel": "Highlights",
-      "ticketsButton": "🎫 Tickets für diese Show",
+      "ticketsButton": "Tickets für diese Show",
       "ticketsNote": "200 Plätze • Freie Platzwahl • Early Bird bis 15.10"
     }
   },
@@ -403,7 +403,7 @@
       "accessibility": "Alle Vorstellungen sind barrierefrei zugänglich"
     },
     "ctaTitle": "Tickets für alle Shows verfügbar",
-    "ctaButton": "🎫 Jetzt Tickets sichern",
+    "ctaButton": "Jetzt Tickets sichern",
     "ctaSubtitle": "200 Plätze pro Vorstellung • Freie Platzwahl"
   },
   "venue": {
@@ -417,12 +417,12 @@
       {
         "icon": "🎭",
         "title": "Shows erleben",
-        "description": "Internationale Zirkuskunst und zeitgenössische Performances in einzigartiger Atmosphäre"
+        "description": "Internationale Artistik und zeitgenössische Performances in einzigartiger Atmosphäre"
       },
       {
         "icon": "🤸",
         "title": "Kurse & Workshops",
-        "description": "Bewegung, Tanz oder Zirkus – für Neugierige und Kreative jeden Levels"
+        "description": "Bewegung, Tanz oder Artistik – für Neugierige und Kreative jeden Levels"
       },
       {
         "icon": "🎪",
@@ -481,8 +481,8 @@
       { "icon": "🎪", "title": "Innenraum" },
       { "icon": "✨", "title": "Atmosphäre" }
     ],
-    "ctaTitle": "Erlebe Zirkuskunst im Pepe Dome",
-    "ctaButton": "🎫 Jetzt Tickets sichern",
+    "ctaTitle": "Erlebe Artistik im Pepe Dome",
+    "ctaButton": "Jetzt Tickets sichern",
     "ctaSubtitle": "Einzigartiges Ambiente • 200 Plätze • Barrierefrei",
     "techSpecs": [
       {
@@ -506,15 +506,15 @@
     ]
   },
   "finalCta": {
-    "title": "Letzte Chance: Nur noch wenige Tickets!",
-    "subtitle": "5 spektakuläre Shows in 3 Tagen – sichere dir jetzt deinen Platz für internationale Zirkuskunst",
-    "primary": "🎫 Jetzt Tickets ab 12€ sichern",
+    "title": "Nur noch wenige Tickets!",
+    "subtitle": "5 spektakuläre Shows in 3 Tagen – sichere dir jetzt deinen Platz für internationale Artistik",
+    "primary": "Jetzt Tickets ab 12€ sichern",
     "secondary": "⚠️ Nur 200 Plätze pro Show",
     "scarcity": "Early Bird-Preise nur bis 15. Oktober"
   },
   "contact": {
     "title": "Kontakt",
-    "subtitle": "Haben Sie Fragen zum Freeman Festival? Wir helfen gerne weiter!",
+    "subtitle": "Haben Sie Fragen zu Freeman? Wir helfen gerne weiter!",
     "general": {
       "title": "Allgemeine Anfragen",
       "emailLabel": "E-Mail",
@@ -542,8 +542,8 @@
     },
     "partner": {
       "title": "Unser Hauptpartner",
-      "subtitle": "Das Freeman Festival wird präsentiert von PepeShows",
-      "pepeDescription": "PepeShows ist Münchens führende Plattform für zeitgenössische Zirkuskunst und unser stolzer Hauptpartner. Seit Jahren bringen sie innovative Performances in die Stadt.",
+      "subtitle": "Freeman wird präsentiert von PepeShows",
+      "pepeDescription": "PepeShows ist Münchens führende Plattform für zeitgenössische Artistik und unser stolzer Hauptpartner. Seit Jahren bringen sie innovative Performances in die Stadt.",
       "pepeButton": "Mehr über PepeShows",
       "supportTitle": "Weitere Unterstützer",
       "supporters": [
@@ -567,31 +567,31 @@
     },
     "cta": {
       "title": "Bereit für das Festival?",
-      "button": "🎫 Jetzt Tickets sichern",
+      "button": "Jetzt Tickets sichern",
       "subtitle": "Nur noch wenige Plätze verfügbar"
     }
   },
   "about": {
-    "title": "Freeman Festival | Zeit für Zirkus",
+    "title": "Freeman | Zeit für Artistik",
     "subtitle": "Wir feiern die Freiheit des künstlerischen Ausdrucks, verwurzelt in Verbundenheit und Einheit",
-    "tagline": "Kunst ist Freiheit. Zirkus ist Freiheit. Du bist frei.",
+    "tagline": "Kunst ist Freiheit. Artistik ist Freiheit. Du bist frei.",
     "mission": {
       "title": "Unsere Mission",
-      "description": "Das Freeman Festival feiert die künstlerische Freiheit, indem es internationale Zirkusartisten zusammenbringt, um Identität, Tradition und Innovation durch mutige, grenzüberschreitende Darbietungen zu erforschen. In einer Zeit zunehmender Spaltung kommen wir in Bewegung und Ausdruck zusammen, um die Freiheit zurückzugewinnen – nicht nur als Individuen, sondern als kollektiver Akt der Einheit."
+      "description": "Freeman feiert die künstlerische Freiheit, indem es internationale Artist:innen zusammenbringt, um Identität, Tradition und Innovation durch mutige, grenzüberschreitende Darbietungen zu erforschen. In einer Zeit zunehmender Spaltung kommen wir in Bewegung und Ausdruck zusammen, um die Freiheit zurückzugewinnen – nicht nur als Individuen, sondern als kollektiver Akt der Einheit."
     },
     "munich": {
       "title": "Warum München?",
       "paragraphs": [
         "Münchens Geschichte ist geprägt von künstlerischer Rebellion und Innovation. Von den expressiven Brüchen des Blauen Reiters bis zu den bahnbrechenden Performances der Dada-Bewegung ist die Stadt seit jeher ein Zentrum für Bewegungen, die Kultur neu definieren und den Status quo in Frage stellen.",
-        "Indem wir das Freeman Festival hier ausrichten, würdigen wir diese radikale Vergangenheit – und verankern unsere Vision zugleich in der Gegenwart, in der künstlerische Freiheit angesichts globaler Spannungen, Zensur und Polarisierung notwendiger denn je ist."
+        "Indem wir Freeman hier ausrichten, würdigen wir diese radikale Vergangenheit – und verankern unsere Vision zugleich in der Gegenwart, in der künstlerische Freiheit angesichts globaler Spannungen, Zensur und Polarisierung notwendiger denn je ist."
       ]
     },
     "circus": {
-      "title": "Zeitgenössischer Zirkus als Sprache",
-      "description": "Der zeitgenössische Zirkus, der sich Definitionen und Traditionen verweigert, bietet einen radikal offenen Raum, in dem Kulturen, Techniken und Körper miteinander sprechen können. Hier ist Zirkus weder an Genre noch an Geografie gebunden. Er ist ein Ort, an dem ein Seil, eine Geste oder ein Sturz die Last einer Heimat oder den Traum einer grenzenlosen Welt tragen können."
+      "title": "Zeitgenössische Artistik als Sprache",
+      "description": "Die zeitgenössische Artistik, die sich Definitionen und Traditionen verweigert, bietet einen radikal offenen Raum, in dem Kulturen, Techniken und Körper miteinander sprechen können. Hier ist Artistik weder an Genre noch an Geografie gebunden. Sie ist ein Ort, an dem ein Seil, eine Geste oder ein Sturz die Last einer Heimat oder den Traum einer grenzenlosen Welt tragen können."
     },
     "questions": {
-      "title": "Das Festival fragt:",
+      "title": "Freeman fragt:",
       "items": [
         "Wie bleiben wir geerdet, während wir kulturübergreifend agieren?",
         "Wie können wir unsere Körper nutzen, um Geschichten zu erzählen, die sowohl persönlich als auch politisch sind?",
@@ -600,12 +600,12 @@
     },
     "vision": {
       "title": "Unser Chor der Freiheit",
-      "description": "Bei diesem Festival geht es nicht nur darum, die individuelle Stimme zu feiern – es geht darum, einen Chor zu bilden. Ein Raum, in dem Freiheit kollektiv wird, in dem Unterschiedlichkeit Kraftquelle ist und in dem Einheit nicht Uniformität ist, sondern ein gemeinsames Bekenntnis zu Wahrheit, Verletzlichkeit und künstlerischem Mut."
+      "description": "Bei Freeman geht es nicht nur darum, die individuelle Stimme zu feiern – es geht darum, einen Chor zu bilden. Ein Raum, in dem Freiheit kollektiv wird, in dem Unterschiedlichkeit Kraftquelle ist und in dem Einheit nicht Uniformität ist, sondern ein gemeinsames Bekenntnis zu Wahrheit, Verletzlichkeit und künstlerischem Mut."
     },
     "freedom": {
       "statements": [
         "Kunst ist Freiheit",
-        "Zirkus ist Freiheit",
+        "Artistik ist Freiheit",
         "Du bist frei"
       ],
       "closing": "In München kommen wir in diesem Moment zusammen – über Grenzen und Disziplinen hinweg."

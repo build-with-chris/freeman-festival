@@ -115,7 +115,7 @@ export default function LineupPage() {
                     href="/#tickets"
                     className="btn-primary w-full justify-center py-3 text-lg font-semibold"
                   >
-                    🎫 Tickets für &ldquo;Häppy Hour&rdquo; sichern
+Tickets für &ldquo;Häppy Hour&rdquo;
                   </Link>
                 </div>
               </div>
@@ -214,7 +214,7 @@ export default function LineupPage() {
                     href="/#tickets"
                     className="btn-primary w-full justify-center py-3 text-lg font-semibold"
                   >
-                    🎫 Tickets für &ldquo;How a Spiral Works&rdquo; sichern
+Tickets für &ldquo;How a Spiral Works&rdquo;
                   </Link>
                 </div>
               </div>

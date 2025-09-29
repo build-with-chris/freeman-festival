@@ -42,7 +42,7 @@ export default function Navigation({ currentPage = 'home', onTicketsClick }: Nav
             onClick={closeMenu}
           >
             <span className="bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 bg-clip-text text-transparent group-hover:from-yellow-300 group-hover:via-orange-300 group-hover:to-red-300 transition-all duration-300 drop-shadow-lg relative z-10">
-              🎪 Freeman Festival ✨
+              🤸 Freeman
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/30 via-orange-400/30 to-red-400/30 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
           </Link>
@@ -212,7 +212,7 @@ export default function Navigation({ currentPage = 'home', onTicketsClick }: Nav
                 onClick={handleTicketsClick}
                 className="btn-primary w-full py-3 text-center"
               >
-                🎫 {content.navigation.tickets}
+{content.navigation.tickets}
               </button>
 
               {/* Mobile Language Toggle */}

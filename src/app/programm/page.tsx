@@ -159,7 +159,7 @@ export default function ProgramPage() {
                                 href="/#tickets"
                                 className="btn-primary w-full justify-center py-2 text-sm font-semibold"
                               >
-                                🎫 Tickets für diese Show sichern
+Tickets für diese Show
                               </Link>
                             </div>
                           )}
@@ -184,7 +184,7 @@ export default function ProgramPage() {
                                 href="/#tickets"
                                 className="btn-primary w-full justify-center py-2 text-sm font-semibold"
                               >
-                                🎫 Tickets für diese Show sichern
+Tickets für diese Show
                               </Link>
                             </div>
                           )}
