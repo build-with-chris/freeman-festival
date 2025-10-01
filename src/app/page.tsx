@@ -189,11 +189,13 @@ export default function Home() {
           <h1 className="display text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-4 sm:mb-6 tracking-tight px-2">
             {content.hero.title}
           </h1>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6 text-white/90 font-semibold px-2">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl mb-6 sm:mb-8 text-white/90 font-semibold px-2">
             {content.hero.subtitle}
           </h2>
-          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/80 leading-relaxed max-w-4xl mx-auto px-2">
-            {content.hero.description}
+
+          {/* Hero Subline */}
+          <p className="text-lg sm:text-xl md:text-2xl font-medium mb-8 sm:mb-10 text-white/90 leading-relaxed max-w-5xl mx-auto px-2">
+            {content.hero.subline}
           </p>
 
           {/* Countdown */}
@@ -202,14 +204,23 @@ export default function Home() {
             <Countdown targetDate={festivalDate} labels={content.hero.countdown} />
           </div>
 
-          <div className="flex flex-col gap-3 sm:gap-4 justify-center items-center mb-6 sm:mb-8 px-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 sm:mb-10 px-4">
             <button
               onClick={scrollToTickets}
-              className="btn-primary text-lg sm:text-xl px-8 sm:px-10 py-4 sm:py-5 shadow-lg hover:shadow-xl transition-all w-full sm:w-auto max-w-xs"
+              className="btn-primary text-lg sm:text-xl px-8 sm:px-10 py-4 sm:py-5 shadow-lg hover:shadow-xl transition-all w-full sm:w-auto"
               aria-label="Zu den Ticket-Preisen scrollen"
             >
               {content.hero.cta}
             </button>
+            <Link
+              href="/programm"
+              className="btn-secondary text-lg sm:text-xl px-8 sm:px-10 py-4 sm:py-5 w-full sm:w-auto text-center"
+            >
+              {content.hero.ctaSecondary}
+            </Link>
+          </div>
+
+          <div className="mb-6 sm:mb-8">
             <a
               href="https://maps.google.com/maps?q=Theatron+Ostpark+München"
               target="_blank"
@@ -239,6 +250,54 @@ export default function Home() {
             </div>
           </div>
 
+        </div>
+      </section>
+
+      {/* Promo Video */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6">
+        <div className="mb-6 sm:mb-8 max-w-4xl mx-auto">
+          <div className="relative rounded-lg sm:rounded-xl overflow-hidden border border-white/20 shadow-2xl">
+            <video
+              controls
+              className="w-full h-auto"
+              poster="/SaveTheDate.webp"
+              preload="metadata"
+            >
+              <source src="/Freeman-fest-video-for-web.mp4" type="video/mp4" />
+              Ihr Browser unterstützt das Video-Tag nicht.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      {/* Kurz-Manifest Section */}
+      <section className="py-16 sm:py-20 px-4 sm:px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="space-y-6 sm:space-y-8 text-center">
+            <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
+              {content.manifest.paragraph1}
+            </p>
+            <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
+              {content.manifest.paragraph2}
+            </p>
+            <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
+              {content.manifest.paragraph3}
+            </p>
+
+            {/* Claim */}
+            <div className="pt-6 sm:pt-8">
+              <p className="display text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight mb-8">
+                {content.manifest.claim}
+              </p>
+              <Link
+                href="/ueber"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 border border-white/30 rounded-full hover:border-white/50 hover:bg-white/20 transition-all"
+              >
+                <span className="font-semibold">Mehr über unsere Mission</span>
+                <span>→</span>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -346,22 +405,6 @@ export default function Home() {
         </div>
       </section>
 
-          {/* Promo Video */}
-          <div className="mb-6 sm:mb-8 max-w-4xl mx-auto px-4">
-            <div className="relative rounded-lg sm:rounded-xl overflow-hidden border border-white/20 shadow-2xl">
-              <video
-                controls
-                className="w-full h-auto"
-                poster="/SaveTheDate.webp"
-                preload="metadata"
-              >
-                <source src="/Freeman-fest-video-for-web.mp4" type="video/mp4" />
-                Ihr Browser unterstützt das Video-Tag nicht.
-              </video>
-            </div>
-            <p className="text-xs sm:text-sm muted mt-2 sm:mt-3 text-center">🎥 Freeman Promo • Bitte mit Ton anschauen</p>
-          </div>
-
       {/* YouTube Videos Section */}
       <section className="py-20 px-6 bg-black/10">
         <div className="max-w-6xl mx-auto text-center">
@@ -450,38 +493,14 @@ Tickets für &ldquo;How a Spiral Works&rdquo;
         </div>
       </section>
 
-      {/* Mission Teaser */}
-      <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="display text-4xl md:text-5xl font-bold mb-8">
-            {content.lineup.mission.title}
-          </h2>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 font-semibold">
-            {content.lineup.mission.subtitle}
-          </p>
-          <p className="text-lg md:text-xl leading-relaxed text-white/80 mb-8">
-            {content.lineup.mission.description}
-          </p>
-          <p className="text-lg text-white/70 italic mb-12">
-            {content.lineup.mission.tagline}
-          </p>
-          <Link
-            href="/ueber"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 border border-white/30 rounded-full hover:border-white/50 hover:bg-white/20 transition-all"
-          >
-            <span className="font-semibold">{content.lineup.mission.button}</span>
-            <span>→</span>
-          </Link>
-        </div>
-      </section>
 
       {/* Quick Program Preview */}
       <section className="py-20 px-6 bg-black/20">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-6xl mx-auto text-center">
           <h2 className="display text-3xl md:text-4xl font-bold mb-8">
-            5 Shows an 3 Tagen
+            4 Shows an 3 Tagen
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12">
             {content.schedule.items.map((item, index) => (
               <div
                 key={index}
@@ -569,9 +588,80 @@ Tickets für &ldquo;How a Spiral Works&rdquo;
             ))}
           </div>
 
-          {/* Ticket Purchase Info */}
-          <div className="text-center mt-6 sm:mt-8">
+          {/* Main CTA Button */}
+          <div className="text-center mt-8 sm:mt-12">
+            <button
+              onClick={() => {
+                // Placeholder for ticket platform integration
+                window.alert('Ticket-Plattform wird bald verfügbar sein!');
+              }}
+              className="btn-primary text-xl sm:text-2xl px-12 sm:px-16 py-4 sm:py-6 shadow-2xl hover:shadow-yellow-400/25 transition-all mb-4"
+            >
+              {content.tickets.ctaButton}
+            </button>
+            <p className="text-sm text-white/60 mb-8">
+              {content.tickets.workshopNote}
+            </p>
             <p className="muted text-sm sm:text-base">{content.tickets.note}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Location Section */}
+      <section className="py-16 sm:py-20 px-4 sm:px-6 bg-black/10">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="display text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 text-center">
+            {content.location.title}
+          </h2>
+          <p className="text-lg sm:text-xl mb-8 sm:mb-12 text-white/90 text-center leading-relaxed">
+            {content.location.description}
+          </p>
+
+          <div className="grid md:grid-cols-1 gap-6 mb-8">
+            <div className="space-y-6">
+              <div className="p-6 rounded-xl bg-black/20 border border-white/10">
+                <p className="text-white/90 text-lg">{content.location.address}</p>
+              </div>
+              <div className="p-6 rounded-xl bg-black/20 border border-white/10">
+                <p className="text-white/90 text-lg">{content.location.transport}</p>
+              </div>
+              <div className="p-6 rounded-xl bg-black/20 border border-white/10">
+                <p className="text-white/90 text-lg">{content.location.parking}</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <a
+              href={content.location.mapUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary inline-flex items-center gap-3 px-8 py-4 text-lg"
+            >
+              <span>📍</span>
+              {content.location.mapButton}
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Volunteer Section */}
+      <section className="py-16 sm:py-20 px-4 sm:px-6">
+        <div className="max-w-2xl mx-auto text-center">
+          <div className="p-8 rounded-xl bg-gradient-to-br from-purple-500/10 to-blue-500/10 border border-purple-400/20">
+            <h3 className="display text-2xl sm:text-3xl font-bold mb-4">
+              {content.volunteer.title}
+            </h3>
+            <p className="text-lg font-semibold mb-6 text-white/90">
+              {content.volunteer.subtitle}
+            </p>
+            <a
+              href={content.volunteer.url}
+              className="btn-secondary inline-flex items-center gap-2 px-8 py-4 text-lg"
+            >
+              <span>👥</span>
+              {content.volunteer.button}
+            </a>
           </div>
         </div>
       </section>

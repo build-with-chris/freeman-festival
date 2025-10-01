@@ -2,12 +2,14 @@
   "hero": {
     "badge": "14.–16. November in München",
     "title": "Freeman – Festival der Artistik",
-    "subtitle": "5 Shows • 3 Tage • Höchstleistung trifft Poesie",
+    "subtitle": "4 Shows • 3 Tage • Höchstleistung trifft Poesie",
     "description": "Internationale Spitzen-Artist:innen zeigen Akrobatik und Entertainment auf Weltklasse-Niveau – live, nahbar und mitten in München.",
+    "subline": "ZEIT FÜR ZIRKUS: Internationale Zirkuskunst trifft Freiheit, Tradition & Innovation – mitten in München.",
     "date": "14.–16. November",
     "location": "Ostpark • Geodätische Kuppel",
     "venue": "✓ Nur 200 Plätze ✓ Einzigartige Atmosphäre ✓ Familienfreundlich",
     "cta": "Tickets ab 12€ sichern",
+    "ctaSecondary": "Programm ansehen",
     "price": "Early Bird ab 12 € • Standard 18 € • Abendkasse 22 €",
     "scarcity": "⚠️ Begrenzte Plätze – Nur 200 Sitzplätze pro Show",
     "countdown": {
@@ -17,6 +19,12 @@
       "minutes": "Minuten",
       "seconds": "Sekunden"
     }
+  },
+  "manifest": {
+    "paragraph1": "Das Freeman Festival feiert die Freiheit des künstlerischen Ausdrucks. Internationale Zirkus-Künstler*innen treffen in München aufeinander, um Identität, Tradition und Innovation neu zu denken – mutig, poetisch, grenzüberschreitend.",
+    "paragraph2": "Verwurzelt in Münchens Geschichte der Avantgarde entsteht hier ein Raum, in dem Vielfalt zur Stärke wird. Ein Ort, an dem Unterschiede verbinden und Kunst zu einer gemeinsamen Sprache wird.",
+    "paragraph3": "In Zeiten der Spaltung laden wir ein, Freiheit neu zu erleben – nicht als Ego-Show, sondern als kollektives Erlebnis von Einheit, Mut und Ausdruck.",
+    "claim": "Kunst ist Freiheit. Zirkus ist Freiheit. Du bist frei."
   },
   "navigation": {
     "home": "Start",
@@ -89,8 +97,10 @@
     }
   },
   "tickets": {
-    "title": "Jetzt Tickets sichern",
-    "subtitle": "⚠️ Nur 200 Plätze pro Show – freie Platzwahl",
+    "title": "Tickets sichern",
+    "subtitle": "Early-Bird-Tickets ab 12 € – sichere dir jetzt deinen Platz!",
+    "ctaButton": "Tickets kaufen",
+    "workshopNote": "Workshops separat buchbar (ca. 10 €, 12 € vor Ort).",
     "tiers": [
       {
         "name": "🚀 Early Bird",
@@ -114,37 +124,37 @@
     "price": "ab 12 €"
   },
   "schedule": {
-    "title": "5 Shows an 3 Tagen",
+    "title": "4 Shows an 3 Tagen",
     "subtitle": "Einlass 30 Min. vor Beginn • freie Platzwahl",
     "items": [
       {
         "day": "Fr",
-        "time": "20:00",
+        "time": "19:00",
         "date": "14. November",
-        "title": "\"Insomnia\"",
-        "description": "Jakob Jakobsson eröffnet das Festival mit seiner intensiven Performance über Schlaflosigkeit und nächtliche Träume.",
-        "artist": "Jakob Jakobsson",
-        "duration": "75 Minuten",
-        "features": ["Festival-Eröffnung", "Zeitgenössischer Zirkus", "Solo-Performance"],
-        "audience": "Erwachsene und Jugendliche ab 12"
-      },
-      {
-        "day": "Sa",
-        "time": "17:00",
-        "date": "15. November",
         "title": "\"Häppy Hour\"",
-        "description": "The Nordic Council vereint nordische Eleganz mit Live-Musik, Jonglage und poetischer Akrobatik.",
+        "description": "Ode an den Norden; Humor über peinliche Real-Life-Momente & die ambivalente Beziehung zu Alkohol. Zeitgenössischer Zirkus × Comedy.",
         "artist": "The Nordic Council",
         "duration": "75 Minuten",
-        "features": ["Nordische Zirkuskunst", "Live-Musik", "Poetische Akrobatik"],
+        "features": ["Festival-Eröffnung", "Nordische Zirkuskunst", "Comedy"],
         "audience": "Für alle Altersgruppen ab 6"
       },
       {
         "day": "Sa",
-        "time": "19:00",
+        "time": "18:00",
+        "date": "15. November",
+        "title": "\"Häppy Hour\"",
+        "description": "Ode an den Norden; Humor über peinliche Real-Life-Momente & die ambivalente Beziehung zu Alkohol. Zeitgenössischer Zirkus × Comedy.",
+        "artist": "The Nordic Council",
+        "duration": "75 Minuten",
+        "features": ["Nordische Zirkuskunst", "Comedy", "Live-Musik"],
+        "audience": "Für alle Altersgruppen ab 6"
+      },
+      {
+        "day": "Sa",
+        "time": "20:30",
         "date": "15. November",
         "title": "\"How a Spiral Works\"",
-        "description": "Art for Rainy Days präsentiert ihre preisgekrönte Performance über Bewegung, Spiralen und Transformation.",
+        "description": "Meditativer, hypnotischer Zirkus: Tanz, Hair Hanging & Aerial Rope, minimalistische Ästhetik, neu interpretierte baltische Volksmusik.",
         "artist": "Art for Rainy Days",
         "duration": "60 Minuten",
         "features": ["Preisgekrönt", "Zeitgenössisch", "Tanz & Zirkus"],
@@ -152,21 +162,10 @@
       },
       {
         "day": "So",
-        "time": "15:00",
+        "time": "18:00",
         "date": "16. November",
-        "title": "\"Häppy Hour\" (Matinee)",
-        "description": "Entspannte Sonntag-Matinee mit The Nordic Council. Nordische Zirkuspoesie in ruhiger Atmosphäre.",
-        "artist": "The Nordic Council",
-        "duration": "75 Minuten",
-        "features": ["Entspannt", "Poetisch", "Familienfreundlich"],
-        "audience": "Perfekt für entspannte Sonntage ab 6"
-      },
-      {
-        "day": "So",
-        "time": "17:00",
-        "date": "16. November",
-        "title": "\"How a Spiral Works\" (Finale)",
-        "description": "Das große Festival-Finale! Art for Rainy Days verabschiedet sich mit einer emotionalen Abschlussvorstellung.",
+        "title": "\"How a Spiral Works\"",
+        "description": "Meditativer, hypnotischer Zirkus: Tanz, Hair Hanging & Aerial Rope, minimalistische Ästhetik, neu interpretierte baltische Volksmusik.",
         "artist": "Art for Rainy Days",
         "duration": "75 Minuten",
         "features": ["Festival-Finale", "Emotional", "Unvergesslich"],
@@ -210,7 +209,7 @@
   "videos": {
     "title": "Promo-Videos",
     "subtitle": "Erhalte einen ersten Eindruck von unseren Künstlern",
-    "pepeDescription": "PepeShows Vorschau",
+    "pepeDescription": "",
     "nordicDescription": "The Nordic Council Performance",
     "rainyDescription": "Art for Rainy Days Preview"
   },
@@ -254,124 +253,118 @@
     ]
   },
   "location": {
-    "title": "Anfahrt & Info",
-    "address": "Theatron, Ostpark, München",
-    "transport": "U-Bahn Quiddestraße • Beschilderung im Park • barrierefrei",
-    "mapUrl": "https://maps.google.com/maps?q=Theatron+Ostpark+München"
+    "title": "Ort & Anfahrt",
+    "description": "Das Freeman Festival findet im Geodome im Münchner Ostpark statt – mitten im Grünen, nur wenige Minuten von der U-Bahn Quiddestraße.",
+    "address": "📍 Adresse: Pepe Dome, Ostpark, 81925 München",
+    "transport": "🚇 ÖPNV: U-Bahn bis Quiddestraße, Eingang über Albert-Schweitzer-Straße, kurzer Fußweg",
+    "parking": "🚗 Parken: Michaeligarten (ca. 15 Min Fußweg), Parkplätze meist verfügbar – bei Events früh anreisen empfohlen",
+    "mapButton": "In Google Maps öffnen",
+    "mapUrl": "https://maps.google.com/maps?q=Pepe+Dome+Ostpark+München"
   },
   "program": {
-    "title": "Programm",
-    "subtitle": "Drei Tage voller Zirkusmagie, Workshops und künstlerischem Dialog",
+    "title": "Programm · 14.–16.11.2025",
+    "subtitle": "Shows, Workshops & Talks – alle Zeiten auf einen Blick.",
+    "heroSubline": "ZEIT FÜR ZIRKUS: Internationale Zirkuskunst trifft Freiheit, Tradition & Innovation – mitten in München.",
+    "heroButtons": {
+      "tickets": "Tickets sichern",
+      "program": "Programm ansehen"
+    },
+    "manifest": {
+      "paragraph1": "Das Freeman Festival feiert die Freiheit des künstlerischen Ausdrucks. Internationale Zirkus-Künstler*innen treffen in München aufeinander, um Identität, Tradition und Innovation neu zu denken – mutig, poetisch, grenzüberschreitend.",
+      "paragraph2": "Verwurzelt in Münchens Geschichte der Avantgarde entsteht hier ein Raum, in dem Vielfalt zur Stärke wird. Ein Ort, an dem Unterschiede verbinden und Kunst zu einer gemeinsamen Sprache wird.",
+      "paragraph3": "In Zeiten der Spaltung laden wir ein, Freiheit neu zu erleben – nicht als Ego-Show, sondern als kollektives Erlebnis von Einheit, Mut und Ausdruck.",
+      "claim": "Kunst ist Freiheit. Zirkus ist Freiheit. Du bist frei."
+    },
     "days": [
       {
-        "day": "Freitag, 14. November",
-        "theme": "Eröffnung & Begegnung",
+        "day": "Freitag, 14.11.2025",
+        "theme": "",
         "events": [
-          {
-            "time": "19:00",
-            "title": "Opening Event",
-            "subtitle": "Freeman Festival: What We Do, How We Do It, and Why?",
-            "type": "opening",
-            "description": "Festliche Eröffnung mit Einführung in die Festival-Mission"
-          },
-          {
-            "time": "20:00",
-            "title": "\"Insomnia\"",
-            "subtitle": "Jakob Jakobsson",
-            "type": "show",
-            "description": "Zeitgenössische Zirkusshow über Schlaflosigkeit und nächtliche Träume"
-          },
-          {
-            "time": "21:00",
-            "title": "Aftertalk & Opening Party",
-            "subtitle": "Where Music, Drinks, and Words Connect Creative Worlds",
-            "type": "social",
-            "description": "Gespräch mit dem Künstler und Eröffnungsfeier"
-          }
-        ]
-      },
-      {
-        "day": "Samstag, 15. November",
-        "theme": "Workshops & Performance",
-        "events": [
-          {
-            "time": "10:00-12:00",
-            "title": "Workshop Teil I",
-            "subtitle": "\"Stillness in Motion: Mastering Presence and Intention in Performance\"",
-            "type": "workshop",
-            "artist": "Alise Bokaldere",
-            "description": "Intensiver Workshop über Präsenz und Intention in der Performance"
-          },
-          {
-            "time": "17:00",
-            "title": "\"Häppy Hour\"",
-            "subtitle": "The Nordic Council",
-            "type": "show",
-            "description": "Nordische Zirkuskunst mit Live-Musik, Jonglage und Akrobatik"
-          },
-          {
-            "time": "19:00",
-            "title": "\"How a Spiral Works\"",
-            "subtitle": "Art for Rainy Days",
-            "type": "show",
-            "description": "Preisgekrönte zeitgenössische Performance über Bewegung und Metamorphose"
-          },
-          {
-            "time": "20:00",
-            "title": "Aftertalk",
-            "subtitle": "Gespräch mit den Künstlern",
-            "type": "talk",
-            "description": "Dialog über die Performances und künstlerische Prozesse"
-          }
-        ]
-      },
-      {
-        "day": "Sonntag, 16. November",
-        "theme": "Dialog & Finale",
-        "events": [
-          {
-            "time": "10:00-12:00",
-            "title": "Workshop Teil II",
-            "subtitle": "\"Stillness in Motion: Mastering Presence and Intention in Performance\"",
-            "type": "workshop",
-            "artist": "Alise Bokaldere",
-            "description": "Fortführung des Workshops über Präsenz und Intention"
-          },
-          {
-            "time": "13:00-14:00",
-            "title": "Artist Talks",
-            "subtitle": "Curated meeting for circus & dance professionals",
-            "type": "talk",
-            "curator": "Valentina Barone",
-            "description": "Kuratierte Gespräche für Zirkus- und Tanzprofis"
-          },
           {
             "time": "15:00",
-            "title": "\"Häppy Hour\"",
-            "subtitle": "The Nordic Council",
-            "type": "show",
-            "description": "Nordische Zirkuskunst mit Live-Musik (Matinee)"
-          },
-          {
-            "time": "17:00",
-            "title": "\"How a Spiral Works\"",
-            "subtitle": "Art for Rainy Days",
-            "type": "show",
-            "description": "Zeitgenössische Performance über Spiralen des Lebens"
+            "title": "Workshop \"Object Manipulation\"",
+            "subtitle": "Merri Heikkilä",
+            "type": "workshop",
+            "description": "Workshop über die Verwendung alltäglicher Gegenstände als Jonglier-Requisiten. Durch angeleitete Erkundung experimentieren die Teilnehmer mit Form, Bewegung und Rhythmus.",
+            "detailedDescription": "Dieser Workshop konzentriert sich auf die Verwendung alltäglicher Gegenstände als Jonglier-Requisiten und bietet eine andere Perspektive auf Objektmanipulation. Durch angeleitete Erkundung experimentieren die Teilnehmer mit Form, Bewegung und Rhythmus unter Verwendung von Gegenständen aus dem täglichen Leben. Die Session fördert einen durchdachten und kreativen Ansatz zum Jonglieren, mit Schwerpunkt auf Beobachtung, Anpassungsfähigkeit und dem Finden neuer Möglichkeiten in vertrauten Dingen.",
+            "teacher": "Merri Heikkilä ist ein Jongleur und Zirkuskünstler, der hauptsächlich mit zeitgenössischem Zirkus arbeitet. Er schloss 2017 die Zirkuslinie von Codarts in Rotterdam mit einem Bachelor-Abschluss in Zirkuskünsten ab und war an der Gründung von zwei neuen Zirkusgruppen beteiligt: Sirkum Polaris und The Nordic Council. Darüber hinaus arbeitet er in verschiedenen Werken und Veranstaltungen der Zirkusgruppe Nuua.",
+            "idealFor": "Zeitgenössische Zirkuskünstler, Jongleure und Bewegungspraktiker, die sich für Objektmanipulation, kreative Erkundung und interdisziplinäre Experimente interessieren.",
+            "whatToBring": "Bringen Sie Ihren liebsten Alltagsgegenstand mit.",
+            "duration": "2 Stunden",
+            "language": "Englisch",
+            "bookingButton": "Jetzt anmelden",
+            "bookingUrl": "https://forms.gle/LNDK9pMzuZCcdeZd6"
           },
           {
             "time": "19:00",
-            "title": "Open Stage",
-            "subtitle": "for experimental ideas",
-            "type": "experimental",
-            "description": "Offene Bühne für experimentelle Ideen und neue Arbeiten"
+            "title": "Show \"Häppy Hour\"",
+            "subtitle": "The Nordic Council",
+            "type": "show",
+            "description": "Ode an den Norden; Humor über peinliche Real-Life-Momente & die ambivalente Beziehung zu Alkohol. Zeitgenössischer Zirkus × Comedy."
+          }
+        ]
+      },
+      {
+        "day": "Samstag, 15.11.2025",
+        "theme": "",
+        "events": [
+          {
+            "time": "11:00",
+            "title": "Presentation + Talk",
+            "subtitle": "Anke Politz",
+            "type": "talk",
+            "description": "Details folgen (BUZZ liefert Text).",
+            "note": "Details folgen"
           },
           {
-            "time": "21:30",
-            "title": "Closing Party",
-            "subtitle": "See You Next Year",
+            "time": "18:00",
+            "title": "Show \"Häppy Hour\"",
+            "subtitle": "The Nordic Council",
+            "type": "show",
+            "description": "Ode an den Norden; Humor über peinliche Real-Life-Momente & die ambivalente Beziehung zu Alkohol. Zeitgenössischer Zirkus × Comedy."
+          },
+          {
+            "time": "20:30",
+            "title": "Show \"How a Spiral Works\"",
+            "subtitle": "Art for Rainy Days",
+            "type": "show",
+            "description": "Meditativer, hypnotischer Zirkus: Tanz, Hair Hanging & Aerial Rope, minimalistische Ästhetik, neu interpretierte baltische Volksmusik."
+          },
+          {
+            "time": "21:45",
+            "title": "Party",
+            "subtitle": "",
             "type": "social",
-            "description": "Abschlussfeier des Festivals mit Ausblick auf die Zukunft"
+            "description": "Party nach den Shows"
+          }
+        ]
+      },
+      {
+        "day": "Sonntag, 16.11.2025",
+        "theme": "",
+        "events": [
+          {
+            "time": "13:00",
+            "title": "Workshop \"Stillness in Motion\"",
+            "subtitle": "Alise Madara Bokaldere",
+            "type": "workshop",
+            "description": "\"Stillness in Motion\" erkundet die kraftvolle Verwendung von Stille – nicht nur als Fundament für Bewegung, sondern auch als Technik zur Verbesserung der Bühnenpräsenz.",
+            "detailedDescription": "\"Stillness in Motion\" erkundet die kraftvolle Verwendung von Stille – nicht nur als Fundament für Bewegung, sondern auch als Technik zur Verbesserung der Bühnenpräsenz. Wir werden uns innerhalb und außerhalb unserer jeweiligen Disziplinen bewegen und es euch ermöglichen, grundlegende Prinzipien zu entdecken und später in eure eigene künstlerische Praxis zu integrieren. In vielen Kunstformen spielt Stille eine entscheidende Rolle – Musik wird durch Pausen verstärkt, Worte brauchen Zwischenräume, um verständlich zu sein, und Bewegung funktioniert ähnlich. Das Vergessen zu stoppen nimmt uns die Fähigkeit, uns auf die Bewegung zu konzentrieren.",
+            "teacher": "Alise Madara Bokaldere ist eine lettische Tänzerin/Choreografin. Sie arbeitet sehr eng mit Details und nuancierter Bewegung in ihren Kreationen und konzentriert sich auf Bühnenpräsenz, Bewegungsqualität und Konzept. Sie schloss 2018 die Lettische Akademie für Kultur mit einem BA in zeitgenössischem Tanz ab. Sie wurde 2024 bei den lettischen Tanzpreisen zur besten zeitgenössischen Tänzerin gekürt.",
+            "idealFor": "Dieser Workshop richtet sich an Tänzer und Zirkusartisten, einschließlich Akrobaten, Luftakrobaten und Jongleure, die neue Dimensionen der Ausdruckskraft durch den disziplinierten Einsatz von Stille und Präsenz erkunden möchten. Geeignet auch für Choreografen und Regisseure, die ihr Werkzeug vertiefen und Konzepte der Stille erforschen möchten.",
+            "whatToBring": "Die Teilnehmer sollten Kleidung tragen, die uneingeschränkte Bewegung ermöglicht, Wasser zur Hydratation mitbringen und Notizbücher und Stifte für wichtige Erkenntnisse und Inspirationen während der Diskussionen dabei haben.",
+            "duration": "2 Stunden",
+            "language": "Englisch",
+            "maxParticipants": "Max. 20 Personen",
+            "bookingButton": "Jetzt anmelden",
+            "bookingUrl": "https://forms.gle/C2aomJ7gpYQ5fvqE7"
+          },
+          {
+            "time": "18:00",
+            "title": "Show \"How a Spiral Works\"",
+            "subtitle": "Art for Rainy Days",
+            "type": "show",
+            "description": "Meditativer, hypnotischer Zirkus: Tanz, Hair Hanging & Aerial Rope, minimalistische Ästhetik, neu interpretierte baltische Volksmusik."
           }
         ]
       }
@@ -615,6 +608,12 @@
       "subtitle": "Erlebe künstlerische Freiheit in ihrer reinsten Form",
       "button": "🎫 Zur Freiheit"
     }
+  },
+  "volunteer": {
+    "title": "Mitmachen & helfen?",
+    "subtitle": "Werde Volunteer!",
+    "button": "Volunteer Formular",
+    "url": "#"
   },
   "footer": {
     "impressum": "Impressum",

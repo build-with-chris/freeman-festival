@@ -66,7 +66,7 @@ export default function ProgramPage() {
       </section>
 
       {/* Program Schedule */}
-      <section className="py-20 px-6">
+      <section id="program-schedule" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="space-y-16">
             {content.program.days.map((day, dayIndex) => (
@@ -138,86 +138,159 @@ export default function ProgramPage() {
 
                           <p className="text-white/80 leading-relaxed mb-4">{event.description}</p>
 
-                          {/* Video Preview for Show Events */}
-                          {event.type === 'show' && event.title.includes('Häppy Hour') && (
-                            <div className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-blue-400/30 rounded-xl p-4 mb-4">
-                              <div className="flex items-center gap-2 mb-3">
-                                <span className="text-lg">🎬</span>
-                                <h4 className="font-semibold text-white text-sm">Performance Preview</h4>
+                          {/* Workshop Booking Button - Always Visible */}
+                          {event.type === 'workshop' && 'bookingButton' in event && 'bookingUrl' in event && event.bookingButton && event.bookingUrl && (
+                            <div className="mb-4">
+                              <a
+                                href={event.bookingUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn-primary px-6 py-3 text-sm font-semibold"
+                              >
+                                {event.bookingButton}
+                              </a>
+                            </div>
+                          )}
+
+                          {/* Detailed Workshop Information - Collapsible */}
+                          {event.type === 'workshop' && 'detailedDescription' in event && event.detailedDescription && (
+                            <details className="bg-gradient-to-br from-green-500/5 to-blue-500/5 border border-green-400/20 rounded-lg p-3 mb-4">
+                              <summary className="cursor-pointer flex items-center gap-2 text-sm font-medium text-white/90 hover:text-white transition-colors">
+                                <span className="text-sm">📚</span>
+                                Workshop Details anzeigen
+                              </summary>
+                              <div className="mt-4 space-y-4">
+                                <div>
+                                  <p className="text-white/80 leading-relaxed text-sm">{event.detailedDescription}</p>
+                                </div>
+
+                                {'teacher' in event && event.teacher && (
+                                  <div>
+                                    <h5 className="font-semibold text-white mb-2">🎭 Über den Lehrer</h5>
+                                    <p className="text-white/80 leading-relaxed text-sm">{event.teacher}</p>
+                                  </div>
+                                )}
+
+                                <div className="grid md:grid-cols-2 gap-4">
+                                  {'idealFor' in event && event.idealFor && (
+                                    <div>
+                                      <h5 className="font-semibold text-white mb-1">👥 Ideal für</h5>
+                                      <p className="text-white/80 text-sm">{event.idealFor}</p>
+                                    </div>
+                                  )}
+
+                                  {'whatToBring' in event && event.whatToBring && (
+                                    <div>
+                                      <h5 className="font-semibold text-white mb-1">🎒 Mitbringen</h5>
+                                      <p className="text-white/80 text-sm">{event.whatToBring}</p>
+                                    </div>
+                                  )}
+                                </div>
+
+                                <div className="grid md:grid-cols-2 gap-4">
+                                  {'duration' in event && event.duration && (
+                                    <div>
+                                      <h5 className="font-semibold text-white mb-1">⏱️ Dauer</h5>
+                                      <p className="text-white/80 text-sm">{event.duration}</p>
+                                    </div>
+                                  )}
+
+                                  {'language' in event && event.language && (
+                                    <div>
+                                      <h5 className="font-semibold text-white mb-1">🗣️ Sprache</h5>
+                                      <p className="text-white/80 text-sm">{event.language}</p>
+                                    </div>
+                                  )}
+                                </div>
+
+                                {'maxParticipants' in event && event.maxParticipants && (
+                                  <div className="pt-2">
+                                    <h5 className="font-semibold text-white mb-1">👥 Teilnehmer</h5>
+                                    <p className="text-white/80 text-sm">{event.maxParticipants}</p>
+                                  </div>
+                                )}
                               </div>
-                              <div className="aspect-video rounded-lg overflow-hidden bg-black/20 border border-white/20 mb-3">
-                                <iframe
-                                  src="https://www.youtube.com/embed/owESp3YkcRY?rel=0&modestbranding=1"
-                                  title="The Nordic Council - Häppy Hour Performance"
-                                  className="w-full h-full"
-                                  frameBorder="0"
-                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                  allowFullScreen
-                                ></iframe>
+                            </details>
+                          )}
+
+
+                          {/* Note for placeholders */}
+                          {'note' in event && event.note && (
+                            <div className="bg-yellow-500/10 border border-yellow-400/30 rounded-lg p-4 mb-4">
+                              <div className="flex items-center gap-2">
+                                <span className="text-lg">ℹ️</span>
+                                <p className="text-yellow-200 font-medium">{event.note}</p>
                               </div>
+                            </div>
+                          )}
+
+                          {/* Standard Ticket CTA */}
+                          {event.type === 'show' && (
+                            <div className="mb-4">
                               <Link
                                 href="/#tickets"
-                                className="btn-primary w-full justify-center py-2 text-sm font-semibold"
+                                className="btn-secondary px-4 py-2 text-sm"
                               >
-Tickets für diese Show
+                                Tickets sichern (Early Bird ab 12 €)
                               </Link>
                             </div>
+                          )}
+
+                          {/* Video Preview for Show Events - More Subtle */}
+                          {event.type === 'show' && event.title.includes('Häppy Hour') && (
+                            <details className="bg-gradient-to-br from-blue-500/5 to-purple-500/5 border border-blue-400/20 rounded-lg p-3 mb-4">
+                              <summary className="cursor-pointer flex items-center gap-2 text-sm font-medium text-white/90 hover:text-white transition-colors">
+                                <span className="text-sm">🎬</span>
+                                Performance Preview ansehen
+                              </summary>
+                              <div className="mt-3 space-y-3">
+                                <div className="aspect-video rounded-lg overflow-hidden bg-black/20 border border-white/10">
+                                  <iframe
+                                    src="https://www.youtube.com/embed/owESp3YkcRY?rel=0&modestbranding=1"
+                                    title="The Nordic Council - Häppy Hour Performance"
+                                    className="w-full h-full"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                  ></iframe>
+                                </div>
+                                <Link
+                                  href="/#tickets"
+                                  className="btn-secondary w-full justify-center py-2 text-xs"
+                                >
+                                  Tickets für diese Show
+                                </Link>
+                              </div>
+                            </details>
                           )}
 
                           {event.type === 'show' && event.title.includes('How a Spiral Works') && (
-                            <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-400/30 rounded-xl p-4 mb-4">
-                              <div className="flex items-center gap-2 mb-3">
-                                <span className="text-lg">🎬</span>
-                                <h4 className="font-semibold text-white text-sm">Performance Preview</h4>
+                            <details className="bg-gradient-to-br from-purple-500/5 to-pink-500/5 border border-purple-400/20 rounded-lg p-3 mb-4">
+                              <summary className="cursor-pointer flex items-center gap-2 text-sm font-medium text-white/90 hover:text-white transition-colors">
+                                <span className="text-sm">🎬</span>
+                                Performance Preview ansehen
+                              </summary>
+                              <div className="mt-3 space-y-3">
+                                <div className="aspect-video rounded-lg overflow-hidden bg-black/20 border border-white/10">
+                                  <iframe
+                                    src="https://www.youtube.com/embed/UWLTynMZhHE?rel=0&modestbranding=1"
+                                    title="Art for Rainy Days - How a Spiral Works Performance"
+                                    className="w-full h-full"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                  ></iframe>
+                                </div>
+                                <Link
+                                  href="/#tickets"
+                                  className="btn-secondary w-full justify-center py-2 text-xs"
+                                >
+                                  Tickets für diese Show
+                                </Link>
                               </div>
-                              <div className="aspect-video rounded-lg overflow-hidden bg-black/20 border border-white/20 mb-3">
-                                <iframe
-                                  src="https://www.youtube.com/embed/UWLTynMZhHE?rel=0&modestbranding=1"
-                                  title="Art for Rainy Days - How a Spiral Works Performance"
-                                  className="w-full h-full"
-                                  frameBorder="0"
-                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                  allowFullScreen
-                                ></iframe>
-                              </div>
-                              <Link
-                                href="/#tickets"
-                                className="btn-primary w-full justify-center py-2 text-sm font-semibold"
-                              >
-Tickets für diese Show
-                              </Link>
-                            </div>
+                            </details>
                           )}
 
-                          {/* Additional Info */}
-                          <div className="flex flex-wrap gap-4 text-sm">
-                            {event.artist && (
-                              <div className="flex items-center gap-2">
-                                <span className="font-semibold text-white">🎨 Artist:</span>
-                                <a
-                                  href={content.program.partners.workshop.url}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="text-white/80 hover:text-white transition-colors underline"
-                                >
-                                  {event.artist}
-                                </a>
-                              </div>
-                            )}
-                            {event.curator && (
-                              <div className="flex items-center gap-2">
-                                <span className="font-semibold text-white">👤 Curator:</span>
-                                <a
-                                  href={content.program.partners.curator.url}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="text-white/80 hover:text-white transition-colors underline"
-                                >
-                                  {event.curator}
-                                </a>
-                              </div>
-                            )}
-                          </div>
                         </div>
                       </div>
                     </div>
