@@ -72,7 +72,7 @@ export default function TicketsPage() {
       </section>
 
       {/* Tickets by Day */}
-      <section className="py-12 px-6">
+      <section id="events" className="py-12 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="space-y-16">
             {ticketData.map((day, dayIndex) => (
@@ -148,6 +148,76 @@ export default function TicketsPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="py-16 px-6 bg-black/10">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="display text-3xl md:text-4xl font-bold mb-6">
+            Tickets sichern
+          </h2>
+          <p className="text-lg text-white/80 mb-12">
+            Early-Bird-Tickets ab 12 € – sichere dir jetzt deinen Platz!
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            {/* Early Bird */}
+            <div className="p-8 rounded-xl border bg-white/5 border-white/30 shadow-white/10 shadow-lg relative group animate-pulse">
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                <span className="px-4 py-1 bg-white text-black rounded-full text-xs font-bold">
+                  EARLY BIRD BIS 15.10
+                </span>
+              </div>
+              <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                <span className="text-4xl">🎁</span>
+              </div>
+              <h3 className="display text-xl font-semibold mb-3">🚀 Early Bird</h3>
+              <div className="text-3xl font-bold text-white mb-2">12 €</div>
+              <p className="text-white/70 text-sm">bis 15.10. • SPARE 10€</p>
+            </div>
+
+            {/* Standard */}
+            <div className="p-8 rounded-xl border bg-black/20 border-white/10 hover:border-white/30 transition-all relative group">
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                <span className="px-4 py-1 bg-yellow-400 text-black rounded-full text-xs font-bold">
+                  Empfehlung
+                </span>
+              </div>
+              <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                <span className="text-4xl">🎫</span>
+              </div>
+              <h3 className="display text-xl font-semibold mb-3">Standard</h3>
+              <div className="text-3xl font-bold text-white mb-2">18 €</div>
+              <p className="text-white/70 text-sm">online verfügbar</p>
+            </div>
+
+            {/* Abendkasse */}
+            <div className="p-8 rounded-xl border bg-black/20 border-white/10 hover:border-white/30 transition-all group">
+              <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                <span className="text-4xl">🎪</span>
+              </div>
+              <h3 className="display text-xl font-semibold mb-3">Abendkasse</h3>
+              <div className="text-3xl font-bold text-white mb-2">22 €</div>
+              <p className="text-white/70 text-sm">falls verfügbar</p>
+            </div>
+          </div>
+
+          {/* CTA and Notes */}
+          <div className="text-center">
+            <Link
+              href="#events"
+              className="btn-primary text-xl px-12 py-4 shadow-2xl hover:shadow-yellow-400/25 transition-all mb-4 inline-block"
+            >
+              Tickets kaufen
+            </Link>
+            <p className="text-sm text-white/60 mb-8">
+              Workshops separat buchbar (ca. 10 €, 12 € vor Ort).
+            </p>
+            <p className="text-white/70 text-sm">
+              Sofort verfügbar über Eventfrog (Link folgt)
+            </p>
           </div>
         </div>
       </section>

@@ -261,7 +261,7 @@ Tickets für &ldquo;How a Spiral Works&rdquo;
             {content.lineup.ctaTitle}
           </h2>
           <Link
-            href="/#tickets"
+            href="/tickets"
             className="btn-primary text-xl px-10 py-5 shadow-2xl hover:shadow-yellow-400/20 transition-all"
           >
             {content.lineup.ctaButton}

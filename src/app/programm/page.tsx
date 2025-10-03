@@ -229,7 +229,7 @@ export default function ProgramPage() {
                           {event.type === 'show' && (
                             <div className="mb-4">
                               <Link
-                                href="/#tickets"
+                                href="/tickets"
                                 className="btn-secondary px-4 py-2 text-sm"
                               >
                                 Tickets sichern (Early Bird ab 12 €)

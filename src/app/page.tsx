@@ -7,33 +7,6 @@ import Navigation from "@/components/Navigation";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import React from "react";
 
-// Hover Animation Component
-function HoverAnimation({ src, staticIcon }: { src: string; staticIcon: string }) {
-  const [isHovered, setIsHovered] = useState(false);
-
-  return (
-    <div
-      className="relative w-full h-full"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      {/* Lottie Animation - only visible on hover */}
-      <div className={`absolute inset-0 transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
-        <DotLottieReact
-          src={src}
-          loop
-          autoplay={isHovered}
-          style={{ width: "100%", height: "100%" }}
-        />
-      </div>
-
-      {/* Static Icon - visible by default, hidden on hover */}
-      <div className={`transition-opacity duration-300 w-full h-full bg-gradient-to-br from-white/20 to-white/10 rounded-full flex items-center justify-center ${isHovered ? 'opacity-0' : 'opacity-100'}`}>
-        <span className="text-2xl sm:text-3xl">{staticIcon}</span>
-      </div>
-    </div>
-  );
-}
 
 // Countdown Component
 function Countdown({ targetDate, labels }: { targetDate: Date; labels: CountdownLabels }) {
@@ -523,89 +496,6 @@ Tickets für &ldquo;How a Spiral Works&rdquo;
         </div>
       </section>
 
-      {/* Tickets Section */}
-      <section id="tickets" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="display text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8">
-            {content.tickets.title}
-          </h2>
-          <p className="text-lg sm:text-xl mb-8 sm:mb-12 muted px-2">
-            {content.tickets.subtitle}
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12">
-            {content.tickets.tiers.map((tier, index) => (
-              <div
-                key={index}
-                onClick={() => {
-                  // Here you would typically handle the ticket purchase
-                  // For now, we'll just scroll to show the user they clicked
-                  window.alert(`${tier.name} Ticket ausgewählt! (${tier.price})`);
-                }}
-                className={`p-6 sm:p-8 rounded-xl border transition-all hover:scale-105 hover:shadow-2xl relative group cursor-pointer ${
-                  index === 0
-                    ? 'bg-white/5 border-white/30 shadow-white/10 shadow-lg animate-pulse'
-                    : 'bg-black/20 border-white/10 hover:border-white/30'
-                } ${index === 2 ? 'sm:col-span-2 lg:col-span-1' : ''}`}
-              >
-                {index === 0 && (
-                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <span className="px-3 sm:px-4 py-1 bg-white text-black rounded-full text-xs font-bold">
-                      EARLY BIRD BIS 15.10
-                    </span>
-                  </div>
-                )}
-                <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  {index === 0 ? (
-                    // Early Bird - Special animation (only on hover)
-                    <HoverAnimation
-                      src="https://lottie.host/d81196b3-247b-4c78-a23e-e8a499c79113/wjKIXPwofC.lottie"
-                      staticIcon="🎁"
-                    />
-                  ) : index === 1 ? (
-                    // Standard - Regular ticket animation (only on hover)
-                    <HoverAnimation
-                      src="https://lottie.host/0d1a7dac-aecd-4609-ab85-e6995cc84982/wYgN2NCbPe.lottie"
-                      staticIcon="🎫"
-                    />
-                  ) : (
-                    // Abendkasse - Static icon (no animation)
-                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-white/20 to-white/10 rounded-full flex items-center justify-center">
-                      <span className="text-2xl sm:text-3xl">🎪</span>
-                    </div>
-                  )}
-                </div>
-                <h3 className="display text-lg sm:text-xl font-semibold mb-2 sm:mb-3">{tier.name}</h3>
-                <div className="text-2xl sm:text-3xl font-bold text-white mb-2">{tier.price}</div>
-                <p className="muted text-xs sm:text-sm">{tier.note}</p>
-                {index === 0 && (
-                  <div className="mt-3 sm:mt-4">
-                    <span className="px-3 py-1 bg-white/20 rounded-full text-white text-xs font-semibold">
-                      Empfehlung
-                    </span>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-
-          {/* Main CTA Button */}
-          <div className="text-center mt-8 sm:mt-12">
-            <button
-              onClick={() => {
-                // Placeholder for ticket platform integration
-                window.alert('Ticket-Plattform wird bald verfügbar sein!');
-              }}
-              className="btn-primary text-xl sm:text-2xl px-12 sm:px-16 py-4 sm:py-6 shadow-2xl hover:shadow-yellow-400/25 transition-all mb-4"
-            >
-              {content.tickets.ctaButton}
-            </button>
-            <p className="text-sm text-white/60 mb-8">
-              {content.tickets.workshopNote}
-            </p>
-            <p className="muted text-sm sm:text-base">{content.tickets.note}</p>
-          </div>
-        </div>
-      </section>
 
       {/* Location Section */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 bg-black/10">
