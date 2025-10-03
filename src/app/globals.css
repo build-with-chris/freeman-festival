@@ -109,4 +109,8 @@
   .energetic-logo:hover {
     animation: energetic-pulse 0.5s ease-in-out infinite;
   }
+
+  .bg-gradient-radial {
+    background: radial-gradient(circle, var(--tw-gradient-stops));
+  }
 }
