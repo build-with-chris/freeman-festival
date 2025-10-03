@@ -39,6 +39,15 @@ export default function ProgramPage() {
       {/* Hero Section */}
       <section className="py-20 px-6 text-center">
         <div className="max-w-4xl mx-auto">
+          {/* Logo */}
+          <div className="mb-8">
+            <img
+              src="/freeman-festival-logo.png"
+              alt="Freeman Festival Logo"
+              className="mx-auto h-32 md:h-40 w-auto object-contain"
+            />
+          </div>
+
           <h1 className="display text-5xl md:text-6xl font-bold mb-6">
             {content.program.title}
           </h1>

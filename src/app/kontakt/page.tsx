@@ -45,13 +45,25 @@ export default function ContactPage() {
                   <p className="text-white/90 font-medium">{content.contact.venue.parking}</p>
                 </div>
                 <div className="mt-6">
+                  <div className="mb-4 rounded-lg overflow-hidden border border-white/20">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.5728!2d11.6193873!3d48.1187726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75e7f3f5e5e5%3A0x5a5a5a5a5a5a5a5a!2sTheatron%20Ostpark!5e0!3m2!1sde!2sde!4v1234567890"
+                      width="100%"
+                      height="200"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Pepe Dome Standort"
+                    ></iframe>
+                  </div>
                   <a
                     href="https://maps.google.com/maps?q=Theatron+Ostpark+München"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/30 rounded-lg hover:border-white/50 hover:bg-white/20 transition-all text-white"
                   >
-                    🗺️ <span>Google Maps</span>
+                    🗺️ <span>Google Maps öffnen</span>
                   </a>
                 </div>
               </div>
@@ -121,6 +133,92 @@ export default function ContactPage() {
               </div>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Form Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="display text-4xl md:text-5xl font-bold mb-6">
+              Nachricht senden
+            </h2>
+            <p className="text-lg text-white/80">
+              Hast du Fragen zum Festival? Schreib uns gerne eine Nachricht!
+            </p>
+          </div>
+
+          <div className="bg-black/20 border border-white/10 rounded-xl p-8">
+            <form action={`mailto:info@pepeshows.de`} method="post" encType="text/plain" className="space-y-6">
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="name" className="block text-white font-semibold mb-2">
+                    Name *
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    className="w-full px-4 py-3 bg-black/30 border border-white/20 rounded-lg text-white placeholder-white/50 focus:border-yellow-400 focus:outline-none transition-colors"
+                    placeholder="Dein Name"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-white font-semibold mb-2">
+                    E-Mail *
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    className="w-full px-4 py-3 bg-black/30 border border-white/20 rounded-lg text-white placeholder-white/50 focus:border-yellow-400 focus:outline-none transition-colors"
+                    placeholder="deine@email.de"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label htmlFor="subject" className="block text-white font-semibold mb-2">
+                  Betreff
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  className="w-full px-4 py-3 bg-black/30 border border-white/20 rounded-lg text-white placeholder-white/50 focus:border-yellow-400 focus:outline-none transition-colors"
+                  placeholder="Worum geht es?"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="message" className="block text-white font-semibold mb-2">
+                  Nachricht *
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  rows={6}
+                  className="w-full px-4 py-3 bg-black/30 border border-white/20 rounded-lg text-white placeholder-white/50 focus:border-yellow-400 focus:outline-none transition-colors resize-vertical"
+                  placeholder="Deine Nachricht an uns..."
+                ></textarea>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4 items-center">
+                <button
+                  type="submit"
+                  className="btn-primary px-8 py-3 text-lg font-semibold w-full sm:w-auto"
+                >
+                  📧 Nachricht senden
+                </button>
+                <p className="text-white/60 text-sm">
+                  Deine Nachricht wird an info@pepeshows.de weitergeleitet
+                </p>
+              </div>
+            </form>
           </div>
         </div>
       </section>

@@ -52,12 +52,6 @@ export default function Navigation({ currentPage = 'home' }: NavigationProps) {
               {content.navigation.lineup}
             </Link>
             <Link
-              href="/pepe-dome"
-              className={currentPage === 'venue' ? 'text-white font-semibold' : 'hover:text-white transition-colors text-white/70'}
-            >
-              {content.navigation.venue}
-            </Link>
-            <Link
               href="/ueber"
               className={currentPage === 'about' ? 'text-white font-semibold' : 'hover:text-white transition-colors text-white/70'}
             >
@@ -161,17 +155,6 @@ export default function Navigation({ currentPage = 'home' }: NavigationProps) {
                 onClick={closeMenu}
               >
                 {content.navigation.lineup}
-              </Link>
-              <Link
-                href="/pepe-dome"
-                className={`block text-center py-3 px-4 rounded-lg transition-colors ${
-                  currentPage === 'venue'
-                    ? 'bg-white/20 text-white font-semibold'
-                    : 'hover:bg-white/10 hover:text-white text-white/70'
-                }`}
-                onClick={closeMenu}
-              >
-                {content.navigation.venue}
               </Link>
               <Link
                 href="/ueber"

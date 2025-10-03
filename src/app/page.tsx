@@ -148,64 +148,55 @@ export default function Home() {
       <Navigation currentPage="home" />
 
       {/* Hero Section */}
-      <section
-        className="min-h-screen flex items-center justify-center px-6 py-20 relative overflow-hidden"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('/hero-aerialist.png')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center right',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        {/* Atmospheric overlay for depth */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/40"></div>
+      <section className="min-h-screen flex flex-col justify-between md:items-center md:justify-center px-6 pt-12 pb-12 relative overflow-hidden hero-background">
+        {/* Overlay for readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/60 md:from-transparent md:via-black/20 md:to-black/40"></div>
 
-        {/* Subtle vignette effect */}
-        <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-black/30"></div>
-
-        <div className="text-center max-w-4xl mx-auto relative z-10">
+        {/* Top Section: Headline + Date */}
+        <div className="text-center relative z-10 md:max-w-4xl md:mx-auto">
           <div className="inline-block mb-6">
-            <span className="px-4 py-2 bg-black/50 backdrop-blur-sm border border-white/30 rounded-full text-white font-semibold text-sm shadow-lg">
+            <span className="px-4 py-2 bg-black/60 backdrop-blur-sm border border-white/30 rounded-full text-white font-semibold text-sm shadow-lg">
               14.–16. November 2025
             </span>
           </div>
 
-          <h1 className="display text-5xl md:text-7xl font-bold mb-6 tracking-tight text-white drop-shadow-lg">
-            Freeman Festival
+          <h1 className="hero-glow-title display text-5xl md:text-8xl lg:text-9xl font-bold tracking-tight text-white">
+            Freeman
+            <br />
+            <span className="text-4xl md:text-7xl lg:text-8xl" style={{color: '#D4A574'}}>
+              Festival der Artistik
+            </span>
           </h1>
-          <h2 className="text-2xl md:text-3xl mb-8 text-white/95 font-semibold drop-shadow-md">
-            Zeitgenössischer Zirkus & Performance
-          </h2>
+        </div>
 
-          <p className="text-lg md:text-xl mb-12 text-white/90 leading-relaxed drop-shadow-sm max-w-3xl mx-auto">
-            Internationale Künstler:innen treffen in München aufeinander – mutig, poetisch, grenzüberschreitend.
-          </p>
+        {/* Middle Section: Artist Image (Mobile Only) */}
+        <div className="flex items-end justify-center md:hidden pt-8">
+          <img
+            src="/HeroLandingPage.png"
+            alt="Rope Artist Silhouette"
+            className="max-h-64 w-auto object-contain object-center"
+          />
+        </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+        {/* Bottom Section: CTAs */}
+        <div className="relative z-10 space-y-4 md:max-w-4xl md:mx-auto">
+          <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
             <Link
               href="/tickets"
-              className="btn-primary text-xl px-10 py-5 shadow-xl hover:shadow-2xl hover:shadow-yellow-400/25 transition-all w-full sm:w-auto backdrop-blur-sm"
+              className="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-black rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 w-full md:w-auto backdrop-blur-sm border"
+              style={{background: 'linear-gradient(to right, #D4A574, #E6B887)', borderColor: 'rgba(212, 165, 116, 0.4)'}}
             >
-              Tickets sichern
+              <span className="relative z-10">Tickets sichern</span>
+              <div className="absolute inset-0 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{background: 'linear-gradient(to right, rgba(212, 165, 116, 0.3), rgba(230, 184, 135, 0.3))'}}></div>
             </Link>
             <Link
               href="/programm"
-              className="btn-secondary text-xl px-10 py-5 w-full sm:w-auto text-center backdrop-blur-sm border-white/30 hover:border-white/50"
+              className="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-white border border-white/30 rounded-full hover:border-white/50 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-0.5 w-full md:w-auto backdrop-blur-sm"
             >
-              Programm ansehen
+              <span className="relative z-10">Programm ansehen</span>
+              <div className="absolute inset-0 rounded-full bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Link>
           </div>
-
-          <div className="countdown mb-8 bg-black/30 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-            <Countdown targetDate={festivalDate} labels={content.hero.countdown} />
-          </div>
-        </div>
-
-        {/* Subtle animated particles for atmosphere */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-white rounded-full animate-pulse"></div>
-          <div className="absolute top-3/4 right-1/3 w-1 h-1 bg-white rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
-          <div className="absolute top-1/2 right-1/4 w-1.5 h-1.5 bg-white rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
         </div>
       </section>
 
@@ -221,8 +212,8 @@ export default function Home() {
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div className="flex-1">
                   <div className="flex items-center gap-4 mb-2">
-                    <span className="text-lg font-bold text-yellow-400">Fr 14.11. – 19:00</span>
-                    <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                    <span className="text-lg font-bold" style={{color: '#D4A574'}}>Fr 14.11. – 19:00</span>
+                    <div className="w-2 h-2 rounded-full" style={{backgroundColor: '#D4A574'}}></div>
                   </div>
                   <h3 className="display text-xl font-bold mb-1">&bdquo;Häppy Hour&ldquo;</h3>
                   <p className="text-white/70 text-sm">The Nordic Council</p>
@@ -242,8 +233,8 @@ export default function Home() {
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div className="flex-1">
                   <div className="flex items-center gap-4 mb-2">
-                    <span className="text-lg font-bold text-yellow-400">Sa 15.11. – 18:00 / 20:30</span>
-                    <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                    <span className="text-lg font-bold" style={{color: '#D4A574'}}>Sa 15.11. – 18:00 / 20:30</span>
+                    <div className="w-2 h-2 rounded-full" style={{backgroundColor: '#D4A574'}}></div>
                   </div>
                   <h3 className="display text-xl font-bold mb-1">&bdquo;Häppy Hour&ldquo; / &bdquo;How a Spiral Works&ldquo;</h3>
                   <p className="text-white/70 text-sm">Nordic Council / Art for Rainy Days</p>
@@ -263,8 +254,8 @@ export default function Home() {
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div className="flex-1">
                   <div className="flex items-center gap-4 mb-2">
-                    <span className="text-lg font-bold text-yellow-400">So 16.11. – 18:00</span>
-                    <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                    <span className="text-lg font-bold" style={{color: '#D4A574'}}>So 16.11. – 18:00</span>
+                    <div className="w-2 h-2 rounded-full" style={{backgroundColor: '#D4A574'}}></div>
                   </div>
                   <h3 className="display text-xl font-bold mb-1">&bdquo;How a Spiral Works&ldquo;</h3>
                   <p className="text-white/70 text-sm">Art for Rainy Days</p>
@@ -344,7 +335,7 @@ export default function Home() {
       {/* Compact CTA */}
       <section className="py-12 px-6 bg-black/10">
         <div className="max-w-md mx-auto text-center">
-          <div className="p-6 rounded-xl bg-gradient-to-br from-yellow-400/10 to-orange-400/10 border border-yellow-400/20">
+          <div className="p-6 rounded-xl bg-gradient-to-br from-yellow-400/10 to-orange-400/10 border border-white/20" style={{background: 'linear-gradient(to bottom right, rgba(212, 165, 116, 0.1), rgba(212, 165, 116, 0.05))'}}>
             <h3 className="display text-2xl font-bold mb-3">
               Tickets sichern
             </h3>
