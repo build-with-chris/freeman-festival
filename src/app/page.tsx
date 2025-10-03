@@ -441,7 +441,9 @@ export default function Home() {
                 </div>
               </div>
               <Link
-                href="/#tickets"
+                href="https://rausgegangen.de/events/nordic-council-happy-hour-0/?mtm_campaign=teilen_event&mtm_kwd=app"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary w-full justify-center py-3 text-lg font-semibold"
               >
 Tickets für &ldquo;Häppy Hour&rdquo;
@@ -473,7 +475,9 @@ Tickets für &ldquo;Häppy Hour&rdquo;
                 </div>
               </div>
               <Link
-                href="/#tickets"
+                href="https://rausgegangen.de/events/art-for-rainy-days-how-a-spiral-works-0/?mtm_campaign=teilen_event&mtm_kwd=app"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary w-full justify-center py-3 text-lg font-semibold"
               >
 Tickets für &ldquo;How a Spiral Works&rdquo;

@@ -30,6 +30,31 @@ export default function ProgramPage() {
     }
   };
 
+  const getTicketUrl = (event: { type: string; title: string }, dayIndex: number) => {
+    if (event.type === 'show') {
+      if (event.title.includes('Häppy Hour')) {
+        // Nordic Council shows
+        if (dayIndex === 0) {
+          // Friday 14.11 19h
+          return 'https://rausgegangen.de/events/nordic-council-happy-hour-0/?mtm_campaign=teilen_event&mtm_kwd=app';
+        } else if (dayIndex === 1) {
+          // Saturday 15.11 18h
+          return 'https://rausgegangen.de/events/nordic-council-happy-hour-1/?mtm_campaign=teilen_event&mtm_kwd=app';
+        }
+      } else if (event.title.includes('How a Spiral Works')) {
+        // Art for Rainy Days shows
+        if (dayIndex === 1) {
+          // Saturday 15.11 20:30h
+          return 'https://rausgegangen.de/events/art-for-rainy-days-how-a-spiral-works-0/?mtm_campaign=teilen_event&mtm_kwd=app';
+        } else if (dayIndex === 2) {
+          // Sunday 16.11 18h
+          return 'https://rausgegangen.de/events/art-for-rainy-days-how-a-spiral-works-1/?mtm_campaign=teilen_event&mtm_kwd=app';
+        }
+      }
+    }
+    return '/#tickets'; // fallback
+  };
+
   return (
     <div className="min-h-screen">
       {/* Navigation */}
@@ -255,7 +280,9 @@ export default function ProgramPage() {
                                   ></iframe>
                                 </div>
                                 <Link
-                                  href="/#tickets"
+                                  href={getTicketUrl(event, dayIndex)}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
                                   className="btn-secondary w-full justify-center py-2 text-xs"
                                 >
                                   Tickets für diese Show
@@ -282,7 +309,9 @@ export default function ProgramPage() {
                                   ></iframe>
                                 </div>
                                 <Link
-                                  href="/#tickets"
+                                  href={getTicketUrl(event, dayIndex)}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
                                   className="btn-secondary w-full justify-center py-2 text-xs"
                                 >
                                   Tickets für diese Show
