@@ -174,7 +174,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <Navigation currentPage="home" onTicketsClick={scrollToTickets} />
+      <Navigation currentPage="home" />
 
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 py-16 sm:py-20">
@@ -441,9 +441,7 @@ export default function Home() {
                 </div>
               </div>
               <Link
-                href="https://rausgegangen.de/events/nordic-council-happy-hour-0/?mtm_campaign=teilen_event&mtm_kwd=app"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/tickets"
                 className="btn-primary w-full justify-center py-3 text-lg font-semibold"
               >
 Tickets für &ldquo;Häppy Hour&rdquo;
@@ -475,9 +473,7 @@ Tickets für &ldquo;Häppy Hour&rdquo;
                 </div>
               </div>
               <Link
-                href="https://rausgegangen.de/events/art-for-rainy-days-how-a-spiral-works-0/?mtm_campaign=teilen_event&mtm_kwd=app"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/tickets"
                 className="btn-primary w-full justify-center py-3 text-lg font-semibold"
               >
 Tickets für &ldquo;How a Spiral Works&rdquo;
@@ -1082,7 +1078,7 @@ Tickets für &ldquo;How a Spiral Works&rdquo;
                 {expandedVideo === 'owESp3YkcRY' ? 'The Nordic Council - Häppy Hour' : 'Art for Rainy Days - How a Spiral Works'}
               </h3>
               <Link
-                href="/#tickets"
+                href="/tickets"
                 className="btn-primary inline-flex items-center gap-2 px-8 py-3 text-lg font-semibold"
                 onClick={closeExpandedVideo}
               >

@@ -5,11 +5,10 @@ import { useState } from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 interface NavigationProps {
-  currentPage?: 'home' | 'program' | 'lineup' | 'venue' | 'about' | 'contact';
-  onTicketsClick?: () => void;
+  currentPage?: 'home' | 'program' | 'lineup' | 'venue' | 'about' | 'contact' | 'tickets';
 }
 
-export default function Navigation({ currentPage = 'home', onTicketsClick }: NavigationProps) {
+export default function Navigation({ currentPage = 'home' }: NavigationProps) {
   const { language, toggleLanguage, content } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -21,15 +20,6 @@ export default function Navigation({ currentPage = 'home', onTicketsClick }: Nav
     setIsMenuOpen(false);
   };
 
-  const handleTicketsClick = () => {
-    if (onTicketsClick) {
-      onTicketsClick();
-    } else {
-      // Navigate to home page tickets section
-      window.location.href = "/#tickets";
-    }
-    closeMenu();
-  };
 
   return (
     <nav className="sticky top-0 z-50 bg-black/90 backdrop-blur-sm border-b border-white/10">
@@ -79,13 +69,12 @@ export default function Navigation({ currentPage = 'home', onTicketsClick }: Nav
             >
               {content.navigation.contact}
             </Link>
-            <button
-              onClick={handleTicketsClick}
-              className="btn-primary px-4 py-2 text-sm"
-              aria-label="Zu den Tickets scrollen"
+            <Link
+              href="/tickets"
+              className={currentPage === 'tickets' ? 'btn-primary px-4 py-2 text-sm font-semibold' : 'btn-primary px-4 py-2 text-sm'}
             >
               {content.navigation.tickets}
-            </button>
+            </Link>
             <button
               onClick={toggleLanguage}
               className="px-3 py-1 border border-white/20 rounded text-sm hover:border-white/50 transition-colors"
@@ -207,13 +196,16 @@ export default function Navigation({ currentPage = 'home', onTicketsClick }: Nav
                 {content.navigation.contact}
               </Link>
 
-              {/* Mobile Tickets Button */}
-              <button
-                onClick={handleTicketsClick}
-                className="btn-primary w-full py-3 text-center"
+              {/* Mobile Tickets Link */}
+              <Link
+                href="/tickets"
+                className={`btn-primary w-full py-3 text-center ${
+                  currentPage === 'tickets' ? 'font-semibold' : ''
+                }`}
+                onClick={closeMenu}
               >
 {content.navigation.tickets}
-              </button>
+              </Link>
 
               {/* Mobile Language Toggle */}
               <button

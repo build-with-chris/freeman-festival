@@ -112,9 +112,7 @@ export default function LineupPage() {
                   </div>
                   <p className="text-white/80 text-sm mb-4">Erlebe einen Vorgeschmack auf die faszinierende Performance von The Nordic Council</p>
                   <Link
-                    href="https://rausgegangen.de/events/nordic-council-happy-hour-1/?mtm_campaign=teilen_event&mtm_kwd=app"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/tickets"
                     className="btn-primary w-full justify-center py-3 text-lg font-semibold"
                   >
 Tickets für &ldquo;Häppy Hour&rdquo;
@@ -213,9 +211,7 @@ Tickets für &ldquo;Häppy Hour&rdquo;
                   </div>
                   <p className="text-white/80 text-sm mb-4">Entdecke die preisgekrönte Performance von Art for Rainy Days</p>
                   <Link
-                    href="https://rausgegangen.de/events/art-for-rainy-days-how-a-spiral-works-1/?mtm_campaign=teilen_event&mtm_kwd=app"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/tickets"
                     className="btn-primary w-full justify-center py-3 text-lg font-semibold"
                   >
 Tickets für &ldquo;How a Spiral Works&rdquo;
