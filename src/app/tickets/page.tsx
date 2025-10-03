@@ -1,58 +1,10 @@
 "use client";
 import Link from "next/link";
+import { useLanguage } from "@/contexts/LanguageContext";
 import Navigation from "@/components/Navigation";
 
 export default function TicketsPage() {
-
-  const ticketData = [
-    {
-      day: "Freitag, 14.11.2025",
-      events: [
-        {
-          time: "19:00",
-          title: "\"Häppy Hour\"",
-          artist: "The Nordic Council",
-          description: "Ode an den Norden; Humor über peinliche Real-Life-Momente & die ambivalente Beziehung zu Alkohol. Zeitgenössischer Zirkus × Comedy.",
-          ticketUrl: "https://rausgegangen.de/events/nordic-council-happy-hour-0/?mtm_campaign=teilen_event&mtm_kwd=app",
-          image: "/Happy Hour/Chris Collina - Häppy Hour 3.webp"
-        }
-      ]
-    },
-    {
-      day: "Samstag, 15.11.2025",
-      events: [
-        {
-          time: "18:00",
-          title: "\"Häppy Hour\"",
-          artist: "The Nordic Council",
-          description: "Ode an den Norden; Humor über peinliche Real-Life-Momente & die ambivalente Beziehung zu Alkohol. Zeitgenössischer Zirkus × Comedy.",
-          ticketUrl: "https://rausgegangen.de/events/nordic-council-happy-hour-1/?mtm_campaign=teilen_event&mtm_kwd=app",
-          image: "/Happy Hour/Dynamo - Happy Hour cropped.webp"
-        },
-        {
-          time: "20:30",
-          title: "\"How a Spiral Works\"",
-          artist: "Art for Rainy Days",
-          description: "Meditativer, hypnotischer Zirkus: Tanz, Hair Hanging & Aerial Rope, minimalistische Ästhetik, neu interpretierte baltische Volksmusik.",
-          ticketUrl: "https://rausgegangen.de/events/art-for-rainy-days-how-a-spiral-works-0/?mtm_campaign=teilen_event&mtm_kwd=app",
-          image: "/How A Spiral Works/Zane Krūmiņa 1.webp"
-        }
-      ]
-    },
-    {
-      day: "Sonntag, 16.11.2025",
-      events: [
-        {
-          time: "18:00",
-          title: "\"How a Spiral Works\"",
-          artist: "Art for Rainy Days",
-          description: "Meditativer, hypnotischer Zirkus: Tanz, Hair Hanging & Aerial Rope, minimalistische Ästhetik, neu interpretierte baltische Volksmusik.",
-          ticketUrl: "https://rausgegangen.de/events/art-for-rainy-days-how-a-spiral-works-1/?mtm_campaign=teilen_event&mtm_kwd=app",
-          image: "/How A Spiral Works/Eve Gastaldi 1.webp"
-        }
-      ]
-    }
-  ];
+  const { content } = useLanguage();
 
   return (
     <div className="min-h-screen">
@@ -63,52 +15,43 @@ export default function TicketsPage() {
       <section className="py-20 px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="display text-5xl md:text-6xl font-bold mb-6">
-            Tickets sichern
+            {content.tickets.title}
           </h1>
           <p className="text-xl text-white/80 mb-12">
-            Early-Bird-Tickets ab 12 € – sichere dir jetzt deinen Platz!
+            {content.tickets.subtitle}
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            {/* Early Bird */}
-            <div className="p-8 rounded-xl border bg-white/5 border-white/30 shadow-white/10 shadow-lg relative group animate-pulse">
-              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                <span className="px-4 py-1 bg-white text-black rounded-full text-xs font-bold">
-                  EARLY BIRD BIS 15.10
-                </span>
+            {content.tickets.tiers.map((tier, index) => (
+              <div key={index} className={`p-8 rounded-xl border transition-all relative group ${
+                index === 0
+                  ? 'bg-white/5 border-white/30 shadow-white/10 shadow-lg animate-pulse'
+                  : index === 1
+                  ? 'bg-black/20 border-white/10 hover:border-white/30'
+                  : 'bg-black/20 border-white/10 hover:border-white/30'
+              }`}>
+                {index === 0 && (
+                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                    <span className="px-4 py-1 bg-white text-black rounded-full text-xs font-bold">
+                      EARLY BIRD BIS 15.10
+                    </span>
+                  </div>
+                )}
+                {index === 1 && (
+                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                    <span className="px-4 py-1 bg-yellow-400 text-black rounded-full text-xs font-bold">
+                      Empfehlung
+                    </span>
+                  </div>
+                )}
+                <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-4xl">{index === 0 ? '🎁' : index === 1 ? '🎫' : '🎪'}</span>
+                </div>
+                <h3 className="display text-xl font-semibold mb-3">{tier.name}</h3>
+                <div className="text-3xl font-bold text-white mb-2">{tier.price}</div>
+                <p className="text-white/70 text-sm">{tier.note}</p>
               </div>
-              <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                <span className="text-4xl">🎁</span>
-              </div>
-              <h3 className="display text-xl font-semibold mb-3">🚀 Early Bird</h3>
-              <div className="text-3xl font-bold text-white mb-2">12 €</div>
-              <p className="text-white/70 text-sm">bis 15.10. • SPARE 10€</p>
-            </div>
-
-            {/* Standard */}
-            <div className="p-8 rounded-xl border bg-black/20 border-white/10 hover:border-white/30 transition-all relative group">
-              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                <span className="px-4 py-1 bg-yellow-400 text-black rounded-full text-xs font-bold">
-                  Empfehlung
-                </span>
-              </div>
-              <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                <span className="text-4xl">🎫</span>
-              </div>
-              <h3 className="display text-xl font-semibold mb-3">Standard</h3>
-              <div className="text-3xl font-bold text-white mb-2">18 €</div>
-              <p className="text-white/70 text-sm">online verfügbar</p>
-            </div>
-
-            {/* Abendkasse */}
-            <div className="p-8 rounded-xl border bg-black/20 border-white/10 hover:border-white/30 transition-all group">
-              <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                <span className="text-4xl">🎪</span>
-              </div>
-              <h3 className="display text-xl font-semibold mb-3">Abendkasse</h3>
-              <div className="text-3xl font-bold text-white mb-2">22 €</div>
-              <p className="text-white/70 text-sm">falls verfügbar</p>
-            </div>
+            ))}
           </div>
 
           {/* CTA and Notes */}
@@ -117,13 +60,13 @@ export default function TicketsPage() {
               href="#events"
               className="btn-primary text-xl px-12 py-4 shadow-2xl hover:shadow-yellow-400/25 transition-all mb-4 inline-block"
             >
-              Tickets kaufen
+              {content.tickets.ctaButton}
             </Link>
             <p className="text-sm text-white/60 mb-8">
-              Workshops separat buchbar (ca. 10 €, 12 € vor Ort).
+              {content.tickets.ctaNote}
             </p>
             <p className="text-white/70 text-sm">
-              Sofort verfügbar über Eventfrog (Link folgt)
+              {content.tickets.availability}
             </p>
           </div>
         </div>
@@ -133,10 +76,10 @@ export default function TicketsPage() {
       <section className="py-16 px-6 bg-black/10">
         <div className="max-w-4xl mx-auto text-center mb-12">
           <h2 className="display text-3xl md:text-4xl font-bold mb-6">
-            Wähle deine Show
+            {content.tickets.selectionTitle}
           </h2>
           <p className="text-lg text-white/80">
-            Sichere dir Tickets für die Shows des Freeman Festivals
+            {content.tickets.selectionSubtitle}
           </p>
         </div>
       </section>
@@ -145,7 +88,7 @@ export default function TicketsPage() {
       <section id="events" className="py-12 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="space-y-16">
-            {ticketData.map((day, dayIndex) => (
+            {content.tickets.days.map((day, dayIndex) => (
               <div key={dayIndex} className="space-y-8">
                 {/* Day Header */}
                 <div className="text-center">
@@ -225,24 +168,24 @@ export default function TicketsPage() {
       {/* Info Section */}
       <section className="py-16 px-6 border-t border-white/10">
         <div className="max-w-4xl mx-auto text-center">
-          <h3 className="display text-2xl font-bold mb-6">Wichtige Informationen</h3>
+          <h3 className="display text-2xl font-bold mb-6">{content.tickets.infoTitle}</h3>
           <div className="grid md:grid-cols-3 gap-8 text-sm">
             <div className="space-y-2">
-              <div className="text-yellow-400 text-lg">📍</div>
-              <h4 className="font-semibold">Ort</h4>
-              <p className="text-white/80">Pepe Dome, München</p>
+              <div className="text-yellow-400 text-lg">{content.tickets.infoLocation.icon}</div>
+              <h4 className="font-semibold">{content.tickets.infoLocation.title}</h4>
+              <p className="text-white/80">{content.tickets.infoLocation.text}</p>
             </div>
             <div className="space-y-2">
-              <div className="text-yellow-400 text-lg">🎫</div>
-              <h4 className="font-semibold">Tickets</h4>
-              <p className="text-white/80">Verfügbar über rausgegangen.de</p>
+              <div className="text-yellow-400 text-lg">{content.tickets.infoTickets.icon}</div>
+              <h4 className="font-semibold">{content.tickets.infoTickets.title}</h4>
+              <p className="text-white/80">{content.tickets.infoTickets.text}</p>
             </div>
             <div className="space-y-2">
-              <div className="text-yellow-400 text-lg">💬</div>
-              <h4 className="font-semibold">Fragen?</h4>
+              <div className="text-yellow-400 text-lg">{content.tickets.infoQuestions.icon}</div>
+              <h4 className="font-semibold">{content.tickets.infoQuestions.title}</h4>
               <p className="text-white/80">
-                <Link href="/kontakt" className="text-yellow-400 hover:text-yellow-300 transition-colors">
-                  Kontaktiere uns
+                <Link href={content.tickets.infoQuestions.link} className="text-yellow-400 hover:text-yellow-300 transition-colors">
+                  {content.tickets.infoQuestions.text}
                 </Link>
               </p>
             </div>

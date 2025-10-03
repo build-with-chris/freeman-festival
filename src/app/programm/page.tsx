@@ -42,7 +42,7 @@ export default function ProgramPage() {
           {/* Logo */}
           <div className="mb-8">
             <img
-              src="/freeman-festival-logo.png"
+              src="/LogoFreeman.JPG"
               alt="Freeman Festival Logo"
               className="mx-auto h-32 md:h-40 w-auto object-contain"
             />

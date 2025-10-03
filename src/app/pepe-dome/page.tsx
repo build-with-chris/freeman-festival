@@ -24,8 +24,8 @@ export default function VenuePage() {
           {/* Hero Image */}
           <div className="aspect-video bg-black/20 rounded-xl mb-12 overflow-hidden border border-white/10 relative group">
             <img
-              src="/GeodomeCover.webp"
-              alt="Pepe Dome Außenansicht - Geodätische Kuppel im Ostpark"
+              src="/dome-image.png"
+              alt="Pepe Dome Innenansicht - Geodätische Kuppel"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
@@ -214,8 +214,8 @@ export default function VenuePage() {
             {/* Square Format Cover */}
             <div className="aspect-square bg-black/20 rounded-xl overflow-hidden border border-white/10 relative group">
               <img
-                src="/GeodomeCover.webp"
-                alt="Pepe Dome Außenansicht im Ostpark"
+                src="/dome-image.png"
+                alt="Pepe Dome - Geodätische Kuppel"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>

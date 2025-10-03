@@ -89,8 +89,8 @@
     }
   },
   "tickets": {
-    "title": "Get your tickets now",
-    "subtitle": "⚠️ Only 200 seats per show – free seating",
+    "title": "Get Your Tickets",
+    "subtitle": "Early Bird tickets from €12 – secure your spot now!",
     "tiers": [
       {
         "name": "🚀 Early Bird",
@@ -108,7 +108,77 @@
         "note": "if available"
       }
     ],
-    "note": "Available now via Eventfrog (link coming)",
+    "ctaButton": "Buy Tickets",
+    "ctaNote": "Workshops bookable separately (approx. €10, €12 on-site).",
+    "availability": "Available immediately via Eventfrog (link follows)",
+    "selectionTitle": "Choose Your Show",
+    "selectionSubtitle": "Secure tickets for Freeman Festival shows",
+    "days": [
+      {
+        "day": "Friday, November 14, 2025",
+        "events": [
+          {
+            "time": "19:00",
+            "title": "\"Häppy Hour\"",
+            "artist": "The Nordic Council",
+            "description": "Ode to the North; humor about embarrassing real-life moments & the ambivalent relationship with alcohol. Contemporary circus × comedy.",
+            "ticketUrl": "https://rausgegangen.de/events/nordic-council-happy-hour-0/?mtm_campaign=teilen_event&mtm_kwd=app",
+            "image": "/Happy Hour/Chris Collina - Häppy Hour 3.webp"
+          }
+        ]
+      },
+      {
+        "day": "Saturday, November 15, 2025",
+        "events": [
+          {
+            "time": "18:00",
+            "title": "\"Häppy Hour\"",
+            "artist": "The Nordic Council",
+            "description": "Ode to the North; humor about embarrassing real-life moments & the ambivalent relationship with alcohol. Contemporary circus × comedy.",
+            "ticketUrl": "https://rausgegangen.de/events/nordic-council-happy-hour-1/?mtm_campaign=teilen_event&mtm_kwd=app",
+            "image": "/Happy Hour/Dynamo - Happy Hour cropped.webp"
+          },
+          {
+            "time": "20:30",
+            "title": "\"How a Spiral Works\"",
+            "artist": "Art for Rainy Days",
+            "description": "Meditative, hypnotic circus: dance, hair hanging & aerial rope, minimalist aesthetics, newly interpreted Baltic folk music.",
+            "ticketUrl": "https://rausgegangen.de/events/art-for-rainy-days-how-a-spiral-works-0/?mtm_campaign=teilen_event&mtm_kwd=app",
+            "image": "/How A Spiral Works/Zane Krūmiņa 1.webp"
+          }
+        ]
+      },
+      {
+        "day": "Sunday, November 16, 2025",
+        "events": [
+          {
+            "time": "18:00",
+            "title": "\"How a Spiral Works\"",
+            "artist": "Art for Rainy Days",
+            "description": "Meditative, hypnotic circus: dance, hair hanging & aerial rope, minimalist aesthetics, newly interpreted Baltic folk music.",
+            "ticketUrl": "https://rausgegangen.de/events/art-for-rainy-days-how-a-spiral-works-1/?mtm_campaign=teilen_event&mtm_kwd=app",
+            "image": "/How A Spiral Works/Eve Gastaldi 1.webp"
+          }
+        ]
+      }
+    ],
+    "infoTitle": "Important Information",
+    "infoLocation": {
+      "icon": "📍",
+      "title": "Location",
+      "text": "Pepe Dome, Munich"
+    },
+    "infoTickets": {
+      "icon": "🎫",
+      "title": "Tickets",
+      "text": "Available via rausgegangen.de"
+    },
+    "infoQuestions": {
+      "icon": "💬",
+      "title": "Questions?",
+      "text": "Contact us",
+      "link": "/contact"
+    },
     "online": "Online Tickets",
     "offline": "Box Office",
     "price": "from €12"
@@ -243,118 +313,109 @@
     "mapUrl": "https://maps.google.com/maps?q=Theatron+Ostpark+München"
   },
   "program": {
-    "title": "Program",
-    "subtitle": "Three days of circus magic, workshops and artistic dialogue",
+    "title": "Program · Nov 14–16, 2025",
+    "subtitle": "Shows, Workshops & Talks – all times at a glance.",
+    "heroSubline": "TIME FOR CIRCUS: International circus arts meet freedom, tradition & innovation – right in Munich.",
+    "heroButtons": {
+      "tickets": "Get Tickets",
+      "program": "View Program"
+    },
+    "manifest": {
+      "paragraph1": "Freeman Festival celebrates the freedom of artistic expression. International circus artists meet in Munich to rethink identity, tradition and innovation – bold, poetic, boundary-crossing.",
+      "paragraph2": "Rooted in Munich's avant-garde history, a space emerges where diversity becomes strength. A place where differences connect and art becomes a common language.",
+      "paragraph3": "In times of division, we invite you to experience freedom anew – not as an ego show, but as a collective experience of unity, courage and expression.",
+      "claim": "Art is freedom. Circus is freedom. You are free."
+    },
     "days": [
       {
-        "day": "Friday, November 14",
-        "theme": "Opening & Connection",
+        "day": "Friday, November 14, 2025",
+        "theme": "",
         "events": [
           {
-            "time": "7:00 PM",
-            "title": "Opening Event",
-            "subtitle": "Freeman Festival: What We Do, How We Do It, and Why?",
-            "type": "opening",
-            "description": "Festive opening with introduction to the festival mission"
+            "time": "15:00",
+            "title": "Workshop \"Object Manipulation\"",
+            "subtitle": "Merri Heikkilä",
+            "type": "workshop",
+            "description": "Workshop on using everyday objects as juggling props. Through guided exploration, participants experiment with form, movement and rhythm.",
+            "detailedDescription": "This workshop focuses on using everyday objects as juggling props, offering a different perspective on object manipulation. Through guided exploration, participants experiment with form, movement and rhythm using objects from daily life. The session promotes a thoughtful and creative approach to juggling, emphasizing observation, adaptability and finding new possibilities in familiar things.",
+            "teacher": "Merri Heikkilä is a juggler and circus artist who works primarily with contemporary circus. He graduated from Codarts' circus line in Rotterdam in 2017 with a Bachelor's degree in Circus Arts and was involved in founding two new circus groups: Sirkum Polaris and The Nordic Council. He also works in various works and events of the circus group Nuua.",
+            "idealFor": "Contemporary circus artists, jugglers and movement practitioners interested in object manipulation, creative exploration and interdisciplinary experiments.",
+            "whatToBring": "Bring your favorite everyday object.",
+            "duration": "2 hours",
+            "language": "English",
+            "bookingButton": "Register Now",
+            "bookingUrl": "https://forms.gle/LNDK9pMzuZCcdeZd6"
           },
           {
-            "time": "8:00 PM",
-            "title": "\"Insomnia\"",
-            "subtitle": "Jakob Jakobsson",
+            "time": "19:00",
+            "title": "Show \"Häppy Hour\"",
+            "subtitle": "The Nordic Council",
             "type": "show",
-            "description": "Contemporary circus show about sleeplessness and nocturnal dreams"
-          },
-          {
-            "time": "9:00 PM",
-            "title": "Aftertalk & Opening Party",
-            "subtitle": "Where Music, Drinks, and Words Connect Creative Worlds",
-            "type": "social",
-            "description": "Discussion with the artist and opening celebration"
+            "description": "Ode to the North; humor about embarrassing real-life moments & the ambivalent relationship with alcohol. Contemporary circus × comedy."
           }
         ]
       },
       {
-        "day": "Saturday, November 15",
-        "theme": "Workshops & Performance",
+        "day": "Saturday, November 15, 2025",
+        "theme": "",
         "events": [
           {
-            "time": "10:00 AM-12:00 PM",
-            "title": "Workshop Part I",
-            "subtitle": "\"Stillness in Motion: Mastering Presence and Intention in Performance\"",
-            "type": "workshop",
-            "artist": "Alise Bokaldere",
-            "description": "Intensive workshop on presence and intention in performance"
+            "time": "11:00",
+            "title": "Presentation + Talk",
+            "subtitle": "Anke Politz",
+            "type": "talk",
+            "description": "Details to follow (BUZZ provides text).",
+            "note": "Details to follow"
           },
           {
-            "time": "5:00 PM",
-            "title": "\"Häppy Hour\"",
+            "time": "18:00",
+            "title": "Show \"Häppy Hour\"",
             "subtitle": "The Nordic Council",
             "type": "show",
-            "description": "Nordic circus art with live music, juggling and acrobatics"
+            "description": "Ode to the North; humor about embarrassing real-life moments & the ambivalent relationship with alcohol. Contemporary circus × comedy."
           },
           {
-            "time": "7:00 PM",
-            "title": "\"How a Spiral Works\"",
+            "time": "20:30",
+            "title": "Show \"How a Spiral Works\"",
             "subtitle": "Art for Rainy Days",
             "type": "show",
-            "description": "Award-winning contemporary performance about movement and metamorphosis"
+            "description": "Meditative, hypnotic circus: dance, hair hanging & aerial rope, minimalist aesthetics, newly interpreted Baltic folk music."
           },
           {
-            "time": "8:00 PM",
-            "title": "Aftertalk",
-            "subtitle": "Discussion with the artists",
-            "type": "talk",
-            "description": "Dialogue about the performances and artistic processes"
+            "time": "21:45",
+            "title": "Party",
+            "subtitle": "",
+            "type": "social",
+            "description": "Party after the shows"
           }
         ]
       },
       {
-        "day": "Sunday, November 16",
-        "theme": "Dialogue & Finale",
+        "day": "Sunday, November 16, 2025",
+        "theme": "",
         "events": [
           {
-            "time": "10:00 AM-12:00 PM",
-            "title": "Workshop Part II",
-            "subtitle": "\"Stillness in Motion: Mastering Presence and Intention in Performance\"",
+            "time": "13:00",
+            "title": "Workshop \"Stillness in Motion\"",
+            "subtitle": "Alise Madara Bokaldere",
             "type": "workshop",
-            "artist": "Alise Bokaldere",
-            "description": "Continuation of the workshop on presence and intention"
+            "description": "\"Stillness in Motion\" explores the powerful use of stillness – not only as a foundation for movement, but also as a technique for improving stage presence.",
+            "detailedDescription": "\"Stillness in Motion\" explores the powerful use of stillness – not only as a foundation for movement, but also as a technique for improving stage presence. We will move within and outside our respective disciplines, enabling you to discover fundamental principles and later integrate them into your own artistic practice. In many art forms, stillness plays a crucial role – music is enhanced by pauses, words need spaces to be understandable, and movement works similarly. Forgetting to stop takes away our ability to focus on movement.",
+            "teacher": "Alise Madara Bokaldere is a Latvian dancer/choreographer. She works very closely with details and nuanced movement in her creations, focusing on stage presence, movement quality and concept. She graduated from the Latvian Academy of Culture with a BA in contemporary dance in 2018. She was named best contemporary dancer at the 2024 Latvian Dance Awards.",
+            "idealFor": "This workshop is aimed at dancers and circus artists, including acrobats, aerial artists and jugglers who want to explore new dimensions of expressiveness through the disciplined use of stillness and presence. Also suitable for choreographers and directors who want to deepen their tools and explore concepts of stillness.",
+            "whatToBring": "Participants should wear clothing that allows unrestricted movement, bring water for hydration, and have notebooks and pens for important insights and inspirations during discussions.",
+            "duration": "2 hours",
+            "language": "English",
+            "maxParticipants": "Max. 20 people",
+            "bookingButton": "Register Now",
+            "bookingUrl": "https://forms.gle/C2aomJ7gpYQ5fvqE7"
           },
           {
-            "time": "1:00 PM-2:00 PM",
-            "title": "Artist Talks",
-            "subtitle": "Curated meeting for circus & dance professionals",
-            "type": "talk",
-            "curator": "Valentina Barone",
-            "description": "Curated conversations for circus and dance professionals"
-          },
-          {
-            "time": "3:00 PM",
-            "title": "\"Häppy Hour\"",
-            "subtitle": "The Nordic Council",
-            "type": "show",
-            "description": "Nordic circus art with live music (matinee)"
-          },
-          {
-            "time": "5:00 PM",
-            "title": "\"How a Spiral Works\"",
+            "time": "18:00",
+            "title": "Show \"How a Spiral Works\"",
             "subtitle": "Art for Rainy Days",
             "type": "show",
-            "description": "Contemporary performance about spirals of life"
-          },
-          {
-            "time": "7:00 PM",
-            "title": "Open Stage",
-            "subtitle": "for experimental ideas",
-            "type": "experimental",
-            "description": "Open stage for experimental ideas and new works"
-          },
-          {
-            "time": "9:30 PM",
-            "title": "Closing Party",
-            "subtitle": "See You Next Year",
-            "type": "social",
-            "description": "Festival closing celebration with outlook to the future"
+            "description": "Meditative, hypnotic circus: dance, hair hanging & aerial rope, minimalist aesthetics, newly interpreted Baltic folk music."
           }
         ]
       }

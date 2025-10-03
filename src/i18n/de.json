@@ -99,8 +99,6 @@
   "tickets": {
     "title": "Tickets sichern",
     "subtitle": "Early-Bird-Tickets ab 12 € – sichere dir jetzt deinen Platz!",
-    "ctaButton": "Tickets kaufen",
-    "workshopNote": "Workshops separat buchbar (ca. 10 €, 12 € vor Ort).",
     "tiers": [
       {
         "name": "🚀 Early Bird",
@@ -118,7 +116,77 @@
         "note": "falls verfügbar"
       }
     ],
-    "note": "Sofort verfügbar über Eventfrog (Link folgt)",
+    "ctaButton": "Tickets kaufen",
+    "ctaNote": "Workshops separat buchbar (ca. 10 €, 12 € vor Ort).",
+    "availability": "Sofort verfügbar über Eventfrog (Link folgt)",
+    "selectionTitle": "Wähle deine Show",
+    "selectionSubtitle": "Sichere dir Tickets für die Shows des Freeman Festivals",
+    "days": [
+      {
+        "day": "Freitag, 14.11.2025",
+        "events": [
+          {
+            "time": "19:00",
+            "title": "\"Häppy Hour\"",
+            "artist": "The Nordic Council",
+            "description": "Ode an den Norden; Humor über peinliche Real-Life-Momente & die ambivalente Beziehung zu Alkohol. Zeitgenössischer Zirkus × Comedy.",
+            "ticketUrl": "https://rausgegangen.de/events/nordic-council-happy-hour-0/?mtm_campaign=teilen_event&mtm_kwd=app",
+            "image": "/Happy Hour/Chris Collina - Häppy Hour 3.webp"
+          }
+        ]
+      },
+      {
+        "day": "Samstag, 15.11.2025",
+        "events": [
+          {
+            "time": "18:00",
+            "title": "\"Häppy Hour\"",
+            "artist": "The Nordic Council",
+            "description": "Ode an den Norden; Humor über peinliche Real-Life-Momente & die ambivalente Beziehung zu Alkohol. Zeitgenössischer Zirkus × Comedy.",
+            "ticketUrl": "https://rausgegangen.de/events/nordic-council-happy-hour-1/?mtm_campaign=teilen_event&mtm_kwd=app",
+            "image": "/Happy Hour/Dynamo - Happy Hour cropped.webp"
+          },
+          {
+            "time": "20:30",
+            "title": "\"How a Spiral Works\"",
+            "artist": "Art for Rainy Days",
+            "description": "Meditativer, hypnotischer Zirkus: Tanz, Hair Hanging & Aerial Rope, minimalistische Ästhetik, neu interpretierte baltische Volksmusik.",
+            "ticketUrl": "https://rausgegangen.de/events/art-for-rainy-days-how-a-spiral-works-0/?mtm_campaign=teilen_event&mtm_kwd=app",
+            "image": "/How A Spiral Works/Zane Krūmiņa 1.webp"
+          }
+        ]
+      },
+      {
+        "day": "Sonntag, 16.11.2025",
+        "events": [
+          {
+            "time": "18:00",
+            "title": "\"How a Spiral Works\"",
+            "artist": "Art for Rainy Days",
+            "description": "Meditativer, hypnotischer Zirkus: Tanz, Hair Hanging & Aerial Rope, minimalistische Ästhetik, neu interpretierte baltische Volksmusik.",
+            "ticketUrl": "https://rausgegangen.de/events/art-for-rainy-days-how-a-spiral-works-1/?mtm_campaign=teilen_event&mtm_kwd=app",
+            "image": "/How A Spiral Works/Eve Gastaldi 1.webp"
+          }
+        ]
+      }
+    ],
+    "infoTitle": "Wichtige Informationen",
+    "infoLocation": {
+      "icon": "📍",
+      "title": "Ort",
+      "text": "Pepe Dome, München"
+    },
+    "infoTickets": {
+      "icon": "🎫",
+      "title": "Tickets",
+      "text": "Verfügbar über rausgegangen.de"
+    },
+    "infoQuestions": {
+      "icon": "💬",
+      "title": "Fragen?",
+      "text": "Kontaktiere uns",
+      "link": "/kontakt"
+    },
     "online": "Online-Tickets",
     "offline": "Abendkasse",
     "price": "ab 12 €"
