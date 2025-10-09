@@ -99,6 +99,8 @@
   "tickets": {
     "title": "Tickets sichern",
     "subtitle": "Early-Bird-Tickets ab 12 € – sichere dir jetzt deinen Platz!",
+    "specialOffer": "🍹 Mehrere Shows buchen = Freigetränk pro Abend!",
+    "specialOfferDescription": "Buche 2 oder mehr Shows und erhalte zu jedem Abend ein Freigetränk",
     "tiers": [
       {
         "name": "🚀 Early Bird",
@@ -117,7 +119,7 @@
       }
     ],
     "ctaButton": "Tickets kaufen",
-    "ctaNote": "Workshops separat buchbar (ca. 10 €, 12 € vor Ort).",
+    "ctaNote": "Workshops über Anmeldeformular buchbar.",
     "availability": "Sofort verfügbar über Eventfrog (Link folgt)",
     "selectionTitle": "Wähle deine Show",
     "selectionSubtitle": "Sichere dir Tickets für die Shows des Freeman Festivals",

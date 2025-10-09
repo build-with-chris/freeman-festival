@@ -17,9 +17,21 @@ export default function TicketsPage() {
           <h1 className="display text-5xl md:text-6xl font-bold mb-6">
             {content.tickets.title}
           </h1>
-          <p className="text-xl text-white/80 mb-12">
+          <p className="text-xl text-white/80 mb-8">
             {content.tickets.subtitle}
           </p>
+
+          {/* Special Offer Banner */}
+          <div className="mb-12 p-6 rounded-2xl bg-gradient-to-r from-yellow-400/20 to-orange-500/20 border-2 border-yellow-400/50 backdrop-blur-sm">
+            <div className="text-center">
+              <p className="text-2xl md:text-3xl font-bold mb-2">
+                {content.tickets.specialOffer}
+              </p>
+              <p className="text-lg text-white/90">
+                {content.tickets.specialOfferDescription}
+              </p>
+            </div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             {content.tickets.tiers.map((tier, index) => (

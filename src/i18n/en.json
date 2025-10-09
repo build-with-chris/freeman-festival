@@ -91,6 +91,8 @@
   "tickets": {
     "title": "Get Your Tickets",
     "subtitle": "Early Bird tickets from €12 – secure your spot now!",
+    "specialOffer": "🍹 Book multiple shows = Free drink per evening!",
+    "specialOfferDescription": "Book 2 or more shows and receive a free drink each evening",
     "tiers": [
       {
         "name": "🚀 Early Bird",
@@ -109,7 +111,7 @@
       }
     ],
     "ctaButton": "Buy Tickets",
-    "ctaNote": "Workshops bookable separately (approx. €10, €12 on-site).",
+    "ctaNote": "Workshops bookable via registration form.",
     "availability": "Available immediately via Eventfrog (link follows)",
     "selectionTitle": "Choose Your Show",
     "selectionSubtitle": "Secure tickets for Freeman Festival shows",
