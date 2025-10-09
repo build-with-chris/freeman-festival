@@ -22,59 +22,21 @@ export default function TicketsPage() {
           </p>
 
           {/* Special Offer Banner */}
-          <div className="mb-12 p-6 rounded-2xl bg-gradient-to-r from-yellow-400/20 to-orange-500/20 border-2 border-yellow-400/50 backdrop-blur-sm">
+          <div className="mb-8 p-4 rounded-xl bg-white/5 border border-white/20 backdrop-blur-sm">
             <div className="text-center">
-              <p className="text-2xl md:text-3xl font-bold mb-2">
-                {content.tickets.specialOffer}
+              <p className="text-lg md:text-xl font-semibold mb-1 flex items-center justify-center gap-2">
+                <span>🍹</span>
+                <span>{content.tickets.specialOffer.replace('🍹 ', '')}</span>
               </p>
-              <p className="text-lg text-white/90">
+              <p className="text-sm text-white/70">
                 {content.tickets.specialOfferDescription}
               </p>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            {content.tickets.tiers.map((tier, index) => (
-              <div key={index} className={`p-8 rounded-xl border transition-all relative group ${
-                index === 0
-                  ? 'bg-white/5 border-white/30 shadow-white/10 shadow-lg animate-pulse'
-                  : index === 1
-                  ? 'bg-black/20 border-white/10 hover:border-white/30'
-                  : 'bg-black/20 border-white/10 hover:border-white/30'
-              }`}>
-                {index === 0 && (
-                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <span className="px-4 py-1 bg-white text-black rounded-full text-xs font-bold">
-                      EARLY BIRD BIS 15.10
-                    </span>
-                  </div>
-                )}
-                {index === 1 && (
-                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <span className="px-4 py-1 bg-yellow-400 text-black rounded-full text-xs font-bold">
-                      Empfehlung
-                    </span>
-                  </div>
-                )}
-                <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-4xl">{index === 0 ? '🎁' : index === 1 ? '🎫' : '🎪'}</span>
-                </div>
-                <h3 className="display text-xl font-semibold mb-3">{tier.name}</h3>
-                <div className="text-3xl font-bold text-white mb-2">{tier.price}</div>
-                <p className="text-white/70 text-sm">{tier.note}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* CTA and Notes */}
-          <div className="text-center">
-            <Link
-              href="#events"
-              className="btn-primary text-xl px-12 py-4 shadow-2xl hover:shadow-yellow-400/25 transition-all mb-4 inline-block"
-            >
-              {content.tickets.ctaButton}
-            </Link>
-            <p className="text-sm text-white/60 mb-8">
+          {/* CTA Note */}
+          <div className="text-center mb-8">
+            <p className="text-sm text-white/60 mb-2">
               {content.tickets.ctaNote}
             </p>
             <p className="text-white/70 text-sm">
