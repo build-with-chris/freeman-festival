@@ -36,18 +36,15 @@ export default function TicketsPage() {
 
           {/* CTA Note */}
           <div className="text-center mb-8">
-            <p className="text-sm text-white/60 mb-2">
+            <p className="text-sm text-white/60">
               {content.tickets.ctaNote}
-            </p>
-            <p className="text-white/70 text-sm">
-              {content.tickets.availability}
             </p>
           </div>
         </div>
       </section>
 
       {/* Event Selection Section */}
-      <section className="py-16 px-6 bg-black/10">
+      <section className="px-6 bg-black/10">
         <div className="max-w-4xl mx-auto text-center mb-12">
           <h2 className="display text-3xl md:text-4xl font-bold mb-6">
             {content.tickets.selectionTitle}
