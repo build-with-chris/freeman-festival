@@ -152,14 +152,8 @@ export default function Home() {
         {/* Overlay for readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/60 md:from-transparent md:via-black/20 md:to-black/40"></div>
 
-        {/* Top Section: Headline + Date */}
+        {/* Top Section: Headline */}
         <div className="text-center relative z-10 md:max-w-4xl md:mx-auto">
-          <div className="flex flex-col items-center gap-3 mb-6">
-            <span className="px-4 py-2 bg-black/60 backdrop-blur-sm border border-white/30 rounded-full text-white font-semibold text-sm shadow-lg">
-              14.–16. November 2025
-            </span>
-          </div>
-
           <h1 className="hero-glow-title display text-5xl md:text-8xl lg:text-9xl font-bold tracking-tight text-white">
             Freeman
             <br />
@@ -174,12 +168,25 @@ export default function Home() {
           <img
             src="/HeroLandingPage.png"
             alt="Rope Artist Silhouette"
-            className="max-h-64 w-auto object-contain object-center"
+            className="max-h-96 w-auto object-contain object-center"
           />
         </div>
 
-        {/* Bottom Section: CTAs */}
+        {/* Bottom Section: Badges + CTAs */}
         <div className="relative z-10 space-y-4 md:max-w-4xl md:mx-auto">
+          <div className="flex flex-col items-center gap-3 mb-2">
+            <a
+              href="https://zeitfuerzirkus.de"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-gradient-to-r from-blue-500/40 to-purple-500/40 backdrop-blur-sm border border-blue-400/50 rounded-full text-blue-100 font-bold text-sm shadow-lg hover:from-blue-500/50 hover:to-purple-500/50 transition-all"
+            >
+              {content.zeitfuerzirkus.badge} 🎪
+            </a>
+            <span className="px-4 py-2 bg-black/60 backdrop-blur-sm border border-white/30 rounded-full text-white font-semibold text-sm shadow-lg">
+              14.–16. November 2025
+            </span>
+          </div>
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
             <Link
               href="/tickets"
@@ -357,8 +364,13 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="p-8 md:p-10 rounded-2xl bg-gradient-to-br from-blue-500/15 to-purple-500/15 border-2 border-blue-400/40 shadow-xl">
             <div className="flex items-start gap-4 md:gap-6 mb-6">
-              <span className="text-5xl md:text-6xl">🎪</span>
-              <div className="flex-1">
+              <span className="text-5xl md:text-6xl hidden md:inline">🎪</span>
+              <div className="flex-1 w-full">
+                <div className="mb-4">
+                  <span className="inline-block px-4 py-1.5 bg-blue-500/30 border border-blue-400/50 rounded-full text-blue-100 font-bold text-xs uppercase tracking-wider mb-4">
+                    Offizielles Partnerfestival
+                  </span>
+                </div>
                 <h3 className="display text-2xl md:text-4xl font-bold mb-4 text-blue-100">
                   {content.zeitfuerzirkus.title}
                 </h3>
@@ -399,30 +411,28 @@ export default function Home() {
             Ort & Anfahrt
           </h2>
 
-          <div className="mb-8">
-            <img
-              src="/pepe-dome-exterior.jpg"
-              alt="Pepe Dome - Geodätischer Dome im Ostpark"
-              className="w-full h-64 object-cover rounded-xl"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none';
-              }}
-            />
-          </div>
+          <div className="p-8 md:p-10 rounded-2xl bg-black/20 border border-white/20 hover:border-white/40 transition-all duration-300">
+            <div className="mb-6">
+              <h3 className="text-2xl font-bold mb-4">Geodome im Ostpark</h3>
+              <div className="flex flex-wrap justify-center gap-4 text-white/80 mb-6">
+                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">200 Plätze</span>
+                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">barrierefrei</span>
+                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">🚇 U-Bahn Quiddestraße</span>
+              </div>
+              <p className="text-white/70 text-sm mb-8">
+                Fußweg 10 Minuten vom U-Bahnhof
+              </p>
+            </div>
 
-          <div className="text-center mb-8">
-            <h3 className="text-xl font-bold mb-4">Geodome im Ostpark · 200 Plätze · barrierefrei</h3>
-            <p className="text-white/80 mb-6">
-              🚇 U-Bahn Quiddestraße, Fußweg 10 Min.
-            </p>
             <a
               href="https://maps.google.com/maps?q=Theatron+Ostpark+München"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary inline-flex items-center gap-2 px-6 py-3"
+              className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 text-lg font-bold rounded-xl bg-gradient-to-r from-blue-500/30 to-purple-500/30 border-2 border-blue-400/50 hover:from-blue-500/40 hover:to-purple-500/40 hover:border-blue-400/70 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
             >
-              <span>📍</span>
-              <span>Anfahrt planen</span>
+              <span className="text-2xl">📍</span>
+              <span>In Google Maps öffnen</span>
+              <span className="text-sm opacity-0 group-hover:opacity-100 transition-opacity">→</span>
             </a>
           </div>
         </div>

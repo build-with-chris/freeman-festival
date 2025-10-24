@@ -64,7 +64,7 @@ export default function AboutPage() {
                   <span className="font-medium">Blauer Reiter</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-2xl">🎪</span>
+                  <span className="text-2xl hidden md:inline">🎪</span>
                   <span className="font-medium">Dada-Bewegung</span>
                 </div>
                 <div className="flex items-center gap-2">

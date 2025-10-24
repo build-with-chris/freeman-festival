@@ -131,16 +131,15 @@
   }
 
   .hero-background {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('/HeroLandingPage.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
     background-size: cover;
     background-repeat: no-repeat;
-    /* Mobile: Position rope artist much lower to appear in the center gap */
-    background-position: center 80%;
   }
 
-  /* Desktop: Move rope artist more to the left */
+  /* Desktop: Show background image and position it */
   @media (min-width: 768px) {
     .hero-background {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('/HeroLandingPage.png');
       background-position: 30% center;
     }
   }
