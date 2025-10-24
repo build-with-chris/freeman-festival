@@ -143,8 +143,87 @@ export default function AboutPage() {
               {content.about.freedom.closing}
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* General Partners & Supporters */}
+      {/* ZEIT FÜR ZIRKUS Partnership */}
+      <section className="py-20 px-6 bg-gradient-to-b from-blue-500/5 to-purple-500/5">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="mb-6">
+                <span className="text-6xl">🎪</span>
+              </div>
+              <h2 className="display text-4xl font-bold mb-6 text-blue-100">
+                Teil von ZEIT FÜR ZIRKUS 2025
+              </h2>
+              <p className="text-lg leading-relaxed text-white/90 mb-6">
+                Das Freeman Festival ist offizieller Teil des bundesweiten ZEIT FÜR ZIRKUS Festivals. 
+                Als Teil dieses Netzwerks verbinden wir uns mit der deutschen Zirkusszene und 
+                tragen zur kulturellen Vielfalt bei.
+              </p>
+              <p className="text-lg leading-relaxed text-white/90 mb-8">
+                ZEIT FÜR ZIRKUS ist die deutsche Ausgabe des internationalen Zirkusfestivals 
+                LA NUIT DU CIRQUE und schafft einen Raum für zeitgenössischen Zirkus, 
+                Diskurs und kulturellen Austausch.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">🌍</span>
+                  <span className="text-white/90">Internationale Vernetzung</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">🎭</span>
+                  <span className="text-white/90">Zeitgenössische Zirkuskunst</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">💬</span>
+                  <span className="text-white/90">Diskurs und Austausch</span>
+                </div>
+              </div>
+            </div>
+            <div className="space-y-8">
+              <div className="p-6 rounded-xl bg-gradient-to-br from-blue-500/15 to-purple-500/15 border border-blue-400/30">
+                <h3 className="text-xl font-bold text-blue-100 mb-4">
+                  ZEIT ZUM REDEN
+                </h3>
+                <p className="text-white/90 mb-4">
+                  Das Diskursprogramm von ZEIT FÜR ZIRKUS lädt ein zu Gesprächen über 
+                  die Zukunft des zeitgenössischen Zirkus.
+                </p>
+                <p className="text-blue-200/80 text-sm italic">
+                  "Auf Augenhöhe mit Publikum und Zirkusszene"
+                </p>
+              </div>
+              
+              <div className="p-6 rounded-xl bg-gradient-to-br from-purple-500/15 to-pink-500/15 border border-purple-400/30">
+                <h3 className="text-xl font-bold text-purple-100 mb-4">
+                  Netzwerk & Partnerschaft
+                </h3>
+                <p className="text-white/90 mb-4">
+                  Gemeinsam mit sieben überregionalen Veranstaltungsorten gestalten wir 
+                  den Diskurs über zeitgenössischen Zirkus.
+                </p>
+                <div className="flex items-center gap-2">
+                  <span className="text-sm text-purple-200/80">Mehr erfahren:</span>
+                  <a 
+                    href="https://zeitfuerzirkus.de" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-purple-300 hover:text-purple-200 transition-colors font-medium"
+                  >
+                    zeitfuerzirkus.de
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* General Partners & Supporters */}
+      <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto text-center">
           <div className="text-center mt-20">
             <h3 className="display text-xl font-bold mb-8 muted">Mit Unterstützung von</h3>
             <div className="flex justify-center items-center">

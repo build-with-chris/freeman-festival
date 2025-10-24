@@ -155,14 +155,6 @@ export default function Home() {
         {/* Top Section: Headline + Date */}
         <div className="text-center relative z-10 md:max-w-4xl md:mx-auto">
           <div className="flex flex-col items-center gap-3 mb-6">
-            <a
-              href="https://zeitfuerzirkus.de"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 bg-gradient-to-r from-blue-500/40 to-purple-500/40 backdrop-blur-sm border border-blue-400/50 rounded-full text-blue-100 font-bold text-sm shadow-lg hover:from-blue-500/50 hover:to-purple-500/50 transition-all"
-            >
-              {content.zeitfuerzirkus.badge} 🎪
-            </a>
             <span className="px-4 py-2 bg-black/60 backdrop-blur-sm border border-white/30 rounded-full text-white font-semibold text-sm shadow-lg">
               14.–16. November 2025
             </span>
@@ -340,6 +332,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Compact CTA */}
+      <section className="py-12 px-6 bg-black/10">
+        <div className="max-w-md mx-auto text-center">
+          <div className="p-6 rounded-xl bg-gradient-to-br from-yellow-400/10 to-orange-400/10 border border-white/20" style={{background: 'linear-gradient(to bottom right, rgba(212, 165, 116, 0.1), rgba(212, 165, 116, 0.05))'}}>
+            <h3 className="display text-2xl font-bold mb-3">
+              Tickets sichern
+            </h3>
+            <p className="text-white/80 text-sm mb-6">
+              Early-Bird ab 12€ · Nur 200 Plätze pro Show
+            </p>
+            <Link
+              href="/tickets"
+              className="btn-primary w-full py-3 text-lg font-semibold"
+            >
+              Jetzt Tickets kaufen
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ZEIT FÜR ZIRKUS Section - Highlighted */}
       <section className="py-20 px-6 bg-gradient-to-b from-blue-500/5 to-purple-500/5">
         <div className="max-w-4xl mx-auto">
@@ -347,11 +359,6 @@ export default function Home() {
             <div className="flex items-start gap-4 md:gap-6 mb-6">
               <span className="text-5xl md:text-6xl">🎪</span>
               <div className="flex-1">
-                <div className="mb-4">
-                  <span className="inline-block px-4 py-1.5 bg-blue-500/30 border border-blue-400/50 rounded-full text-blue-100 font-bold text-xs uppercase tracking-wider mb-4">
-                    Offizielles Partnerfestival
-                  </span>
-                </div>
                 <h3 className="display text-2xl md:text-4xl font-bold mb-4 text-blue-100">
                   {content.zeitfuerzirkus.title}
                 </h3>
@@ -380,26 +387,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Compact CTA */}
-      <section className="py-12 px-6 bg-black/10">
-        <div className="max-w-md mx-auto text-center">
-          <div className="p-6 rounded-xl bg-gradient-to-br from-yellow-400/10 to-orange-400/10 border border-white/20" style={{background: 'linear-gradient(to bottom right, rgba(212, 165, 116, 0.1), rgba(212, 165, 116, 0.05))'}}>
-            <h3 className="display text-2xl font-bold mb-3">
-              Tickets sichern
-            </h3>
-            <p className="text-white/80 text-sm mb-6">
-              Early-Bird ab 12€ · Nur 200 Plätze pro Show
-            </p>
-            <Link
-              href="/tickets"
-              className="btn-primary w-full py-3 text-lg font-semibold"
-            >
-              Jetzt Tickets kaufen
-            </Link>
           </div>
         </div>
       </section>

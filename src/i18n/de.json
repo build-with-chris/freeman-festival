@@ -108,8 +108,8 @@
   "tickets": {
     "title": "Tickets sichern",
     "subtitle": "Early-Bird-Tickets ab 12 € – sichere dir jetzt deinen Platz!",
-    "specialOffer": "🍹 Mehrere Shows buchen = Freigetränk pro Abend!",
-    "specialOfferDescription": "Buche 2 oder mehr Shows und erhalte zu jedem Abend ein Freigetränk",
+    "specialOffer": "🎫 Ermäßigungen verfügbar",
+    "specialOfferDescription": "Rabatte für Kinder, Studenten, Senioren und Menschen mit Behinderung",
     "tiers": [
       {
         "name": "🚀 Early Bird",

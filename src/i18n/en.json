@@ -100,8 +100,8 @@
   "tickets": {
     "title": "Get Your Tickets",
     "subtitle": "Early Bird tickets from €12 – secure your spot now!",
-    "specialOffer": "🍹 Book multiple shows = Free drink per evening!",
-    "specialOfferDescription": "Book 2 or more shows and receive a free drink each evening",
+    "specialOffer": "🎫 Discounts available",
+    "specialOfferDescription": "Reduced prices for children, students, seniors and people with disabilities",
     "tiers": [
       {
         "name": "🚀 Early Bird",
