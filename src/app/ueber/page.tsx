@@ -192,7 +192,7 @@ export default function AboutPage() {
                   die Zukunft des zeitgenössischen Zirkus.
                 </p>
                 <p className="text-blue-200/80 text-sm italic">
-                  "Auf Augenhöhe mit Publikum und Zirkusszene"
+                  &ldquo;Auf Augenhöhe mit Publikum und Zirkusszene&rdquo;
                 </p>
               </div>
               
