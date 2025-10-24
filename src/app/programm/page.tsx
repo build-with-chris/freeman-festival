@@ -149,7 +149,7 @@ export default function ProgramPage() {
                           <p className="text-white/80 leading-relaxed mb-4">{String(event.description)}</p>
 
                           {/* Workshop Booking Button - Always Visible */}
-                          {event.type === 'workshop' && 'bookingButton' in event && 'bookingUrl' in event && event.bookingButton && event.bookingUrl && (
+                          {event.type === 'workshop' && 'bookingButton' in event && 'bookingUrl' in event && (event as any).bookingButton && (event as any).bookingUrl && (
                             <div className="mb-4">
                               <a
                                 href={String(event.bookingUrl)}
@@ -163,7 +163,7 @@ export default function ProgramPage() {
                           )}
 
                           {/* Detailed Workshop Information - Collapsible */}
-                          {event.type === 'workshop' && 'detailedDescription' in event && event.detailedDescription && (
+                          {event.type === 'workshop' && 'detailedDescription' in event && (event as any).detailedDescription && (
                             <details className="bg-gradient-to-br from-green-500/5 to-blue-500/5 border border-green-400/20 rounded-lg p-3 mb-4">
                               <summary className="cursor-pointer flex items-center gap-2 text-sm font-medium text-white/90 hover:text-white transition-colors">
                                 <span className="text-sm">📚</span>
@@ -174,7 +174,7 @@ export default function ProgramPage() {
                                   <p className="text-white/80 leading-relaxed text-sm">{String(event.detailedDescription)}</p>
                                 </div>
 
-                                {'teacher' in event && event.teacher && (
+                                {'teacher' in event && (event as any).teacher && (
                                   <div>
                                     <h5 className="font-semibold text-white mb-2">🎭 Über den Lehrer</h5>
                                     <p className="text-white/80 leading-relaxed text-sm">{String(event.teacher)}</p>
@@ -182,14 +182,14 @@ export default function ProgramPage() {
                                 )}
 
                                 <div className="grid md:grid-cols-2 gap-4">
-                                  {'idealFor' in event && event.idealFor && (
+                                  {'idealFor' in event && (event as any).idealFor && (
                                     <div>
                                       <h5 className="font-semibold text-white mb-1">👥 Ideal für</h5>
                                       <p className="text-white/80 text-sm">{String(event.idealFor)}</p>
                                     </div>
                                   )}
 
-                                  {'whatToBring' in event && event.whatToBring && (
+                                  {'whatToBring' in event && (event as any).whatToBring && (
                                     <div>
                                       <h5 className="font-semibold text-white mb-1">🎒 Mitbringen</h5>
                                       <p className="text-white/80 text-sm">{String(event.whatToBring)}</p>
@@ -198,14 +198,14 @@ export default function ProgramPage() {
                                 </div>
 
                                 <div className="grid md:grid-cols-2 gap-4">
-                                  {'duration' in event && event.duration && (
+                                  {'duration' in event && (event as any).duration && (
                                     <div>
                                       <h5 className="font-semibold text-white mb-1">⏱️ Dauer</h5>
                                       <p className="text-white/80 text-sm">{String(event.duration)}</p>
                                     </div>
                                   )}
 
-                                  {'language' in event && event.language && (
+                                  {'language' in event && (event as any).language && (
                                     <div>
                                       <h5 className="font-semibold text-white mb-1">🗣️ Sprache</h5>
                                       <p className="text-white/80 text-sm">{String(event.language)}</p>
@@ -213,7 +213,7 @@ export default function ProgramPage() {
                                   )}
                                 </div>
 
-                                {'maxParticipants' in event && event.maxParticipants && (
+                                {'maxParticipants' in event && (event as any).maxParticipants && (
                                   <div className="pt-2">
                                     <h5 className="font-semibold text-white mb-1">👥 Teilnehmer</h5>
                                     <p className="text-white/80 text-sm">{String(event.maxParticipants)}</p>
@@ -225,7 +225,7 @@ export default function ProgramPage() {
 
 
                           {/* Note for placeholders */}
-                          {'note' in event && event.note && (
+                          {'note' in event && (event as any).note && (
                             <div className="bg-yellow-500/10 border border-yellow-400/30 rounded-lg p-4 mb-4">
                               <div className="flex items-center gap-2">
                                 <span className="text-lg">ℹ️</span>
