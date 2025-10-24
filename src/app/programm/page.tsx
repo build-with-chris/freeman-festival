@@ -112,7 +112,7 @@ export default function ProgramPage() {
                             </div>
 
                             {/* Artistic Images for Shows */}
-                            {event.title.includes("How a Spiral Works") && (
+                            {String(event.title).includes("How a Spiral Works") && (
                               <div className="w-full md:w-48 h-32 md:h-36 bg-black/40 rounded-lg overflow-hidden border border-white/10 relative group mt-4 md:mt-0 md:ml-6">
                                 <img
                                   src={eventIndex === 0 ? "/How A Spiral Works/Zane Krūmiņa 1.webp" :
@@ -128,12 +128,12 @@ export default function ProgramPage() {
                               </div>
                             )}
 
-                            {event.title.includes("Häppy Hour") && (
+                            {String(event.title).includes("Häppy Hour") && (
                               <div className="w-full md:w-48 h-32 md:h-36 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg overflow-hidden border border-white/10 relative group mt-4 md:mt-0 md:ml-6">
                                 <img
                                   src={eventIndex === 0 ? "/Happy Hour/Chris Collina - Häppy Hour 3.webp" :
                                        eventIndex === 1 ? "/Happy Hour/Dynamo - Happy Hour cropped.webp" :
-                                       event.title.includes("Matinee") ? "/Happy Hour/Chris Collina - Häppy Hour 4.webp" :
+                                       String(event.title).includes("Matinee") ? "/Happy Hour/Chris Collina - Häppy Hour 4.webp" :
                                        "/Happy Hour/Dynamo - Happy Hour-806.webp"}
                                   alt="Häppy Hour performance by The Nordic Council"
                                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 hover:opacity-100"
@@ -247,7 +247,7 @@ export default function ProgramPage() {
                           )}
 
                           {/* Video Preview for Show Events - More Subtle */}
-                          {event.type === 'show' && event.title.includes('Häppy Hour') && (
+                          {event.type === 'show' && String(event.title).includes('Häppy Hour') && (
                             <details className="bg-gradient-to-br from-blue-500/5 to-purple-500/5 border border-blue-400/20 rounded-lg p-3 mb-4">
                               <summary className="cursor-pointer flex items-center gap-2 text-sm font-medium text-white/90 hover:text-white transition-colors">
                                 <span className="text-sm">🎬</span>
@@ -274,7 +274,7 @@ export default function ProgramPage() {
                             </details>
                           )}
 
-                          {event.type === 'show' && event.title.includes('How a Spiral Works') && (
+                          {event.type === 'show' && String(event.title).includes('How a Spiral Works') && (
                             <details className="bg-gradient-to-br from-purple-500/5 to-pink-500/5 border border-purple-400/20 rounded-lg p-3 mb-4">
                               <summary className="cursor-pointer flex items-center gap-2 text-sm font-medium text-white/90 hover:text-white transition-colors">
                                 <span className="text-sm">🎬</span>
