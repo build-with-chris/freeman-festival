@@ -5,7 +5,7 @@ import { useState } from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 interface NavigationProps {
-  currentPage?: 'home' | 'program' | 'lineup' | 'venue' | 'about' | 'contact' | 'tickets';
+  currentPage?: 'home' | 'program' | 'lineup' | 'venue' | 'about' | 'contact' | 'tickets' | 'datenschutz' | 'impressum';
 }
 
 export default function Navigation({ currentPage = 'home' }: NavigationProps) {
