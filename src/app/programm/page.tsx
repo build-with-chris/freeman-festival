@@ -1,7 +1,27 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useLanguage } from "@/contexts/LanguageContext";
 import Navigation from "@/components/Navigation";
+
+// Type definition for event objects
+interface EventData {
+  time: string;
+  title: string;
+  subtitle?: string;
+  type: string;
+  description: string;
+  detailedDescription?: string;
+  teacher?: string;
+  idealFor?: string;
+  whatToBring?: string;
+  duration?: string;
+  language?: string;
+  maxParticipants?: string;
+  note?: string;
+  bookingButton?: string;
+  bookingUrl?: string;
+}
 
 export default function ProgramPage() {
   const { content } = useLanguage();
@@ -41,10 +61,13 @@ export default function ProgramPage() {
         <div className="max-w-4xl mx-auto">
           {/* Logo */}
           <div className="mb-8">
-            <img
+            <Image
               src="/LogoFreeman.JPG"
               alt="Freeman Festival Logo"
+              width={160}
+              height={160}
               className="mx-auto h-32 md:h-40 w-auto object-contain"
+              priority
             />
           </div>
 
@@ -114,11 +137,13 @@ export default function ProgramPage() {
                             {/* Artistic Images for Shows */}
                             {String(event.title).includes("How a Spiral Works") && (
                               <div className="w-full md:w-48 h-32 md:h-36 bg-black/40 rounded-lg overflow-hidden border border-white/10 relative group mt-4 md:mt-0 md:ml-6">
-                                <img
+                                <Image
                                   src={eventIndex === 0 ? "/How A Spiral Works/Zane Krūmiņa 1.webp" :
                                        eventIndex === 1 ? "/How A Spiral Works/Eve Gastaldi 1.webp" :
                                        "/How A Spiral Works/Zane Krūmiņa.webp"}
                                   alt="How a Spiral Works performance"
+                                  width={192}
+                                  height={144}
                                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-75 hover:opacity-95"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/30"></div>
@@ -130,12 +155,14 @@ export default function ProgramPage() {
 
                             {String(event.title).includes("Häppy Hour") && (
                               <div className="w-full md:w-48 h-32 md:h-36 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg overflow-hidden border border-white/10 relative group mt-4 md:mt-0 md:ml-6">
-                                <img
+                                <Image
                                   src={eventIndex === 0 ? "/Happy Hour/Chris Collina - Häppy Hour 3.webp" :
                                        eventIndex === 1 ? "/Happy Hour/Dynamo - Happy Hour cropped.webp" :
                                        String(event.title).includes("Matinee") ? "/Happy Hour/Chris Collina - Häppy Hour 4.webp" :
                                        "/Happy Hour/Dynamo - Happy Hour-806.webp"}
                                   alt="Häppy Hour performance by The Nordic Council"
+                                  width={192}
+                                  height={144}
                                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 hover:opacity-100"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-transparent"></div>
@@ -149,7 +176,7 @@ export default function ProgramPage() {
                           <p className="text-white/80 leading-relaxed mb-4">{String(event.description)}</p>
 
                           {/* Workshop Booking Button - Always Visible */}
-                          {event.type === 'workshop' && 'bookingButton' in event && 'bookingUrl' in event && (event as any).bookingButton && (event as any).bookingUrl && (
+                          {event.type === 'workshop' && 'bookingButton' in event && 'bookingUrl' in event && (event as EventData).bookingButton && (event as EventData).bookingUrl && (
                             <div className="mb-4">
                               <a
                                 href={String(event.bookingUrl)}
@@ -163,7 +190,7 @@ export default function ProgramPage() {
                           )}
 
                           {/* Detailed Workshop Information - Collapsible */}
-                          {event.type === 'workshop' && 'detailedDescription' in event && (event as any).detailedDescription && (
+                          {event.type === 'workshop' && 'detailedDescription' in event && (event as EventData).detailedDescription && (
                             <details className="bg-gradient-to-br from-green-500/5 to-blue-500/5 border border-green-400/20 rounded-lg p-3 mb-4">
                               <summary className="cursor-pointer flex items-center gap-2 text-sm font-medium text-white/90 hover:text-white transition-colors">
                                 <span className="text-sm">📚</span>
@@ -174,7 +201,7 @@ export default function ProgramPage() {
                                   <p className="text-white/80 leading-relaxed text-sm">{String(event.detailedDescription)}</p>
                                 </div>
 
-                                {'teacher' in event && (event as any).teacher && (
+                                {'teacher' in event && (event as EventData).teacher && (
                                   <div>
                                     <h5 className="font-semibold text-white mb-2">🎭 Über den Lehrer</h5>
                                     <p className="text-white/80 leading-relaxed text-sm">{String(event.teacher)}</p>
@@ -182,14 +209,14 @@ export default function ProgramPage() {
                                 )}
 
                                 <div className="grid md:grid-cols-2 gap-4">
-                                  {'idealFor' in event && (event as any).idealFor && (
+                                  {'idealFor' in event && (event as EventData).idealFor && (
                                     <div>
                                       <h5 className="font-semibold text-white mb-1">👥 Ideal für</h5>
                                       <p className="text-white/80 text-sm">{String(event.idealFor)}</p>
                                     </div>
                                   )}
 
-                                  {'whatToBring' in event && (event as any).whatToBring && (
+                                  {'whatToBring' in event && (event as EventData).whatToBring && (
                                     <div>
                                       <h5 className="font-semibold text-white mb-1">🎒 Mitbringen</h5>
                                       <p className="text-white/80 text-sm">{String(event.whatToBring)}</p>
@@ -198,14 +225,14 @@ export default function ProgramPage() {
                                 </div>
 
                                 <div className="grid md:grid-cols-2 gap-4">
-                                  {'duration' in event && (event as any).duration && (
+                                  {'duration' in event && (event as EventData).duration && (
                                     <div>
                                       <h5 className="font-semibold text-white mb-1">⏱️ Dauer</h5>
                                       <p className="text-white/80 text-sm">{String(event.duration)}</p>
                                     </div>
                                   )}
 
-                                  {'language' in event && (event as any).language && (
+                                  {'language' in event && (event as EventData).language && (
                                     <div>
                                       <h5 className="font-semibold text-white mb-1">🗣️ Sprache</h5>
                                       <p className="text-white/80 text-sm">{String(event.language)}</p>
@@ -213,7 +240,7 @@ export default function ProgramPage() {
                                   )}
                                 </div>
 
-                                {'maxParticipants' in event && (event as any).maxParticipants && (
+                                {'maxParticipants' in event && (event as EventData).maxParticipants && (
                                   <div className="pt-2">
                                     <h5 className="font-semibold text-white mb-1">👥 Teilnehmer</h5>
                                     <p className="text-white/80 text-sm">{String(event.maxParticipants)}</p>
@@ -225,7 +252,7 @@ export default function ProgramPage() {
 
 
                           {/* Note for placeholders */}
-                          {'note' in event && (event as any).note && (
+                          {'note' in event && (event as EventData).note && (
                             <div className="bg-yellow-500/10 border border-yellow-400/30 rounded-lg p-4 mb-4">
                               <div className="flex items-center gap-2">
                                 <span className="text-lg">ℹ️</span>
@@ -376,9 +403,11 @@ export default function ProgramPage() {
           <div className="mt-20 text-center">
             <h3 className="display text-xl font-bold mb-8 muted">Mit Unterstützung von</h3>
             <div className="flex justify-center items-center">
-              <img
+              <Image
                 src="/Logos.png"
                 alt="Partner und Förderer: Kulturreferat München, Theatron, BLVZ und weitere"
+                width={400}
+                height={140}
                 className="max-w-full h-auto opacity-60 hover:opacity-90 transition-opacity duration-300"
                 style={{ maxHeight: '140px' }}
               />
