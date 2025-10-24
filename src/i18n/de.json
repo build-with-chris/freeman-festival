@@ -20,6 +20,15 @@
       "seconds": "Sekunden"
     }
   },
+  "zeitfuerzirkus": {
+    "badge": "Offiziell Teil von ZEIT FÜR ZIRKUS 2025",
+    "title": "Freeman ist Teil von ZEIT FÜR ZIRKUS 2025",
+    "description": "ZEIT FÜR ZIRKUS ist die deutsche Ausgabe des international stattfindenden Zirkusfestivals LA NUIT DU CIRQUE. Die 5. Edition findet erneut in Kooperation mit dem französischen Netzwerk Territoires du Cirque statt.",
+    "buzzDescription": "Der Bundesverband Zeitgenössischer Zirkus erweitert die Jubiläumsausgabe um das Diskursprogramm ZEIT ZUM REDEN und gestaltet Gespräche, Begegnungen und Austausch gemeinsam mit sieben überregionalen Veranstaltungsorten.",
+    "tagline": "Auf Augenhöhe mit Publikum und Zirkusszene",
+    "link": "Mehr zu ZEIT FÜR ZIRKUS",
+    "website": "zeitfuerzirkus.de"
+  },
   "manifest": {
     "paragraph1": "Das Freeman Festival feiert die Freiheit des künstlerischen Ausdrucks. Internationale Zirkus-Künstler*innen treffen in München aufeinander, um Identität, Tradition und Innovation neu zu denken – mutig, poetisch, grenzüberschreitend.",
     "paragraph2": "Verwurzelt in Münchens Geschichte der Avantgarde entsteht hier ein Raum, in dem Vielfalt zur Stärke wird. Ein Ort, an dem Unterschiede verbinden und Kunst zu einer gemeinsamen Sprache wird.",
@@ -380,11 +389,10 @@
         "events": [
           {
             "time": "11:00",
-            "title": "Presentation + Talk",
-            "subtitle": "Anke Politz",
+            "title": "ZEIT ZUM REDEN: BUZZ",
+            "subtitle": "Diskursprogramm mit Anke Politz",
             "type": "talk",
-            "description": "Details folgen (BUZZ liefert Text).",
-            "note": "Details folgen"
+            "description": "ZEIT ZUM REDEN ist das Diskursprogramm von ZEIT FÜR ZIRKUS. Der Bundesverband Zeitgenössischer Zirkus gestaltet Gespräche, Begegnungen und Austausch gemeinsam mit sieben überregionalen Veranstaltungsorten. Auf Augenhöhe mit Publikum und Zirkusszene werden drängende Themen der Kunstform und ihrer Akteur:innen im Kontext unserer Zeit verhandelt."
           },
           {
             "time": "18:00",

@@ -154,7 +154,15 @@ export default function Home() {
 
         {/* Top Section: Headline + Date */}
         <div className="text-center relative z-10 md:max-w-4xl md:mx-auto">
-          <div className="inline-block mb-6">
+          <div className="flex flex-col items-center gap-3 mb-6">
+            <a
+              href="https://zeitfuerzirkus.de"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-gradient-to-r from-blue-500/40 to-purple-500/40 backdrop-blur-sm border border-blue-400/50 rounded-full text-blue-100 font-bold text-sm shadow-lg hover:from-blue-500/50 hover:to-purple-500/50 transition-all"
+            >
+              {content.zeitfuerzirkus.badge} 🎪
+            </a>
             <span className="px-4 py-2 bg-black/60 backdrop-blur-sm border border-white/30 rounded-full text-white font-semibold text-sm shadow-lg">
               14.–16. November 2025
             </span>
@@ -328,6 +336,50 @@ export default function Home() {
               <span>Mehr zum Line-up</span>
               <span>→</span>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ZEIT FÜR ZIRKUS Section - Highlighted */}
+      <section className="py-20 px-6 bg-gradient-to-b from-blue-500/5 to-purple-500/5">
+        <div className="max-w-4xl mx-auto">
+          <div className="p-8 md:p-10 rounded-2xl bg-gradient-to-br from-blue-500/15 to-purple-500/15 border-2 border-blue-400/40 shadow-xl">
+            <div className="flex items-start gap-4 md:gap-6 mb-6">
+              <span className="text-5xl md:text-6xl">🎪</span>
+              <div className="flex-1">
+                <div className="mb-4">
+                  <span className="inline-block px-4 py-1.5 bg-blue-500/30 border border-blue-400/50 rounded-full text-blue-100 font-bold text-xs uppercase tracking-wider mb-4">
+                    Offizielles Partnerfestival
+                  </span>
+                </div>
+                <h3 className="display text-2xl md:text-4xl font-bold mb-4 text-blue-100">
+                  {content.zeitfuerzirkus.title}
+                </h3>
+                <div className="space-y-4 mb-6">
+                  <p className="text-white/90 leading-relaxed text-base md:text-lg">
+                    {content.zeitfuerzirkus.description}
+                  </p>
+                  <p className="text-white/90 leading-relaxed text-base md:text-lg">
+                    {content.zeitfuerzirkus.buzzDescription}
+                  </p>
+                  <p className="text-blue-200/80 italic text-sm md:text-base">
+                    {content.zeitfuerzirkus.tagline}
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-4 items-center">
+                  <a
+                    href="https://zeitfuerzirkus.de"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-blue-500/30 border-2 border-blue-400/50 rounded-full text-blue-100 hover:bg-blue-500/40 hover:border-blue-400/70 transition-all font-bold shadow-lg"
+                  >
+                    <span>🌐</span>
+                    <span>{content.zeitfuerzirkus.link}</span>
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
