@@ -15,11 +15,24 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Freeman Festival 2025 - Das Jahresentertainment im Münchner Osten",
-  description: "Drei Tage Zirkuskunst in München - unterhaltsam, nachdenklich, humorvoll. 14.-16. November 2025 im Pepe Dome, Ostpark. Tickets ab 12€. Barrierefrei & familienfreundlich.",
+  description: "Freeman Festival 2025: Drei Tage zeitgenössischer Zirkus im Münchner Ostpark. 14.-16. November im Pepe Dome mit The Nordic Council und Art for Rainy Days. Tickets ab 12€.",
   keywords: "Freeman Festival, Zirkus München, Ostpark, Pepe Dome, Zirkuskunst, Entertainment München, Festival 2025",
+  icons: {
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon.ico', sizes: 'any' }
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }
+    ],
+    other: [
+      { url: '/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' }
+    ]
+  },
   openGraph: {
     title: "Freeman Festival 2025 - Das Jahresentertainment im Münchner Osten",
-    description: "Drei Tage Zirkuskunst in München - unterhaltsam, nachdenklich, humorvoll. 14.-16. November 2025 im Pepe Dome, Ostpark. Tickets ab 12€.",
+    description: "Freeman Festival 2025: Drei Tage zeitgenössischer Zirkus im Münchner Ostpark. 14.-16. November im Pepe Dome mit The Nordic Council und Art for Rainy Days. Tickets ab 12€.",
     images: ["/SaveTheDate.webp"],
     locale: "de_DE",
     type: "website",
@@ -28,7 +41,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Freeman Festival 2025 - Das Jahresentertainment im Münchner Osten",
-    description: "Drei Tage Zirkuskunst in München - unterhaltsam, nachdenklich, humorvoll. 14.-16. November 2025 im Pepe Dome, Ostpark. Tickets ab 12€.",
+    description: "Freeman Festival 2025: Drei Tage zeitgenössischer Zirkus im Münchner Ostpark. 14.-16. November im Pepe Dome mit The Nordic Council und Art for Rainy Days. Tickets ab 12€.",
     images: ["/SaveTheDate.webp"]
   },
   alternates: {

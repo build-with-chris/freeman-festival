@@ -98,16 +98,16 @@ export default function ProgramPage() {
                         {/* Time & Icon */}
                         <div className="flex items-center gap-4 md:flex-col md:items-center md:min-w-[120px]">
                           <div className="text-3xl">{getEventTypeIcon(event.type)}</div>
-                          <div className="text-xl font-bold text-white">{event.time}</div>
+                          <div className="text-xl font-bold text-white">{String(event.time)}</div>
                         </div>
 
                         {/* Content */}
                         <div className="flex-1">
                           <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
                             <div className="flex-1">
-                              <h3 className="display text-2xl font-bold mb-2">{event.title}</h3>
+                              <h3 className="display text-2xl font-bold mb-2">{String(event.title)}</h3>
                               {event.subtitle && (
-                                <p className="text-lg font-semibold text-white/90 mb-2">{event.subtitle}</p>
+                                <p className="text-lg font-semibold text-white/90 mb-2">{String(event.subtitle)}</p>
                               )}
                             </div>
 
@@ -146,18 +146,18 @@ export default function ProgramPage() {
                             )}
                           </div>
 
-                          <p className="text-white/80 leading-relaxed mb-4">{event.description}</p>
+                          <p className="text-white/80 leading-relaxed mb-4">{String(event.description)}</p>
 
                           {/* Workshop Booking Button - Always Visible */}
                           {event.type === 'workshop' && 'bookingButton' in event && 'bookingUrl' in event && event.bookingButton && event.bookingUrl && (
                             <div className="mb-4">
                               <a
-                                href={event.bookingUrl}
+                                href={String(event.bookingUrl)}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="btn-primary px-6 py-3 text-sm font-semibold"
                               >
-                                {event.bookingButton}
+                                {String(event.bookingButton)}
                               </a>
                             </div>
                           )}
@@ -171,13 +171,13 @@ export default function ProgramPage() {
                               </summary>
                               <div className="mt-4 space-y-4">
                                 <div>
-                                  <p className="text-white/80 leading-relaxed text-sm">{event.detailedDescription}</p>
+                                  <p className="text-white/80 leading-relaxed text-sm">{String(event.detailedDescription)}</p>
                                 </div>
 
                                 {'teacher' in event && event.teacher && (
                                   <div>
                                     <h5 className="font-semibold text-white mb-2">🎭 Über den Lehrer</h5>
-                                    <p className="text-white/80 leading-relaxed text-sm">{event.teacher}</p>
+                                    <p className="text-white/80 leading-relaxed text-sm">{String(event.teacher)}</p>
                                   </div>
                                 )}
 
@@ -185,14 +185,14 @@ export default function ProgramPage() {
                                   {'idealFor' in event && event.idealFor && (
                                     <div>
                                       <h5 className="font-semibold text-white mb-1">👥 Ideal für</h5>
-                                      <p className="text-white/80 text-sm">{event.idealFor}</p>
+                                      <p className="text-white/80 text-sm">{String(event.idealFor)}</p>
                                     </div>
                                   )}
 
                                   {'whatToBring' in event && event.whatToBring && (
                                     <div>
                                       <h5 className="font-semibold text-white mb-1">🎒 Mitbringen</h5>
-                                      <p className="text-white/80 text-sm">{event.whatToBring}</p>
+                                      <p className="text-white/80 text-sm">{String(event.whatToBring)}</p>
                                     </div>
                                   )}
                                 </div>
@@ -201,14 +201,14 @@ export default function ProgramPage() {
                                   {'duration' in event && event.duration && (
                                     <div>
                                       <h5 className="font-semibold text-white mb-1">⏱️ Dauer</h5>
-                                      <p className="text-white/80 text-sm">{event.duration}</p>
+                                      <p className="text-white/80 text-sm">{String(event.duration)}</p>
                                     </div>
                                   )}
 
                                   {'language' in event && event.language && (
                                     <div>
                                       <h5 className="font-semibold text-white mb-1">🗣️ Sprache</h5>
-                                      <p className="text-white/80 text-sm">{event.language}</p>
+                                      <p className="text-white/80 text-sm">{String(event.language)}</p>
                                     </div>
                                   )}
                                 </div>
@@ -216,7 +216,7 @@ export default function ProgramPage() {
                                 {'maxParticipants' in event && event.maxParticipants && (
                                   <div className="pt-2">
                                     <h5 className="font-semibold text-white mb-1">👥 Teilnehmer</h5>
-                                    <p className="text-white/80 text-sm">{event.maxParticipants}</p>
+                                    <p className="text-white/80 text-sm">{String(event.maxParticipants)}</p>
                                   </div>
                                 )}
                               </div>
@@ -229,7 +229,7 @@ export default function ProgramPage() {
                             <div className="bg-yellow-500/10 border border-yellow-400/30 rounded-lg p-4 mb-4">
                               <div className="flex items-center gap-2">
                                 <span className="text-lg">ℹ️</span>
-                                <p className="text-yellow-200 font-medium">{event.note}</p>
+                                <p className="text-yellow-200 font-medium">{String(event.note)}</p>
                               </div>
                             </div>
                           )}
