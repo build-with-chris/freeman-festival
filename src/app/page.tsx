@@ -362,6 +362,14 @@ export default function Home() {
       {/* ZEIT FÜR ZIRKUS Section - Highlighted */}
       <section className="py-20 px-6 bg-gradient-to-b from-blue-500/5 to-purple-500/5">
         <div className="max-w-4xl mx-auto">
+          {/* Banner Image */}
+          <div className="mb-8 rounded-xl overflow-hidden">
+            <img
+              src="/ZeitfuerZirkus.png"
+              alt="Zeit für Zirkus - bundesweites Festival zur internationalen La Nuit du Cirque"
+              className="w-full h-auto object-contain"
+            />
+          </div>
           <div className="p-8 md:p-10 rounded-2xl bg-gradient-to-br from-blue-500/15 to-purple-500/15 border-2 border-blue-400/40 shadow-xl">
             <div className="flex items-start gap-4 md:gap-6 mb-6">
               <span className="text-5xl md:text-6xl hidden md:inline">🎪</span>
@@ -423,7 +431,6 @@ export default function Home() {
                 Fußweg 10 Minuten vom U-Bahnhof
               </p>
             </div>
-
             <a
               href="https://maps.google.com/maps?q=Theatron+Ostpark+München"
               target="_blank"

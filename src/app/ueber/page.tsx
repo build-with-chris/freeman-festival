@@ -149,6 +149,14 @@ export default function AboutPage() {
       {/* ZEIT FÜR ZIRKUS Partnership */}
       <section className="py-20 px-6 bg-gradient-to-b from-blue-500/5 to-purple-500/5">
         <div className="max-w-6xl mx-auto">
+          {/* Banner Image */}
+          <div className="mb-12 rounded-xl overflow-hidden">
+            <img
+              src="/ZeitfuerZirkus.png"
+              alt="Zeit für Zirkus - bundesweites Festival zur internationalen La Nuit du Cirque"
+              className="w-full h-auto object-contain"
+            />
+          </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="mb-6">
