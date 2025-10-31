@@ -168,7 +168,7 @@ export default function Home() {
           <img
             src="/HeroLandingPage.png"
             alt="Rope Artist Silhouette"
-            className="max-h-96 w-auto object-contain object-center"
+            className="max-h-[500px] w-full max-w-md object-contain object-center px-4"
           />
         </div>
 
