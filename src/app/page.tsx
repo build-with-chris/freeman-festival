@@ -347,7 +347,7 @@ export default function Home() {
               Tickets sichern
             </h3>
             <p className="text-white/80 text-sm mb-6">
-              Early-Bird ab 12€ · Nur 200 Plätze pro Show
+              Ermäßigt ab 8€ · Standard 18€ · Nur 200 Plätze pro Show
             </p>
             <Link
               href="/tickets"

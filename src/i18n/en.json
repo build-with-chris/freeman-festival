@@ -7,8 +7,8 @@
     "date": "November 14–16",
     "location": "Ostpark • Geodesic Dome",
     "venue": "✓ Only 200 seats ✓ Unique atmosphere ✓ Family-friendly",
-    "cta": "Get tickets from €12",
-    "price": "Early Bird from €12 • Standard €18 • Box Office €22",
+    "cta": "Get tickets from €8",
+    "price": "Reduced from €8 • Standard €18 • Box Office €22",
     "scarcity": "⚠️ Limited seats – Only 200 seats per show",
     "countdown": {
       "title": "Until the festival:",
@@ -33,7 +33,7 @@
     "lineup": "Line-up",
     "venue": "Pepe Dome",
     "about": "About",
-    "tickets": "Tickets from €12",
+    "tickets": "Tickets from €8",
     "contact": "Contact",
     "faq": "FAQ",
     "language": {
@@ -43,7 +43,7 @@
   },
   "valueProps": {
     "price": {
-      "title": "From €12 only",
+      "title": "From €8 only",
       "description": "Affordable tickets for international artistry – Early Bird until Oct 15"
     },
     "artists": {
@@ -99,14 +99,14 @@
   },
   "tickets": {
     "title": "Get Your Tickets",
-    "subtitle": "Early Bird tickets from €12 – secure your spot now!",
+    "subtitle": "Reduced tickets from €8 • Standard €18 – secure your spot now!",
     "specialOffer": "🎫 Discounts available",
     "specialOfferDescription": "Reduced prices for children, students, seniors and people with disabilities",
     "tiers": [
       {
-        "name": "🚀 Early Bird",
-        "price": "€12",
-        "note": "until Oct 15 • SAVE €10"
+        "name": "🎫 Reduced",
+        "price": "€8",
+        "note": "Children, students, seniors, people with disabilities"
       },
       {
         "name": "Standard",
@@ -192,7 +192,7 @@
     },
     "online": "Online Tickets",
     "offline": "Box Office",
-    "price": "from €12"
+    "price": "from €8"
   },
   "schedule": {
     "title": "5 Shows in 3 Days",
@@ -538,7 +538,7 @@
   "finalCta": {
     "title": "Only few tickets left!",
     "subtitle": "5 spectacular shows in 3 days – secure your seat for international artistry now",
-    "primary": "Get tickets from €12 now",
+    "primary": "Get tickets from €8 now",
     "secondary": "⚠️ Only 200 seats per show",
     "scarcity": "Early Bird prices only until October 15"
   },

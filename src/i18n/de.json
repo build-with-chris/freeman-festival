@@ -8,9 +8,9 @@
     "date": "14.–16. November",
     "location": "Ostpark • Geodätische Kuppel",
     "venue": "✓ Nur 200 Plätze ✓ Einzigartige Atmosphäre ✓ Familienfreundlich",
-    "cta": "Tickets ab 12€ sichern",
+    "cta": "Tickets ab 8€ sichern",
     "ctaSecondary": "Programm ansehen",
-    "price": "Early Bird ab 12 € • Standard 18 € • Abendkasse 22 €",
+    "price": "Ermäßigt ab 8 € • Standard 18 € • Abendkasse 22 €",
     "scarcity": "⚠️ Begrenzte Plätze – Nur 200 Sitzplätze pro Show",
     "countdown": {
       "title": "Bis zum Festival:",
@@ -41,7 +41,7 @@
     "lineup": "Line-up",
     "venue": "Pepe Dome",
     "about": "Über uns",
-    "tickets": "Tickets ab 12€",
+    "tickets": "Tickets ab 8€",
     "contact": "Kontakt",
     "faq": "FAQ",
     "language": {
@@ -51,7 +51,7 @@
   },
   "valueProps": {
     "price": {
-      "title": "Ab 12€ dabei sein",
+      "title": "Ab 8€ dabei sein",
       "description": "Günstige Tickets für internationale Artistik – Early Bird bis 15.10."
     },
     "artists": {
@@ -107,14 +107,14 @@
   },
   "tickets": {
     "title": "Tickets sichern",
-    "subtitle": "Early-Bird-Tickets ab 12 € – sichere dir jetzt deinen Platz!",
+    "subtitle": "Ermäßigte Tickets ab 8 € • Standard 18 € – sichere dir jetzt deinen Platz!",
     "specialOffer": "🎫 Ermäßigungen verfügbar",
     "specialOfferDescription": "Rabatte für Kinder, Studenten, Senioren und Menschen mit Behinderung",
     "tiers": [
       {
-        "name": "🚀 Early Bird",
-        "price": "12 €",
-        "note": "bis 15.10. • SPARE 10€"
+        "name": "🎫 Ermäßigt",
+        "price": "8 €",
+        "note": "Kinder, Studenten, Senioren, Menschen mit Behinderung"
       },
       {
         "name": "Standard",
@@ -200,7 +200,7 @@
     },
     "online": "Online-Tickets",
     "offline": "Abendkasse",
-    "price": "ab 12 €"
+    "price": "ab 8 €"
   },
   "schedule": {
     "title": "4 Shows an 3 Tagen",
@@ -579,7 +579,7 @@
   "finalCta": {
     "title": "Nur noch wenige Tickets!",
     "subtitle": "5 spektakuläre Shows in 3 Tagen – sichere dir jetzt deinen Platz für internationale Artistik",
-    "primary": "Jetzt Tickets ab 12€ sichern",
+    "primary": "Jetzt Tickets ab 8€ sichern",
     "secondary": "⚠️ Nur 200 Plätze pro Show",
     "scarcity": "Early Bird-Preise nur bis 15. Oktober"
   },

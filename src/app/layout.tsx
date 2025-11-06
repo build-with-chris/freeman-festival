@@ -15,7 +15,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Freeman Festival 2025 - Das Jahresentertainment im Münchner Osten",
-  description: "Freeman Festival 2025: Drei Tage zeitgenössischer Zirkus im Münchner Ostpark. 14.-16. November im Pepe Dome mit The Nordic Council und Art for Rainy Days. Tickets ab 12€.",
+  description: "Freeman Festival 2025: Drei Tage zeitgenössischer Zirkus im Münchner Ostpark. 14.-16. November im Pepe Dome mit The Nordic Council und Art for Rainy Days. Tickets ab 8€.",
   keywords: "Freeman Festival, Zirkus München, Ostpark, Pepe Dome, Zirkuskunst, Entertainment München, Festival 2025",
   icons: {
     icon: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Freeman Festival 2025 - Das Jahresentertainment im Münchner Osten",
-    description: "Freeman Festival 2025: Drei Tage zeitgenössischer Zirkus im Münchner Ostpark. 14.-16. November im Pepe Dome mit The Nordic Council und Art for Rainy Days. Tickets ab 12€.",
+    description: "Freeman Festival 2025: Drei Tage zeitgenössischer Zirkus im Münchner Ostpark. 14.-16. November im Pepe Dome mit The Nordic Council und Art for Rainy Days. Tickets ab 8€.",
     images: ["/SaveTheDate.webp"],
     locale: "de_DE",
     type: "website",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Freeman Festival 2025 - Das Jahresentertainment im Münchner Osten",
-    description: "Freeman Festival 2025: Drei Tage zeitgenössischer Zirkus im Münchner Ostpark. 14.-16. November im Pepe Dome mit The Nordic Council und Art for Rainy Days. Tickets ab 12€.",
+    description: "Freeman Festival 2025: Drei Tage zeitgenössischer Zirkus im Münchner Ostpark. 14.-16. November im Pepe Dome mit The Nordic Council und Art for Rainy Days. Tickets ab 8€.",
     images: ["/SaveTheDate.webp"]
   },
   alternates: {
@@ -77,8 +77,8 @@ export default function RootLayout({
     "offers": [
       {
         "@type": "Offer",
-        "name": "Early Bird",
-        "price": "12",
+        "name": "Ermäßigt",
+        "price": "8",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/LimitedAvailability"
       },

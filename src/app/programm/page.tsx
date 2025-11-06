@@ -268,7 +268,7 @@ export default function ProgramPage() {
                                 href="/tickets"
                                 className="btn-secondary px-4 py-2 text-sm"
                               >
-                                Tickets sichern (Early Bird ab 12 €)
+                                Tickets sichern (Ermäßigt ab 8 € • Standard 18 €)
                               </Link>
                             </div>
                           )}
