@@ -8,9 +8,9 @@
     "date": "14.–16. November",
     "location": "Ostpark • Geodätische Kuppel",
     "venue": "✓ Nur 200 Plätze ✓ Einzigartige Atmosphäre ✓ Familienfreundlich",
-    "cta": "Tickets ab 8€ sichern",
+    "cta": "Tickets ab 12€ sichern",
     "ctaSecondary": "Programm ansehen",
-    "price": "Ermäßigt ab 8 € • Standard 18 € • Abendkasse 22 €",
+    "price": "Ermäßigt ab 12 € (Schwerbehinderte 8 €) • Standard 18 € • Abendkasse 22 €",
     "scarcity": "⚠️ Begrenzte Plätze – Nur 200 Sitzplätze pro Show",
     "countdown": {
       "title": "Bis zum Festival:",
@@ -41,7 +41,7 @@
     "lineup": "Line-up",
     "venue": "Pepe Dome",
     "about": "Über uns",
-    "tickets": "Tickets ab 8€",
+    "tickets": "Tickets ab 12€",
     "contact": "Kontakt",
     "faq": "FAQ",
     "language": {
@@ -51,7 +51,7 @@
   },
   "valueProps": {
     "price": {
-      "title": "Ab 8€ dabei sein",
+      "title": "Ab 12€ dabei sein",
       "description": "Günstige Tickets für internationale Artistik – Early Bird bis 15.10."
     },
     "artists": {
@@ -107,14 +107,19 @@
   },
   "tickets": {
     "title": "Tickets sichern",
-    "subtitle": "Ermäßigte Tickets ab 8 € • Standard 18 € – sichere dir jetzt deinen Platz!",
+    "subtitle": "Ermäßigt ab 12 € (Studenten, Senioren, Kinder) • Schwerbehinderte 8 € • Standard 18 € – sichere dir jetzt deinen Platz!",
     "specialOffer": "🎫 Ermäßigungen verfügbar",
-    "specialOfferDescription": "Rabatte für Kinder, Studenten, Senioren und Menschen mit Behinderung",
+    "specialOfferDescription": "Rabatte für Kinder, Studenten, Senioren und Schwerbehinderte",
     "tiers": [
       {
-        "name": "🎫 Ermäßigt",
+        "name": "♿ Schwerbehinderte",
         "price": "8 €",
-        "note": "Kinder, Studenten, Senioren, Menschen mit Behinderung"
+        "note": "Mit Nachweis"
+      },
+      {
+        "name": "🎫 Ermäßigt",
+        "price": "12 €",
+        "note": "Studenten, Senioren, Kinder"
       },
       {
         "name": "Standard",
@@ -200,7 +205,7 @@
     },
     "online": "Online-Tickets",
     "offline": "Abendkasse",
-    "price": "ab 8 €"
+    "price": "ab 12 €"
   },
   "schedule": {
     "title": "4 Shows an 3 Tagen",
@@ -392,7 +397,30 @@
             "title": "ZEIT ZUM REDEN: BUZZ",
             "subtitle": "network meeting",
             "type": "talk",
-            "description": "ZEIT ZUM REDEN ist das Diskursprogramm von ZEIT FÜR ZIRKUS. Der Bundesverband Zeitgenössischer Zirkus gestaltet Gespräche, Begegnungen und Austausch gemeinsam mit sieben überregionalen Veranstaltungsorten. Auf Augenhöhe mit Publikum und Zirkusszene werden drängende Themen der Kunstform und ihrer Akteur:innen im Kontext unserer Zeit verhandelt."
+            "description": "Im Rahmen des Festivals \"Zeit für Zirkus\" lädt der Bundesverband Zeitgenössischer Zirkus (BUZZ) zu einem offenen Gespräch über die Zukunft des zeitgenössischen Zirkus ein.",
+            "detailedDescription": "In München wächst die Szene stetig, doch es fehlt noch immer an fairen Zugängen zu Förderungen, Spielstätten und Produktionsmöglichkeiten. Der Talk bietet Raum, um genau darüber zu sprechen – gemeinsam mit Künstlerinnen, Veranstalterinnen und kulturpolitischen Vertreter*innen.",
+            "topics": [
+              "Welche Rolle spielt der freie Zirkus in der bayerischen Kulturlandschaft?",
+              "Wie kann seine Sichtbarkeit und finanzielle Stabilität gestärkt werden?",
+              "Welche Strukturen und Netzwerke braucht es, um nachhaltig zu wachsen?"
+            ],
+            "goal": "Ein ehrlicher Austausch über Herausforderungen und Chancen – um Verbindungen zu schaffen, Allianzen zu fördern und neue Perspektiven für die Kunstform zu eröffnen.",
+            "participants": [
+              "Sanne Kurz (MdL, Bündnis 90/Die Grünen)",
+              "Walter Heun (NPN, BLZT, SK3)",
+              "Anke Politz (BUZZ, Chamäleon Theater Berlin)",
+              "Michael Heiduk (Vertreter Münchner Szene)"
+            ],
+            "schedule": [
+              "Kurzer Einblick in die Münchner Zirkusszene",
+              "30-minütiges moderiertes Gespräch zu Lage, Bedarfen und Zukunftsperspektiven",
+              "Offener Austausch an Thementischen:",
+              "  1. Interessenvertretung (mit Anke Politz)",
+              "  2. Bedarfe der Münchner Szene (mit Michael Heiduk)",
+              "  3. Netzwerke und Strukturen für den Zeitgenössischen Zirkus (mit Walter Heun)"
+            ],
+            "seriesInfo": "ZEIT ZUM REDEN ist Teil des bundesweiten Formats \"Zeit für Zirkus\", gefördert durch den Fonds Darstellende Künste, in Kooperation mit führenden Häusern für zeitgenössischen Zirkus in Deutschland.",
+            "moreInfoUrl": "https://zeitfuerzirkus.de"
           },
           {
             "time": "18:00",
@@ -579,7 +607,7 @@
   "finalCta": {
     "title": "Nur noch wenige Tickets!",
     "subtitle": "5 spektakuläre Shows in 3 Tagen – sichere dir jetzt deinen Platz für internationale Artistik",
-    "primary": "Jetzt Tickets ab 8€ sichern",
+    "primary": "Jetzt Tickets ab 12€ sichern",
     "secondary": "⚠️ Nur 200 Plätze pro Show",
     "scarcity": "Early Bird-Preise nur bis 15. Oktober"
   },

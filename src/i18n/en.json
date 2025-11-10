@@ -7,8 +7,8 @@
     "date": "November 14–16",
     "location": "Ostpark • Geodesic Dome",
     "venue": "✓ Only 200 seats ✓ Unique atmosphere ✓ Family-friendly",
-    "cta": "Get tickets from €8",
-    "price": "Reduced from €8 • Standard €18 • Box Office €22",
+    "cta": "Get tickets from €12",
+    "price": "Reduced from €12 (Severely disabled €8) • Standard €18 • Box Office €22",
     "scarcity": "⚠️ Limited seats – Only 200 seats per show",
     "countdown": {
       "title": "Until the festival:",
@@ -33,7 +33,7 @@
     "lineup": "Line-up",
     "venue": "Pepe Dome",
     "about": "About",
-    "tickets": "Tickets from €8",
+    "tickets": "Tickets from €12",
     "contact": "Contact",
     "faq": "FAQ",
     "language": {
@@ -43,7 +43,7 @@
   },
   "valueProps": {
     "price": {
-      "title": "From €8 only",
+      "title": "From €12 only",
       "description": "Affordable tickets for international artistry – Early Bird until Oct 15"
     },
     "artists": {
@@ -99,14 +99,19 @@
   },
   "tickets": {
     "title": "Get Your Tickets",
-    "subtitle": "Reduced tickets from €8 • Standard €18 – secure your spot now!",
+    "subtitle": "Reduced from €12 (Students, Seniors, Children) • Severely disabled €8 • Standard €18 – secure your spot now!",
     "specialOffer": "🎫 Discounts available",
-    "specialOfferDescription": "Reduced prices for children, students, seniors and people with disabilities",
+    "specialOfferDescription": "Reduced prices for children, students, seniors and severely disabled",
     "tiers": [
       {
-        "name": "🎫 Reduced",
+        "name": "♿ Severely Disabled",
         "price": "€8",
-        "note": "Children, students, seniors, people with disabilities"
+        "note": "With proof"
+      },
+      {
+        "name": "🎫 Reduced",
+        "price": "€12",
+        "note": "Students, Seniors, Children"
       },
       {
         "name": "Standard",
@@ -192,7 +197,7 @@
     },
     "online": "Online Tickets",
     "offline": "Box Office",
-    "price": "from €8"
+    "price": "from €12"
   },
   "schedule": {
     "title": "5 Shows in 3 Days",
@@ -375,7 +380,30 @@
             "title": "TIME TO TALK: BUZZ",
             "subtitle": "network meeting",
             "type": "talk",
-            "description": "TIME TO TALK is the discourse program of TIME FOR CIRCUS. The Federal Association for Contemporary Circus creates conversations, encounters and exchanges together with seven supra-regional venues. On equal footing with the audience and circus scene, pressing topics of the art form and its actors are discussed in the context of our time."
+            "description": "As part of the \"Time for Circus\" festival, the Federal Association for Contemporary Circus (BUZZ) invites you to an open discussion about the future of contemporary circus.",
+            "detailedDescription": "In Munich, the scene is growing steadily, but there is still a lack of fair access to funding, venues and production opportunities. The talk provides space to discuss exactly this – together with artists, organizers and cultural policy representatives.",
+            "topics": [
+              "What role does free circus play in the Bavarian cultural landscape?",
+              "How can its visibility and financial stability be strengthened?",
+              "What structures and networks are needed for sustainable growth?"
+            ],
+            "goal": "An honest exchange about challenges and opportunities – to create connections, foster alliances and open up new perspectives for the art form.",
+            "participants": [
+              "Sanne Kurz (MdL, Alliance 90/The Greens)",
+              "Walter Heun (NPN, BLZT, SK3)",
+              "Anke Politz (BUZZ, Chamäleon Theater Berlin)",
+              "Michael Heiduk (Representative Munich Scene)"
+            ],
+            "schedule": [
+              "Brief insight into the Munich circus scene",
+              "30-minute moderated discussion on situation, needs and future perspectives",
+              "Open exchange at topic tables:",
+              "  1. Interest representation (with Anke Politz)",
+              "  2. Needs of the Munich scene (with Michael Heiduk)",
+              "  3. Networks and structures for contemporary circus (with Walter Heun)"
+            ],
+            "seriesInfo": "TIME TO TALK is part of the nationwide format \"Time for Circus\", funded by the Fonds Darstellende Künste, in cooperation with leading houses for contemporary circus in Germany.",
+            "moreInfoUrl": "https://zeitfuerzirkus.de"
           },
           {
             "time": "18:00",
@@ -538,7 +566,7 @@
   "finalCta": {
     "title": "Only few tickets left!",
     "subtitle": "5 spectacular shows in 3 days – secure your seat for international artistry now",
-    "primary": "Get tickets from €8 now",
+    "primary": "Get tickets from €12 now",
     "secondary": "⚠️ Only 200 seats per show",
     "scarcity": "Early Bird prices only until October 15"
   },

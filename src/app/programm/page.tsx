@@ -21,6 +21,12 @@ interface EventData {
   note?: string;
   bookingButton?: string;
   bookingUrl?: string;
+  topics?: string[];
+  goal?: string;
+  participants?: string[];
+  schedule?: string[];
+  seriesInfo?: string;
+  moreInfoUrl?: string;
 }
 
 export default function ProgramPage() {
@@ -250,6 +256,98 @@ export default function ProgramPage() {
                             </details>
                           )}
 
+                          {/* Detailed Talk Information - Collapsible */}
+                          {event.type === 'talk' && 'detailedDescription' in event && (event as EventData).detailedDescription && (
+                            <details className="bg-gradient-to-br from-purple-500/5 to-pink-500/5 border border-purple-400/20 rounded-lg p-4 mb-4">
+                              <summary className="cursor-pointer flex items-center gap-2 text-sm font-medium text-white/90 hover:text-white transition-colors">
+                                <span className="text-sm">💬</span>
+                                {content.navigation.language.current === 'DE' ? 'Ausführliches Programm anzeigen' : 'View Detailed Program'}
+                              </summary>
+                              <div className="mt-4 space-y-5">
+                                <div>
+                                  <p className="text-white/80 leading-relaxed text-sm">{String(event.detailedDescription)}</p>
+                                </div>
+
+                                {'topics' in event && (event as EventData).topics && Array.isArray(event.topics) && event.topics.length > 0 && (
+                                  <div>
+                                    <h5 className="font-semibold text-white mb-3">🎯 {content.navigation.language.current === 'DE' ? 'Themen des Panels' : 'Panel Topics'}</h5>
+                                    <ul className="space-y-2">
+                                      {event.topics.map((topic, index) => (
+                                        <li key={index} className="flex items-start gap-2 text-white/80 text-sm">
+                                          <span className="text-purple-400 mt-1">•</span>
+                                          <span>{String(topic)}</span>
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  </div>
+                                )}
+
+                                {'goal' in event && (event as EventData).goal && (
+                                  <div>
+                                    <h5 className="font-semibold text-white mb-2">🎯 {content.navigation.language.current === 'DE' ? 'Ziel' : 'Goal'}</h5>
+                                    <p className="text-white/80 leading-relaxed text-sm">{String(event.goal)}</p>
+                                  </div>
+                                )}
+
+                                {'participants' in event && (event as EventData).participants && Array.isArray(event.participants) && event.participants.length > 0 && (
+                                  <div>
+                                    <h5 className="font-semibold text-white mb-3">👥 {content.navigation.language.current === 'DE' ? 'Teilnehmende Gesprächspartner*innen' : 'Participating Speakers'}</h5>
+                                    <ul className="space-y-2">
+                                      {event.participants.map((participant, index) => (
+                                        <li key={index} className="flex items-start gap-2 text-white/80 text-sm">
+                                          <span className="text-purple-400 mt-1">•</span>
+                                          <span>{String(participant)}</span>
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  </div>
+                                )}
+
+                                {'schedule' in event && (event as EventData).schedule && Array.isArray(event.schedule) && event.schedule.length > 0 && (
+                                  <div>
+                                    <h5 className="font-semibold text-white mb-3">📅 {content.navigation.language.current === 'DE' ? 'Ablauf' : 'Schedule'}</h5>
+                                    <ul className="space-y-2">
+                                      {event.schedule.map((item, index) => {
+                                        const itemStr = String(item);
+                                        const isIndented = itemStr.startsWith('  ');
+                                        const trimmed = itemStr.trim();
+                                        const isNumbered = /^\d+\./.test(trimmed);
+                                        
+                                        return (
+                                          <li key={index} className={`flex items-start gap-2 text-white/80 text-sm ${isIndented ? 'ml-4' : ''}`}>
+                                            {isIndented && isNumbered ? (
+                                              <span className="text-purple-400 mt-1 font-medium">{trimmed.split(' ')[0]}</span>
+                                            ) : (
+                                              <span className="text-purple-400 mt-1">•</span>
+                                            )}
+                                            <span>{trimmed}</span>
+                                          </li>
+                                        );
+                                      })}
+                                    </ul>
+                                  </div>
+                                )}
+
+                                {'seriesInfo' in event && (event as EventData).seriesInfo && (
+                                  <div className="bg-purple-500/10 border border-purple-400/20 rounded-lg p-3">
+                                    <h5 className="font-semibold text-white mb-2">📚 {content.navigation.language.current === 'DE' ? 'Veranstaltungsreihe' : 'Event Series'}</h5>
+                                    <p className="text-white/80 leading-relaxed text-sm mb-2">{String(event.seriesInfo)}</p>
+                                    {'moreInfoUrl' in event && (event as EventData).moreInfoUrl && (
+                                      <a
+                                        href={String(event.moreInfoUrl)}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-purple-400 hover:text-purple-300 transition-colors text-sm underline"
+                                      >
+                                        {content.navigation.language.current === 'DE' ? 'Mehr Infos: zeitfuerzirkus.de' : 'More info: zeitfuerzirkus.de'}
+                                      </a>
+                                    )}
+                                  </div>
+                                )}
+                              </div>
+                            </details>
+                          )}
+
 
                           {/* Note for placeholders */}
                           {'note' in event && (event as EventData).note && (
@@ -268,7 +366,7 @@ export default function ProgramPage() {
                                 href="/tickets"
                                 className="btn-secondary px-4 py-2 text-sm"
                               >
-                                Tickets sichern (Ermäßigt ab 8 € • Standard 18 €)
+                                Tickets sichern (Ermäßigt ab 12 € • Schwerbehinderte 8 € • Standard 18 €)
                               </Link>
                             </div>
                           )}
