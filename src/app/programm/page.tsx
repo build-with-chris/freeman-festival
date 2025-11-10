@@ -313,14 +313,25 @@ export default function ProgramPage() {
                                         const trimmed = itemStr.trim();
                                         const isNumbered = /^\d+\./.test(trimmed);
                                         
+                                        // Wenn nummeriert, extrahiere Nummer und Text getrennt
+                                        let numberPart = '';
+                                        let textPart = trimmed;
+                                        if (isIndented && isNumbered) {
+                                          const match = trimmed.match(/^(\d+\.)\s*(.+)$/);
+                                          if (match) {
+                                            numberPart = match[1];
+                                            textPart = match[2];
+                                          }
+                                        }
+                                        
                                         return (
                                           <li key={index} className={`flex items-start gap-2 text-white/80 text-sm ${isIndented ? 'ml-4' : ''}`}>
                                             {isIndented && isNumbered ? (
-                                              <span className="text-purple-400 mt-1 font-medium">{trimmed.split(' ')[0]}</span>
+                                              <span className="text-purple-400 mt-1 font-medium">{numberPart}</span>
                                             ) : (
                                               <span className="text-purple-400 mt-1">•</span>
                                             )}
-                                            <span>{trimmed}</span>
+                                            <span>{textPart}</span>
                                           </li>
                                         );
                                       })}
