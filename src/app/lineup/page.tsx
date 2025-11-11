@@ -84,6 +84,37 @@ export default function LineupPage() {
                   </p>
                 </div>
 
+                {/* Detailed Description - Collapsible */}
+                {'detailedDescription' in content.lineup.artists[0] && content.lineup.artists[0].detailedDescription && (
+                  <details className="bg-gradient-to-br from-blue-500/5 to-purple-500/5 border border-blue-400/20 rounded-lg p-4 mb-6">
+                    <summary className="cursor-pointer flex items-center gap-2 text-sm font-medium text-white/90 hover:text-white transition-colors">
+                      <span className="text-sm">📖</span>
+                      {content.navigation.language.current === 'DE' ? 'Detaillierte Beschreibung anzeigen' : 'View Detailed Description'}
+                    </summary>
+                    <div className="mt-4 space-y-4">
+                      <div>
+                        <p className="text-white/80 leading-relaxed text-sm whitespace-pre-line">
+                          {String(content.lineup.artists[0].detailedDescription)}
+                        </p>
+                      </div>
+
+                      {'elements' in content.lineup.artists[0] && content.lineup.artists[0].elements && Array.isArray(content.lineup.artists[0].elements) && content.lineup.artists[0].elements.length > 0 && (
+                        <div>
+                          <h5 className="font-semibold text-white mb-3">✨ {content.navigation.language.current === 'DE' ? 'Elemente' : 'Elements'}</h5>
+                          <ul className="space-y-2">
+                            {content.lineup.artists[0].elements.map((element, index) => (
+                              <li key={index} className="flex items-start gap-2 text-white/80 text-sm">
+                                <span className="text-blue-400 mt-1">•</span>
+                                <span>{String(element)}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+                  </details>
+                )}
+
                 <div className="p-4 rounded-lg bg-green-500/10 border border-green-400/20 mb-6">
                   <p className="text-green-300 font-semibold flex items-center gap-2">
                     <span>👨‍👩‍👧‍👦</span> {content.lineup.artists[0].audience}
@@ -186,6 +217,37 @@ Tickets für &ldquo;Häppy Hour&rdquo;
                     {content.lineup.artists[1].concept}
                   </p>
                 </div>
+
+                {/* Detailed Description - Collapsible */}
+                {'detailedDescription' in content.lineup.artists[1] && content.lineup.artists[1].detailedDescription && (
+                  <details className="bg-gradient-to-br from-purple-500/5 to-pink-500/5 border border-purple-400/20 rounded-lg p-4 mb-6">
+                    <summary className="cursor-pointer flex items-center gap-2 text-sm font-medium text-white/90 hover:text-white transition-colors">
+                      <span className="text-sm">📖</span>
+                      {content.navigation.language.current === 'DE' ? 'Detaillierte Beschreibung anzeigen' : 'View Detailed Description'}
+                    </summary>
+                    <div className="mt-4 space-y-4">
+                      <div>
+                        <p className="text-white/80 leading-relaxed text-sm whitespace-pre-line">
+                          {String(content.lineup.artists[1].detailedDescription)}
+                        </p>
+                      </div>
+
+                      {'elements' in content.lineup.artists[1] && content.lineup.artists[1].elements && Array.isArray(content.lineup.artists[1].elements) && content.lineup.artists[1].elements.length > 0 && (
+                        <div>
+                          <h5 className="font-semibold text-white mb-3">✨ {content.navigation.language.current === 'DE' ? 'Elemente' : 'Elements'}</h5>
+                          <ul className="space-y-2">
+                            {content.lineup.artists[1].elements.map((element, index) => (
+                              <li key={index} className="flex items-start gap-2 text-white/80 text-sm">
+                                <span className="text-purple-400 mt-1">•</span>
+                                <span>{String(element)}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+                  </details>
+                )}
 
                 <div className="p-4 rounded-lg bg-blue-500/10 border border-blue-400/20 mb-6">
                   <p className="text-blue-300 text-sm">

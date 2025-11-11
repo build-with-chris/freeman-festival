@@ -74,7 +74,9 @@
         "members": "Merri Heikilä, Bjarni Árnason, Jakob Jacobsson",
         "style": "Juggling, acrobatics and live music merge in a powerful, poetic circus experience",
         "concept": "Nordic magic art: The piece is humorous, surprising and profound – inspired by everyday rituals in Scandinavia, transformed into movement and visual language",
-        "audience": "Also suitable for families"
+        "audience": "Also suitable for families",
+        "detailedDescription": "Häppy Hour is an ode to the deep, dark North and its social culture. The show deals with the contradictory relationship with alcohol and explores the strange and embarrassing experiences that Nordic nightlife has to offer.\n\nInterpreted through the lens of contemporary circus and comedy, Häppy Hour approaches real-life situations through awkward humor and shows that things aren't always so serious and that it's okay to laugh at ourselves, even in our worst moments.\n\nBy combining juggling and aerial rope with physical theater and live music, The Nordic Council creates scenes on these themes that evoke a feeling of self-recognition in the audience. \"We've all been there\" is a feeling that permeates the performance as the trio stumbles through the highs and lows of Nordic nightlife.",
+        "elements": ["Juggling", "Aerial Rope", "Physical Theater", "Live Music"]
       },
       {
         "name": "Art for Rainy Days",
@@ -84,7 +86,9 @@
         "category": "Best Contemporary Performance",
         "style": "Their performance combines elements from dance, circus and contemporary movement",
         "concept": "They use physical expression forms, movement language and visual metaphors in their choreography",
-        "recognition": "The Latvian Dance Award is considered one of the highest honors in the field of dance/art in Latvia"
+        "recognition": "The Latvian Dance Award is considered one of the highest honors in the field of dance/art in Latvia",
+        "detailedDescription": "It is a powerful and hypnotic exploration of care under pressure. How do we take care of ourselves – and each other – when everything around us is spiraling out of control? What does compassion look like at great heights, in the middle of a storm, or when pain creeps into the body?\n\nIn this intimate duet, a dancer, an aerialist, and a rope are bound together in an ever-evolving relationship. Their movements circle each other in a tender choreography of trust, resistance, and release. They hang, spin, support, and respond – bound to each other in a physical and emotional spiral.\n\nBy connecting hair hanging, aerial rope, contemporary dance, and hauntingly reinterpreted Baltic folk music, \"How A Spiral Works\" is a poetic act of care and resistance.\n\nCreated by renowned British director Jason Dupree, Latvian choreographer Alise Madara Bokaldere, and extraordinary Lithuanian aerialist Izabele Kuzelyte. With their debut performance, they struck a resonant chord in the contemporary scene, and we are proud to be part of their extensive European tour.",
+        "elements": ["Hair Hanging", "Aerial Rope", "Contemporary Dance", "Baltic Folk Music"]
       }
     ],
     "moreActs": "More acts will be added continuously.",
@@ -133,6 +137,8 @@
             "title": "\"Häppy Hour\"",
             "artist": "The Nordic Council",
             "description": "Ode to the North; humor about embarrassing real-life moments & the ambivalent relationship with alcohol. Contemporary circus × comedy.",
+            "detailedDescription": "Häppy Hour is an ode to the deep, dark North and its social culture. The show deals with the contradictory relationship with alcohol and explores the strange and embarrassing experiences that Nordic nightlife has to offer.\n\nInterpreted through the lens of contemporary circus and comedy, Häppy Hour approaches real-life situations through awkward humor and shows that things aren't always so serious and that it's okay to laugh at ourselves, even in our worst moments.\n\nBy combining juggling and aerial rope with physical theater and live music, The Nordic Council creates scenes on these themes that evoke a feeling of self-recognition in the audience. \"We've all been there\" is a feeling that permeates the performance as the trio stumbles through the highs and lows of Nordic nightlife.",
+            "elements": ["Juggling", "Aerial Rope", "Physical Theater", "Live Music"],
             "ticketUrl": "https://rausgegangen.de/events/nordic-council-happy-hour-0/?mtm_campaign=teilen_event&mtm_kwd=app",
             "image": "/Happy Hour/Chris Collina - Häppy Hour 3.webp"
           }
@@ -146,6 +152,8 @@
             "title": "\"Häppy Hour\"",
             "artist": "The Nordic Council",
             "description": "Ode to the North; humor about embarrassing real-life moments & the ambivalent relationship with alcohol. Contemporary circus × comedy.",
+            "detailedDescription": "Häppy Hour is an ode to the deep, dark North and its social culture. The show deals with the contradictory relationship with alcohol and explores the strange and embarrassing experiences that Nordic nightlife has to offer.\n\nInterpreted through the lens of contemporary circus and comedy, Häppy Hour approaches real-life situations through awkward humor and shows that things aren't always so serious and that it's okay to laugh at ourselves, even in our worst moments.\n\nBy combining juggling and aerial rope with physical theater and live music, The Nordic Council creates scenes on these themes that evoke a feeling of self-recognition in the audience. \"We've all been there\" is a feeling that permeates the performance as the trio stumbles through the highs and lows of Nordic nightlife.",
+            "elements": ["Juggling", "Aerial Rope", "Physical Theater", "Live Music"],
             "ticketUrl": "https://rausgegangen.de/events/nordic-council-happy-hour-1/?mtm_campaign=teilen_event&mtm_kwd=app",
             "image": "/Happy Hour/Dynamo - Happy Hour cropped.webp"
           },
@@ -154,6 +162,8 @@
             "title": "\"How a Spiral Works\"",
             "artist": "Art for Rainy Days",
             "description": "Meditative, hypnotic circus: dance, hair hanging & aerial rope, minimalist aesthetics, newly interpreted Baltic folk music.",
+            "detailedDescription": "It is a powerful and hypnotic exploration of care under pressure. How do we take care of ourselves – and each other – when everything around us is spiraling out of control? What does compassion look like at great heights, in the middle of a storm, or when pain creeps into the body?\n\nIn this intimate duet, a dancer, an aerialist, and a rope are bound together in an ever-evolving relationship. Their movements circle each other in a tender choreography of trust, resistance, and release. They hang, spin, support, and respond – bound to each other in a physical and emotional spiral.\n\nBy connecting hair hanging, aerial rope, contemporary dance, and hauntingly reinterpreted Baltic folk music, \"How A Spiral Works\" is a poetic act of care and resistance.\n\nCreated by renowned British director Jason Dupree, Latvian choreographer Alise Madara Bokaldere, and extraordinary Lithuanian aerialist Izabele Kuzelyte. With their debut performance, they struck a resonant chord in the contemporary scene, and we are proud to be part of their extensive European tour.",
+            "elements": ["Hair Hanging", "Aerial Rope", "Contemporary Dance", "Baltic Folk Music"],
             "ticketUrl": "https://rausgegangen.de/events/art-for-rainy-days-how-a-spiral-works-0/?mtm_campaign=teilen_event&mtm_kwd=app",
             "image": "/How A Spiral Works/Zane Krūmiņa 1.webp"
           }
@@ -167,6 +177,8 @@
             "title": "\"How a Spiral Works\"",
             "artist": "Art for Rainy Days",
             "description": "Meditative, hypnotic circus: dance, hair hanging & aerial rope, minimalist aesthetics, newly interpreted Baltic folk music.",
+            "detailedDescription": "It is a powerful and hypnotic exploration of care under pressure. How do we take care of ourselves – and each other – when everything around us is spiraling out of control? What does compassion look like at great heights, in the middle of a storm, or when pain creeps into the body?\n\nIn this intimate duet, a dancer, an aerialist, and a rope are bound together in an ever-evolving relationship. Their movements circle each other in a tender choreography of trust, resistance, and release. They hang, spin, support, and respond – bound to each other in a physical and emotional spiral.\n\nBy connecting hair hanging, aerial rope, contemporary dance, and hauntingly reinterpreted Baltic folk music, \"How A Spiral Works\" is a poetic act of care and resistance.\n\nCreated by renowned British director Jason Dupree, Latvian choreographer Alise Madara Bokaldere, and extraordinary Lithuanian aerialist Izabele Kuzelyte. With their debut performance, they struck a resonant chord in the contemporary scene, and we are proud to be part of their extensive European tour.",
+            "elements": ["Hair Hanging", "Aerial Rope", "Contemporary Dance", "Baltic Folk Music"],
             "ticketUrl": "https://rausgegangen.de/events/art-for-rainy-days-how-a-spiral-works-1/?mtm_campaign=teilen_event&mtm_kwd=app",
             "image": "/How A Spiral Works/Eve Gastaldi 1.webp"
           }

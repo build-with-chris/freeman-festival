@@ -109,9 +109,40 @@ export default function TicketsPage() {
                                 </p>
                               </div>
                             </div>
-                            <p className="text-white/80 leading-relaxed mb-6">
+                            <p className="text-white/80 leading-relaxed mb-4">
                               {event.description}
                             </p>
+
+                            {/* Detailed Show Description - Collapsible */}
+                            {'detailedDescription' in event && event.detailedDescription && (
+                              <details className="bg-gradient-to-br from-yellow-500/5 to-orange-500/5 border border-yellow-400/20 rounded-lg p-4 mb-4">
+                                <summary className="cursor-pointer flex items-center gap-2 text-sm font-medium text-white/90 hover:text-white transition-colors">
+                                  <span className="text-sm">📖</span>
+                                  {content.navigation.language.current === 'DE' ? 'Detaillierte Beschreibung anzeigen' : 'View Detailed Description'}
+                                </summary>
+                                <div className="mt-4 space-y-4">
+                                  <div>
+                                    <p className="text-white/80 leading-relaxed text-sm whitespace-pre-line">
+                                      {String(event.detailedDescription)}
+                                    </p>
+                                  </div>
+
+                                  {'elements' in event && event.elements && Array.isArray(event.elements) && event.elements.length > 0 && (
+                                    <div>
+                                      <h5 className="font-semibold text-white mb-3">✨ {content.navigation.language.current === 'DE' ? 'Elemente' : 'Elements'}</h5>
+                                      <ul className="space-y-2">
+                                        {event.elements.map((element, index) => (
+                                          <li key={index} className="flex items-start gap-2 text-white/80 text-sm">
+                                            <span className="text-yellow-400 mt-1">•</span>
+                                            <span>{String(element)}</span>
+                                          </li>
+                                        ))}
+                                      </ul>
+                                    </div>
+                                  )}
+                                </div>
+                              </details>
+                            )}
                           </div>
 
                           {/* Ticket Button */}
