@@ -8,7 +8,7 @@
     "location": "Ostpark • Geodesic Dome",
     "venue": "✓ Only 200 seats ✓ Unique atmosphere ✓ Family-friendly",
     "cta": "Get tickets from €12",
-    "price": "Reduced €12 • Standard €18 • Box Office €22",
+    "price": "Reduced €12 • Standard €18 • Box Office €18",
     "scarcity": "⚠️ Limited seats – Only 200 seats per show",
     "countdown": {
       "title": "Until the festival:",
@@ -115,7 +115,7 @@
       },
       {
         "name": "Box Office",
-        "price": "€22",
+        "price": "€18",
         "note": "if available"
       }
     ],

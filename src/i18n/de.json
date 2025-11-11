@@ -10,7 +10,7 @@
     "venue": "✓ Nur 200 Plätze ✓ Einzigartige Atmosphäre ✓ Familienfreundlich",
     "cta": "Tickets ab 12€ sichern",
     "ctaSecondary": "Programm ansehen",
-    "price": "Ermäßigt 12 € • Standard 18 € • Abendkasse 22 €",
+    "price": "Ermäßigt 12 € • Standard 18 € • Abendkasse 18 €",
     "scarcity": "⚠️ Begrenzte Plätze – Nur 200 Sitzplätze pro Show",
     "countdown": {
       "title": "Bis zum Festival:",
@@ -123,7 +123,7 @@
       },
       {
         "name": "Abendkasse",
-        "price": "22 €",
+        "price": "18 €",
         "note": "falls verfügbar"
       }
     ],

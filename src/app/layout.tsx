@@ -92,7 +92,7 @@ export default function RootLayout({
       {
         "@type": "Offer",
         "name": "Abendkasse",
-        "price": "22",
+        "price": "18",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock"
       }
