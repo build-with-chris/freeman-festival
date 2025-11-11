@@ -10,7 +10,7 @@
     "venue": "✓ Nur 200 Plätze ✓ Einzigartige Atmosphäre ✓ Familienfreundlich",
     "cta": "Tickets ab 12€ sichern",
     "ctaSecondary": "Programm ansehen",
-    "price": "Ermäßigt ab 12 € (Schwerbehinderte 8 €) • Standard 18 € • Abendkasse 22 €",
+    "price": "Ermäßigt 12 € • Standard 18 € • Abendkasse 22 €",
     "scarcity": "⚠️ Begrenzte Plätze – Nur 200 Sitzplätze pro Show",
     "countdown": {
       "title": "Bis zum Festival:",
@@ -107,15 +107,10 @@
   },
   "tickets": {
     "title": "Tickets sichern",
-    "subtitle": "Ermäßigt ab 12 € (Studenten, Senioren, Kinder) • Schwerbehinderte 8 € • Standard 18 € – sichere dir jetzt deinen Platz!",
+    "subtitle": "Ermäßigt 12 € • Standard 18 € – sichere dir jetzt deinen Platz!",
     "specialOffer": "🎫 Ermäßigungen verfügbar",
-    "specialOfferDescription": "Rabatte für Kinder, Studenten, Senioren und Schwerbehinderte",
+    "specialOfferDescription": "Rabatte für Kinder, Studenten, Senioren",
     "tiers": [
-      {
-        "name": "♿ Schwerbehinderte",
-        "price": "8 €",
-        "note": "Mit Nachweis"
-      },
       {
         "name": "🎫 Ermäßigt",
         "price": "12 €",

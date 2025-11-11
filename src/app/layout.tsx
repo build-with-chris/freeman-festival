@@ -77,13 +77,6 @@ export default function RootLayout({
     "offers": [
       {
         "@type": "Offer",
-        "name": "Schwerbehinderte",
-        "price": "8",
-        "priceCurrency": "EUR",
-        "availability": "https://schema.org/LimitedAvailability"
-      },
-      {
-        "@type": "Offer",
         "name": "Ermäßigt",
         "price": "12",
         "priceCurrency": "EUR",

@@ -377,7 +377,7 @@ export default function ProgramPage() {
                                 href="/tickets"
                                 className="btn-secondary px-4 py-2 text-sm"
                               >
-                                Tickets sichern (Ermäßigt ab 12 € • Schwerbehinderte 8 € • Standard 18 €)
+                                Tickets sichern (Ermäßigt 12 € • Standard 18 €)
                               </Link>
                             </div>
                           )}
