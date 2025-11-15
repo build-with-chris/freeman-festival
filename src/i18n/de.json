@@ -204,6 +204,13 @@
       "title": "Tickets",
       "text": "Verfügbar über rausgegangen.de"
     },
+    "technicalNotice": {
+      "title": "⚠️ Wichtiger Hinweis zu Online-Tickets",
+      "message": "Aktuell gibt es ein technisches Problem bei rausgegangen.de. Die Online-Tickets sind momentan nicht verfügbar.",
+      "boxOffice": "Keine Sorge! Es gibt genug Tickets an der Abendkasse – zum selben Preis!",
+      "boxOfficePrice": "Abendkasse: 18 € (Standard) / 12 € (ermäßigt)",
+      "buttonText": "Tickets kaufen (Link aktuell nicht verfügbar)"
+    },
     "infoQuestions": {
       "icon": "💬",
       "title": "Fragen?",
@@ -309,7 +316,7 @@
     "questions": [
       {
         "q": "Wo gibt es Tickets?",
-        "a": "Online (Eventfrog-Link folgt) und an der Abendkasse."
+        "a": "Aktuell gibt es ein technisches Problem bei rausgegangen.de. Tickets sind an der Abendkasse erhältlich – zum selben Preis! (18€ Standard / 12€ ermäßigt)"
       },
       {
         "q": "Wie finde ich hin?",

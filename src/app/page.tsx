@@ -346,9 +346,14 @@ export default function Home() {
             <h3 className="display text-2xl font-bold mb-3">
               Tickets sichern
             </h3>
-            <p className="text-white/80 text-sm mb-6">
+            <p className="text-white/80 text-sm mb-3">
               Ermäßigt 12€ · Standard 18€ · Nur 200 Plätze pro Show
             </p>
+            <div className="mb-4 p-2 rounded-lg bg-orange-500/20 border border-orange-400/40">
+              <p className="text-xs text-orange-200 font-medium">
+                {content.tickets.technicalNotice.message.split('.')[0]}. {content.tickets.technicalNotice.boxOffice}
+              </p>
+            </div>
             <Link
               href="/tickets"
               className="btn-primary w-full py-3 text-lg font-semibold"

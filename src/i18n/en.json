@@ -196,6 +196,13 @@
       "title": "Tickets",
       "text": "Available via rausgegangen.de"
     },
+    "technicalNotice": {
+      "title": "⚠️ Important Notice About Online Tickets",
+      "message": "There is currently a technical issue with rausgegangen.de. Online tickets are temporarily unavailable.",
+      "boxOffice": "Don't worry! There are plenty of tickets available at the box office – at the same price!",
+      "boxOfficePrice": "Box Office: €18 (Standard) / €12 (Reduced)",
+      "buttonText": "Buy Tickets (Link currently unavailable)"
+    },
     "infoQuestions": {
       "icon": "💬",
       "title": "Questions?",
@@ -582,7 +589,7 @@
     "questions": [
       {
         "q": "Where can I get tickets?",
-        "a": "Online (Eventfrog link follows) and at the box office."
+        "a": "There is currently a technical issue with rausgegangen.de. Tickets are available at the box office – at the same price! (€18 Standard / €12 Reduced)"
       },
       {
         "q": "How do I get there?",
