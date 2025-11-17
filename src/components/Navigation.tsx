@@ -64,7 +64,7 @@ export default function Navigation({ currentPage = 'home' }: NavigationProps) {
               {content.navigation.contact}
             </Link>
             <Link
-              href="/tickets"
+              href="/infos"
               className={currentPage === 'tickets' ? 'btn-primary px-4 py-2 text-sm font-semibold' : 'btn-primary px-4 py-2 text-sm'}
             >
               {content.navigation.tickets}
@@ -181,7 +181,7 @@ export default function Navigation({ currentPage = 'home' }: NavigationProps) {
 
               {/* Mobile Tickets Link */}
               <Link
-                href="/tickets"
+                href="/infos"
                 className={`btn-primary w-full py-3 text-center ${
                   currentPage === 'tickets' ? 'font-semibold' : ''
                 }`}

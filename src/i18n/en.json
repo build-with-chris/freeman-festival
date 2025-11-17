@@ -220,6 +220,31 @@
     "offline": "Box Office",
     "price": "from €12"
   },
+  "infos": {
+    "title": "Info",
+    "subtitle": "Everything important about the Freeman Festival",
+    "ticketInfo": {
+      "title": "Ticket Info for 2026",
+      "message": "Ticket information for the Freeman Festival 2026 is not yet available. We will inform you about prices, availability, and ticket sales, likely by the end of March."
+    },
+    "infoTitle": "Important Information",
+    "infoLocation": {
+      "icon": "📍",
+      "title": "Location",
+      "text": "Pepe Dome, Munich"
+    },
+    "infoTickets": {
+      "icon": "🎫",
+      "title": "Tickets",
+      "text": "Information coming soon"
+    },
+    "infoQuestions": {
+      "icon": "💬",
+      "title": "Questions?",
+      "text": "Contact us",
+      "link": "/kontakt"
+    }
+  },
   "schedule": {
     "title": "5 Shows in 3 Days",
     "subtitle": "Entry 30 min. before start • free seating",

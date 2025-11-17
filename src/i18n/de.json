@@ -214,6 +214,31 @@
     "offline": "Abendkasse",
     "price": "ab 12 €"
   },
+  "infos": {
+    "title": "Infos",
+    "subtitle": "Alles Wichtige zum Freeman Festival",
+    "ticketInfo": {
+      "title": "Ticket-Infos für 2026",
+      "message": "Die Ticket-Informationen für das Freeman Festival 2026 sind noch nicht verfügbar. Wir informieren dich voraussichtlich Ende März über Preise, Verfügbarkeit und den Ticketverkauf."
+    },
+    "infoTitle": "Wichtige Informationen",
+    "infoLocation": {
+      "icon": "📍",
+      "title": "Ort",
+      "text": "Pepe Dome, München"
+    },
+    "infoTickets": {
+      "icon": "🎫",
+      "title": "Tickets",
+      "text": "Informationen folgen in Kürze"
+    },
+    "infoQuestions": {
+      "icon": "💬",
+      "title": "Fragen?",
+      "text": "Kontaktiere uns",
+      "link": "/kontakt"
+    }
+  },
   "schedule": {
     "title": "4 Shows an 3 Tagen",
     "subtitle": "Einlass 30 Min. vor Beginn • freie Platzwahl",

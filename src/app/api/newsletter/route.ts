@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import nodemailer from 'nodemailer';
 
 export async function POST(request: NextRequest) {
   try {
@@ -20,23 +21,7 @@ Datum: ${new Date().toLocaleString('de-DE', { timeZone: 'Europe/Berlin' })}
 
 Diese E-Mail wurde automatisch generiert.`;
 
-    // Send email using fetch to a mail service
-    // For production, integrate with a service like Resend, SendGrid, or Nodemailer
-    // For now, we'll use a simple approach that can be extended
-    
-    // Option 1: Use a webhook service or email API
-    // Option 2: Use server-side email library (requires SMTP config)
-    
-    // For immediate functionality, we'll log and prepare for email service integration
-    console.log('Newsletter subscription received:', email);
-    console.log('Email should be sent to: info@pepeshows.de');
-    console.log('Subject:', emailSubject);
-    console.log('Body:', emailBody);
-
-    // Send email using a simple approach
-    // Try to send email via fetch to a mail service
-    // If RESEND_API_KEY is set, use Resend, otherwise log for manual processing
-    
+    // Try Resend first (if API key is set)
     const RESEND_API_KEY = process.env.RESEND_API_KEY;
     
     if (RESEND_API_KEY) {
@@ -55,11 +40,7 @@ Diese E-Mail wurde automatisch generiert.`;
           }),
         });
         
-        if (!response.ok) {
-          const errorData = await response.text();
-          console.error('Resend API error:', errorData);
-          // Continue to log fallback
-        } else {
+        if (response.ok) {
           const data = await response.json();
           console.log('Email sent successfully via Resend:', data);
           return NextResponse.json(
@@ -69,14 +50,53 @@ Diese E-Mail wurde automatisch generiert.`;
         }
       } catch (error) {
         console.error('Error sending email via Resend:', error);
-        // Continue to log fallback
       }
     }
-    
-    // Fallback: Log email data (for manual processing or integration with other services)
-    // In production, you should integrate with an email service
+
+    // Fallback: Use nodemailer with SMTP (if configured)
+    const SMTP_HOST = process.env.SMTP_HOST;
+    const SMTP_PORT = process.env.SMTP_PORT;
+    const SMTP_USER = process.env.SMTP_USER;
+    const SMTP_PASS = process.env.SMTP_PASS;
+
+    if (SMTP_HOST && SMTP_USER && SMTP_PASS) {
+      try {
+        const transporter = nodemailer.createTransport({
+          host: SMTP_HOST,
+          port: parseInt(SMTP_PORT || '587'),
+          secure: SMTP_PORT === '465',
+          auth: {
+            user: SMTP_USER,
+            pass: SMTP_PASS,
+          },
+        });
+
+        await transporter.sendMail({
+          from: SMTP_USER,
+          to: 'info@pepeshows.de',
+          subject: emailSubject,
+          text: emailBody,
+        });
+
+        console.log('Email sent successfully via SMTP');
+        return NextResponse.json(
+          { success: true, message: 'Newsletter subscription successful' },
+          { status: 200 }
+        );
+      } catch (error) {
+        console.error('Error sending email via SMTP:', error);
+      }
+    }
+
+    // Final fallback: Log for manual processing
+    console.log('Newsletter subscription received:', email);
+    console.log('Email should be sent to: info@pepeshows.de');
+    console.log('Subject:', emailSubject);
+    console.log('Body:', emailBody);
+    console.log('⚠️ No email service configured. Please set RESEND_API_KEY or SMTP credentials.');
+
     return NextResponse.json(
-      { success: true, message: 'Newsletter subscription successful' },
+      { success: true, message: 'Newsletter subscription received (email service not configured)' },
       { status: 200 }
     );
   } catch (error) {
