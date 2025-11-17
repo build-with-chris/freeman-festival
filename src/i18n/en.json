@@ -196,12 +196,19 @@
       "title": "Tickets",
       "text": "Available via rausgegangen.de"
     },
-    "technicalNotice": {
-      "title": "⚠️ Important Notice About Online Tickets",
-      "message": "There is currently a technical issue with rausgegangen.de. Online tickets are temporarily unavailable.",
-      "boxOffice": "Don't worry! There are plenty of tickets available at the box office – at the same price!",
-      "boxOfficePrice": "Box Office: €18 (Standard) / €12 (Reduced)",
-      "buttonText": "Buy Tickets (Link currently unavailable)"
+    "newsletter": {
+      "title": "Subscribe to Newsletter",
+      "subtitle": "Stay Updated",
+      "description": "Subscribe to our newsletter and don't miss any raffles, discounted tickets, and news about the Freeman Festival!",
+      "emailPlaceholder": "Your email address",
+      "button": "Subscribe to Newsletter",
+      "success": "Thank you! You have successfully subscribed.",
+      "benefits": {
+        "title": "What you'll get:",
+        "raffles": "🎁 Exclusive Raffles",
+        "discounts": "💰 Discounted Tickets",
+        "updates": "📢 News & Updates"
+      }
     },
     "infoQuestions": {
       "icon": "💬",
@@ -313,6 +320,20 @@
     "pepeDescription": "PepeShows Preview",
     "nordicDescription": "The Nordic Council Performance",
     "rainyDescription": "Art for Rainy Days Preview"
+  },
+  "newsletter": {
+    "title": "Subscribe to Newsletter",
+    "subtitle": "Stay Updated",
+    "description": "Subscribe to our newsletter and don't miss any raffles, discounted tickets, and news about the Freeman Festival!",
+    "emailPlaceholder": "Your email address",
+    "button": "Subscribe to Newsletter",
+    "success": "Thank you! You have successfully subscribed.",
+    "benefits": {
+      "title": "What you'll get:",
+      "raffles": "🎁 Exclusive Raffles",
+      "discounts": "💰 Discounted Tickets",
+      "updates": "📢 News & Updates"
+    }
   },
   "social": {
     "title": "Follow us on Instagram",
@@ -588,8 +609,8 @@
     "title": "FAQ",
     "questions": [
       {
-        "q": "Where can I get tickets?",
-        "a": "There is currently a technical issue with rausgegangen.de. Tickets are available at the box office – at the same price! (€18 Standard / €12 Reduced)"
+        "q": "How can I stay informed about news?",
+        "a": "Subscribe to our newsletter for raffles, discounted tickets, and all news about the Freeman Festival!"
       },
       {
         "q": "How do I get there?",

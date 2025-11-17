@@ -204,13 +204,6 @@
       "title": "Tickets",
       "text": "Verfügbar über rausgegangen.de"
     },
-    "technicalNotice": {
-      "title": "⚠️ Wichtiger Hinweis zu Online-Tickets",
-      "message": "Aktuell gibt es ein technisches Problem bei rausgegangen.de. Die Online-Tickets sind momentan nicht verfügbar.",
-      "boxOffice": "Keine Sorge! Es gibt genug Tickets an der Abendkasse – zum selben Preis!",
-      "boxOfficePrice": "Abendkasse: 18 € (Standard) / 12 € (ermäßigt)",
-      "buttonText": "Tickets kaufen (Link aktuell nicht verfügbar)"
-    },
     "infoQuestions": {
       "icon": "💬",
       "title": "Fragen?",
@@ -315,8 +308,8 @@
     "title": "FAQ",
     "questions": [
       {
-        "q": "Wo gibt es Tickets?",
-        "a": "Aktuell gibt es ein technisches Problem bei rausgegangen.de. Tickets sind an der Abendkasse erhältlich – zum selben Preis! (18€ Standard / 12€ ermäßigt)"
+        "q": "Wie kann ich über Neuigkeiten informiert bleiben?",
+        "a": "Abonniere unseren Newsletter für Verlosungen, vergünstigte Tickets und alle Neuigkeiten zum Freeman Festival!"
       },
       {
         "q": "Wie finde ich hin?",
@@ -327,6 +320,20 @@
         "a": "Ja. Die Show dauert ca. 75 Minuten."
       }
     ]
+  },
+  "newsletter": {
+    "title": "Newsletter abonnieren",
+    "subtitle": "Bleib auf dem Laufenden",
+    "description": "Abonniere unseren Newsletter und verpasse keine Verlosungen, vergünstigten Tickets und Neuigkeiten zum Freeman Festival!",
+    "emailPlaceholder": "Deine E-Mail-Adresse",
+    "button": "Newsletter abonnieren",
+    "success": "Vielen Dank! Du hast dich erfolgreich angemeldet.",
+    "benefits": {
+      "title": "Was du erhältst:",
+      "raffles": "🎁 Exklusive Verlosungen",
+      "discounts": "💰 Vergünstigte Tickets",
+      "updates": "📢 Neuigkeiten & Updates"
+    }
   },
   "social": {
     "title": "Folge uns auf Instagram",

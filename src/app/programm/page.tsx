@@ -370,14 +370,14 @@ export default function ProgramPage() {
                             </div>
                           )}
 
-                          {/* Standard Ticket CTA */}
+                          {/* Newsletter CTA instead of Ticket CTA */}
                           {event.type === 'show' && (
                             <div className="mb-4">
                               <Link
-                                href="/tickets"
+                                href="/#newsletter"
                                 className="btn-secondary px-4 py-2 text-sm"
                               >
-                                Tickets sichern (Ermäßigt 12 € • Standard 18 €)
+                                {content.newsletter.button}
                               </Link>
                             </div>
                           )}
@@ -401,10 +401,10 @@ export default function ProgramPage() {
                                   ></iframe>
                                 </div>
                                 <Link
-                                  href="/tickets"
+                                  href="/#newsletter"
                                   className="btn-secondary w-full justify-center py-2 text-xs"
                                 >
-                                  Tickets für diese Show
+                                  {content.newsletter.button}
                                 </Link>
                               </div>
                             </details>
@@ -428,10 +428,10 @@ export default function ProgramPage() {
                                   ></iframe>
                                 </div>
                                 <Link
-                                  href="/tickets"
+                                  href="/#newsletter"
                                   className="btn-secondary w-full justify-center py-2 text-xs"
                                 >
-                                  Tickets für diese Show
+                                  {content.newsletter.button}
                                 </Link>
                               </div>
                             </details>
@@ -532,10 +532,10 @@ export default function ProgramPage() {
             {content.program.ctaTitle}
           </h2>
           <Link
-            href="/tickets"
+            href="/#newsletter"
             className="btn-primary text-xl px-10 py-5 shadow-2xl hover:shadow-yellow-400/20 transition-all"
           >
-            {content.program.ctaButton}
+            {content.newsletter.button}
           </Link>
           <p className="mt-6 muted">
             {content.program.ctaSubtitle}

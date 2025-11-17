@@ -143,10 +143,10 @@ export default function LineupPage() {
                   </div>
                   <p className="text-white/80 text-sm mb-4">Erlebe einen Vorgeschmack auf die faszinierende Performance von The Nordic Council</p>
                   <Link
-                    href="/tickets"
+                    href="/#newsletter"
                     className="btn-primary w-full justify-center py-3 text-lg font-semibold"
                   >
-Tickets für &ldquo;Häppy Hour&rdquo;
+                    {content.newsletter.button}
                   </Link>
                 </div>
               </div>
@@ -273,10 +273,10 @@ Tickets für &ldquo;Häppy Hour&rdquo;
                   </div>
                   <p className="text-white/80 text-sm mb-4">Entdecke die preisgekrönte Performance von Art for Rainy Days</p>
                   <Link
-                    href="/tickets"
+                    href="/#newsletter"
                     className="btn-primary w-full justify-center py-3 text-lg font-semibold"
                   >
-Tickets für &ldquo;How a Spiral Works&rdquo;
+                    {content.newsletter.button}
                   </Link>
                 </div>
               </div>
@@ -323,10 +323,10 @@ Tickets für &ldquo;How a Spiral Works&rdquo;
             {content.lineup.ctaTitle}
           </h2>
           <Link
-            href="/tickets"
+            href="/#newsletter"
             className="btn-primary text-xl px-10 py-5 shadow-2xl hover:shadow-yellow-400/20 transition-all"
           >
-            {content.lineup.ctaButton}
+            {content.newsletter.button}
           </Link>
           <p className="mt-6 muted">
             {content.lineup.ctaSubtitle}

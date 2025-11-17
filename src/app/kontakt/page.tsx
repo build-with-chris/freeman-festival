@@ -303,10 +303,10 @@ export default function ContactPage() {
             {content.contact.cta.title}
           </h2>
           <Link
-            href="/tickets"
+            href="/#newsletter"
             className="btn-primary text-xl px-10 py-5 shadow-2xl transition-all"
           >
-            {content.contact.cta.button}
+            {content.newsletter.button}
           </Link>
           <p className="mt-6 muted">
             {content.contact.cta.subtitle}

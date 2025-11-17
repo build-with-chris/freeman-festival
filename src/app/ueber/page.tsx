@@ -256,10 +256,10 @@ export default function AboutPage() {
             {content.about.cta.subtitle}
           </p>
           <Link
-            href="/tickets"
+            href="/#newsletter"
             className="btn-primary text-xl px-10 py-5 shadow-2xl transition-all"
           >
-            {content.about.cta.button}
+            {content.newsletter.button}
           </Link>
         </div>
       </section>

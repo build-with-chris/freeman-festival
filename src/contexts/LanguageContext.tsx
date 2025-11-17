@@ -66,7 +66,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   const content = language === 'de'
     ? deContent
-    : deepMergeFallback(deContent, enContent as Partial<typeof deContent>);
+    : deepMergeFallback(deContent, enContent as unknown as Partial<typeof deContent>);
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage, toggleLanguage, content }}>

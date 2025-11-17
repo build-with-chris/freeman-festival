@@ -21,21 +21,47 @@ export default function TicketsPage() {
             {content.tickets.subtitle}
           </p>
 
-          {/* Technical Notice Banner - Prominent */}
-          <div className="mb-8 p-6 rounded-xl bg-gradient-to-r from-orange-500/20 to-red-500/20 border-2 border-orange-400/50 backdrop-blur-sm shadow-lg">
-            <div className="text-center space-y-3">
-              <p className="text-xl md:text-2xl font-bold mb-2 flex items-center justify-center gap-2 text-orange-200">
-                <span>{content.tickets.technicalNotice.title}</span>
+          {/* Newsletter CTA Banner */}
+          <div className="mb-8 p-6 rounded-xl bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border-2 border-yellow-400/50 backdrop-blur-sm shadow-lg">
+            <div className="text-center space-y-4">
+              <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white">
+                {content.newsletter.title}
+              </h2>
+              <p className="text-base md:text-lg text-white/90 font-medium mb-4">
+                {content.newsletter.description}
               </p>
-              <p className="text-base md:text-lg text-white/90 font-medium mb-2">
-                {content.tickets.technicalNotice.message}
-              </p>
-              <p className="text-base md:text-lg text-white font-semibold mb-2">
-                {content.tickets.technicalNotice.boxOffice}
-              </p>
-              <p className="text-sm md:text-base text-white/80">
-                {content.tickets.technicalNotice.boxOfficePrice}
-              </p>
+              <form 
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  const formData = new FormData(e.target as HTMLFormElement);
+                  const email = formData.get('email') as string;
+                  alert(content.newsletter.success);
+                  (e.target as HTMLFormElement).reset();
+                }}
+                className="max-w-md mx-auto space-y-3"
+              >
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder={content.newsletter.emailPlaceholder}
+                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/30 text-white placeholder-white/50 focus:outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400/20"
+                />
+                <button
+                  type="submit"
+                  className="w-full btn-primary py-3 text-lg font-semibold"
+                >
+                  {content.newsletter.button}
+                </button>
+              </form>
+              <div className="mt-4 pt-4 border-t border-white/20">
+                <p className="text-sm text-white/80 mb-2">{content.newsletter.benefits.title}</p>
+                <div className="flex flex-wrap justify-center gap-4 text-sm text-white/70">
+                  <span>{content.newsletter.benefits.raffles}</span>
+                  <span>{content.newsletter.benefits.discounts}</span>
+                  <span>{content.newsletter.benefits.updates}</span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -163,25 +189,14 @@ export default function TicketsPage() {
                             )}
                           </div>
 
-                          {/* Ticket Button with Notice */}
-                          <div className="space-y-3">
-                            <div className="p-3 rounded-lg bg-orange-500/10 border border-orange-400/30">
-                              <p className="text-sm text-orange-200 font-medium">
-                                {content.tickets.technicalNotice.message} {content.tickets.technicalNotice.boxOffice}
-                              </p>
-                            </div>
-                            <div className="flex justify-end">
-                              <button
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  alert(content.tickets.technicalNotice.message + ' ' + content.tickets.technicalNotice.boxOffice);
-                                }}
-                                className="btn-primary px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-yellow-400/20 transition-all group-hover:scale-105 opacity-70 cursor-not-allowed"
-                                disabled
-                              >
-                                {content.tickets.technicalNotice.buttonText}
-                              </button>
-                            </div>
+                          {/* Newsletter CTA instead of Ticket Button */}
+                          <div className="flex justify-end">
+                            <Link
+                              href="/#newsletter"
+                              className="btn-primary px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-yellow-400/20 transition-all group-hover:scale-105"
+                            >
+                              {content.newsletter.button}
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -208,8 +223,8 @@ export default function TicketsPage() {
               <div className="text-yellow-400 text-lg">{content.tickets.infoTickets.icon}</div>
               <h4 className="font-semibold">{content.tickets.infoTickets.title}</h4>
               <p className="text-white/80 mb-2">{content.tickets.infoTickets.text}</p>
-              <p className="text-sm text-orange-300/90 font-medium">
-                ⚠️ {content.tickets.technicalNotice.message.split('.')[0]}. {content.tickets.technicalNotice.boxOffice}
+              <p className="text-sm text-white/70">
+                {content.newsletter.description}
               </p>
             </div>
             <div className="space-y-2">

@@ -164,11 +164,11 @@ export default function Home() {
         </div>
 
         {/* Middle Section: Artist Image (Mobile Only) */}
-        <div className="flex items-end justify-center md:hidden pt-8">
+        <div className="flex items-end justify-center md:hidden pt-8 pb-8">
           <img
             src="/HeroLandingPage.png"
             alt="Rope Artist Silhouette"
-            className="max-h-[500px] w-full max-w-md object-contain object-center px-4"
+            className="max-h-[700px] w-full max-w-lg object-contain object-center px-2"
           />
         </div>
 
@@ -187,22 +187,47 @@ export default function Home() {
               14.–16. November 2025
             </span>
           </div>
-          <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-            <Link
-              href="/tickets"
-              className="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-black rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 w-full md:w-auto backdrop-blur-sm border"
-              style={{background: 'linear-gradient(to right, #D4A574, #E6B887)', borderColor: 'rgba(212, 165, 116, 0.4)'}}
-            >
-              <span className="relative z-10">Tickets sichern</span>
-              <div className="absolute inset-0 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{background: 'linear-gradient(to right, rgba(212, 165, 116, 0.3), rgba(230, 184, 135, 0.3))'}}></div>
-            </Link>
-            <Link
-              href="/programm"
-              className="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-white border border-white/30 rounded-full hover:border-white/50 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-0.5 w-full md:w-auto backdrop-blur-sm"
-            >
-              <span className="relative z-10">Programm ansehen</span>
-              <div className="absolute inset-0 rounded-full bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </Link>
+          {/* Newsletter CTA */}
+          <div className="w-full max-w-md mx-auto">
+            <div className="bg-black/40 backdrop-blur-sm border border-white/20 rounded-2xl p-6">
+              <h2 className="text-xl font-bold text-white mb-2">{content.newsletter.title}</h2>
+              <p className="text-sm text-white/80 mb-4">{content.newsletter.description}</p>
+              <form 
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  const formData = new FormData(e.target as HTMLFormElement);
+                  const email = formData.get('email') as string;
+                  // TODO: Integrate with newsletter service
+                  alert(content.newsletter.success);
+                  (e.target as HTMLFormElement).reset();
+                }}
+                className="space-y-3"
+              >
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder={content.newsletter.emailPlaceholder}
+                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/30 text-white placeholder-white/50 focus:outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400/20"
+                />
+                <button
+                  type="submit"
+                  className="w-full group relative inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-black rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 backdrop-blur-sm border"
+                  style={{background: 'linear-gradient(to right, #D4A574, #E6B887)', borderColor: 'rgba(212, 165, 116, 0.4)'}}
+                >
+                  <span className="relative z-10">{content.newsletter.button}</span>
+                  <div className="absolute inset-0 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{background: 'linear-gradient(to right, rgba(212, 165, 116, 0.3), rgba(230, 184, 135, 0.3))'}}></div>
+                </button>
+              </form>
+              <div className="mt-4 pt-4 border-t border-white/10">
+                <p className="text-xs text-white/60 mb-2">{content.newsletter.benefits.title}</p>
+                <div className="space-y-1 text-xs text-white/70">
+                  <p>{content.newsletter.benefits.raffles}</p>
+                  <p>{content.newsletter.benefits.discounts}</p>
+                  <p>{content.newsletter.benefits.updates}</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -227,10 +252,10 @@ export default function Home() {
                   <p className="text-white/60 text-sm mt-1">Zeitgenössischer Zirkus × Comedy</p>
                 </div>
                 <Link
-                  href="/tickets"
+                  href="/#newsletter"
                   className="btn-primary px-6 py-2 text-sm w-full md:w-auto text-center"
                 >
-                  Tickets
+                  {content.newsletter.button}
                 </Link>
               </div>
             </div>
@@ -248,10 +273,10 @@ export default function Home() {
                   <p className="text-white/60 text-sm mt-1">Zirkus × Comedy / Tanz × Aerial</p>
                 </div>
                 <Link
-                  href="/tickets"
+                  href="/#newsletter"
                   className="btn-primary px-6 py-2 text-sm w-full md:w-auto text-center"
                 >
-                  Tickets
+                  {content.newsletter.button}
                 </Link>
               </div>
             </div>
@@ -269,10 +294,10 @@ export default function Home() {
                   <p className="text-white/60 text-sm mt-1">Meditativer Zirkus × Baltische Volksmusik</p>
                 </div>
                 <Link
-                  href="/tickets"
+                  href="/#newsletter"
                   className="btn-primary px-6 py-2 text-sm w-full md:w-auto text-center"
                 >
-                  Tickets
+                  {content.newsletter.button}
                 </Link>
               </div>
             </div>
@@ -339,27 +364,57 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Compact CTA */}
-      <section className="py-12 px-6 bg-black/10">
-        <div className="max-w-md mx-auto text-center">
-          <div className="p-6 rounded-xl bg-gradient-to-br from-yellow-400/10 to-orange-400/10 border border-white/20" style={{background: 'linear-gradient(to bottom right, rgba(212, 165, 116, 0.1), rgba(212, 165, 116, 0.05))'}}>
-            <h3 className="display text-2xl font-bold mb-3">
-              Tickets sichern
-            </h3>
-            <p className="text-white/80 text-sm mb-3">
-              Ermäßigt 12€ · Standard 18€ · Nur 200 Plätze pro Show
-            </p>
-            <div className="mb-4 p-2 rounded-lg bg-orange-500/20 border border-orange-400/40">
-              <p className="text-xs text-orange-200 font-medium">
-                {content.tickets.technicalNotice.message.split('.')[0]}. {content.tickets.technicalNotice.boxOffice}
-              </p>
-            </div>
-            <Link
-              href="/tickets"
-              className="btn-primary w-full py-3 text-lg font-semibold"
+      {/* Newsletter Section */}
+      <section id="newsletter" className="py-16 px-6 bg-black/10">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="display text-3xl md:text-4xl font-bold mb-4">
+            {content.newsletter.title}
+          </h2>
+          <p className="text-lg text-white/80 mb-8">
+            {content.newsletter.description}
+          </p>
+          <div className="bg-black/40 backdrop-blur-sm border border-white/20 rounded-2xl p-8">
+            <form 
+              onSubmit={(e) => {
+                e.preventDefault();
+                const formData = new FormData(e.target as HTMLFormElement);
+                const email = formData.get('email') as string;
+                alert(content.newsletter.success);
+                (e.target as HTMLFormElement).reset();
+              }}
+              className="space-y-4"
             >
-              Jetzt Tickets kaufen
-            </Link>
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder={content.newsletter.emailPlaceholder}
+                className="w-full px-6 py-4 rounded-lg bg-white/10 border border-white/30 text-white placeholder-white/50 focus:outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400/20 text-lg"
+              />
+              <button
+                type="submit"
+                className="w-full btn-primary py-4 text-lg font-semibold"
+              >
+                {content.newsletter.button}
+              </button>
+            </form>
+            <div className="mt-8 pt-6 border-t border-white/10">
+              <p className="text-sm font-semibold text-white/90 mb-4">{content.newsletter.benefits.title}</p>
+              <div className="grid md:grid-cols-3 gap-4 text-sm text-white/70">
+                <div className="p-4 rounded-lg bg-white/5">
+                  <p className="text-lg mb-1">{content.newsletter.benefits.raffles.split(' ')[0]}</p>
+                  <p>{content.newsletter.benefits.raffles.split(' ').slice(1).join(' ')}</p>
+                </div>
+                <div className="p-4 rounded-lg bg-white/5">
+                  <p className="text-lg mb-1">{content.newsletter.benefits.discounts.split(' ')[0]}</p>
+                  <p>{content.newsletter.benefits.discounts.split(' ').slice(1).join(' ')}</p>
+                </div>
+                <div className="p-4 rounded-lg bg-white/5">
+                  <p className="text-lg mb-1">{content.newsletter.benefits.updates.split(' ')[0]}</p>
+                  <p>{content.newsletter.benefits.updates.split(' ').slice(1).join(' ')}</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
