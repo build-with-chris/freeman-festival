@@ -8,7 +8,7 @@
     "date": "14.–16. November",
     "location": "Ostpark • Geodätische Kuppel",
     "venue": "✓ Nur 200 Plätze ✓ Einzigartige Atmosphäre ✓ Familienfreundlich",
-    "cta": "Tickets ab 12€ sichern",
+    "cta": "Newsletter abonnieren",
     "ctaSecondary": "Programm ansehen",
     "price": "Ermäßigt 12 € • Standard 18 € • Abendkasse 18 €",
     "scarcity": "⚠️ Begrenzte Plätze – Nur 200 Sitzplätze pro Show",
@@ -41,7 +41,7 @@
     "lineup": "Line-up",
     "venue": "Pepe Dome",
     "about": "Über uns",
-    "tickets": "Tickets ab 12€",
+    "tickets": "Newsletter",
     "contact": "Kontakt",
     "faq": "FAQ",
     "language": {
@@ -334,6 +334,21 @@
       "discounts": "💰 Vergünstigte Tickets",
       "updates": "📢 Neuigkeiten & Updates"
     }
+  },
+  "freeman2025": {
+    "title": "Freeman 2025",
+    "subtitle": "Das Festival der Artistik fand vom 14.–16. November 2025 in München statt",
+    "program": {
+      "title": "Programm",
+      "description": "Erlebe das vollständige Programm des Freeman Festivals 2025 mit Shows, Workshops und Talks. Von The Nordic Council bis Art for Rainy Days – alle Highlights auf einen Blick.",
+      "button": "Zum Programm"
+    },
+    "lineup": {
+      "title": "Line-up",
+      "description": "Lerne die internationalen Künstler:innen des Freeman Festivals 2025 kennen. The Nordic Council und Art for Rainy Days präsentierten ihre preisgekrönten Performances.",
+      "button": "Zum Line-up"
+    },
+    "mediaPlaceholder": "Bilder und Videos vom Festival 2025 folgen in Kürze"
   },
   "social": {
     "title": "Folge uns auf Instagram",
@@ -628,7 +643,7 @@
   "finalCta": {
     "title": "Nur noch wenige Tickets!",
     "subtitle": "5 spektakuläre Shows in 3 Tagen – sichere dir jetzt deinen Platz für internationale Artistik",
-    "primary": "Jetzt Tickets ab 12€ sichern",
+    "primary": "Newsletter abonnieren",
     "secondary": "⚠️ Nur 200 Plätze pro Show",
     "scarcity": "Early Bird-Preise nur bis 15. Oktober"
   },

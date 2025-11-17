@@ -31,12 +31,30 @@ export default function TicketsPage() {
                 {content.newsletter.description}
               </p>
               <form 
-                onSubmit={(e) => {
+                onSubmit={async (e) => {
                   e.preventDefault();
                   const formData = new FormData(e.target as HTMLFormElement);
                   const email = formData.get('email') as string;
-                  alert(content.newsletter.success);
-                  (e.target as HTMLFormElement).reset();
+                  
+                  try {
+                    const response = await fetch('/api/newsletter', {
+                      method: 'POST',
+                      headers: {
+                        'Content-Type': 'application/json',
+                      },
+                      body: JSON.stringify({ email }),
+                    });
+
+                    if (response.ok) {
+                      alert(content.newsletter.success);
+                      (e.target as HTMLFormElement).reset();
+                    } else {
+                      alert('Fehler beim Abonnieren. Bitte versuchen Sie es erneut.');
+                    }
+                  } catch (error) {
+                    console.error('Newsletter subscription error:', error);
+                    alert('Fehler beim Abonnieren. Bitte versuchen Sie es erneut.');
+                  }
                 }}
                 className="max-w-md mx-auto space-y-3"
               >

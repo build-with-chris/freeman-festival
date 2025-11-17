@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Freeman Festival 2025 - Das Jahresentertainment im Münchner Osten",
-    description: "Freeman Festival 2025: Drei Tage zeitgenössischer Zirkus im Münchner Ostpark. 14.-16. November im Pepe Dome mit The Nordic Council und Art for Rainy Days. Tickets ab 12€.",
+    description: "Freeman Festival 2025: Drei Tage zeitgenössischer Zirkus im Münchner Ostpark. 14.-16. November im Pepe Dome mit The Nordic Council und Art for Rainy Days.",
     images: ["/SaveTheDate.webp"],
     locale: "de_DE",
     type: "website",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Freeman Festival 2025 - Das Jahresentertainment im Münchner Osten",
-    description: "Freeman Festival 2025: Drei Tage zeitgenössischer Zirkus im Münchner Ostpark. 14.-16. November im Pepe Dome mit The Nordic Council und Art for Rainy Days. Tickets ab 12€.",
+    description: "Freeman Festival 2025: Drei Tage zeitgenössischer Zirkus im Münchner Ostpark. 14.-16. November im Pepe Dome mit The Nordic Council und Art for Rainy Days.",
     images: ["/SaveTheDate.webp"]
   },
   alternates: {

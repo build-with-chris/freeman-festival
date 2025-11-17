@@ -187,179 +187,56 @@ export default function Home() {
               14.–16. November 2025
             </span>
           </div>
-          {/* Newsletter CTA */}
-          <div className="w-full max-w-md mx-auto">
-            <div className="bg-black/40 backdrop-blur-sm border border-white/20 rounded-2xl p-6">
-              <h2 className="text-xl font-bold text-white mb-2">{content.newsletter.title}</h2>
-              <p className="text-sm text-white/80 mb-4">{content.newsletter.description}</p>
-              <form 
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  const formData = new FormData(e.target as HTMLFormElement);
-                  const email = formData.get('email') as string;
-                  // TODO: Integrate with newsletter service
-                  alert(content.newsletter.success);
-                  (e.target as HTMLFormElement).reset();
-                }}
-                className="space-y-3"
+        </div>
+      </section>
+
+      {/* Freeman 2025 Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="display text-4xl md:text-5xl font-bold mb-4 text-center">
+            {content.freeman2025.title}
+          </h2>
+          <p className="text-xl text-white/80 mb-12 text-center max-w-3xl mx-auto">
+            {content.freeman2025.subtitle}
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-12 mb-12">
+            {/* Programm */}
+            <div className="bg-black/30 backdrop-blur-sm border border-white/20 rounded-xl p-8">
+              <h3 className="display text-2xl font-bold mb-4">{content.freeman2025.program.title}</h3>
+              <p className="text-white/80 leading-relaxed mb-6">
+                {content.freeman2025.program.description}
+              </p>
+              <Link
+                href="/programm"
+                className="inline-flex items-center gap-2 px-6 py-3 border border-white/30 rounded-full hover:border-white/50 transition-colors"
               >
-                <input
-                  type="email"
-                  name="email"
-                  required
-                  placeholder={content.newsletter.emailPlaceholder}
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/30 text-white placeholder-white/50 focus:outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400/20"
-                />
-                <button
-                  type="submit"
-                  className="w-full group relative inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-black rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 backdrop-blur-sm border"
-                  style={{background: 'linear-gradient(to right, #D4A574, #E6B887)', borderColor: 'rgba(212, 165, 116, 0.4)'}}
-                >
-                  <span className="relative z-10">{content.newsletter.button}</span>
-                  <div className="absolute inset-0 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{background: 'linear-gradient(to right, rgba(212, 165, 116, 0.3), rgba(230, 184, 135, 0.3))'}}></div>
-                </button>
-              </form>
-              <div className="mt-4 pt-4 border-t border-white/10">
-                <p className="text-xs text-white/60 mb-2">{content.newsletter.benefits.title}</p>
-                <div className="space-y-1 text-xs text-white/70">
-                  <p>{content.newsletter.benefits.raffles}</p>
-                  <p>{content.newsletter.benefits.discounts}</p>
-                  <p>{content.newsletter.benefits.updates}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Compact Program Overview */}
-      <section className="py-16 px-6 bg-black/10">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="display text-3xl md:text-4xl font-bold mb-8 text-center">
-            Shows & Termine
-          </h2>
-          <div className="space-y-4">
-            {/* Friday */}
-            <div className="p-6 rounded-xl bg-black/20 border border-white/10 hover:border-white/30 transition-colors">
-              <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                <div className="flex-1">
-                  <div className="flex items-center gap-4 mb-2">
-                    <span className="text-lg font-bold" style={{color: '#D4A574'}}>Fr 14.11. – 19:00</span>
-                    <div className="w-2 h-2 rounded-full" style={{backgroundColor: '#D4A574'}}></div>
-                  </div>
-                  <h3 className="display text-xl font-bold mb-1">&bdquo;Häppy Hour&ldquo;</h3>
-                  <p className="text-white/70 text-sm">The Nordic Council</p>
-                  <p className="text-white/60 text-sm mt-1">Zeitgenössischer Zirkus × Comedy</p>
-                </div>
-                <Link
-                  href="/#newsletter"
-                  className="btn-primary px-6 py-2 text-sm w-full md:w-auto text-center"
-                >
-                  {content.newsletter.button}
-                </Link>
-              </div>
+                <span>{content.freeman2025.program.button}</span>
+                <span>→</span>
+              </Link>
             </div>
 
-            {/* Saturday */}
-            <div className="p-6 rounded-xl bg-black/20 border border-white/10 hover:border-white/30 transition-colors">
-              <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                <div className="flex-1">
-                  <div className="flex items-center gap-4 mb-2">
-                    <span className="text-lg font-bold" style={{color: '#D4A574'}}>Sa 15.11. – 18:00 / 20:30</span>
-                    <div className="w-2 h-2 rounded-full" style={{backgroundColor: '#D4A574'}}></div>
-                  </div>
-                  <h3 className="display text-xl font-bold mb-1">&bdquo;Häppy Hour&ldquo; / &bdquo;How a Spiral Works&ldquo;</h3>
-                  <p className="text-white/70 text-sm">Nordic Council / Art for Rainy Days</p>
-                  <p className="text-white/60 text-sm mt-1">Zirkus × Comedy / Tanz × Aerial</p>
-                </div>
-                <Link
-                  href="/#newsletter"
-                  className="btn-primary px-6 py-2 text-sm w-full md:w-auto text-center"
-                >
-                  {content.newsletter.button}
-                </Link>
-              </div>
-            </div>
-
-            {/* Sunday */}
-            <div className="p-6 rounded-xl bg-black/20 border border-white/10 hover:border-white/30 transition-colors">
-              <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                <div className="flex-1">
-                  <div className="flex items-center gap-4 mb-2">
-                    <span className="text-lg font-bold" style={{color: '#D4A574'}}>So 16.11. – 18:00</span>
-                    <div className="w-2 h-2 rounded-full" style={{backgroundColor: '#D4A574'}}></div>
-                  </div>
-                  <h3 className="display text-xl font-bold mb-1">&bdquo;How a Spiral Works&ldquo;</h3>
-                  <p className="text-white/70 text-sm">Art for Rainy Days</p>
-                  <p className="text-white/60 text-sm mt-1">Meditativer Zirkus × Baltische Volksmusik</p>
-                </div>
-                <Link
-                  href="/#newsletter"
-                  className="btn-primary px-6 py-2 text-sm w-full md:w-auto text-center"
-                >
-                  {content.newsletter.button}
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center mt-8">
-            <Link
-              href="/programm"
-              className="inline-flex items-center gap-2 px-6 py-3 border border-white/30 rounded-full hover:border-white/50 transition-colors"
-            >
-              <span>Vollständiges Programm ansehen</span>
-              <span>→</span>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Artists Introduction */}
-      <section className="py-16 px-6">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="display text-3xl md:text-4xl font-bold mb-8 text-center">
-            Unsere Künstler:innen
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            {/* Nordic Council */}
-            <div className="text-center">
-              <div className="aspect-square mb-4 rounded-xl overflow-hidden">
-                <img
-                  src="/Happy Hour/Chris Collina for Nordic Council.webp"
-                  alt="The Nordic Council"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="display text-xl font-bold mb-2">The Nordic Council</h3>
-              <p className="text-white/80 text-sm leading-relaxed">
-                Zeitgenössischer Zirkus trifft auf Comedy. Eine poetische Ode an den Norden mit Humor über peinliche Real-Life-Momente und die ambivalente Beziehung zu Alkohol.
+            {/* Lineup */}
+            <div className="bg-black/30 backdrop-blur-sm border border-white/20 rounded-xl p-8">
+              <h3 className="display text-2xl font-bold mb-4">{content.freeman2025.lineup.title}</h3>
+              <p className="text-white/80 leading-relaxed mb-6">
+                {content.freeman2025.lineup.description}
               </p>
-            </div>
-
-            {/* Art for Rainy Days */}
-            <div className="text-center">
-              <div className="aspect-square mb-4 rounded-xl overflow-hidden">
-                <img
-                  src="/How A Spiral Works/Zane Krūmiņa.webp"
-                  alt="Art for Rainy Days"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="display text-xl font-bold mb-2">Art for Rainy Days</h3>
-              <p className="text-white/80 text-sm leading-relaxed">
-                Meditativer, hypnotischer Zirkus mit Tanz, Hair Hanging und Aerial Rope. Minimalistische Ästhetik trifft auf neu interpretierte baltische Volksmusik.
-              </p>
+              <Link
+                href="/lineup"
+                className="inline-flex items-center gap-2 px-6 py-3 border border-white/30 rounded-full hover:border-white/50 transition-colors"
+              >
+                <span>{content.freeman2025.lineup.button}</span>
+                <span>→</span>
+              </Link>
             </div>
           </div>
-          <div className="text-center">
-            <Link
-              href="/lineup"
-              className="inline-flex items-center gap-2 px-6 py-3 border border-white/30 rounded-full hover:border-white/50 transition-colors"
-            >
-              <span>Mehr zum Line-up</span>
-              <span>→</span>
-            </Link>
+
+          {/* Placeholder for future images/videos */}
+          <div className="bg-black/20 border border-white/10 rounded-xl p-8 text-center">
+            <p className="text-white/60 text-sm italic">
+              {content.freeman2025.mediaPlaceholder}
+            </p>
           </div>
         </div>
       </section>
@@ -375,12 +252,30 @@ export default function Home() {
           </p>
           <div className="bg-black/40 backdrop-blur-sm border border-white/20 rounded-2xl p-8">
             <form 
-              onSubmit={(e) => {
+              onSubmit={async (e) => {
                 e.preventDefault();
                 const formData = new FormData(e.target as HTMLFormElement);
                 const email = formData.get('email') as string;
-                alert(content.newsletter.success);
-                (e.target as HTMLFormElement).reset();
+                
+                try {
+                  const response = await fetch('/api/newsletter', {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ email }),
+                  });
+
+                  if (response.ok) {
+                    alert(content.newsletter.success);
+                    (e.target as HTMLFormElement).reset();
+                  } else {
+                    alert('Fehler beim Abonnieren. Bitte versuchen Sie es erneut.');
+                  }
+                } catch (error) {
+                  console.error('Newsletter subscription error:', error);
+                  alert('Fehler beim Abonnieren. Bitte versuchen Sie es erneut.');
+                }
               }}
               className="space-y-4"
             >

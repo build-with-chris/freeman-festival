@@ -7,7 +7,7 @@
     "date": "November 14–16",
     "location": "Ostpark • Geodesic Dome",
     "venue": "✓ Only 200 seats ✓ Unique atmosphere ✓ Family-friendly",
-    "cta": "Get tickets from €12",
+    "cta": "Subscribe to Newsletter",
     "price": "Reduced €12 • Standard €18 • Box Office €18",
     "scarcity": "⚠️ Limited seats – Only 200 seats per show",
     "countdown": {
@@ -33,7 +33,7 @@
     "lineup": "Line-up",
     "venue": "Pepe Dome",
     "about": "About",
-    "tickets": "Tickets from €12",
+    "tickets": "Newsletter",
     "contact": "Contact",
     "faq": "FAQ",
     "language": {
@@ -335,6 +335,21 @@
       "updates": "📢 News & Updates"
     }
   },
+  "freeman2025": {
+    "title": "Freeman 2025",
+    "subtitle": "The Festival of Artistry took place from November 14–16, 2025 in Munich",
+    "program": {
+      "title": "Program",
+      "description": "Experience the complete program of Freeman Festival 2025 with shows, workshops and talks. From The Nordic Council to Art for Rainy Days – all highlights at a glance.",
+      "button": "View Program"
+    },
+    "lineup": {
+      "title": "Line-up",
+      "description": "Get to know the international artists of Freeman Festival 2025. The Nordic Council and Art for Rainy Days presented their award-winning performances.",
+      "button": "View Line-up"
+    },
+    "mediaPlaceholder": "Images and videos from Festival 2025 coming soon"
+  },
   "social": {
     "title": "Follow us on Instagram",
     "subtitle": "Latest updates from @pepe_arts",
@@ -601,7 +616,7 @@
   "finalCta": {
     "title": "Only few tickets left!",
     "subtitle": "5 spectacular shows in 3 days – secure your seat for international artistry now",
-    "primary": "Get tickets from €12 now",
+    "primary": "Subscribe to Newsletter",
     "secondary": "⚠️ Only 200 seats per show",
     "scarcity": "Early Bird prices only until October 15"
   },
